@@ -1,0 +1,2909 @@
+/* Enhanced CSS Reset and Cross-Browser Normalization */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    /* Enhanced viewport stability */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    /* Prevent font scaling in landscape while allowing user zoom */
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none;
+    /* Better scroll behavior */
+    scroll-behavior: smooth;
+    /* iOS Safari specific fixes */
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    /* Fallback solid background for Firefox */
+    background-color: #1e1b4b;
+    background-image: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
+    /* Enhanced background for consistency */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height for mobile */
+    color: white;
+    overflow-x: hidden;
+    font-weight: 400;
+    /* Enhanced font rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1;
+    /* Touch optimization */
+    touch-action: manipulation;
+    /* Prevent text selection on UI elements */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* iOS Safari specific fixes */
+    -webkit-overflow-scrolling: touch;
+    /* Prevent zoom on double tap */
+    touch-action: manipulation;
+}
+
+/* Allow text selection for content areas */
+.question-text, .answer-text, .option-text {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+/* iOS Safari Specific Fixes */
+@supports (-webkit-appearance: none) {
+    /* Force repaint to fix iOS Safari rendering issues */
+    .quiz-card, .option-btn, .show-answer-btn, .nav-btn {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    
+    /* Fix iOS Safari viewport issues */
+    html {
+        height: -webkit-fill-available;
+    }
+    
+    body {
+        min-height: -webkit-fill-available;
+    }
+}
+
+/* Enhanced Mobile Support */
+@media (hover: none) and (pointer: coarse) {
+    /* Mobile-specific hover state removal */
+    .option-btn:hover,
+    .show-answer-btn:hover:not(:disabled),
+    .nav-btn.primary:hover,
+    .nav-btn.secondary:hover {
+        transform: none;
+    }
+    
+    /* Enhanced touch targets */
+    .option-btn, .show-answer-btn, .nav-btn {
+        min-height: 44px; /* iOS minimum touch target */
+    }
+}
+
+/* ===== LOADING SCREEN ===== */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.loading-container {
+    text-align: center;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.loading-logo {
+    margin-bottom: 1.5rem;
+}
+
+/* Använd samma stilar som befintlig logo */
+.loading-logo .main-title {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.loading-logo .app-title {
+    font-size: 6rem;
+    font-weight: 900;
+    /* Fallback color for Firefox */
+    color: #ffffff;
+    background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 50%, #f9a8d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    /* Enhanced rendering */
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.loading-logo .domain {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 0.25rem;
+}
+
+/* Ta bort understrykningen - blir dubbel med progress-baren */
+.loading-logo .title-underline {
+    display: none;
+}
+
+.loading-progress-container {
+    width: 100%;
+}
+
+.loading-progress-bar {
+    width: 100%;
+    height: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.loading-progress-fill {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    border-radius: 7px;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+}
+
+/* Mobile optimizations for loading screen */
+@media (max-width: 768px) {
+    .loading-logo .app-title {
+        font-size: 4rem !important;
+    }
+    
+    .loading-logo .domain {
+        font-size: 1.4rem !important;
+    }
+    
+    .loading-container {
+        padding: 1.5rem;
+        max-width: 400px;
+    }
+    
+    .loading-logo {
+        margin-bottom: 1rem;
+    }
+    
+    .loading-progress-bar {
+        height: 14px !important;
+        border-radius: 7px;
+    }
+    
+    .loading-progress-fill {
+        border-radius: 7px;
+    }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+    .loading-logo .app-title {
+        font-size: 3rem !important;
+    }
+    
+    .loading-logo .domain {
+        font-size: 1rem !important;
+    }
+    
+    .loading-container {
+        max-width: 320px;
+        padding: 1rem;
+    }
+    
+    .loading-progress-bar {
+        height: 12px !important;
+        border-radius: 6px;
+    }
+    
+    .loading-progress-fill {
+        border-radius: 6px;
+    }
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+}
+
+/* Mobile - Force left/right padding */
+@media (max-width: 1023px) {
+    .container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+/* Views */
+.view {
+    display: none;
+    min-height: 100vh;
+}
+
+.view.active {
+    display: block;
+}
+
+/* Common Elements */
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Home View Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 0.75rem;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title {
+    display: flex;
+    align-items: baseline;
+}
+
+.app-title {
+    font-size: 1.875rem;
+    font-weight: 900;
+    /* Fallback color for Firefox */
+    color: #ffffff;
+    background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 50%, #f9a8d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.025em;
+    line-height: 1;
+    /* Enhanced rendering */
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* Enhanced Firefox Support with Feature Detection */
+@supports not (-webkit-background-clip: text) {
+    /* Firefox text gradient fallbacks */
+    .app-title, .domain {
+        background: none !important;
+        color: #ffffff !important;
+    }
+    
+    .category-title {
+        background: none !important;
+        color: #d8b4fe !important;
+    }
+    
+    .category-name {
+        background: none !important;
+        color: #e879f9 !important;
+    }
+    
+    .count-display {
+        background: none !important;
+        color: #fbbf24 !important;
+    }
+    
+    .question-text {
+        background: none !important;
+        color: #ffffff !important;
+    }
+}
+
+@supports not (backdrop-filter: blur(10px)) {
+    /* Firefox backdrop-filter fallbacks */
+    .quiz-card {
+        background: rgba(30, 27, 75, 0.9) !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    }
+    
+    .option-btn {
+        background: rgba(255, 255, 255, 0.2) !important;
+        border: 1px solid rgba(168, 85, 247, 0.4) !important;
+    }
+    
+    .show-answer-btn {
+        /* Keep gradient for show-answer-btn */
+    }
+    
+    .nav-btn.secondary {
+        background: rgba(255, 255, 255, 0.2) !important;
+        border: 1px solid rgba(168, 85, 247, 0.4) !important;
+    }
+    
+    .category-btn {
+        background: rgba(255, 255, 255, 0.2) !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    }
+    
+    .settings-btn {
+        background: rgba(255, 255, 255, 0.2) !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    }
+    
+    .answer-container {
+        background: rgba(59, 130, 246, 0.3) !important;
+        border: 1px solid rgba(59, 130, 246, 0.4) !important;
+    }
+}
+
+/* Firefox Android - Minimal Targeted Fixes */
+@-moz-document url-prefix() {
+    @media (max-width: 768px) {
+        /* Keep original gradient but ensure it works */
+        body {
+            background: #1e1b4b;
+            background-image: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
+            background-attachment: fixed;
+        }
+        
+        /* Fix logo size - smaller on Firefox mobile */
+        .app-title {
+            font-size: 1.5rem !important;
+        }
+        
+        /* Minimal quiz-card fix - just increase visibility */
+        .quiz-card {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Minimal button fixes - just ensure visibility */
+        .option-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(168, 85, 247, 0.4);
+            color: #ffffff;
+        }
+        
+        /* Remove blue active color from next button on Firefox Android */
+        .nav-btn.primary:active,
+        .nav-btn.primary:focus {
+            background: linear-gradient(135deg, #4ade80 0%, #3b82f6 100%) !important;
+            color: white !important;
+            outline: none !important;
+            -webkit-tap-highlight-color: transparent !important;
+        }
+        
+        /* Additional Firefox Android button fixes */
+        .nav-btn.primary {
+            -webkit-tap-highlight-color: transparent !important;
+            -moz-tap-highlight-color: transparent !important;
+        }
+        
+        /* Remove all individual backgrounds - let quiz-card handle it */
+        .question-section {
+            background: transparent !important;
+        }
+        
+        .answer-display {
+            background: transparent !important;
+        }
+        
+        .answer-container {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(168, 85, 247, 0.15) 100%) !important;
+            border: 1px solid rgba(59, 130, 246, 0.2) !important;
+            border-radius: 1rem !important;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
+        }
+        
+        .answer-options {
+            background: transparent !important;
+        }
+    }
+    
+    /* Firefox Android Tablet - Force taller buttons */
+    @media (min-width: 600px) and (max-width: 1023px) {
+        .show-answer-btn {
+            min-height: 70px !important;
+            padding: 1.25rem 1.75rem !important;
+        }
+        
+        .nav-btn {
+            min-height: 65px !important;
+            padding: 1.25rem 1.5rem !important;
+        }
+        
+        .option-btn {
+            min-height: 80px !important;
+            padding: 1.25rem !important;
+        }
+    }
+}
+
+/* Android Chrome - smaller logo like Firefox */
+@media (max-width: 768px) {
+    .app-title {
+        font-size: 1.75rem !important;
+    }
+}
+
+/* Android Chrome specific - slightly taller start page buttons */
+@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 0) {
+    .category-btn {
+        min-height: 70px;
+        padding: 1.25rem;
+    }
+    
+    .settings-btn {
+        min-height: 52px;
+        width: 52px;
+        padding: 0.75rem;
+    }
+}
+
+/* Mobile - Make bottom buttons taller */
+@media (max-width: 768px) {
+    .select-btn,
+    .play-all-btn {
+        min-height: 70px;
+        padding: 1.5rem 1.25rem;
+    }
+}
+
+/* Small mobile devices - Remove start page button icons */
+@media (min-width: 350px) and (max-width: 430px) {
+    #blanda-btn .category-icon,
+    #fler-quiz-btn .category-icon {
+        display: none;
+    }
+}
+
+/* Tablet - Make quiz buttons taller */
+@media (min-width: 769px) and (max-width: 1023px) {
+    .show-answer-btn {
+        min-height: 65px;
+        padding: 1.25rem 1.75rem;
+    }
+    
+    .nav-btn {
+        min-height: 60px;
+        padding: 1.25rem 1.5rem;
+    }
+    
+    .option-btn {
+        min-height: 75px;
+        padding: 1.25rem;
+    }
+}
+
+/* Android Tablet specific - Force taller buttons */
+@media (min-width: 600px) and (max-width: 1023px) {
+    .show-answer-btn {
+        min-height: 70px !important;
+        padding: 1.25rem 1.75rem !important;
+    }
+    
+    .nav-btn {
+        min-height: 65px !important;
+        padding: 1.25rem 1.5rem !important;
+    }
+    
+    .option-btn {
+        min-height: 80px !important;
+        padding: 1.25rem !important;
+    }
+}
+
+/* Additional Android tablet fixes for different pixel ratios */
+@media (min-width: 600px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .show-answer-btn {
+        min-height: 75px !important;
+        padding: 1.5rem 2rem !important;
+    }
+    
+    .nav-btn {
+        min-height: 70px !important;
+        padding: 1.5rem 1.75rem !important;
+    }
+    
+    .option-btn {
+        min-height: 85px !important;
+        padding: 1.5rem !important;
+    }
+}
+
+/* Landscape mobile/tablet - Same height as mobile buttons */
+@media (min-width: 481px) and (max-width: 768px) {
+    .show-answer-btn {
+        min-height: 70px;
+        padding: 1.25rem 1.5rem;
+    }
+    
+    .nav-btn {
+        min-height: 70px;
+        padding: 1.25rem 1.5rem;
+    }
+    
+    .option-btn {
+        min-height: 80px;
+        padding: 1.25rem;
+    }
+}
+
+/* Mobile - Remove blue active color from next button on all browsers */
+@media (max-width: 768px) {
+    .nav-btn.primary:active,
+    .nav-btn.primary:focus,
+    .nav-btn.primary:focus-visible {
+        background: linear-gradient(135deg, #4ade80 0%, #3b82f6 100%) !important;
+        color: white !important;
+        outline: none !important;
+        -webkit-tap-highlight-color: transparent !important;
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        appearance: none !important;
+    }
+    
+    /* Additional mobile button fixes */
+    .nav-btn.primary {
+        -webkit-tap-highlight-color: transparent !important;
+        -moz-tap-highlight-color: transparent !important;
+        -webkit-user-select: none !important;
+        -moz-user-select: none !important;
+        -ms-user-select: none !important;
+        user-select: none !important;
+    }
+    
+    /* Force remove any browser default active states */
+    .nav-btn.primary::-moz-focus-inner {
+        border: 0 !important;
+        outline: 0 !important;
+    }
+    
+    .nav-btn.primary:focus {
+        outline: 0 !important;
+        box-shadow: none !important;
+    }
+    
+    /* Remove scale on show-answer-btn for mobile */
+    .show-answer-btn:hover,
+    .show-answer-btn:active,
+    .show-answer-btn.active {
+        transform: none !important;
+        box-shadow: 0 8px 20px rgba(168, 85, 247, 0.3) !important;
+    }
+}
+
+/* Firefox Desktop & Mobile - Modern Hover Effects */
+@-moz-document url-prefix() {
+    /* Subtle modern hover for category buttons */
+    .category-btn:hover {
+        background: rgba(255, 255, 255, 0.12) !important;
+        transform: translateY(-1px) !important;
+        filter: none !important;
+        transition: all 0.2s ease !important;
+    }
+    
+    .category-btn:hover .category-icon {
+        background: rgba(255, 255, 255, 0.15) !important;
+        transform: none !important;
+        box-shadow: none !important;
+        transition: all 0.2s ease !important;
+    }
+    
+    .category-btn:hover .category-icon svg {
+        color: rgba(255, 255, 255, 0.9) !important;
+        stroke: rgba(255, 255, 255, 0.9) !important;
+        filter: none !important;
+        transform: none !important;
+        transition: all 0.2s ease !important;
+    }
+    
+    /* Subtle hover for settings button */
+    .settings-btn:hover {
+        background: rgba(255, 255, 255, 0.12) !important;
+        box-shadow: none !important;
+        transition: all 0.2s ease !important;
+    }
+}
+
+.domain {
+    font-size: 1.125rem;
+    /* Fallback color for Firefox */
+    color: #ffffff;
+    background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 50%, #f9a8d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-left: 0.125rem;
+    line-height: 1.75rem;
+}
+
+.title-underline {
+    width: 4rem;
+    height: 0.25rem;
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    border-radius: 9999px;
+    margin-top: 0.25rem;
+}
+
+.settings-btn {
+    padding: 0.625rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Make button more square */
+    min-height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Categories */
+.categories-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.category-btn {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.category-btn:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 
+        0 8px 30px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.category-btn:hover .category-icon {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    transform: scale(1.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.category-btn:hover .category-icon svg {
+    color: white;
+    stroke: white;
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+    transform: scale(1.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.category-btn:active {
+    transform: scale(0.98);
+    filter: brightness(0.95);
+}
+
+.category-btn:active .category-icon {
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(0.98);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.category-btn:active .category-icon svg {
+    transform: scale(0.95);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.category-btn.mixed {
+    background: transparent !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+.category-btn.mixed:hover {
+    border-color: rgba(168, 85, 247, 0.6) !important;
+    background: rgba(168, 85, 247, 0.1) !important;
+    transform: scale(1.02) !important;
+    box-shadow: 0 8px 30px rgba(168, 85, 247, 0.15) !important;
+}
+
+.category-btn.mixed:active {
+    transform: scale(0.98) !important;
+    border-color: rgba(168, 85, 247, 0.8) !important;
+    background: rgba(168, 85, 247, 0.2) !important;
+}
+
+.category-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.category-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.category-icon svg {
+    width: 24px;
+    height: 24px;
+    color: white;
+    stroke: white;
+    fill: none;
+}
+
+.category-info {
+    flex: 1;
+    text-align: left;
+}
+
+.category-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffffff 0%, #e879f9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.chevron {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: rgba(255, 255, 255, 0.6);
+    flex-shrink: 0;
+}
+
+/* Question Count */
+.question-count {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.count-display {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #ffffff 0%, #e879f9 50%, #fbbf24 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.count-number {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.count-label {
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+/* Fler Quiz knapp styling - exakt samma som Blanda alla (mixed) */
+.fler-quiz-btn {
+    background: transparent !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+.fler-quiz-btn:hover {
+    border-color: rgba(168, 85, 247, 0.6) !important;
+    background: rgba(168, 85, 247, 0.1) !important;
+    transform: scale(1.02) !important;
+    box-shadow: 0 8px 30px rgba(168, 85, 247, 0.15) !important;
+}
+
+.fler-quiz-btn:active {
+    transform: scale(0.98) !important;
+    border-color: rgba(168, 85, 247, 0.8) !important;
+    background: rgba(168, 85, 247, 0.2) !important;
+}
+
+/* Sökruta styling - matchar inställningsknappens stil */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0.75rem;
+}
+
+.search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    backdrop-filter: blur(20px);
+    transition: all 0.3s ease;
+    min-width: 280px;
+    min-height: 48px; /* Samma höjd som tillbaka-knappen */
+}
+
+.search-input-wrapper:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.search-input-wrapper:focus-within {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(168, 85, 247, 0.6);
+    box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.1);
+}
+
+.search-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    outline: none;
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.clear-search-btn {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease;
+    margin-left: 0.5rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.clear-search-btn:hover {
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.clear-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Responsiv design för sökrutan */
+@media (max-width: 768px) {
+    .search-input-wrapper {
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-input-wrapper {
+        min-width: 160px;
+    }
+    
+    .search-input {
+        font-size: 0.8rem;
+    }
+}
+
+/* Placera Blanda och Fler Quiz på samma rad */
+.bottom-buttons-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+/* Flytta Blanda alla knappen till bottom row */
+#categories-container .category-btn.mixed {
+    display: none; /* Dölj från vanliga kategorier */
+}
+
+/* Dynamiska kategorier - 2 knappar per rad */
+.dynamic-categories-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+/* Android Chrome specifikt - större gap mellan knapparna */
+@supports (-webkit-appearance: none) {
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        @media (max-width: 480px) {
+            .dynamic-categories-container {
+                gap: 1rem;
+            }
+        }
+    }
+}
+
+.dynamic-category-btn {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dynamic-category-btn:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.dynamic-category-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff !important;
+    line-height: 1.2;
+    word-break: break-word;
+    /* Ta bort gradient text-fill för att texten ska synas */
+    -webkit-text-fill-color: initial !important;
+    background-clip: initial !important;
+    -webkit-background-clip: initial !important;
+}
+
+/* Responsiv design för små skärmar */
+@media (max-width: 480px) {
+    .dynamic-categories-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+    
+    .dynamic-category-btn {
+        padding: 1.25rem;
+        min-height: 90px;
+    }
+    
+    .dynamic-category-name {
+        font-size: 0.875rem;
+    }
+}
+
+/* Specifik styling för Android Chrome */
+@supports (-webkit-appearance: none) {
+    @media (max-width: 480px) {
+        .dynamic-category-btn {
+            min-height: 100px; /* Lite högre för Chrome på Android */
+            padding: 1.25rem;
+        }
+    }
+}
+
+/* Chrome-specifik hack för Android */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @media (max-width: 480px) {
+        .dynamic-category-btn {
+            min-height: 100px; /* Lite högre för Chrome på Android */
+            padding: 1.25rem;
+        }
+    }
+}
+
+/* Quiz View Styles */
+.quiz-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.back-btn {
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 0.75rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.category-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #d8b4fe 0%, #f9a8d4 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.spacer {
+    width: 3rem;
+}
+
+/* Quiz Card */
+.quiz-card {
+    /* Fallback background for Firefox */
+    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    margin-bottom: 1.5rem;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Enhanced cross-browser support */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    /* Force hardware acceleration */
+    will-change: transform;
+}
+
+.question-section {
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    flex-shrink: 0;
+    flex: 1;
+    /* Smooth transitions for all changes */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Reduce padding and height when answers are active */
+.question-section.answers-active {
+    padding: 1rem 1.5rem;
+    min-height: 120px;
+    /* Smooth transition to active state */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.question-container {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.question-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffffff 0%, #f3e8ff 50%, #fce7f3 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.6;
+    word-wrap: normal;
+    hyphens: none;
+    white-space: normal;
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+/* Answer Options */
+.answer-options {
+    padding: 0 1.5rem 1.5rem;
+    flex: 1;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: visible;
+    opacity: 1;
+    will-change: max-height, opacity, padding;
+}
+
+.answer-options.hidden {
+    max-height: 0;
+    opacity: 0;
+    padding: 0 1.5rem;
+    /* Smooth collapse */
+    transform: translateY(-10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.answer-options.visible {
+    max-height: 20rem;
+    opacity: 1;
+    /* Smooth expand */
+    transform: translateY(0);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.option-btn {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    /* Enhanced touch optimization */
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    /* Cross-browser button reset */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Better text rendering */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    /* Smooth state transitions */
+    will-change: transform, background, box-shadow;
+}
+
+.option-btn:hover {
+    background: rgba(168, 85, 247, 0.15);
+    border-color: rgba(168, 85, 247, 0.4);
+    transform: scale(1.02);
+    box-shadow: 
+        0 8px 30px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.option-btn:active {
+    transform: scale(0.98);
+}
+
+.option-btn.correct {
+    background: linear-gradient(135deg, #22c55e 0%, #0d9488 100%);
+    background-clip: padding-box;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0.75rem;
+    transform: scale(1.04);
+    transform-origin: center center;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
+    overflow: visible;
+    z-index: 10;
+}
+
+.option-btn.incorrect {
+    background: linear-gradient(135deg, rgba(127, 29, 29, 0.3) 0%, rgba(69, 10, 10, 0.2) 100%);
+    border: 2px solid rgba(239, 68, 68, 0.4);
+    color: #d8b4fe;
+    transform: scale(0.98);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(127, 29, 29, 0.3);
+}
+
+.option-btn.disabled {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(168, 85, 247, 0.1);
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.option-text {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* Answer Display */
+.answer-display {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    margin: 0 1.5rem 1.5rem;
+    flex: 1;
+    opacity: 1;
+    will-change: max-height, opacity, margin;
+    /* Smooth height transitions */
+    max-height: 8rem;
+}
+
+.answer-display.hidden {
+    max-height: 0;
+    opacity: 0;
+    margin-bottom: 0;
+    /* Smooth collapse */
+    transform: translateY(-10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.answer-display.visible {
+    max-height: 8rem;
+    opacity: 1;
+    /* Smooth expand */
+    transform: translateY(0);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.answer-container {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(168, 85, 247, 0.15) 100%);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.answer-text {
+    color: #bfdbfe;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Buttons */
+.show-answer-btn {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 
+        0 8px 25px rgba(168, 85, 247, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    margin: 0.5rem 0 1rem 0;
+    min-height: 50px;
+    /* Enhanced cross-browser compatibility */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Touch optimization */
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    /* Better text rendering */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Smooth state transitions */
+    will-change: transform, opacity, background;
+}
+
+.show-answer-btn:hover:not(:disabled) {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(168, 85, 247, 0.4);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Remove scale when answer is active */
+.show-answer-btn.active {
+    transform: none;
+    box-shadow: 0 8px 20px rgba(168, 85, 247, 0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Remove scale on click/active state */
+.show-answer-btn:active {
+    transform: none;
+    box-shadow: 0 8px 20px rgba(168, 85, 247, 0.3);
+}
+
+/* Touch device optimization - no hover effects */
+@media (hover: none) and (pointer: coarse) {
+    .show-answer-btn:hover {
+        transform: none;
+        box-shadow: 0 8px 20px rgba(168, 85, 247, 0.3);
+    }
+}
+
+/* Smooth transitions for button state changes */
+.show-answer-btn.disabled {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Ensure smooth transitions when switching modes */
+.quiz-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.show-answer-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: linear-gradient(135deg, #6b7280 0%, #9ca3af 100%);
+    box-shadow: 0 4px 12px rgba(107, 114, 128, 0.2);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.show-answer-btn.disabled:hover {
+    transform: none;
+    box-shadow: 0 4px 12px rgba(107, 114, 128, 0.2);
+}
+
+.show-answer-btn.hidden {
+    display: none;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.nav-btn {
+    flex: 1;
+    padding: 0.875rem 1.25rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 45px;
+    /* Enhanced cross-browser compatibility */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Touch optimization */
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    /* Better text rendering */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.nav-btn.primary {
+    background: linear-gradient(135deg, #4ade80 0%, #3b82f6 100%);
+    color: white;
+    box-shadow: 
+        0 10px 25px rgba(74, 222, 128, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    /* Remove default browser active states */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.nav-btn.primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(74, 222, 128, 0.4);
+}
+
+/* Ensure no blue color on active/focus states */
+.nav-btn.primary:active,
+.nav-btn.primary:focus {
+    background: linear-gradient(135deg, #4ade80 0%, #3b82f6 100%);
+    color: white;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Remove scale animation on mobile/tablet for next button */
+@media (max-width: 1023px) {
+    .nav-btn.primary:hover {
+        transform: none;
+        box-shadow: 0 10px 25px rgba(74, 222, 128, 0.3);
+    }
+    
+    /* Mobile-optimized scale animations for answer feedback */
+    .option-btn.correct {
+        transform: scale(1.03);
+        box-shadow: 0 6px 20px rgba(249, 115, 22, 0.35);
+    }
+    
+    .option-btn.incorrect {
+        transform: scale(0.99);
+        box-shadow: 0 3px 12px rgba(127, 29, 29, 0.25);
+    }
+}
+
+/* Discreet color shift for next button on mobile/tablet */
+@media (max-width: 1023px) {
+    .nav-btn.primary:hover {
+        background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+    }
+}
+
+.nav-btn.secondary {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    color: rgb(233, 213, 255);
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.nav-btn.secondary:hover {
+    background: rgba(168, 85, 247, 0.2);
+    color: white;
+    transform: scale(1.02);
+    border-color: rgba(168, 85, 247, 0.5);
+}
+
+.btn-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Settings View */
+.settings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 0.75rem;
+}
+
+.settings-title {
+    font-size: 1.875rem;
+    font-weight: 900;
+    /* Fallback color for Firefox */
+    color: #ffffff;
+    background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 50%, #f9a8d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+    white-space: nowrap; /* Prevent word breaking */
+    /* Enhanced rendering */
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.close-btn {
+    padding: 0.625rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+/* Settings Content Layout */
+.settings-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Reduced from 2rem for better spacing */
+}
+
+.settings-section {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0; /* Ensure no extra margin */
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: visible; /* Changed from hidden to visible to show all content */
+}
+
+.settings-section::before {
+    /* Removed hover animation line */
+}
+
+.settings-section:hover {
+    /* Removed hover animation and color changes */
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0px;
+    padding-bottom: 0.75rem;
+    /* Removed border-bottom line */
+}
+
+.section-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.settings-section:hover .section-icon {
+    /* Removed hover animation */
+}
+
+.section-icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: white;
+}
+
+.section-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    /* Fallback color for Firefox */
+    color: #ffffff;
+    background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 50%, #f9a8d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+}
+
+.setting-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0; /* Changed to 10px top/bottom padding */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    margin: 0;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Ensure all setting items are properly contained */
+.settings-section .setting-item {
+    position: relative;
+    z-index: 1;
+    overflow: visible; /* Allow content to be visible */
+}
+
+.setting-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.setting-item:hover {
+    /* Removed hover animation and color changes */
+}
+
+.setting-item.hidden {
+    display: none;
+}
+
+.setting-item.visible {
+    display: flex;
+}
+
+
+
+/* Statistics Section */
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: block;
+}
+
+.stat-label {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Category Statistics Grid */
+.category-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.category-stat-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-stat-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.category-stat-number {
+    font-size: 2rem;
+    font-weight: 750;
+    background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 50%, #f9a8d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: block;
+    margin-bottom: 0.25rem;
+    line-height: 1;
+}
+
+.category-stat-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 1.2;
+    background: linear-gradient(135deg, #ffffff 0%, #f3e8ff 50%, #fce7f3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Fler Quiz Statistik */
+.fler-quiz-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.fler-quiz-stat-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.fler-quiz-stat-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.fler-quiz-stat-number {
+    font-size: 2rem;
+    font-weight: 750;
+    background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 50%, #f9a8d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: block;
+    margin-bottom: 0.25rem;
+    line-height: 1;
+}
+
+.fler-quiz-stat-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 1.2;
+    background: linear-gradient(135deg, #ffffff 0%, #f3e8ff 50%, #fce7f3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.setting-info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0; /* Allow text to shrink */
+}
+
+.setting-icon {
+    width: 2rem;
+    height: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.setting-icon svg {
+    width: 1rem;
+    height: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.setting-details {
+    flex: 1;
+    min-width: 0; /* Allow text to shrink */
+    padding-right: 0.25rem; /* Minimal padding for maximum text width */
+    max-width: 90%; /* Allow maximum space for text */
+}
+
+.setting-name {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.25rem;
+    line-height: 1.2;
+}
+
+.setting-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8125rem;
+    line-height: 1.3;
+}
+
+/* Setting Controls */
+.setting-control {
+    display: flex;
+    align-items: center;
+    gap: 0; /* Remove gap between elements */
+    flex-shrink: 0; /* Prevent shrinking */
+    margin-left: auto; /* Push controls to the right edge */
+    padding-left: 0; /* Remove left padding */
+    padding-right: 0; /* Remove right padding */
+    min-width: auto; /* Remove fixed minimum width */
+}
+
+/* Toggle Switch */
+.toggle-btn {
+    width: 3.5rem;
+    height: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.toggle-btn.active {
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    /* Removed box-shadow animation */
+}
+
+.toggle-slider {
+    width: 1.75rem;
+    height: 1.75rem;
+    background: white;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(0.125rem);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-btn.active .toggle-slider {
+    transform: translateX(1.5rem);
+}
+
+.toggle-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.toggle-btn.disabled .toggle-slider {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* App Info */
+.app-info {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.app-logo {
+    width: 4rem;
+    height: 4rem;
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    box-shadow: 0 8px 32px rgba(168, 85, 247, 0.4);
+}
+
+.app-logo svg {
+    width: 2rem;
+    height: 2rem;
+    color: white;
+}
+
+.app-name {
+    font-size: 1.25rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.25rem;
+}
+
+.app-version {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.app-tagline {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.8125rem;
+    font-style: italic;
+}
+
+/* Timer Dropdown Styling */
+.timer-dropdown {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
+    color: white;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 80px;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1.25rem;
+    padding-right: 2.5rem;
+}
+
+.timer-dropdown:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.timer-dropdown:focus {
+    border-color: rgba(168, 85, 247, 0.6);
+    box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.timer-dropdown option {
+    background: #1e1b4b;
+    color: white;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.timer-dropdown option:hover {
+    background: rgba(168, 85, 247, 0.2);
+}
+
+/* Custom dropdown arrow for Firefox */
+.timer-dropdown::-ms-expand {
+    display: none;
+}
+
+/* Remove default focus outline and add custom one */
+.timer-dropdown:focus {
+    outline: none;
+}
+
+/* Dropdown Select */
+.dropdown-select {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
+    color: white;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 80px;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+    padding-right: 2.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-select:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-select:focus {
+    border-color: rgba(168, 85, 247, 0.6);
+    box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.2);
+    transform: translateY(-1px);
+}
+
+.dropdown-select option {
+    background: #1e1b4b;
+    color: white;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.dropdown-select option:hover {
+    background: rgba(168, 85, 247, 0.2);
+}
+
+/* Custom dropdown arrow for Firefox */
+.dropdown-select::-ms-expand {
+    display: none;
+}
+
+/* Remove default focus outline and add custom one */
+.dropdown-select:focus {
+    outline: none;
+}
+
+/* Timer Duration Card - New button-based design */
+.timer-duration-card {
+    margin-top: 1rem;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.timer-duration-card.visible {
+    opacity: 1;
+    max-height: 200px;
+}
+
+.dropdown-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.75rem;
+}
+
+.time-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: visible;
+    padding: 0.25rem;
+}
+
+.time-option {
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: visible;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+.time-option:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.time-option.selected {
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    border-color: rgba(168, 85, 247, 0.6);
+    box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3);
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+.time-option:active {
+    transform: scale(0.98);
+}
+
+
+
+/* Timer Styling */
+.timer-container {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    display: none;
+    width: 100%;
+}
+
+.timer-container.visible {
+    display: block;
+}
+
+.timer-bar {
+    width: 100%;
+    max-width: 400px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.timer-progress {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(270deg, #a855f7 0%, #8b5cf6 50%, #7c3aed 100%);
+    border-radius: 6px;
+    transition: width 0.1s linear;
+    position: relative;
+    transform-origin: left center;
+}
+
+/* Mobile - Higher timer bar and time option buttons */
+@media (max-width: 768px) {
+    .timer-bar {
+        height: 16px;
+        border-radius: 8px;
+        max-width: 300px;
+    }
+    
+    .timer-progress {
+        border-radius: 8px;
+    }
+    
+    .time-option {
+        padding: 1.25rem 1rem;
+        font-size: 1rem;
+        min-height: 56px;
+    }
+    
+    .time-options {
+        gap: 0.75rem;
+        width: 100%;
+        max-width: 100%;
+        overflow: visible;
+        padding: 0.25rem;
+    }
+}
+
+/* Android Chrome - Wider timer to match answer box */
+@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 0) {
+    .timer-bar {
+        max-width: 420px;
+    }
+    
+    /* Larger font size for questions on Android Chrome */
+    .question-text {
+        font-size: 1.4rem !important;
+    }
+    
+    /* Larger font size for answer options on Android Chrome */
+    .option-text {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* Extra small screens - adjust time options layout */
+@media (max-width: 480px) {
+    .time-options {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        width: 100%;
+        max-width: 100%;
+        overflow: visible;
+        padding: 0.25rem;
+    }
+    
+    .time-option {
+        padding: 1.25rem 1rem;
+        font-size: 1rem;
+        min-height: 56px;
+    }
+}
+
+/* Tablet - Medium timer bar */
+@media (min-width: 769px) and (max-width: 1023px) {
+    .timer-bar {
+        height: 14px;
+        border-radius: 7px;
+    }
+    
+    .timer-progress {
+        border-radius: 7px;
+    }
+}
+
+
+
+/* Animations */
+@keyframes correctPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1.05); }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.settings-section {
+    /* No animations for instant display */
+}
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        padding: 0.75rem;
+        max-width: 100%;
+    }
+    
+    .app-title {
+        font-size: 2.5rem;
+    }
+    
+    .question-text {
+        font-size: 1.25rem;
+    }
+    
+    .option-btn {
+        min-height: 80px;
+        padding: 1.25rem;
+    }
+    
+    .option-text {
+        font-size: 0.8rem;
+    }
+    
+    .nav-btn {
+        min-height: 70px;
+        padding: 1.25rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .show-answer-btn {
+        min-height: 70px;
+        padding: 1.25rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .question-section {
+        min-height: 150px;
+        padding: 1.25rem;
+    }
+    
+    .question-section.answers-active {
+        padding: 0.75rem 1.25rem;
+        min-height: 100px;
+    }
+    
+    .category-btn {
+        padding: 0.75rem;
+    }
+    
+    /* Settings mobile optimizations */
+    .settings-title {
+        font-size: 1.5rem;
+    }
+    
+    .settings-section {
+        padding: 1.25rem;
+        margin-bottom: 0; /* Ensure no extra spacing */
+    }
+    
+    .setting-item {
+        padding: 1rem 0; /* Consistent padding */
+        /* Keep toggles on same row */
+    }
+    
+    .setting-control {
+        align-self: flex-end;
+        margin-top: 0.5rem;
+        padding-left: 0; /* Remove left padding */
+        padding-right: 0; /* Remove right padding */
+        gap: 0; /* Remove gap between elements */
+    }
+    
+    .settings-content {
+        gap: 1.25rem; /* Slightly reduced gap for mobile */
+    }
+    
+    .dropdown-select {
+        min-width: 90px;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        padding: 0.5rem;
+    }
+    
+    .app-title {
+        font-size: 2rem;
+    }
+    
+    .category-btn {
+        padding: 0.875rem;
+    }
+    
+    .question-section {
+        min-height: 120px;
+        padding: 1rem;
+    }
+    
+    .question-section.answers-active {
+        padding: 0.5rem 1rem;
+        min-height: 80px;
+    }
+    
+    .question-text {
+        font-size: 1.125rem;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    .question-text {
+        font-size: 1.5rem;
+    }
+    
+    .option-btn {
+        min-height: 85px;
+        padding: 1.5rem;
+    }
+    
+    .option-text {
+        font-size: 1rem;
+    }
+    
+    .show-answer-btn {
+        min-height: 75px;
+        padding: 1.5rem;
+    }
+    
+    .nav-btn {
+        min-height: 75px;
+        padding: 1.5rem;
+    }
+    
+    .question-section {
+        min-height: 200px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .question-text {
+        font-size: 1.5rem;
+    }
+    
+    .option-btn {
+        min-height: 70px;
+        padding: 1.25rem;
+    }
+    
+    .option-text {
+        font-size: 0.875rem;
+    }
+    
+    .question-section {
+        min-height: 220px;
+    }
+}
+
+/* Mobile Settings Improvements */
+@media (max-width: 768px) {
+    .settings-content {
+        gap: 1.25rem;
+    }
+    
+    .settings-section {
+        padding: 1.25rem;
+        margin-bottom: 0;
+    }
+    
+    .section-header {
+    margin-bottom: 0px;
+    padding-bottom: 0.5rem;
+    /* Removed border-bottom line */
+}
+    
+    .setting-item {
+        padding: 1rem 0;
+        /* Remove flex-direction: column to keep toggles on same row */
+    }
+    
+    .dropdown-select {
+        min-width: 100px;
+        padding: 0.625rem 0.875rem;
+        font-size: 0.8125rem;
+    }
+    
+    /* Mobile spacing adjustments */
+    .setting-details {
+        padding-right: 0.125rem;
+        max-width: 85%; /* Allow maximum text space on mobile */
+    }
+    
+    .setting-control {
+        min-width: auto; /* Remove fixed minimum width */
+        padding-left: 0; /* Remove left padding */
+        padding-right: 0; /* Remove right padding */
+        gap: 0; /* Remove gap between elements */
+    }
+    
+    /* Mobile adjustments for timer buttons */
+    .time-options {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+        padding: 0.25rem;
+    }
+    
+    .time-option {
+        padding: 0.625rem 0.75rem;
+        font-size: 0.8125rem;
+    }
+
+    /* Mobile adjustments for category stats */
+    .category-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+    
+    .category-stat-card {
+        padding: 1rem 0.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 80px;
+    }
+    
+    .category-stat-number {
+        font-size: 1.75rem;
+        margin-bottom: 0.125rem;
+    }
+    
+    .category-stat-label {
+        font-size: 0.8125rem;
+    }
+}
+
+/* Clean up - removed duplicate and conflicting rules */
+
+/* Settings items without animations for instant display */
+.setting-item {
+    opacity: 1;
+    transform: none;
+}
+
+/* Tablet - Reduce font weight for answer options */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .option-btn {
+        font-weight: 450;
+    }
+    
+    .option-text {
+        font-weight: 450;
+    }
+}
+
+/* ===== MULTI-CATEGORY SELECTION FEATURE ===== */
+
+/* Shuffle icon button */
+.shuffle-icon-btn {
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.shuffle-icon-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.shuffle-icon-btn.active {
+    background: rgba(139, 92, 246, 0.2);
+    border-color: rgba(139, 92, 246, 0.6);
+    color: #8b5cf6;
+}
+
+.shuffle-icon-btn .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke-width: 2;
+}
+
+/* Bottom buttons container */
+.bottom-buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, rgb(88, 28, 135) 0%, rgb(147, 51, 234) 100%);
+    --original-bg: linear-gradient(135deg, rgb(88, 28, 135) 0%, rgb(147, 51, 234) 100%);
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    z-index: 100;
+    display: flex;
+    gap: 0.75rem;
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Bottom buttons wrapper for centering */
+.bottom-buttons .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.bottom-buttons.visible {
+    transform: translateY(0);
+}
+
+/* Play all button (1/3 width) */
+.play-all-btn {
+    width: 33.333333%;
+    padding: 1rem 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: linear-gradient(225deg, rgb(139, 92, 246) 0%, rgb(168, 85, 247) 100%);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+}
+
+.play-all-btn:hover {
+    background: linear-gradient(225deg, rgb(139, 92, 246) 0%, rgb(168, 85, 247) 100%);
+    border-color: rgba(255, 255, 255, 1);
+    transform: translateY(-1px);
+}
+
+.play-all-btn:active {
+    transform: translateY(0);
+}
+
+/* Select button (2/3 width) - now with blue gradient */
+.select-btn {
+    width: 66.666667%;
+    padding: 1rem 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: linear-gradient(135deg, rgb(6, 182, 212) 0%, rgb(8, 145, 178) 100%);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+}
+
+.select-btn:hover {
+    background: linear-gradient(135deg, rgb(6, 182, 212) 0%, rgb(8, 145, 178) 100%);
+    border-color: rgba(255, 255, 255, 1);
+    transform: translateY(-1px);
+}
+
+.select-btn:active {
+    transform: translateY(0);
+}
+
+/* Question count styling in select button */
+.select-btn .question-count {
+    font-size: 0.75rem;
+    font-weight: 400;
+    opacity: 0.8;
+    margin-left: 0.25rem;
+}
+
+/* Category selection mode styling */
+.dynamic-categories-container.selection-mode {
+    padding-bottom: 100px; /* Space for bottom buttons */
+}
+
+.dynamic-category-btn.selection-mode {
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid rgba(139, 92, 246, 0.2);
+    /* Behåll ursprunglig bakgrundsfärg men lägg till lila accent */
+    background: var(--original-bg, inherit) !important;
+}
+
+.dynamic-category-btn.selection-mode:hover {
+    transform: scale(1.02);
+    border-color: rgba(139, 92, 246, 0.4);
+    /* Behåll ursprunglig bakgrundsfärg men lägg till lila accent */
+    background: var(--original-bg, inherit) !important;
+}
+
+.dynamic-category-btn.selected {
+    background: rgba(139, 92, 246, 0.2) !important;
+    border: 2px solid rgba(139, 92, 246, 0.8);
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+}
+
+/* Hover på valda kategorier - ingen bakgrundsfärg */
+.dynamic-category-btn.selected:hover {
+    background: rgba(139, 92, 246, 0.2) !important;
+    border-color: rgba(139, 92, 246, 0.9);
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.4);
+}
+
+/* Checkbox for selected categories */
+.dynamic-category-btn.selection-mode::before {
+    content: '';
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 28px;
+    height: 28px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+    transform: scale(1);
+}
+
+.dynamic-category-btn.selection-mode::after {
+    content: '';
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    border-radius: 0.5rem;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dynamic-category-btn.selected::before {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.dynamic-category-btn.selected::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Checkmark icon for selected categories */
+.dynamic-category-btn.selected::after {
+    content: '✓';
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .bottom-buttons {
+        padding: 0.875rem;
+        gap: 0.5rem;
+    }
+    
+    .select-btn,
+    .play-all-btn {
+        padding: 0.875rem 1.25rem;
+        font-size: 0.9375rem;
+    }
+    
+    .shuffle-icon-btn {
+        margin-right: 0.5rem;
+        min-height: 48px;
+        width: 48px;
+        padding: 0.75rem;
+    }
+    
+    .shuffle-icon-btn .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+/* Animation delays for staggered checkbox appearance */
+.dynamic-category-btn.selection-mode:nth-child(1)::before,
+.dynamic-category-btn.selection-mode:nth-child(1)::after {
+    transition-delay: 0.1s;
+}
+
+.dynamic-category-btn.selection-mode:nth-child(2)::before,
+.dynamic-category-btn.selection-mode:nth-child(2)::after {
+    transition-delay: 0.15s;
+}
+
+.dynamic-category-btn.selection-mode:nth-child(3)::before,
+.dynamic-category-btn.selection-mode:nth-child(3)::after {
+    transition-delay: 0.2s;
+}
+
+.dynamic-category-btn.selection-mode:nth-child(4)::before,
+.dynamic-category-btn.selection-mode:nth-child(4)::after {
+    transition-delay: 0.25s;
+}
+
+.dynamic-category-btn.selection-mode:nth-child(5)::before,
+.dynamic-category-btn.selection-mode:nth-child(5)::after {
+    transition-delay: 0.3s;
+}
+
+.dynamic-category-btn.selection-mode:nth-child(6)::before,
+.dynamic-category-btn.selection-mode:nth-child(6)::after {
+    transition-delay: 0.35s;
+}
+
+/* ===== EXPANDABLE SEARCH FUNCTIONALITY ===== */
+
+/* Initial state - show only search icon */
+.search-input-wrapper {
+    min-width: 48px;
+    max-width: 48px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.search-input-wrapper .search-input,
+.search-input-wrapper .clear-search-btn {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 0;
+    min-width: 0;
+}
+
+.search-input-wrapper .search-icon {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 0;
+}
+
+/* Expanded state */
+.search-input-wrapper.expanded {
+    min-width: 280px;
+    max-width: 280px;
+}
+
+.search-input-wrapper.expanded .search-input,
+.search-input-wrapper.expanded .clear-search-btn {
+    opacity: 1;
+    transform: translateX(0);
+    width: auto;
+    min-width: 0;
+}
+
+.search-input-wrapper.expanded .search-icon {
+    transform: translateX(0);
+    margin-right: 0.5rem;
+}
+
+/* Hover effect for search icon only */
+.search-input-wrapper:not(.expanded):hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive adjustments for expandable search */
+@media (max-width: 768px) {
+    .search-input-wrapper.expanded {
+        min-width: 200px;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-input-wrapper.expanded {
+        min-width: 160px;
+        max-width: 160px;
+    }
+}
+
+
+

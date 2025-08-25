@@ -1,0 +1,974 @@
+/* High Contrast Theme CSS */
+/* This file contains high contrast styles for accessibility */
+/* Designed to help people with color vision deficiencies */
+
+/* Force high contrast colors and remove gradients */
+* {
+    color-scheme: light dark;
+}
+
+/* Body background - pure black for maximum contrast */
+body {
+    background: #000000 !important;
+    background-image: none !important;
+    color: #ffffff !important;
+}
+
+/* App title - high contrast white */
+.app-title {
+    color: #ffffff !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Domain - high contrast yellow */
+.domain {
+    color: #ffff00 !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Category buttons - high contrast with thick borders */
+.category-btn {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+    font-weight: 700 !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Force all text inside category buttons to be white */
+.category-btn * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+}
+
+.category-btn:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.category-btn:hover * {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+}
+
+/* Force icons to be black on hover - simple inversion */
+.category-btn:hover svg {
+    filter: invert(1) !important;
+}
+
+.category-btn:active {
+    background: #ffffff !important;
+    color: #000000 !important;
+    transform: translateY(0) !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.category-btn:active * {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+}
+
+/* Mixed category button - distinct style */
+.category-btn.mixed {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+}
+
+.category-btn.mixed:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.category-btn.mixed:hover * {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+}
+
+/* Force icons to be black on hover for mixed button - simple inversion */
+.category-btn.mixed:hover svg {
+    filter: invert(1) !important;
+}
+
+.category-btn.mixed:active {
+    background: #ffffff !important;
+    color: #000000 !important;
+    transform: translateY(0) !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.category-btn.mixed:active * {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+}
+
+/* Quiz card - high contrast white background */
+.quiz-card {
+    background: #ffffff !important;
+    border: 3px solid #000000 !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Question text - high contrast black on white */
+.question-text {
+    color: #000000 !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    font-weight: 900 !important;
+    text-shadow: none !important;
+}
+
+/* Answer options - high contrast with thick borders */
+.option-btn {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 3px solid #000000 !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+    font-weight: 700 !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Force reset of answer option colors after state changes */
+.option-btn:not(.correct):not(.incorrect):not(.disabled) {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border-color: #000000 !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.option-btn:hover:not(:disabled) {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #000000 !important;
+    transform: translateY(-1px) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.option-btn:active:not(:disabled) {
+    background: #ffffff !important;
+    color: #000000 !important;
+    transform: translateY(0) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Correct answer - high contrast blue (not green for colorblind users) */
+.option-btn.correct {
+    background: #0066ff !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    font-weight: 900 !important;
+    box-shadow: 0 6px 12px rgba(0, 102, 255, 0.8) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Incorrect answer - high contrast gray with black border */
+.option-btn.incorrect {
+    background: #666666 !important;
+    color: #ffffff !important;
+    border-color: #000000 !important;
+    font-weight: 900 !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Disabled state - high contrast gray */
+.option-btn.disabled {
+    background: #666666 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Navigation buttons - high contrast */
+.nav-btn.primary {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+    font-weight: 700 !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.nav-btn.primary:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    transform: translateY(-1px) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.nav-btn.primary:active {
+    background: #ffffff !important;
+    color: #000000 !important;
+    transform: translateY(0) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.nav-btn.secondary {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    font-weight: 700 !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.nav-btn.secondary:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Show answer button - high contrast */
+.show-answer-btn {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+    font-weight: 700 !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.show-answer-btn:hover:not(:disabled) {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    transform: translateY(-1px) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.show-answer-btn:active:not(:disabled) {
+    background: #ffffff !important;
+    color: #000000 !important;
+    transform: translateY(0) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Toggle mode button - high contrast */
+#toggle-mode-btn {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+    font-weight: 700 !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+#toggle-mode-btn:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    transform: translateY(-1px) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+#toggle-mode-btn:active {
+    background: #ffffff !important;
+    color: #000000 !important;
+    transform: translateY(0) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Next button - high contrast */
+#next-btn {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+    font-weight: 700 !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Next button - always black background, no hover/active effects */
+#next-btn {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+#next-btn * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Media queries for tablet/phone to ensure next button styling */
+@media (max-width: 768px) {
+    #next-btn {
+        background: #000000 !important;
+        color: #ffffff !important;
+        border-color: #ffffff !important;
+    }
+    
+    #next-btn * {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+    
+    /* Force reset of answer option colors on mobile/tablet */
+    .option-btn:not(.correct):not(.incorrect):not(.disabled) {
+        background: #000000 !important;
+        color: #ffffff !important;
+        border-color: #000000 !important;
+        -webkit-text-fill-color: unset !important;
+    }
+    
+    /* Ensure all answer options are properly reset */
+    .option-btn {
+        background: #000000 !important;
+        color: #ffffff !important;
+        border-color: #000000 !important;
+    }
+}
+
+/* Settings buttons - high contrast */
+.settings-btn {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+    font-weight: 700 !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.settings-btn:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    transform: translateY(-1px) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.settings-btn:active {
+    background: #ffffff !important;
+    color: #000000 !important;
+    transform: translateY(0) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Time selection buttons - high contrast */
+.time-option {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    font-weight: 700 !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.time-option:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.time-option.selected {
+    background: #ffffff !important;
+    border-color: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Toggle buttons - high contrast with better visibility */
+.toggle-btn {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+    font-weight: 700 !important;
+    border-radius: 20px !important;
+    width: 50px !important;
+    height: 30px !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.toggle-btn.active {
+    background: #000000 !important;
+    border: 3px solid #ffffff !important;
+    border-color: #ffffff !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.toggle-slider {
+    background: #ffffff !important;
+    border: 2px solid #000000 !important;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    transition: transform 0.3s ease !important;
+}
+
+.toggle-btn.active .toggle-slider {
+    background: #ffffff !important;
+    border: 2px solid #000000 !important;
+    border-color: #000000 !important;
+    transform: translateX(20px) !important;
+}
+
+/* Category stat cards - high contrast with better hover contrast */
+.category-stat-card {
+    border: 3px solid #ffffff !important;
+    background: #000000 !important;
+    color: #ffffff !important;
+}
+
+.category-stat-card:hover {
+    border-color: #ffff00 !important;
+    background: #000000 !important;
+    color: #ffff00 !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 0, 0.5) !important;
+}
+
+/* Category stat numbers - high contrast */
+.category-stat-number {
+    color: #ffffff !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    font-weight: 900 !important;
+}
+
+.category-stat-card:hover .category-stat-number {
+    color: #ffff00 !important;
+}
+
+/* Category stat labels - high contrast */
+.category-stat-label {
+    color: #ffffff !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    font-weight: 700 !important;
+}
+
+.category-stat-card:hover .category-stat-label {
+    color: #ffff00 !important;
+}
+
+/* Settings sections - high contrast */
+.settings-section {
+    background: #000000 !important;
+    border: 3px solid #ffffff !important;
+    color: #ffffff !important;
+}
+
+.section-title {
+    color: #ffffff !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    font-weight: 900 !important;
+}
+
+.setting-name {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+.setting-description {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+}
+
+/* Dropdown label - high contrast */
+.dropdown-label {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+/* Answer container - high contrast */
+.answer-container {
+    background: #000000 !important;
+    border: 3px solid #ffffff !important;
+    color: #ffffff !important;
+}
+
+.answer-text {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+/* Timer bar - high contrast black/white with larger size */
+.timer-bar {
+    background: #ffffff !important;
+    border: 3px solid #000000 !important;
+    height: 30px !important;
+    border-radius: 15px !important;
+}
+
+.timer-progress {
+    background: #000000 !important;
+    border: 2px solid #ffffff !important;
+    border-radius: 13px !important;
+}
+
+/* Question count - high contrast without border and with yellow text */
+.question-count {
+    background: #000000 !important;
+    border: none !important;
+    color: #ffff00 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+
+.count-number {
+    color: #ffff00 !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: #ffff00 !important;
+    font-weight: 900 !important;
+}
+
+.count-label {
+    color: #ffff00 !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: #ffff00 !important;
+    font-weight: 700 !important;
+}
+
+/* Back button - high contrast */
+.back-btn {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.back-btn:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Category title - high contrast */
+.category-title {
+    color: #ffffff !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    font-weight: 900 !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Disabled toggle styling */
+.toggle-btn.disabled {
+    background: #666666 !important;
+    border-color: #ffffff !important;
+    opacity: 0.7 !important;
+}
+
+.toggle-btn.disabled .toggle-slider {
+    background: #666666 !important;
+    border-color: #ffffff !important;
+}
+
+/* Focus indicators for keyboard navigation */
+button:focus,
+input:focus {
+    outline: 4px solid #ffff00 !important;
+    outline-offset: 2px !important;
+}
+
+/* High contrast scrollbar */
+::-webkit-scrollbar {
+    width: 16px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000 !important;
+    border: 2px solid #ffffff !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff !important;
+    border: 2px solid #000000 !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffff00 !important;
+    border-color: #000000 !important;
+}
+
+/* Ensure all text is readable */
+* {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Close settings button - high contrast */
+#close-settings-btn {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+    font-weight: 700 !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+#close-settings-btn:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    transform: translateY(-1px) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+#close-settings-btn:active {
+    background: #ffffff !important;
+    color: #000000 !important;
+    transform: translateY(0) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Total questions - high contrast with yellow text */
+#total-questions {
+    color: #ffff00 !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: #ffff00 !important;
+    font-weight: 600 !important;
+}
+
+#total-questions * {
+    color: #ffff00 !important;
+    -webkit-text-fill-color: #ffff00 !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    font-weight: 600 !important;
+}
+
+/* ===== BOTTOM BUTTONS - High Contrast ===== */
+/* Knapparna under "Fler Quiz" - svart-vita stilar */
+
+/* Bottom buttons container */
+.bottom-buttons {
+    background: #000000 !important;
+    background-image: none !important;
+    border-top: 3px solid #ffffff !important;
+    backdrop-filter: none !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Select button (Välj kategorier) - mer specifika selektorer */
+#select-btn.select-btn,
+button.select-btn,
+.select-btn {
+    background: #000000 !important;
+    background-image: none !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+    font-weight: 700 !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+#select-btn.select-btn:hover,
+button.select-btn:hover,
+.select-btn:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+#select-btn.select-btn:active,
+button.select-btn:active,
+.select-btn:active {
+    background: #ffffff !important;
+    color: #000000 !important;
+    transform: translateY(0) !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+/* Play all button (Alla) - mer specifika selektorer */
+#play-all-btn.play-all-btn,
+button.play-all-btn,
+.play-all-btn {
+    background: #000000 !important;
+    background-image: none !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+    font-weight: 700 !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+#play-all-btn.play-all-btn:hover,
+button.play-all-btn:hover,
+.play-all-btn:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+#play-all-btn.play-all-btn:active,
+button.play-all-btn:active,
+.play-all-btn:active {
+    background: #ffffff !important;
+    color: #000000 !important;
+    transform: translateY(0) !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+/* Force all text inside buttons to be readable */
+#select-btn.select-btn *,
+button.select-btn *,
+.select-btn *,
+#play-all-btn.play-all-btn *,
+button.play-all-btn *,
+.play-all-btn * {
+    color: inherit !important;
+    -webkit-text-fill-color: inherit !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+}
+
+/* Button text specifically */
+#select-btn.select-btn span,
+button.select-btn span,
+.select-btn span,
+#play-all-btn.play-all-btn span,
+button.play-all-btn span,
+.play-all-btn span {
+    color: inherit !important;
+    -webkit-text-fill-color: inherit !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    font-weight: 700 !important;
+}
+
+/* Override any gradient backgrounds with !important */
+#select-btn.select-btn,
+#play-all-btn.play-all-btn {
+    background: #000000 !important;
+    background-image: none !important;
+    background: linear-gradient(none) !important;
+}
+
+/* ===== ULTIMATE OVERRIDE - Highest specificity ===== */
+/* These rules should override everything else */
+body #app #quiz-view .bottom-buttons #select-btn,
+body #app #quiz-view .bottom-buttons #play-all-btn,
+body #app #home-view .bottom-buttons #select-btn,
+body #app #home-view .bottom-buttons #play-all-btn {
+    background: #000000 !important;
+    background-image: none !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+    font-weight: 700 !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+body #app #quiz-view .bottom-buttons #select-btn:hover,
+body #app #quiz-view .bottom-buttons #play-all-btn:hover,
+body #app #home-view .bottom-buttons #select-btn:hover,
+body #app #home-view .bottom-buttons #play-all-btn:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    transform: translateY(-2px) !important;
+}
+
+body #app #quiz-view .bottom-buttons #select-btn:active,
+body #app #quiz-view .bottom-buttons #play-all-btn:active,
+body #app #home-view .bottom-buttons #select-btn:active,
+body #app #home-view .bottom-buttons #play-all-btn:active {
+    background: #ffffff !important;
+    color: #000000 !important;
+    transform: translateY(0) !important;
+}
+
+/* ===== SIMPLE TEST RULE ===== */
+/* Testa om CSS-filen fungerar alls */
+#select-btn {
+    border: 5px solid red !important;
+    background: yellow !important;
+    color: black !important;
+}
+
+#play-all-btn {
+    border: 5px solid red !important;
+    background: yellow !important;
+    color: black !important;
+}
+
+/* ===== EVEN SIMPLER TEST ===== */
+/* Testa med bara en färg */
+#select-btn,
+#play-all-btn {
+    background-color: lime !important;
+    color: black !important;
+    border: 3px solid black !important;
+}
+
+/* ===== DYNAMIC CATEGORIES - High Contrast ===== */
+/* Kaffe, Cocktails, Reklam, etc. - svart-vita stilar */
+
+/* Dynamic category buttons */
+.dynamic-category-btn {
+    background: #000000 !important;
+    background-image: none !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+    font-weight: 700 !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+.dynamic-category-btn:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    transform: scale(1.02) !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+.dynamic-category-btn:active {
+    background: #ffffff !important;
+    color: #000000 !important;
+    transform: scale(0.98) !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+/* Selection mode styling */
+.dynamic-category-btn.selection-mode {
+    background: #000000 !important;
+    background-image: none !important;
+    border: 3px solid #ffffff !important;
+    color: #ffffff !important;
+}
+
+.dynamic-category-btn.selection-mode:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+}
+
+/* Selected state */
+.dynamic-category-btn.selected {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: 3px solid #ffffff !important;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5) !important;
+}
+
+.dynamic-category-btn.selected:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Force all text inside dynamic category buttons to be readable */
+.dynamic-category-btn * {
+    color: inherit !important;
+    -webkit-text-fill-color: inherit !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+}
+
+/* Dynamic category name specifically */
+.dynamic-category-btn .dynamic-category-name {
+    color: inherit !important;
+    -webkit-text-fill-color: inherit !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    font-weight: 700 !important;
+}
