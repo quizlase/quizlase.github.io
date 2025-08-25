@@ -272,7 +272,7 @@ class QuizApp {
 
     // ===== DYNAMISKA KATEGORIER =====
     
-    // Skanna data/kategori/ mappen för CSV-filer automatiskt
+    // Skanna data/kategori/ mappen  för CSV-filer automatiskt
     async scanCategoryFolder() {
         try {
             console.log('=== scanCategoryFolder startar ===');
