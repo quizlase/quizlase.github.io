@@ -45,6 +45,10 @@ class QuizApp {
         // Store auto-advance timeout to cancel it when needed
         this.autoAdvanceTimeout = null;
 
+        // Tracking-variabler för Umami Analytics
+        this.homeViewStartTime = Date.now();
+        this.questionsAnswered = 0;
+
         // Load settings from localStorage
         this.loadSettings();
         
@@ -701,6 +705,29 @@ class QuizApp {
         
         // Reset score
         this.resetScore();
+
+        // Spåra kategori-val för Umami Analytics
+        this.trackEvent('category-selected', {
+            category: category.name,
+            categoryKey: categoryKey,
+            questionCount: category.questions.length,
+            type: 'dynamic'
+        });
+
+        // Spåra start av quiz-session
+        this.trackEvent('quiz-session-started', {
+            category: category.name,
+            totalQuestions: category.questions.length,
+            settings: {
+                multipleChoice: this.settings.showMultipleChoice,
+                timer: this.settings.timer,
+                timerDuration: this.settings.timerDuration,
+                autoAdvance: this.settings.autoAdvance
+            }
+        });
+
+        // Nollställ frågeräknare för ny session
+        this.questionsAnswered = 0;
         
         // Update UI
         document.getElementById('category-title').textContent = category.name;
@@ -863,6 +890,13 @@ class QuizApp {
         if (flerQuizBtn) {
             flerQuizBtn.addEventListener('click', () => {
                 console.log('Fler Quiz knapp klickad!');
+                
+                // Spåra Fler Quiz klick för Umami Analytics
+                this.trackEvent('fler-quiz-clicked', {
+                    dynamicCategoriesCount: Object.keys(this.dynamicCategories).length,
+                    totalQuestions: Object.values(this.dynamicCategories).reduce((sum, cat) => sum + cat.questions.length, 0)
+                });
+                
                 this.showView('fler-quiz');
             });
             console.log('Fler Quiz event listener kopplad');
@@ -1036,6 +1070,21 @@ class QuizApp {
     showView(viewName) {
         console.log(`Växlar till vy: ${viewName}`);
         
+        // Spåra tid på hemsidan när användare lämnar den
+        if (this.currentView === 'home' && viewName !== 'home') {
+            const timeOnHome = Date.now() - (this.homeViewStartTime || Date.now());
+            this.trackEvent('time-on-home', {
+                seconds: Math.round(timeOnHome / 1000),
+                nextView: viewName,
+                timeCategory: this.getTimeCategory(Math.round(timeOnHome / 1000))
+            });
+        }
+        
+        // Starta timer när användare kommer till hemsidan
+        if (viewName === 'home') {
+            this.homeViewStartTime = Date.now();
+        }
+        
         document.querySelectorAll('.view').forEach(view => {
             view.classList.remove('active');
         });
@@ -1121,6 +1170,29 @@ class QuizApp {
 
         // Reset score when starting new quiz
         this.resetScore();
+
+        // Spåra kategori-val för Umami Analytics
+        this.trackEvent('category-selected', {
+            category: category.name,
+            categoryKey: categoryKey,
+            questionCount: category.questions.length,
+            type: 'main'
+        });
+
+        // Spåra start av quiz-session
+        this.trackEvent('quiz-session-started', {
+            category: category.name,
+            totalQuestions: category.questions.length,
+            settings: {
+                multipleChoice: this.settings.showMultipleChoice,
+                timer: this.settings.timer,
+                timerDuration: this.settings.timerDuration,
+                autoAdvance: this.settings.autoAdvance
+            }
+        });
+
+        // Nollställ frågeräknare för ny session
+        this.questionsAnswered = 0;
 
         // Update UI
         document.getElementById('category-title').textContent = category.name;
@@ -1479,6 +1551,16 @@ class QuizApp {
             answerOptions.classList.remove('visible');
         }
         
+        // Spåra att en fråga besvarats för Umami Analytics
+        this.questionsAnswered = (this.questionsAnswered || 0) + 1;
+        this.trackEvent('question-answered', {
+            questionNumber: this.questionsAnswered,
+            categoryKey: this.selectedCategory,
+            mode: this.settings.showMultipleChoice ? 'multiple-choice' : 'direct-answer',
+            timerEnabled: this.settings.timer,
+            autoAdvance: this.settings.autoAdvance
+        });
+        
         // Load the new question and start timer
         this.loadCurrentQuestion(true);
         
@@ -1811,7 +1893,16 @@ class QuizApp {
         button.classList.add('selected');
         
         // Update settings
-        this.settings.timerDuration = parseInt(button.getAttribute('data-time'));
+        const newDuration = parseInt(button.getAttribute('data-time'));
+        
+        // Spåra timer-inställningsändring för Umami Analytics
+        this.trackEvent('timer-setting-changed', {
+            newSeconds: newDuration,
+            previousSeconds: this.settings.timerDuration,
+            changeType: newDuration > this.settings.timerDuration ? 'increased' : 'decreased'
+        });
+        
+        this.settings.timerDuration = newDuration;
         this.timerDuration = this.settings.timerDuration;
         this.saveSettings();
         
@@ -2214,12 +2305,29 @@ class QuizApp {
         // Reset score
         this.resetScore();
         
-        // Update UI - visa kategorinamn från CSV-filerna
+        // Spåra start av multi-kategori quiz-session för Umami Analytics
         const categoryNames = Array.from(this.selectedCategories).map(key => {
             const category = this.dynamicCategories[key];
             return category ? category.name : key;
         });
         
+        this.trackEvent('quiz-session-started', {
+            category: categoryNames.join(', '),
+            totalQuestions: allQuestions.length,
+            selectedCategoriesCount: this.selectedCategories.size,
+            type: 'multi-category',
+            settings: {
+                multipleChoice: this.settings.showMultipleChoice,
+                timer: this.settings.timer,
+                timerDuration: this.settings.timerDuration,
+                autoAdvance: this.settings.autoAdvance
+            }
+        });
+
+        // Nollställ frågeräknare för ny session
+        this.questionsAnswered = 0;
+        
+        // Update UI - visa kategorinamn från CSV-filerna
         console.log('Category names:', categoryNames);
         console.log('showMixedTitle:', showMixedTitle);
         console.log('Selected categories size:', this.selectedCategories.size);
@@ -2290,6 +2398,20 @@ class QuizApp {
         });
         
         console.log('Selected all categories:', Array.from(this.selectedCategories));
+        
+        // Spåra start av "Alla kategorier" quiz för Umami Analytics
+        this.trackEvent('quiz-session-started', {
+            category: 'Alla Kategorier',
+            totalQuestions: Object.values(this.dynamicCategories).reduce((sum, cat) => sum + cat.questions.length, 0),
+            selectedCategoriesCount: Object.keys(this.dynamicCategories).length,
+            type: 'all-categories',
+            settings: {
+                multipleChoice: this.settings.showMultipleChoice,
+                timer: this.settings.timer,
+                timerDuration: this.settings.timerDuration,
+                autoAdvance: this.settings.autoAdvance
+            }
+        });
         
         // Start quiz with all categories
         this.startQuizWithSelectedCategories(true); // true = visa kategorinamnen istället för generisk titel
@@ -2407,6 +2529,23 @@ class QuizApp {
 
     // Metoden showBackgroundLoadingComplete tas bort eftersom notifikationer inte längre visas
 
+    // ===== UMAMI ANALYTICS TRACKING =====
+    
+    // Hjälpfunktion för att spåra events
+    trackEvent(eventName, data = {}) {
+        if (typeof umami !== 'undefined') {
+            umami.track(eventName, data);
+            console.log('Umami event tracked:', eventName, data);
+        }
+    }
+
+    // Kategorisera tid för enklare analys
+    getTimeCategory(seconds) {
+        if (seconds < 15) return 'quick-browse';
+        if (seconds < 45) return 'normal-browse';
+        if (seconds < 120) return 'engaged-browse';
+        return 'deep-browse';
+    }
 
 }
 
