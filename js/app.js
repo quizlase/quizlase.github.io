@@ -444,6 +444,9 @@ class QuizApp {
             // Uppdatera frågeräkningen efter att dynamiska kategorier laddats
             this.updateQuestionCount();
             
+            // Uppdatera Fler Quiz-statistiken efter att dynamiska kategorier laddats
+            this.updateFlerQuizStats();
+            
             // Uppdatera "Blanda"-kategorin om inställningen är aktiverad
             this.updateBlandaCategory();
             
