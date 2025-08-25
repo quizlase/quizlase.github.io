@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Quizla.se - Quiz för alla</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/monochrome.css" id="monochrome-css" disabled>
+    <link rel="stylesheet" href="css/highcontrast.css" id="highcontrast-css" disabled>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-logo">
+                <div class="main-title">
+                    <h1 class="app-title">Quizla</h1>
+                    <span class="domain">.se</span>
+                </div>
+                <div class="title-underline"></div>
+            </div>
+            <div class="loading-progress-container">
+                <div class="loading-progress-bar">
+                    <div id="loading-progress" class="loading-progress-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="app" class="min-h-screen">
+        <!-- Home View -->
+        <div id="home-view" class="view active">
+            <div class="container">
+                <!-- Header -->
+                <div class="header">
+                    <div class="title-section">
+                        <div class="main-title">
+                            <h1 class="app-title">Quizla</h1>
+                            <span class="domain">.se</span>
+                        </div>
+                        <div class="title-underline"></div>
+                    </div>
+                    <button id="settings-btn" class="settings-btn">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </button>
+                </div>
+
+                                <!-- Categories -->
+                <div id="categories-container" class="categories-container">
+                    <!-- Categories will be populated by JavaScript -->
+                </div>
+
+                <!-- Bottom buttons row - Blanda och Fler Quiz på samma rad -->
+                <div class="bottom-buttons-row">
+                    <!-- Blanda knapp -->
+                    <button class="category-btn mixed" id="blanda-btn">
+                        <div class="category-content">
+                            <div class="category-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-white">
+                                    <path d="M16 3h5v5"></path>
+                                    <path d="M4 20L21 3"></path>
+                                    <path d="M21 16v5h-5"></path>
+                                    <path d="M15 15l6 6"></path>
+                                    <path d="M4 4l5 5"></path>
+                                </svg>
+                            </div>
+                            <div class="category-info">
+                                <h3 class="category-name">Blanda</h3>
+                            </div>
+                            <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                    </button>
+
+                    <!-- Fler Quiz knapp -->
+                    <button class="category-btn fler-quiz-btn" id="fler-quiz-btn">
+                        <div class="category-content">
+                            <div class="category-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-white">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <div class="category-info">
+                                <h3 class="category-name">Fler Quiz</h3>
+                            </div>
+                            <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Question count -->
+                <div class="question-count">
+                    <div class="count-display">
+                        <span id="total-questions" class="count-number">Laddar...</span>
+                        <span class="count-label">FRÅGOR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz View -->
+        <div id="quiz-view" class="view">
+            <div class="container">
+                <!-- Header -->
+                <div class="quiz-header">
+                    <button id="back-btn" class="back-btn">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <h1 id="category-title" class="category-title">Allmänbildning</h1>
+                    <div class="spacer"></div>
+                </div>
+
+                <!-- Quiz Card -->
+                <div class="quiz-card">
+                    <!-- Question Section -->
+                    <div class="question-section">
+                        <div class="question-container">
+                            <h2 id="current-question" class="question-text">
+                                Laddar fråga...
+                            </h2>
+                        </div>
+                    </div>
+                    
+                    <!-- Answer Options (Multiple Choice) -->
+                    <div id="answer-options" class="answer-options hidden">
+                        <div class="options-grid">
+                            <button class="option-btn" data-index="0">
+                                <span class="option-text">Alternativ 1</span>
+                            </button>
+                            <button class="option-btn" data-index="1">
+                                <span class="option-text">Alternativ 2</span>
+                            </button>
+                            <button class="option-btn" data-index="2">
+                                <span class="option-text">Alternativ 3</span>
+                            </button>
+                            <button class="option-btn" data-index="3">
+                                <span class="option-text">Alternativ 4</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Answer Display (Direct Answer) -->
+                    <div id="answer-display" class="answer-display">
+                        <div class="answer-container">
+                            <p id="answer-text" class="answer-text">Detta är svaret</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timer Bar -->
+                <div id="timer-container" class="timer-container hidden">
+                    <div class="timer-bar">
+                        <div id="timer-progress" class="timer-progress"></div>
+                    </div>
+                </div>
+
+                <!-- Show Answer Button (for direct answer mode) -->
+                <button id="show-answer-btn" class="show-answer-btn">
+                    <div class="btn-content">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                        <span>Visa svar</span>
+                    </div>
+                </button>
+
+                <!-- Navigation buttons -->
+                <div class="navigation-buttons">
+                    <button id="toggle-mode-btn" class="nav-btn secondary">
+                        <div class="btn-content">
+                            <span>Svarsalternativ</span>
+                        </div>
+                    </button>
+
+                    <button id="next-btn" class="nav-btn primary">
+                        <div class="btn-content">
+                            <span>Nästa</span>
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fler Quiz View -->
+        <div id="fler-quiz-view" class="view">
+            <div class="container">
+                <!-- Header -->
+                <div class="quiz-header">
+                    <button id="back-to-home-btn" class="back-btn">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+
+                    <!-- Sökruta och Shuffle-ikon bredvid varandra -->
+                    <div class="search-container">
+                        <div class="search-input-wrapper" id="search-input-wrapper">
+                            <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                            <input type="text" id="quiz-search-input" class="search-input" placeholder="Sök quiz-kategorier..." />
+                            <button id="clear-search-btn" class="clear-search-btn" style="display: none;">
+                                <svg class="clear-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Shuffle-ikon för selection mode -->
+                    <button id="shuffle-icon-btn" class="shuffle-icon-btn" title="Blanda flera kategorier">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 3h5v5"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 20L21 3"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 16v5h-5"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l6 6"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4l5 5"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Dynamiska Quiz-kategorier -->
+                <div id="dynamic-categories-container" class="dynamic-categories-container">
+                    <!-- Knappar skapas automatiskt här -->
+                </div>
+
+                <!-- Fasta bottom knappar för selection mode -->
+                <div id="bottom-buttons" class="bottom-buttons hidden">
+                    <div class="container">
+                        <button id="play-all-btn" class="play-all-btn">
+                            <span>Alla</span>
+                        </button>
+                        <button id="select-btn" class="select-btn">
+                            <span>Välj kategorier</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings View -->
+        <div id="settings-view" class="view">
+            <div class="container">
+                <!-- Header -->
+                <div class="settings-header">
+                    <h1 class="settings-title">Inställningar</h1>
+                    <button id="close-settings-btn" class="close-btn">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Settings Content -->
+                <div class="settings-content">
+                    <!-- Spelupplevelse Section -->
+                    <div class="settings-section">
+                        <div class="section-header">
+                            <div class="section-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                                </svg>
+                            </div>
+                            <h2 class="section-title">Spelupplevelse</h2>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <div class="setting-details">
+                                    <div class="setting-name">Visa svarsalternativ</div>
+                                    <div class="setting-description">Visa 4 svarsalternativ på varje fråga</div>
+                                </div>
+                            </div>
+                            <div class="setting-control">
+                                <button class="toggle-btn" data-setting="showMultipleChoice">
+                                    <div class="toggle-slider"></div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <div class="setting-details">
+                                    <div class="setting-name">Räkna poäng</div>
+                                    <div class="setting-description">Räkna och visa poäng under spelet</div>
+                                </div>
+                            </div>
+                            <div class="setting-control">
+                                <button class="toggle-btn" data-setting="scoreTracking">
+                                    <div class="toggle-slider"></div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="setting-item" id="always-show-setting">
+                            <div class="setting-info">
+                                <div class="setting-details">
+                                    <div class="setting-name">Visa alltid svar</div>
+                                    <div class="setting-description">Svaret visas direkt utan klick</div>
+                                </div>
+                            </div>
+                            <div class="setting-control">
+                                <button class="toggle-btn" data-setting="alwaysShowAnswer">
+                                    <div class="toggle-slider"></div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <div class="setting-details">
+                                    <div class="setting-name">Automatisk nästa fråga</div>
+                                    <div class="setting-description">Automatiskt till nästa fråga efter 2s</div>
+                                </div>
+                            </div>
+                            <div class="setting-control">
+                                <button class="toggle-btn" data-setting="autoAdvance">
+                                    <div class="toggle-slider"></div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <div class="setting-details">
+                                    <div class="setting-name">Blanda alla kategorier</div>
+                                    <div class="setting-description">"Blanda"-knappen inkluderar alla quiz från "Fler Quiz"-kategorin</div>
+                                </div>
+                            </div>
+                            <div class="setting-control">
+                                <button class="toggle-btn" data-setting="includeAllCategories">
+                                    <div class="toggle-slider"></div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timer Section -->
+                    <div class="settings-section">
+                        <div class="section-header">
+                            <div class="section-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h2 class="section-title">Timer</h2>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <div class="setting-details">
+                                    <div class="setting-name">Aktivera timer</div>
+                                    <div class="setting-description">Visa timer för varje fråga</div>
+                                </div>
+                            </div>
+                            <div class="setting-control">
+                                <button class="toggle-btn" data-setting="timer">
+                                    <div class="toggle-slider"></div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="timer-duration-card visible" id="timer-duration-setting">
+                            <div class="dropdown-label">Välj antal sekunder</div>
+                            <div class="time-options">
+                                <button class="time-option" data-time="3">3</button>
+                                <button class="time-option" data-time="5">5</button>
+                                <button class="time-option" data-time="7">7</button>
+                                <button class="time-option" data-time="10">10</button>
+                                <button class="time-option selected" data-time="15">15</button>
+                                <button class="time-option" data-time="20">20</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Utseende Section -->
+                    <div class="settings-section">
+                        <div class="section-header">
+                            <div class="section-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                </svg>
+                            </div>
+                            <h2 class="section-title">Utseende</h2>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <div class="setting-details">
+                                    <div class="setting-name">Enfärgad design</div>
+                                    <div class="setting-description">Alla knappar får samma stil</div>
+                                </div>
+                            </div>
+                            <div class="setting-control">
+                                <button class="toggle-btn" data-setting="monochromeMode">
+                                    <div class="toggle-slider"></div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <div class="setting-details">
+                                    <div class="setting-name">Höga kontraster</div>
+                                    <div class="setting-description">För personer med defekt färgseende</div>
+                                </div>
+                            </div>
+                            <div class="setting-control">
+                                <button class="toggle-btn" data-setting="highContrastMode">
+                                    <div class="toggle-slider"></div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Antal frågor Section -->
+                    <div class="settings-section">
+                        <div class="section-header">
+                            <div class="section-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                </svg>
+                            </div>
+                            <h2 class="section-title">Antal frågor</h2>
+                        </div>
+
+                        <div class="category-stats-grid">
+                            <div class="category-stat-card" data-category="allmanbildning">
+                                <span class="category-stat-number">0</span>
+                                <span class="category-stat-label">Allmänbildning</span>
+                            </div>
+                            <div class="category-stat-card" data-category="musik">
+                                <span class="category-stat-number">0</span>
+                                <span class="category-stat-label">Musik</span>
+                            </div>
+                            <div class="category-stat-card" data-category="geografi">
+                                <span class="category-stat-number">0</span>
+                                <span class="category-stat-label">Geografi</span>
+                            </div>
+                            <div class="category-stat-card" data-category="film">
+                                <span class="category-stat-number">0</span>
+                                <span class="category-stat-label">Film & TV</span>
+                            </div>
+                            <div class="category-stat-card" data-category="sport">
+                                <span class="category-stat-number">0</span>
+                                <span class="category-stat-label">Sport</span>
+                            </div>
+                            <div class="category-stat-card" data-category="teknik">
+                                <span class="category-stat-number">0</span>
+                                <span class="category-stat-label">Teknik</span>
+                            </div>
+                            <div class="category-stat-card" id="fler-quiz-total-card">
+                                <span class="category-stat-number" id="fler-quiz-total">0</span>
+                                <span class="category-stat-label">Fler Quiz</span>
+                            </div>
+                            <div class="category-stat-card" id="total-all-questions-card">
+                                <span class="category-stat-number" id="total-all-questions">0</span>
+                                <span class="category-stat-label">Totalt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- App Info -->
+                <div class="app-info">
+                    <div class="app-name">Quizla.se</div>
+                    <div class="app-version">Version 2.0</div>
+                    <div class="app-tagline">Utvecklad med ❤️ för kunskapstörst</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

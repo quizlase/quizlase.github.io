@@ -1,0 +1,508 @@
+/* Monochrome Theme CSS */
+/* This file contains styles for the monochrome mode */
+
+/* Category buttons - all same style as "Blanda alla" button */
+.category-btn {
+    background: transparent !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+.category-btn:hover {
+    border-color: rgba(168, 85, 247, 0.6) !important;
+    background: rgba(168, 85, 247, 0.1) !important;
+    transform: translateY(-2px) !important;
+}
+
+.category-btn:active {
+    border-color: rgba(168, 85, 247, 0.8) !important;
+    background: rgba(168, 85, 247, 0.2) !important;
+    transform: translateY(0) !important;
+}
+
+/* Quiz option buttons - same transparent style */
+.option-btn {
+    background: transparent !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    box-shadow: none !important;
+}
+
+.option-btn:hover:not(:disabled) {
+    border-color: rgba(168, 85, 247, 0.6) !important;
+    background: rgba(168, 85, 247, 0.1) !important;
+    transform: translateY(-1px) !important;
+}
+
+.option-btn:active:not(:disabled) {
+    border-color: rgba(168, 85, 247, 0.8) !important;
+    background: rgba(168, 85, 247, 0.2) !important;
+    transform: translateY(0) !important;
+}
+
+/* Correct answer state - make it very clear with purple */
+.option-btn.correct {
+    background: rgba(168, 85, 247, 0.4) !important;
+    border-color: rgba(168, 85, 247, 1) !important;
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+/* Incorrect answer state - make it very clear with darker purple */
+.option-btn.incorrect {
+    background: rgba(168, 85, 247, 0.1) !important;
+    border-color: rgba(124, 58, 237, 1) !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-weight: 600 !important;
+}
+
+/* Disabled state for other options when answer is shown */
+.option-btn.disabled {
+    background: rgba(168, 85, 247, 0.1) !important;
+    border-color: rgba(168, 85, 247, 0.3) !important;
+    color: rgba(168, 85, 247, 0.6) !important;
+    opacity: 0.7 !important;
+}
+
+/* Navigation buttons - same transparent style */
+.nav-btn.primary {
+    background: transparent !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    box-shadow: none !important;
+}
+
+.nav-btn.primary:hover {
+    border-color: rgba(168, 85, 247, 0.6) !important;
+    background: rgba(168, 85, 247, 0.1) !important;
+    transform: translateY(-1px) !important;
+}
+
+.nav-btn.primary:active {
+    border-color: rgba(168, 85, 247, 0.8) !important;
+    background: rgba(168, 85, 247, 0.2) !important;
+    transform: translateY(0) !important;
+}
+
+.nav-btn.secondary {
+    background: transparent !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    color: rgba(168, 85, 247, 0.8) !important;
+}
+
+.nav-btn.secondary:hover {
+    border-color: rgba(168, 85, 247, 0.6) !important;
+    background: rgba(168, 85, 247, 0.1) !important;
+    color: rgba(168, 85, 247, 1) !important;
+}
+
+/* Show answer button - same transparent style */
+.show-answer-btn {
+    background: transparent !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    box-shadow: none !important;
+}
+
+.show-answer-btn:hover:not(:disabled) {
+    border-color: rgba(168, 85, 247, 0.6) !important;
+    background: rgba(168, 85, 247, 0.1) !important;
+    transform: translateY(-1px) !important;
+}
+
+.show-answer-btn:active:not(:disabled) {
+    border-color: rgba(168, 85, 247, 0.8) !important;
+    background: rgba(168, 85, 247, 0.2) !important;
+    transform: translateY(0) !important;
+}
+
+/* Toggle mode button - same transparent style */
+#toggle-mode-btn {
+    background: transparent !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    box-shadow: none !important;
+}
+
+#toggle-mode-btn:hover {
+    border-color: rgba(168, 85, 247, 0.6) !important;
+    background: rgba(168, 85, 247, 0.1) !important;
+    transform: translateY(-1px) !important;
+}
+
+#toggle-mode-btn:active {
+    border-color: rgba(168, 85, 247, 0.8) !important;
+    background: rgba(168, 85, 247, 0.2) !important;
+    transform: translateY(0) !important;
+}
+
+/* Next button - same transparent style */
+#next-btn {
+    background: transparent !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    box-shadow: none !important;
+}
+
+#next-btn:hover {
+    border-color: rgba(168, 85, 247, 0.6) !important;
+    background: rgba(168, 85, 247, 0.1) !important;
+    transform: translateY(-1px) !important;
+}
+
+#next-btn:active {
+    border-color: rgba(168, 85, 247, 0.8) !important;
+    background: rgba(168, 85, 247, 0.2) !important;
+    transform: translateY(0) !important;
+}
+
+/* Settings buttons - same transparent style */
+.settings-btn {
+    background: transparent !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    box-shadow: none !important;
+}
+
+.settings-btn:hover {
+    border-color: rgba(168, 85, 247, 0.6) !important;
+    background: rgba(168, 85, 247, 0.1) !important;
+    transform: translateY(-1px) !important;
+}
+
+.settings-btn:active {
+    border-color: rgba(168, 85, 247, 0.8) !important;
+    background: rgba(168, 85, 247, 0.2) !important;
+    transform: translateY(0) !important;
+}
+
+/* Time selection buttons - same transparent style */
+.time-option {
+    background: transparent !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    color: rgba(168, 85, 247, 0.8) !important;
+    font-weight: 600 !important;
+}
+
+.time-option:hover {
+    border-color: rgba(168, 85, 247, 0.6) !important;
+    background: rgba(168, 85, 247, 0.1) !important;
+    color: rgba(168, 85, 247, 1) !important;
+}
+
+.time-option.selected {
+    background: rgba(168, 85, 247, 0.2) !important;
+    border-color: rgba(168, 85, 247, 0.8) !important;
+    color: white !important;
+}
+
+/* Toggle buttons - same transparent style when active */
+.toggle-btn.active {
+    background: rgba(168, 85, 247, 0.2) !important;
+    border-color: rgba(168, 85, 247, 0.8) !important;
+}
+
+/* Mixed category button - ensure consistent styling */
+.category-btn.mixed {
+    background: transparent !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+.category-btn.mixed:hover {
+    border-color: rgba(168, 85, 247, 0.6) !important;
+    background: rgba(168, 85, 247, 0.1) !important;
+    transform: translateY(-2px) !important;
+}
+
+.category-btn.mixed:active {
+    border-color: rgba(168, 85, 247, 0.8) !important;
+    background: rgba(168, 85, 247, 0.2) !important;
+    transform: translateY(0) !important;
+}
+
+/* Category stat cards - subtle monochrome border */
+.category-stat-card {
+    border: 1px solid rgba(168, 85, 247, 0.2) !important;
+    background: rgba(168, 85, 247, 0.05) !important;
+}
+
+.category-stat-card:hover {
+    border-color: rgba(168, 85, 247, 0.4) !important;
+    background: rgba(168, 85, 247, 0.1) !important;
+}
+
+/* ===== BOTTOM BUTTONS - Monochrome ===== */
+/* Knapparna under "Fler Quiz" - transparenta stilar utan gradient */
+
+/* Bottom buttons container */
+.bottom-buttons {
+    background: transparent !important;
+    background-image: none !important;
+    border-top: 2px solid rgba(168, 85, 247, 0.4) !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+}
+
+/* Select button (Välj kategorier) - mer specifika selektorer */
+#select-btn.select-btn,
+button.select-btn,
+.select-btn {
+    background: transparent !important;
+    background-image: none !important;
+    color: #ffffff !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    box-shadow: none !important;
+    font-weight: 600 !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+#select-btn.select-btn:hover,
+button.select-btn:hover,
+.select-btn:hover {
+    background: rgba(168, 85, 247, 0.1) !important;
+    color: #ffffff !important;
+    border-color: rgba(168, 85, 247, 0.6) !important;
+    transform: translateY(-1px) !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+#select-btn.select-btn:active,
+button.select-btn:active,
+.select-btn:active {
+    background: rgba(168, 85, 247, 0.2) !important;
+    color: #ffffff !important;
+    transform: translateY(0) !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+/* Play all button (Alla) - mer specifika selektorer */
+#play-all-btn.play-all-btn,
+button.play-all-btn,
+.play-all-btn {
+    background: transparent !important;
+    background-image: none !important;
+    color: #ffffff !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    box-shadow: none !important;
+    font-weight: 600 !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+#play-all-btn.play-all-btn:hover,
+button.play-all-btn:hover,
+.play-all-btn:hover {
+    background: rgba(168, 85, 247, 0.1) !important;
+    color: #ffffff !important;
+    border-color: rgba(168, 85, 247, 0.6) !important;
+    transform: translateY(-1px) !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+#play-all-btn.play-all-btn:active,
+button.play-all-btn:active,
+.play-all-btn:active {
+    background: rgba(168, 85, 247, 0.2) !important;
+    color: #ffffff !important;
+    transform: translateY(0) !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+/* Force all text inside buttons to be readable */
+#select-btn.select-btn *,
+button.select-btn *,
+.select-btn *,
+#play-all-btn.play-all-btn *,
+button.play-all-btn *,
+.play-all-btn * {
+    color: inherit !important;
+    -webkit-text-fill-color: inherit !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+}
+
+/* Button text specifically */
+#select-btn.select-btn span,
+button.select-btn span,
+.select-btn span,
+#play-all-btn.play-all-btn span,
+button.play-all-btn span,
+.play-all-btn span {
+    color: inherit !important;
+    -webkit-text-fill-color: inherit !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    font-weight: 600 !important;
+}
+
+/* ===== ULTIMATE OVERRIDE - Highest specificity ===== */
+/* These rules should override everything else */
+body #app #quiz-view .bottom-buttons #select-btn,
+body #app #quiz-view .bottom-buttons #play-all-btn,
+body #app #home-view .bottom-buttons #select-btn,
+body #app #home-view .bottom-buttons #play-all-btn {
+    background: transparent !important;
+    background-image: none !important;
+    color: #ffffff !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    box-shadow: none !important;
+    font-weight: 600 !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+body #app #quiz-view .bottom-buttons #select-btn:hover,
+body #app #quiz-view .bottom-buttons #play-all-btn:hover,
+body #app #home-view .bottom-buttons #select-btn:hover,
+body #app #home-view .bottom-buttons #play-all-btn:hover {
+    background: rgba(168, 85, 247, 0.1) !important;
+    color: #ffffff !important;
+    border-color: rgba(168, 85, 247, 0.6) !important;
+    transform: translateY(-1px) !important;
+}
+
+body #app #quiz-view .bottom-buttons #select-btn:active,
+body #app #quiz-view .bottom-buttons #play-all-btn:active,
+body #app #home-view .bottom-buttons #select-btn:active,
+body #app #home-view .bottom-buttons #play-all-btn:active {
+    background: rgba(168, 85, 247, 0.2) !important;
+    color: #ffffff !important;
+    transform: translateY(0) !important;
+}
+
+/* ===== DYNAMIC CATEGORIES - Monochrome ===== */
+/* Kaffe, Cocktails, Reklam, etc. - transparenta stilar utan gradient */
+
+/* Dynamic category buttons */
+.dynamic-category-btn {
+    background: transparent !important;
+    background-image: none !important;
+    color: rgba(168, 85, 247, 0.8) !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    box-shadow: none !important;
+    font-weight: 600 !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+.dynamic-category-btn:hover {
+    background: rgba(168, 85, 247, 0.1) !important;
+    color: rgba(168, 85, 247, 1) !important;
+    border-color: rgba(168, 85, 247, 0.6) !important;
+    transform: scale(1.02) !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+.dynamic-category-btn:active {
+    background: rgba(168, 85, 247, 0.2) !important;
+    color: rgba(168, 85, 247, 1) !important;
+    transform: scale(0.98) !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+/* Selection mode styling */
+.dynamic-category-btn.selection-mode {
+    background: transparent !important;
+    background-image: none !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    color: rgba(168, 85, 247, 0.8) !important;
+}
+
+.dynamic-category-btn.selection-mode:hover {
+    background: rgba(168, 85, 247, 0.1) !important;
+    color: rgba(168, 85, 247, 1) !important;
+    border-color: rgba(168, 85, 247, 0.6) !important;
+}
+
+/* Selected state */
+.dynamic-category-btn.selected {
+    background: rgba(168, 85, 247, 0.2) !important;
+    color: rgba(168, 85, 247, 1) !important;
+    border: 2px solid rgba(168, 85, 247, 0.8) !important;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.3) !important;
+}
+
+.dynamic-category-btn.selected:hover {
+    background: rgba(168, 85, 247, 0.2) !important;
+    color: rgba(168, 85, 247, 1) !important;
+    border-color: rgba(168, 85, 247, 0.9) !important;
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.4) !important;
+}
+
+/* Force all text inside dynamic category buttons to be readable */
+.dynamic-category-btn * {
+    color: inherit !important;
+    -webkit-text-fill-color: inherit !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+}
+
+/* Dynamic category name specifically */
+.dynamic-category-btn .dynamic-category-name {
+    color: inherit !important;
+    -webkit-text-fill-color: inherit !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    font-weight: 600 !important;
+}
+
+/* ===== ULTIMATE OVERRIDE - Highest specificity ===== */
+/* These rules should override everything else */
+body #app #quiz-view .dynamic-categories-container .dynamic-category-btn,
+body #app #home-view .dynamic-categories-container .dynamic-category-btn {
+    background: transparent !important;
+    background-image: none !important;
+    color: rgba(168, 85, 247, 0.8) !important;
+    border: 2px solid rgba(168, 85, 247, 0.4) !important;
+    box-shadow: none !important;
+    font-weight: 600 !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+body #app #quiz-view .dynamic-categories-container .dynamic-category-btn:hover,
+body #app #home-view .dynamic-categories-container .dynamic-category-btn:hover {
+    background: rgba(168, 85, 247, 0.1) !important;
+    color: rgba(168, 85, 247, 1) !important;
+    border-color: rgba(168, 85, 247, 0.6) !important;
+    transform: scale(1.02) !important;
+}
+
+body #app #quiz-view .dynamic-categories-container .dynamic-category-btn:active,
+body #app #home-view .dynamic-categories-container .dynamic-category-btn:active {
+    background: rgba(168, 85, 247, 0.2) !important;
+    color: rgba(168, 85, 247, 1) !important;
+    transform: scale(0.98) !important;
+}

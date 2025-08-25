@@ -1,0 +1,128 @@
+Kategori,Fråga,Rätt svar,Fel svar 1,Fel svar 2,Fel svar 3
+Språk,Vilket språk talas av flest människor i världen?,Mandarin kinesiska,Engelska,Spanska,Hindi
+Språk,Vilket språk har flest ord?,Engelska,Spanska,Franska,Tyska
+Språk,Vilket språk skrivs från höger till vänster?,Arabiska,Hebreiska,Persiska,Urdu
+Språk,Vilket språk har flest grammatiska kasus?,Ungerska,Finska,Estniska,Lettiska
+Språk,Vilket språk har längst ord?,Finska,Tyska,Holländska,Isländska
+Språk,Vilket språk talas i flest länder?,Engelska,Spanska,Franska,Arabiska
+Språk,Vilket språk har flest dialekter?,Kinesiska,Arabiska,Engelska,Spanska
+Språk,Vilket språk har flest ljud?,Tswana,Xhosa,Zulu,Khmer
+Språk,Vilket språk har flest vokaler?,Hawaiiska,Tagalog,Maori,Samoanska
+Språk,Vilket språk har flest konsonanter?,Ubykhiska,Georgiska,Abchaziska,Adygeiska
+sprak,Vad heter det språk som talas i Brasilien,Portugisiska,Spanska,Franska,Italienska
+sprak,Vilket språk räknas som det mest talade modersmålet i världen,Kinesiska,Engelska,Spanska,Hindi
+sprak,Vad betyder ordet ”lingvistik”,Läran om språk,Läran om ljud,Läran om skrift,Läran om kultur
+sprak,Vilket alfabet används i ryska språket,Cyrilliska,Latinska,Grekiska,Hebreiska
+sprak,Vad heter det språk som talas i Mexiko,Spanska,Portugisiska,Franska,Italienska
+sprak,Vad är skillnaden mellan ett språk och en dialekt,Politiskt beslut och ömsesidig förståelighet,Antal vissa ord,Användning av olika alfabet,Skillnad i språkljud
+sprak,Vilket språk har flest officiella talare inom Europeiska unionen,Engelska,Tyska,Franska,Italienska
+sprak,Vad kallas det minsta språkethetet i språkvärlden,Fonem,Morfem,Syntag,Lexem
+sprak,Vad är typiskt för ett tonspråk,Tonförändringar ändrar betydelsen,Tonal musik,Uttalade vokaler,Specifika grammatikregler
+sprak,Vilket språk anses vara det äldsta som fortfarande talas idag,Hebreiska,Latinska,Sanskrit,Grekiska
+sprak,Vad kallas den skrift som används i japanska språket?,Kana och Kanji,Cyrilliska,Latinska,Devanagari
+sprak,Vilket språk har flest lånord från latin,Engelska,Spanska,Tyska,Ryska
+sprak,Vad kallas språkstudien som handlar om språkets struktur och grammatiska regler,Syntax,Semantik,Fonetik,Pragmatik
+sprak,Vad är skillnaden mellan semantik och pragmatik,Semantik handlar om ordens betydelse och pragmatik om användning av språk i kontext,Semantik om ljud Pragmatik om mening,Semantik om kultur Pragmatik om grammatik,Semantik om ordformer Pragmatik om stavning
+sprak,Vilket språk skrivs från höger till vänster,Arabiska,Engelska,Ryska,Franska
+sprak,Vad heter det officiella språket i Indien,Hindi,Engelska,Urdu,Tamil
+sprak,Vad är ett pidginspråk,En blandning av två eller flera språk som används för enkel kommunikation,Språk som talas över hela världen,Det ursprungliga modersmålet i Afrika,En form av teckenspråk
+sprak,Vad kallas det språk som uppstår när ett pidginspråk får modersmålsstatus,Natalspråk,Kreolspråk,Dialekt,Slang
+sprak,Vad heter den svenska institutionen som ansvarar för att vårda svenska språket,Svenska Akademien,Institutet för svenska språket,Språkrådet,Skolverket
+sprak,Vad kallas personer som talar flera språk flytande,Polyglot,Bilingvist,Monoglot,Multilingualist
+sprak,Vad kallas den ljudlära som beskriver ljuden i ett språk,Fonetik,Morfologi,Syntax,Semantik
+sprak,Vad heter teckenspråket som används i Sverige,Svenskt teckenspråk,Norsk teckenspråk,Amerikanskt teckenspråk,Brittiskt teckenspråk
+sprak,Vilket språk är världens mest utbredda handelsspråk,Engelska,Spanska,Franska,Portugisiska
+sprak,Vad betyder ordet ”etymologi”,Läran om ords ursprung,Läran om ljud,Läran om grammatik,Läran om kultur
+sprak,Vad heter det språk som talas i Nigeria,Engelska,Spanska,Hausa,Fulani
+sprak,Vad kallas en språkfamilj,En grupp språk med gemensamt ursprung,En dialekt,Ett standardspråk,En slangvarianten
+sprak,Vilket språk var ursprungligen latinets arvtagare i Europa,Italienska,Franska,Rumänska,Spanska
+sprak,Vad betyder begreppet ”kommunikation”,Överföring av budskap mellan människor,Att läsa böcker,Att skriva dikter,Att lyssna på musik
+sprak,Vad kallas det språk som används för skrift i Kina,Hanzi,Hangul,Kanjii,Cuneiform
+sprak,Vilket språk förknippas starkt med filosofi och antikens tänkare,Grekiska,Latin,Hebreiska,Sanskrit
+sprak,Vilket språk är officiellt i både Brasilien och Portugal,Portugisiska,Spanska,Franska,Italienska
+sprak,Vad heter det språk som används i teckenspråket i USA,Amerikanskt teckenspråk,Brittiskt teckenspråk,Svenskt teckenspråk,Norskt teckenspråk
+sprak,Vad kallas den del av språket som handlar om ordens betydelse,Semantik,Fonetik,Syntax,Pragmatik
+sprak,Vad heter det språk som pratas av flest människor i Afrika,Swahili,Hausa,Amhariska,Afrikanska
+sprak,Vad kallas den vetenskapliga studien av språkljud,Fonetik,Fonologi,Morfologi,Syntaktik
+sprak,Vad kallas den första skrivna formen av ett språk,Alfabet,Skrifttecken,Hieroglyfer,Kalligrafi
+sprak,Vad heter språkets regelsystem för hur ord sätts samman till satser,Syntax,Semantik,Fonetik,Pragmatik
+sprak,Vad kallas den förenklade version av ett språk som används av personer som inte har språk som modersmål,Pidginspråk,Standard språk,Kreolspråk,Dialekt
+sprak,Vilka är de största språkgrupperna i världen,Indoeuropeiska sinotibetanska altaiska semitiska,Afrikanska australiska europeiska amerikanska
+sprak,Vad betyder ordet ”dialekt”,En variant av ett språk som talas i ett visst område,Ursprungsspråk,Skrivstil,Föreställning
+sprak,Vad heter det språk som talas i Indonesien och är modersmål för flest människor där,Indonesiska,Javanesiska,Balinesiska,Filippinska
+sprak,Vad är betydelsen av begreppet ”språklig relativitet”,Att språket påverkar hur vi tänker och uppfattar världen,Att man pratar flera språk,Att språket är statiskt,Att alla språk är lika
+sprak,Vad betyder ordet ”desarrollar” på spanska,Att utveckla,Att förstöra,Att förnya,Att fördröja
+sprak,Vad betyder ordet ”réussir” på franska,Att lyckas,Att misslyckas,Att starta,Att avsluta
+sprak,Vad betyder ordet ”Herausforderung” på tyska,Uppgift eller utmaning,Belöning,Svaghet,Avslut
+sprak,Vad betyder ordet ”ampliar” på spanska,Att förstora eller utvidga,Att minska,Att sluta,Att börja
+sprak,Vad betyder ordet ”rajeunir” på franska,Att föryngra,Att förstöra,Att rädda,Att fördröja
+sprak,Vad betyder ordet ”ausgeglichenheit” på tyska,Balans eller jämvikt,Oro,Stress,Våld
+sprak,Vad betyder ordet ”sostener” på spanska,Att hålla uppe eller stödja,Att släppa,Att sova,Att förstöra
+sprak,Vad betyder ordet ”envahir” på franska,Att invadera,Att försvinna,Att växa,Att vila
+sprak,Vad betyder ordet ”zerstreuen” på tyska,Att sprida eller skingra,Samla,Oroa,Sluta
+sprak,Vad betyder ordet ”solicitar” på spanska,Att ansöka,Att neka,Att glömma,Att klandra
+sprak,Vad betyder ordet ”souffrir” på franska,Att lida,Att skratta,Att älska,Att leva
+sprak,Vad betyder ordet ”verschmelzen” på tyska,Att smälta samman,Att separera,Att tvivla,Att resa
+sprak,Vad betyder ordet ”demorar” på spanska,Att fördröja,Att skynda,Att slutföra,Att glömma
+sprak,Vad betyder ordet ”mélancolie” på franska,En mild sorg eller vemod,Glädje,Kärlek,Skratt
+sprak,Vad betyder ordet ”aufmerksam” på tyska,Varsam eller uppmärksam,Oartig,Låg,Aggressiv
+sprak,Vad betyder ordet ”apoyar” på spanska,Att stödja,Att hindra,Att glömma,Att föra bort
+sprak,Vad betyder ordet ”éclat” på franska,En bländande framgång eller glans,Misslyckande,Klagomål,Fel
+sprak,Vad betyder ordet ”belasten” på tyska,Att belasta eller överbelasta,Att lätta,Att likna,Att flyta
+sprak,Vad betyder ordet ”secar” på spanska,Att torka,Att blöta,Att tvätta,Att smutsa ner
+sprak,Vad betyder ordet ”savoureux” på franska,Smakrik,Luktande,Bitter,Söt
+sprak,Vad betyder ordet ”verweigern” på tyska,Att vägra,Att godkänna,Att hjälpa,Att börja
+sprak,Vad betyder ordet ”yugen” (幽玄) på japanska,En djup skönhet som är svår att beskriva,Lättsam glädje,Skarp kontrast,Öppenhet
+sprak,Vad betyder ordet ”alegría” på spanska,Glädje,Sorg,Lugn,Fruktan
+sprak,Vad betyder ordet ”chuchoter” på franska,Att viska,Ropa,Skrika,Dansa
+sprak,Vad betyder ordet ”entzücken” på tyska,Att förtrolla eller glädja,Att förstöra,Att irritera,Att förvirra
+sprak,Vad betyder ordet ”ikigai” (生き甲斐) på japanska,Anledning att leva,Uppgift,Uppdrag,Utflykt
+sprak,Vad betyder ordet ”confianza” på spanska,Tillit,Rädsla,Hat,Oro
+sprak,Vad betyder ordet ”fougueux” på franska,Hetlevrad eller eldigt,Kall,Tråkig,Långsam
+sprak,Vad betyder ordet ”einfühlsam” på tyska,Empatisk,Oempatisk,Ledsen,Glad
+sprak,Vad betyder ordet ”temer” på spanska,Att vara rädd,Att vara glad,Att vara hungrig,Att vara trött
+sprak,Vad betyder ordet ”apaiser” på franska,Att lugna,Att stressa,Att skynda,Att ropa
+sprak,Vad betyder ordet ”überwältigen” på tyska,Att överväldiga,Att glädja,Att hjälpa,Att ignorera
+sprak,Vad betyder ordet ”komatta” (困った) på japanska,Att vara i trubbel eller besvärad,Att vara nöjd,Att vara glad,Att vara trött
+sprak,Vad betyder ordet ”brindar” på spanska,Att skänka en skål,Att ta bort,Att stjäla,Att vinna
+sprak,Vad betyder ordet ”cocorico” på franska,Kuckeliku eller tuppens galej,Regn,Storm,Snö
+sprak,Vad betyder ordet ”sehnsucht” på tyska,Djup längtan,Stress,Lycka,Frustration
+sprak,Vad betyder ordet ”wabi-sabi” (侘寂) på japanska,Skönheten i det ofullkomliga,Perfektion,Fullständighet,Färgprakt
+sprak,Vad heter det språk som talas i Argentina,Spanska,Portugisiska,Italiano,Franska
+sprak,Vad betyder ordet ”bien” på spanska,Bra,Dåligt,Långsamt,Raskt
+sprak,Vilket språk används i officiella dokument i Schweiz,Romanska,Tyska,Italienska,Franska
+sprak,Vad kallas en person som talar flera språk flytande,Polyglott,Monoglot,Bilingvist,Trilingvist
+sprak,Vad heter det franska ordet för ”hej”,Bonjour,Adieu,Merci,Au revoir
+sprak,Vad är det officiella språket i Kanada,Engelska och franska,Spanska och engelska,Tyska och franska,Italienska och engelska
+sprak,Vad heter den tyska motsvarigheten till engelska ordet ”thank you”,Danke,Bitte,Hallo,Tschüss
+sprak,Vilket språk skrivs med det kyrilliska alfabetet,Ryska,Lettiska,Danska,Norska
+sprak,Vad heter det japanska alfabetet som används för inhemska ord,Hiragana,Katakana,Kanji,Romaji
+sprak,Vad kallas språk med gemensamt ursprung,Släkt språk,Modersmål,Dialekt,Pidgin
+sprak,Vad betyder ordet ”libro” på spanska,Bok,Penna,Skrivbord,Tavla
+sprak,Vad kallas språk som uppstår genom blandning av två eller flera språk,Pidgin,Kreol,Dialekt,Slang
+sprak,Vad heter det italienska ordet för ”vän”,Amico,Nemico,Amore,Libro
+sprak,Vad betyder ordet ”merci” på franska,Tack,Ja,Nej,Hej
+sprak,Vad heter det kinesiska skriftsystemet,Logogram,Fonogram,Alfabet,Syllabarium
+sprak,Vad heter den tyska verbformen för ”att gå”,Gehen,Stehen,Laufen,Sehen
+sprak,Vad betyder ordet ”agua” på spanska,Vatten,Bröd,Sol,Regn
+sprak,Vad heter den franska hälsningsfrasen för ”adjö”,Au revoir,Bonjour,Merci,S'il vous plaît
+sprak,Vilket språk har flest modersmålstalare i Europa,Ryska,Tyska,Franska,Spanska
+sprak,Vad betyder ordet ”sakura” på japanska,Körsbärsblomma,Vatten,Sol,Måne
+sprak,Vad kallas språk som används som handelsspråk mellan olika modersmåls talare,Lingua franca,Kreol,Pidgin,Dialekt
+sprak,Vilket språk är känt för sina många kasus och grammatiska böjningar,Tyska,Ryska,Engelska,Spanska
+sprak,Vad betyder ordet ”danke” på tyska,Tack,Hej,Farväl,Snabbt
+sprak,Vad heter det spansktalande land som ligger i Afrika,Ekvatorialguinea,Argentina,Peru,Chile
+sprak,Vilket språk skrivs med Hangul alfabetet,Koreanska,Japanska,Kinesiska,Vietnamesiska
+sprak,Vad betyder ordet ”bonjour” på franska,Goddag,Tack,Farväl,Adjö
+sprak,Vad heter språkvetenskapliga studiet av betydelser inom språk,Semantik,Fonetik,Syntax,Pragmatik
+sprak,Vad heter det engelska ordet för ”språkdialekt”,Dialect,Language,Accent,Situation
+sprak,Vad betyder ordet ”liberté” på franska,Frihet,Folkmassa,Tystnad,Glädje
+sprak,Vilket asiatiskt språk är världens mest talade modersmål,Kinesiska,Japanska,Koreanska,Vietnamesiska
+
+
+
+
+
+
+
+

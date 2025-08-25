@@ -1,0 +1,241 @@
+Kategori,Fråga,Rätt svar,Fel svar 1,Fel svar 2,Fel svar 3
+synonymer,Vilken synonym betyder samma sak som "bygga"?,Uppföra,Förstöra,Riva,Demolera
+synonymer,Vilken synonym betyder samma sak som "kasta"?,Slänga,Fånga,Ta emot,Hålla kvar
+synonymer,Vilken synonym betyder samma sak som "ny"?,Färsk,Gammal,Använd,Sliten
+synonymer,Vilken synonym betyder samma sak som "konstig"?,Underlig,Normal,Vanlig,Typisk
+synonymer,Vilken synonym betyder samma sak som "märklig"?,Besynnerlig,Normal,Vanlig,Vardaglig
+synonymer,Vilken synonym betyder samma sak som "irriterande"?,Störande,Behaglig,Trevlig,Lugn
+synonymer,Vilken synonym betyder samma sak som "otäck"?,Vidrig,Trevlig,Fin,Behaglig
+synonymer,Vilken synonym betyder samma sak som "elegant"?,Stilig,Ful,Smutsig,Slampig
+synonymer,Vilken synonym betyder samma sak som "prydlig"?,Snyggt ordnad,Rörig,Ostädad,Smutsig
+synonymer,Vilken synonym betyder samma sak som "ganska"?,Rätt så,Inte alls,Absolut inte,Aldrig
+synonymer,Vilken synonym betyder samma sak som "mycket"?,Enormt,Lite,Knappt,Något
+synonymer,Vilken synonym betyder samma sak som "lite"?,Något,Mycket,Enormt,Massvis
+synonymer,Vilken synonym betyder samma sak som "aldrig"?,Ej någonsin,Alltid,Ofta,Ibland
+synonymer,Vilken synonym betyder samma sak som "alltid"?,Ständigt,Aldrig,Sällan,Ibland
+synonymer,Vilken synonym betyder samma sak som "ofta"?,Frekvent,Sällan,Aldrig,Någon gång
+synonymer,Vilken synonym betyder samma sak som "kanske"?,Möjligtvis,Definitivt,Säkert,Absolut
+synonymer,Vilken synonym betyder samma sak som "säkert"?,Definitivt,Kanske,Möjligtvis,Osäkert
+synonymer,Vilken synonym betyder samma sak som "hitta"?,Upptäcka,Förlora,Tappa,Missa
+synonymer,Vilken synonym betyder samma sak som "förlora"?,Tappa,Hitta,Upptäcka,Finna
+synonymer,Vilken synonym betyder samma sak som "börja"?,Påbörja,Sluta,Avsluta,Upphöra
+synonymer,Vilken synonym betyder samma sak som "sluta"?,Avsluta,Börja,Påbörja,Starta
+synonymer,Vilken synonym betyder samma sak som "köpa"?,Förvärva,Sälja,Ge bort,Skänka
+synonymer,Vilken synonym betyder samma sak som "sälja"?,Avyttra,Köpa,Behålla,Förvärva
+synonymer,Vilken synonym betyder samma sak som "hjälpa"?,Bistå,Hindra,Störa,Sabbotera
+synonymer,Vilken synonym betyder samma sak som "förstöra"?,Demolera,Bygga,Skapa,Konstruera
+synonymer,Vilken synonym betyder samma sak som "bygga"?,Uppföra,Förstöra,Riva,Demolera
+synonymer,Vilken synonym betyder samma sak som "tänka"?,Fundera,Glömma,Ignorera,Strunta
+synonymer,Vilken synonym betyder samma sak som "minnas"?,Erinra sig,Glömma,Förtrönga,Ignorera
+synonymer,Vilken synonym betyder samma sak som "glömma"?,Förtrönga,Minnas,Komma ihåg,Erinra
+synonymer,Vilken synonym betyder samma sak som "gråta"?,Snyfta,Skratta,Le,Flina
+synonymer,Vilken synonym betyder samma sak som "dricka"?,Supa,Törsta,Svälta,Hungra
+synonymer,Vilken synonym betyder samma sak som "sova"?,Slumra,Vakna,Vara vaken,Stå upp
+synonymer,Vilken synonym betyder samma sak som "vakna"?,Stiga upp,Sova,Slumra,Vila
+synonymer,Vilken synonym betyder samma sak som "titta"?,Kika,Blunda,Sluta ögonen,Ignorera
+synonymer,Vilken synonym betyder samma sak som "lyssna"?,Höra på,Ignorera,Strunta i,Förbise
+synonymer,Vilken synonym betyder samma sak som "prata"?,Samtala,Tystna,Vara tyst,Hålla käft
+synonymer,Vilken synonym betyder samma sak som "tystna"?,Hålla käft,Prata,Skrika,Vråla
+synonymer,Vilken synonym betyder samma sak som "skrika"?,Vråla,Viska,Mutta,Tystna
+synonymer,Vilken synonym betyder samma sak som "viska"?,Mutta,Skrika,Ropa,Vråla
+synonymer,Vilken synonym betyder samma sak som "hoppa"?,Studsa,Krypa,Ligga,Sitta
+synonymer,Vilken synonym betyder samma sak som "kasta"?,Slänga,Fånga,Ta emot,Hålla kvar
+synonymer,Vilken synonym betyder samma sak som "fånga"?,Gripa,Släppa,Kasta,Förlora
+synonymer,Vilken synonym betyder samma sak som "öppna"?,Låsa upp,Stänga,Låsa,Blockera
+synonymer,Vilken synonym betyder samma sak som "stänga"?,Slå igen,Öppna,Låsa upp,Frigöra
+synonymer,Vilken synonym betyder samma sak som "rengöra"?,Städa,Smutsa ner,Förstöra,Kladda
+synonymer,Vilken synonym betyder samma sak som "smutsa ner"?,Kladda till,Rengöra,Städa,Tvätta
+synonymer,Vilken synonym betyder samma sak som "skynda"?,Hasta,Dröja,Vänta,Fördröja
+synonymer,Vilken synonym betyder samma sak som "vänta"?,Dröja,Skynda,Hasta,Rusa
+synonymer,Vilken synonym betyder samma sak som "fantastisk"?,Underbar,Hemsk,Förskräcklig,Vidrig
+synonymer,Vilken synonym betyder samma sak som "perfekt"?,Felfri,Dålig,Trasig,Fel
+synonymer,Vilken synonym betyder samma sak som "viktig"?,Betydelsefull,Oviktig,Meningslös,Värdelös
+synonymer,Vilken synonym betyder samma sak som "farlig"?,Riskabel,Säker,Trygg,Oskadlig
+synonymer,Vilken synonym betyder samma sak som "säker"?,Trygg,Farlig,Riskabel,Osäker
+synonymer,Vilken synonym betyder samma sak som "bekväm"?,Behaglig,Obehaglig,Jobbig,Otrevlig
+synonymer,Vilken synonym betyder samma sak som "jobbig"?,Besvärlig,Lätt,Enkel,Bekväm
+synonymer,Vilken synonym betyder samma sak som "intressant"?,Fascinerande,Tråkig,Monoton,Platt
+synonymer,Vilken synonym betyder samma sak som "tråkig"?,Monoton,Intressant,Spännande,Fascinerande
+synonymer,Vilken synonym betyder samma sak som "spännande"?,Upphetsande,Tråkig,Platt,Långtråkig
+synonymer,Vilken synonym betyder samma sak som "svår"?,Komplicerad,Lätt,Enkel,Simpel
+synonymer,Vilken synonym betyder samma sak som "lätt"?,Simpel,Svår,Komplex,Knepig
+synonymer,Vilken synonym betyder samma sak som "billig"?,Förmånlig,Dyr,Kostsam,Prisvärd fel
+synonymer,Vilken synonym betyder samma sak som "dyr"?,Kostsam,Billig,Förmånlig,Gratis
+synonymer,Vilken synonym betyder samma sak som "gratis"?,Kostnadsfri,Dyr,Kostsam,Betalbar
+synonymer,Vilken synonym betyder samma sak som "korrekt"?,Riktig,Fel,Felaktig,Inkorrekt
+synonymer,Vilken synonym betyder samma sak som "fel"?,Inkorrekt,Rätt,Korrekt,Riktig
+synonymer,Vilken synonym betyder samma sak som "vanlig"?,Ordinär,Ovanlig,Speciell,Unik
+synonymer,Vilken synonym betyder samma sak som "ovanlig"?,Sällsynt,Vanlig,Ordinär,Typisk
+synonymer,Vilken synonym betyder samma sak som "speciell"?,Unik,Vanlig,Ordinär,Vardaglig
+synonymer,Vilken synonym betyder samma sak som "hel"?,Komplett,Trasig,Sönder,Delad
+synonymer,Vilken synonym betyder samma sak som "ren"?,Fläckfri,Smutsig,Kladdig,Nedsmutsad
+synonymer,Vilken synonym betyder samma sak som "smutsig"?,Nedsmutsad,Ren,Fläckfri,Skinande
+synonymer,Vilken synonym betyder samma sak som "tom"?,Uttömd,Full,Packad,Fylld
+synonymer,Vilken synonym betyder samma sak som "full"?,Fylld,Tom,Uttömd,Uttorkad
+synonymer,Vilken synonym betyder samma sak som "hård"?,Seg,Mjuk,Len,Fluffig
+synonymer,Vilken synonym betyder samma sak som "mjuk"?,Len,Hård,Seg,Sträv
+synonymer,Vilken synonym betyder samma sak som "smal"?,Tunn,Bred,Tjock,Grov
+synonymer,Vilken synonym betyder samma sak som "bred"?,Tjock,Smal,Tunn,Spinkig
+synonymer,Vilken synonym betyder samma sak som "låg"?,Kort,Hög,Lång,Reslig
+synonymer,Vilken synonym betyder samma sak som "hög"?,Lång,Låg,Kort,Pendlig
+synonymer,Vilken synonym betyder samma sak som "nära"?,Intill,Långt bort,Avlägsen,Fjärran
+synonymer,Vilken synonym betyder samma sak som "långt bort"?,Avlägsen,Nära,Intill,Bredvid
+synonymer,Vilken synonym betyder samma sak som "tidigt"?,I god tid,Sent,Försenat,Efterblivet
+synonymer,Vilken synonym betyder samma sak som "sent"?,Försenat,Tidigt,I god tid,Punktligt
+synonymer,Vilken synonym betyder samma sak som "snabbt"?,Hastigt,Långsamt,Segdraget,Trögt
+synonymer,Vilken synonym betyder samma sak som "långsamt"?,Segdraget,Snabbt,Hastigt,Fort
+synonymer,Vilken synonym betyder samma sak som "högljudd"?,Ljudlig,Tyst,Stilla,Knäpptyst
+synonymer,Vilken synonym betyder samma sak som "tyst"?,Stilla,Högljudd,Ljudlig,Bullrig
+synonymer,Vilken synonym betyder samma sak som "förneka"?,Desavuera,Bekräfta,Medge,Erkänna
+synonymer,Vilken synonym betyder samma sak som "förkasta"?,Förvräka,Acceptera,Godkänna,Omfatta
+synonymer,Vilken synonym betyder samma sak som "avstå"?,Entsäga sig,Begära,Kräva,Insistera
+synonymer,Vilken synonym betyder samma sak som "försmå"?,Förakta,Beundra,Respektera,Vörda
+synonymer,Vilken synonym betyder samma sak som "förminska"?,Bagatellisera,Förstora,Överdriva,Accentuera
+synonymer,Vilken synonym betyder samma sak som "förnedra"?,Degradera,Upphöja,Ära,Hylла
+synonymer,Vilken synonym betyder samma sak som "förtala"?,Baksmita,Berömma,Lovorda,Hylla
+synonymer,Vilken synonym betyder samma sak som "förringa"?,Underskatta,Överskatta,Övervärdera,Magnifiera
+synonymer,Vilken synonym betyder samma sak som "försona"?,Medla,Splitra,Splitta,Söndra
+synonymer,Vilken synonym betyder samma sak som "förkunna"?,Proklamera,Dölja,Hemlighålla,Tysta
+synonymer,Vilken synonym betyder samma sak som "betvivla"?,Ifrågasätta,Lita på,Förtrösta,Anförtro
+synonymer,Vilken synonym betyder samma sak som "betrakta"?,Besinna,Ignorera,Förbise,Negligera
+synonymer,Vilken synonym betyder samma sak som "begrunda"?,Fundera över,Strunta i,Avfärda,Förkasta
+synonymer,Vilken synonym betyder samma sak som "bedöma"?,Värdera,Ignorera,Förbise,Negligera
+synonymer,Vilken synonym betyder samma sak som "beveka"?,Förmå,Avskräcka,Avråda,Hindra
+synonymer,Vilken synonym betyder samma sak som "besvära"?,Ansätta,Befria,Lindra,Trösta
+synonymer,Vilken synonym betyder samma sak som "bestraffa"?,Tukta,Belöna,Hylla,Premiера
+synonymer,Vilken synonym betyder samma sak som "besmycka"?,Pryda,Vanställa,Förvanska,Vanära
+synonymer,Vilken synonym betyder samma sak som "besegra"?,Övervinna,Förlora,Kapitulera,Ge upp
+synonymer,Vilken synonym betyder samma sak som "bemästra"?,Behärska,Misslyсkas,Underlåta,Fallera
+synonymer,Vilken synonym betyder samma sak som "blottställa"?,Exponera,Dölja,Gömma,Skyla
+synonymer,Vilken synonym betyder samma sak som "blottlägga"?,Avslöja,Täcka,Kamouflera,Maskera
+synonymer,Vilken synonym betyder samma sak som "bortförklara"?,Ursäkta,Anklaga,Beskylla,Förebrå
+synonymer,Vilken synonym betyder samma sak som "bortvifta"?,Avfärda,Acceptera,Beakta,Överväga
+synonymer,Vilken synonym betyder samma sak som "undergräva"?,Underminera,Stärka,Befästa,Konsolidera
+synonymer,Vilken synonym betyder samma sak som "förödmjuka"?,Ydmyga,Upphöja,Äta,Hedra
+synonymer,Vilken synonym betyder samma sak som "förmå"?,Övertala,Avråda,Avskräcka,Hindra
+synonymer,Vilken synonym betyder samma sak som "försaka"?,Avsäga sig,Begära,Kräva,Fordra
+synonymer,Vilken synonym betyder samma sak som "förskansa"?,Befästa,Blottställa,Utsätta,Riskera
+synonymer,Vilken synonym betyder samma sak som "förkvava"?,Kväva,Främja,Uppmuntra,Stödja
+synonymer,Vilken synonym betyder samma sak som "förtrolla"?,Förhäxa,Befria,Bryta,Lösgöra
+synonymer,Vilken synonym betyder samma sak som "försumma"?,Vanvårda,Vårda,Omhuldа,Ömma
+synonymer,Vilken synonym betyder samma sak som "förspilla"?,Förgås,Spara,Bevara,Konservera
+synonymer,Vilken synonym betyder samma sak som "förslösa"?,Öda bort,Spara,Hushålla,Administrera
+synonymer,Vilken synonym betyder samma sak som "förvilla"?,Vilseleda,Vägleda,Leda rätt,Upplysa
+synonymer,Vilken synonym betyder samma sak som "föreviga"?,Odödliggöra,Glömma,Utplåna,Radera
+synonymer,Vilken synonym betyder samma sak som "förkväva"?,Strypa,Befria,Släppa,Lösgöra
+synonymer,Vilken synonym betyder samma sak som "förbittра"?,Missämja,Föräona,Harmonisera,Samförstånd
+synonymer,Vilken synonym betyder samma sak som "förbehålla"?,Reservera,Avstå,Ge bort,Donera
+synonymer,Vilken synonym betyder samma sak som "förbigå"?,Passera,Stanna,Dröja,Uppehålla
+synonymer,Vilken synonym betyder samma sak som "förfasa"?,Förskräcka,Lugna,Trösta,Beroliga
+synonymer,Vilken synonym betyder samma sak som "förgäves"?,Förgäcks,Framgångsrikt,Lyckosamt,Effektivt
+synonymer,Vilken synonym betyder samma sak som "förmäta"?,Anmassande,Ödmjuk,Blygsam,Beskeden
+synonymer,Vilken synonym betyder samma sak som "förnöjsam"?,Belåten,Missnöjd,Otillfredsställd,Klagande
+synonymer,Vilken synonym betyder samma sak som "förnuftig"?,Besinnig,Oförnuftig,Ovettig,Tanklös
+synonymer,Vilken synonym betyder samma sak som "försagd"?,Blyg,Djärv,Modig,Oförskräckt
+synonymer,Vilken synonym betyder samma sak som "förträfflig"?,Ypperlig,Usel,Eländig,Värdelös
+synonymer,Vilken synonym betyder samma sak som "förvånad"?,Häpen,Oberörd,Lugn,Opåverkad
+synonymer,Vilken synonym betyder samma sak som "genomtränkt"?,Mättad,Torr,Uttorkad,Uttömmd
+synonymer,Vilken synonym betyder samma sak som "genomskinlig"?,Translucent,Ogenomskinlig,Täckande,Solid
+synonymer,Vilken synonym betyder samma sak som "godtycklig"?,Arbiträr,Systematisk,Regelrätt,Konsekvent
+synonymer,Vilken synonym betyder samma sak som "grannlaga"?,Minutiös,Slarvig,Vårdslös,Oprecis
+synonymer,Vilken synonym betyder samma sak som "gränslos"?,Omättlig,Begränsad,Återhållsam,Måttfull
+synonymer,Vilken synonym betyder samma sak som "grundmurad"?,Genomgripande,Ytlig,Ovärderlig,Oberättigad
+synonymer,Vilken synonym betyder samma sak som "grymt"?,Barbariskt,Milt,Snällt,Vänligt
+synonymer,Vilken synonym betyder samma sak som "hemlighetsfull"?,Mystisk,Öppet,Tydlig,Klar
+synonymer,Vilken synonym betyder samma sak som "hänförd"?,Extatisk,Oberörd,Likgiltig,Kall
+synonymer,Vilken synonym betyder samma sak som "häftig"?,Våldsam,Mild,Lugn,Återhållsam
+synonymer,Vilken synonym betyder samma sak som "hävdvunnen"?,Etablerad,Ny,Modern,Contemporary
+synonymer,Vilken synonym betyder samma sak som "obestridlig"?,Ovedersäglig,Tvivelaktig,Osäker,Omstridd
+synonymer,Vilken synonym betyder samma sak som "obefintlig"?,Inexistent,Existerande,Verklig,Påtaglig
+synonymer,Vilken synonym betyder samma sak som "obönhörlig"?,Obarmhärtig,Medkännande,Förlåtande,Ömsint
+synonymer,Vilken synonym betyder samma sak som "oefterhärmlig"?,Unik,Vanlig,Allmän,Sedvanlig
+synonymer,Vilken synonym betyder samma sak som "oförskräckt"?,Orädd,Rädd,Feg,Försagd
+synonymer,Vilken synonym betyder samma sak som "oförblommerat"?,Rakt på sak,Försiktigt,Omsvepande,Diplomatiskt
+synonymer,Vilken synonym betyder samma sak som "ogillande"?,Missbilligande,Gillande,Uppskattande,Lovordande
+synonymer,Vilken synonym betyder samma sak som "ohygglig"?,Avskyvärd,Tilltalande,Charmerande,Behaglig
+synonymer,Vilken synonym betyder samma sak som "olycksbringande"?,Olycksalig,Lyckobringande,Gynnsam,Fördelaktig
+synonymer,Vilken synonym betyder samma sak som "omutlig"?,Orubblig,Besticklig,Korrupt,Otillförlitlig
+synonymer,Vilken synonym betyder samma sak som "oupplöslig"?,Permanent,Tillfällig,Temporär,Kortvarig
+synonymer,Vilken synonym betyder samma sak som "oundgänglig"?,Nödvändig,Onödig,Överflödig,Entbehrlig
+synonymer,Vilken synonym betyder samma sak som "outstående"?,Framträdande,Obetydlig,Obemärkt,Dold
+synonymer,Vilken synonym betyder samma sak som "outtröttlig"?,Ihärdig,Trött,Uttmattad,Giv upp
+synonymer,Vilken synonym betyder samma sak som "ovanlig"?,Sällsynt,Vanlig,Allmän,Typisk
+synonymer,Vilken synonym betyder samma sak som "ovärdig"?,Opålitlig,Värdig,Pålitlig,Tillförlitlig
+synonymer,Vilken synonym betyder samma sak som "påfallande"?,Iögonfallande,Obemärkt,Dold,Ouppmärksammad
+synonymer,Vilken synonym betyder samma sak som "påtaglig"?,Märkbar,Omärklig,Obemärkt,Subtil
+synonymer,Vilken synonym betyder samma sak som "redbar"?,Hederlig,Opålitlig,Otillförlitlig,Ohederlig
+synonymer,Vilken synonym betyder samma sak som "riklig"?,Ymnig,Knapp,Knapphändig,Sparsam
+synonymer,Vilken synonym betyder samma sak som "rådlös"?,Handfallen,Beslutssam,Resolut,Handlingskraftig
+synonymer,Vilken synonym betyder samma sak som "rädsamt"?,Förskräckt,Modig,Oförskräckt,Djärv
+synonymer,Vilken synonym betyder samma sak som "sällsam"?,Besynnerlig,Vanlig,Normal,Vardaglig
+synonymer,Vilken synonym betyder samma sak som "strävsam"?,Flitig,Lat,Omotiverad,Likgiltig
+synonymer,Vilken synonym betyder samma sak som "strikt"?,Sträng,Mild,Eftergiven,Tillåtande
+synonymer,Vilken synonym betyder samma sak som "skärskåda"?,Granska,Ignorera,Förbise,Negligera
+synonymer,Vilken synonym betyder samma sak som "skymflig"?,Vanärande,Ärofull,Hederlig,Respektabel
+synonymer,Vilken synonym betyder samma sak som "ståndaktig"?,Ihärdig,Vackland,Osäker,Ombytlig
+synonymer,Vilken synonym betyder samma sak som "tafatt"?,Klumpig,Skicklig,Händig,Behändig
+synonymer,Vilken synonym betyder samma sak som "tvehågsen"?,Villrådig,Bestämd,Resolut,Säker
+synonymer,Vilken synonym betyder samma sak som "uppbragt"?,Förbittrad,Lugn,Nöjd,Tillfredsställd
+synonymer,Vilken synonym betyder samma sak som "uppslukad"?,Absorberad,Opåverkad,Distraherad,Oberörd
+synonymer,Vilken synonym betyder samma sak som "uttänkt"?,Genomtänkt,Ogenomtänkt,Spontan,Improviserad
+synonymer,Vilken synonym betyder samma sak som "vanställa"?,Förvanska,Försköna,Förbättra,Förvandla
+synonymer,Vilken synonym betyder samma sak som "vedervärdigheter"?,Motbjudande,Tilltalande,Behagligt,Charmigt
+synonymer,Vilken synonym betyder samma sak som "välsignad"?,Lyckosam,Olycklig,Förbanned,Olycksalig
+synonymer,Vilken synonym betyder samma sak som "värka"?,Göra ont,Läka,Bota,Lindra
+synonymer,Vilken synonym betyder samma sak som "återhållsam"?,Diskret,Påträngande,Påflugen,Framfusig
+synonymer,Vilken synonym betyder samma sak som "ädel"?,Förnäm,Enkel,Gemén,Ordinär
+synonymer,Vilken synonym betyder samma sak som "ärbar"?,Hedervärd,Vanärande,Skamlig,Osmaklig
+synonymer,Vilken synonym betyder samma sak som "överdådig"?,Luxuös,Spartansk,Enkel,Primitiv
+synonymer,Vilken synonym betyder samma sak som "överväldigande"?,Imponerande,Oansenlig,Obetydlig,Försumbar
+synonymer,Vilken synonym betyder samma sak som "ömkansvärd"?,Beklagansevärd,Beundransvärd,Imponerande,Respektingivande
+synonymer,Vilken synonym betyder samma sak som "ångestfylld"?,Plågad,Lugn,Harmonisk,Avslappnad
+synonymer,Vilken synonym betyder samma sak som "åtskild"?,Separerad,Förenad,Sammankopplad,Integrerad
+synonymer,Vilken synonym betyder samma sak som "upprymd"?,Exalterad,Nedstämd,Deprimerad,Melankolisk
+synonymer,Vilken synonym betyder samma sak som "eftertänksam"?,Kontemplativ,Tanklös,Reflexlös,Oreflekterad
+synonymer,Vilken synonym betyder samma sak som "enträgen"?,Ihärdig,Lättlurad,Vackland,Vinglig
+synonymer,Vilken synonym betyder samma sak som "berättigad"?,Motiverad,Omotiverad,Oberättigad,Illegitim
+synonymer,Vilken synonym betyder samma sak som "föraktlig"?,Avskyvärd,Beundransvärd,Respektabel,Ärofull
+synonymer,Vilken synonym betyder samma sak som "vedermödlig"?,Motbjudande,Tilltalande,Behaglig,Charmerande
+synonymer,Vilken synonym betyder samma sak som "abominabel"?,Avskyvärd,Älskvärd,Behaglig,Tilldragande
+synonymer,Vilken synonym betyder samma sak som "execrabel"?,Förbannad,Välsignad,Lyckobringande,Gynnsam
+synonymer,Vilken synonym betyder samma sak som "blasfemisk"?,Hädisk,Helig,Vördnadsfull,Andäktig
+synonymer,Vilken synonym betyder samma sak som "sakrilege"?,Helgerån,Vördnad,Respekt,Andäkt
+synonymer,Vilken synonym betyder samma sak som "profan"?,Världslig,Helig,Andlig,Religiös
+synonymer,Vilken synonym betyder samma sak som "sekularisera"?,Förvärldsliga,Helga,Inviga,Välsigna
+synonymer,Vilken synonym betyder samma sak som "apostasi"?,Avfall,Trohet,Lojalitet,Hängivenhet
+synonymer,Vilken synonym betyder samma sak som "kätteri"?,Villolära,Ortodox,Rätt tro,Sann lära
+synonymer,Vilken synonym betyder samma sak som "schismatisk"?,Splittrande,Enande,Förenande,Harmoniserande
+synonymer,Vilken synonym betyder samma sak som "heterodox"?,Kättersk,Orthodox,Regelrätt,Kanonisk
+synonymer,Vilken synonym betyder samma sak som "apokryf"?,Tvivelaktig,Äkta,Sann,Autentisk
+synonymer,Vilken synonym betyder samma sak som "pseudonym"?,Täcknamn,Riktigt namn,Äkta namn,Sant namn
+synonymer,Vilken synonym betyder samma sak som "psevdepigraf"?,Falsktillskriven,Äkta,Autentisk,Genuin
+synonymer,Vilken synonym betyder samma sak som "spuriös"?,Oäkta,Äkta,Autentisk,Genuin
+synonymer,Vilken synonym betyder samma sak som "supposititiös"?,Underskjuten,Äkta,Legitim,Rättmätig
+synonymer,Vilken synonym betyder samma sak som "adultererad"?,Förfalskad,Ren,Oförfalskad,Äkta
+synonymer,Vilken synonym betyder samma sak som "emendation"?,Rättelse,Fel,Misstag,Förvirring
+synonymer,Vilken synonym betyder samma sak som "interpolation"?,Inskott,Borttagning,Uteslutning,Eliminering
+synonymer,Vilken synonym betyder samma sak som "redaktör"?,Utgivare,Författare,Läsare,Konsument
+synonymer,Vilken synonym betyder samma sak som "palimpsest"?,Översriven skrift,Blank sida,Ny text,Oskadad skrift
+synonymer,Vilken synonym betyder samma sak som "codex"?,Handskrift,Tryck,Modern bok,Digital text
+synonymer,Vilken synonym betyder samma sak som "paleograf"?,Skriftforskare,Arkitekt,Målare,Skulptör
+synonymer,Vilken synonym betyder samma sak som "diplomatik"?,Urkundsvetenskap,Språkvetenskap,Konsthistoria,Arkeologi
+synonymer,Vilken synonym betyder samma sak som "sfragistik"?,Sigillvetenskap,Myntkunskap,Vapenlära,Genealogi
+synonymer,Vilken synonym betyder samma sak som "heraldik"?,Vapenlära,Sigillkunskap,Genealogi,Kronologi
+synonymer,Vilken synonym betyder samma sak som "genealogi"?,Släktforskning,Språkhistoria,Konsthistoria,Musikhistoria
+synonymer,Vilken synonym betyder samma sak som "prosopografi"?,Personforskning,Ortforskning,Byggnadsforskning,Konstforskning
+synonymer,Vilken synonym betyder samma sak som "onomastik"?,Namnforskning,Språkhistoria,Litteraturforskning,Musikforskning
+synonymer,Vilken synonym betyder samma sak som "toponymi"?,Ortnamn,Personnamn,Djurnamn,Växtnamn
+synonymer,Vilken synonym betyder samma sak som "antroponim"?,Personnamn,Ortnamn,Djurnamn,Växtnamn
+synonymer,Vilken synonym betyder samma sak som "patronymikon"?,Fadernamn,Modernamn,Förnamn,Efternamn
+synonymer,Vilken synonym betyder samma sak som "matronymikon"?,Modernamn,Fadernamn,Förnamn,Släktnamn
+synonymer,Vilken synonym betyder samma sak som "toponymisk"?,Ortnamnsrelaterad,Personnamnrelaterad,Djurnamnrelaterad,Växtnamnrelaterad
+synonymer,Vilken synonym betyder samma sak som "hydronymi"?,Vattennnamn,Bergsnamn,Skogsnamn,Fältnamn
+synonymer,Vilken synonym betyder samma sak som "oronymi"?,Bergsnamn,Vattennamn,Skogsnamn,Byggnadsnamn
+synonymer,Vilken synonym betyder samma sak som "ekklesionymi"?,Kyrkonamn,Skolnamn,Sjukhusnamn,Fabriksnamn
+synonymer,Vilken synonym betyder samma sak som "hagiotoponymi"?,Heliga orters namn,Profana platser,Världsliga namn,Sekulära beteckningar
+synonymer,Vilken synonym betyder samma sak som "etimologi"?,Ordhistoria,Grammatik,Fonologi,Semantik
+synonymer,Vilken synonym betyder samma sak som "morfologi"?,Ordbildning,Meningsbyggnad,Ljudlära,Betydelselära
+synonymer,Vilken synonym betyder samma sak som "fonologi"?,Ljudsystem,Ordbildning,Meningslära,Betydelselära
+synonymer,Vilken synonym betyder samma sak som "fonetik"?,Ljudlära,Ordlära,Meningslära,Textlära
+synonymer,Vilken synonym betyder samma sak som "fonematisk"?,Ljudenhetlig,Ordbildande,Meningsbärande,Betydelsefull
+
