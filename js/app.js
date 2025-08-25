@@ -66,17 +66,17 @@ class QuizApp {
             // Show loading screen
             this.updateLoadingProgress(0, 'Startar laddning av frågor...');
             
+            // Phase 1: Ladda endast huvudkategorier (6 CSV-filer)
             await this.loadQuestions();
             console.log('loadQuestions klar');
+            console.log('📊 Progress efter loadQuestions ska vara 100%');
             
-            await this.loadDynamicCategories();
-            console.log('loadDynamicCategories klar');
+            // Phase 2: Kort paus så användaren ser 100% innan sidan visas
+            await new Promise(resolve => setTimeout(resolve, 200));
             
+            // Rendera startsidan
             this.renderCategories();
             console.log('renderCategories klar');
-            
-            this.renderDynamicCategories();
-            console.log('renderDynamicCategories klar');
             
             this.setupEventListeners();
             console.log('setupEventListeners klar');
@@ -85,11 +85,14 @@ class QuizApp {
             this.updateCategoryStats();
             this.applySettings();
             
-            // Uppdatera frågeräkningen igen efter att dynamiska kategorier laddats
-            this.updateQuestionCount();
+            // Nu döljs laddningsskärmen när progress är 100%
+            console.log('Startsidan visas nu!');
             
-            // Final loading progress update
-            this.updateLoadingProgress(100, 'Appen är redo!');
+            // Dölj laddningsskärmen manuellt
+            this.hideLoadingScreen();
+            
+            // Phase 3: Ladda dynamiska kategorier i bakgrunden (non-blocking)
+            this.loadDynamicCategoriesInBackground();
             
             console.log('=== INIT KLAR ===');
         } catch (error) {
@@ -127,7 +130,9 @@ class QuizApp {
                 console.log('✅ Skapade blandad-kategorin från cache');
             }
             
-            this.updateLoadingProgress(100, 'Frågor laddade från cache');
+            // Sätt progress till 100% när cache används
+            console.log('📊 Cache: Sätter progress till 100%');
+            this.updateLoadingProgress(100, 'Huvudkategorier laddade från cache');
             return;
         }
 
@@ -204,7 +209,8 @@ class QuizApp {
             // Uppdatera blandad-kategorin direkt efter att den skapats
             this.updateBlandaCategory();
 
-            this.updateLoadingProgress(100, 'Alla frågor laddade!');
+            console.log('📊 CSV: Sätter progress till 100%');
+            this.updateLoadingProgress(100, 'Huvudkategorier laddade!');
             
         } catch (error) {
             console.error('Error during parallel loading:', error);
@@ -249,24 +255,27 @@ class QuizApp {
         const progressBar = document.getElementById('loading-progress');
         
         if (progressBar) {
-            progressBar.style.width = `${progress}%`;
+            // Säkerställ att progress bar går hela vägen till 100%
+            const clampedProgress = Math.min(Math.max(progress, 0), 100);
+            progressBar.style.width = `${clampedProgress}%`;
             
-            // Hide loading screen when complete
-            if (progress >= 100) {
-                setTimeout(() => {
-                    this.hideLoadingScreen();
-                }, 500);
-            }
+            console.log(`📊 Progress uppdaterad: ${progress}% → ${clampedProgress}% (${message})`);
+            
+            // Låt inte progress bar automatiskt dölja laddningsskärmen
+            // Laddningsskärmen döljs manuellt i init() metoden
         }
     }
 
     hideLoadingScreen() {
         const loadingScreen = document.getElementById('loading-screen');
         if (loadingScreen) {
-            loadingScreen.style.opacity = '0';
+            // Lägg till 200ms fördröjning så allt hinner laddas ordentligt
             setTimeout(() => {
-                loadingScreen.style.display = 'none';
-            }, 300);
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 200);
+            }, 200);
         }
     }
 
@@ -344,11 +353,11 @@ class QuizApp {
                 return;
             }
 
-            // Parallel loading with progress tracking
+            // Parallel loading without progress tracking (bakgrundsladdning)
             const totalFiles = csvFiles.length;
             let loadedFiles = 0;
             
-            this.updateLoadingProgress(50, `Laddar ${totalFiles} extra kategorier...`);
+            // Progress uppdateras inte längre här eftersom det är bakgrundsladdning
 
             // Create all fetch promises
             const fetchPromises = csvFiles.map(async (filename) => {
@@ -360,10 +369,8 @@ class QuizApp {
                     const csvText = await response.text();
                     const questions = this.parseCSV(csvText);
                     
-                    // Update progress
+                    // Update progress (bakgrundsladdning - ingen UI-blockering)
                     loadedFiles++;
-                    const progress = 50 + Math.round((loadedFiles / totalFiles) * 25); // 50-75% range
-                    this.updateLoadingProgress(progress, `Laddade ${categoryName} (${questions.length} frågor)`);
                     
                     return {
                         key: categoryKey,
@@ -406,11 +413,47 @@ class QuizApp {
             // Uppdatera "Blanda"-kategorin baserat på inställningen
             this.updateBlandaCategory();
             
-            this.updateLoadingProgress(75, 'Extra kategorier laddade!');
+            // Progress uppdateras inte längre här eftersom det är bakgrundsladdning
             
         } catch (error) {
             console.error('Fel vid laddning av dynamiska kategorier:', error);
-            this.updateLoadingProgress(0, 'Fel vid laddning av extra kategorier');
+            // Progress uppdateras inte längre här eftersom det är bakgrundsladdning
+        }
+    }
+
+    // Phase 3: Ladda dynamiska kategorier i bakgrunden (non-blocking)
+    async loadDynamicCategoriesInBackground() {
+        try {
+            console.log('=== BAKGRUNDSLADDNING STARTAR ===');
+            
+            // Visa att bakgrundsladdning pågår på "Fler Quiz"-knappen
+            this.updateFlerQuizButtonLoading(true);
+            
+            // Ladda dynamiska kategorier utan att blockera UI
+            await this.loadDynamicCategories();
+            console.log('loadDynamicCategories klar (bakgrund)');
+            
+            // Rendera dynamiska kategorier när de är klara
+            this.renderDynamicCategories();
+            console.log('renderDynamicCategories klar (bakgrund)');
+            
+            // Uppdatera frågeräkningen efter att dynamiska kategorier laddats
+            this.updateQuestionCount();
+            
+            // Uppdatera "Blanda"-kategorin om inställningen är aktiverad
+            this.updateBlandaCategory();
+            
+            // Dölj loading state på "Fler Quiz"-knappen och visa antal kategorier
+            const categoryCount = Object.keys(this.dynamicCategories).length;
+            this.updateFlerQuizButtonLoading(false, categoryCount);
+            
+            // Notifikationen tas bort - ingen alert visas längre
+            
+            console.log('=== BAKGRUNDSLADDNING KLAR ===');
+            
+        } catch (error) {
+            console.error('Bakgrundsladdning misslyckades:', error);
+            this.updateFlerQuizButtonLoading(false);
         }
     }
 
@@ -2317,6 +2360,52 @@ class QuizApp {
         }
         // Om vi inte är i "Blanda"-kategorin eller har flera kategorier valda, behåll den befintliga titeln
     }
+
+        // Uppdatera "Fler Quiz"-knappen med loading state
+    updateFlerQuizButtonLoading(loading = false, count = 0) {
+        const btn = document.getElementById('fler-quiz-btn');
+        if (!btn) return;
+        
+        if (loading) {
+            // Visa loading state
+            btn.innerHTML = `
+                <div class="category-content">
+                    <div class="category-icon">
+                        <div class="spinner"></div>
+                    </div>
+                    <div class="category-info">
+                        <h3 class="category-name">Laddar...</h3>
+                    </div>
+                    <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </div>
+            `;
+            btn.style.opacity = '0.7';
+            btn.style.pointerEvents = 'none';
+        } else {
+            // Återställ till normal state utan antal kategorier
+            btn.innerHTML = `
+                <div class="category-content">
+                    <div class="category-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-white">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <div class="category-info">
+                        <h3 class="category-name">Fler Quiz</h3>
+                    </div>
+                    <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </div>
+            `;
+            btn.style.opacity = '1';
+            btn.style.pointerEvents = 'auto';
+        }
+    }
+
+    // Metoden showBackgroundLoadingComplete tas bort eftersom notifikationer inte längre visas
 
 
 }
