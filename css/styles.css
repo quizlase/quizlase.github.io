@@ -399,7 +399,7 @@ body {
         /* Remove blue active color from next button on Firefox Android */
         .nav-btn.primary:active,
         .nav-btn.primary:focus {
-            background: linear-gradient(135deg, #4ade80 0%, #3b82f6 100%) !important;
+            background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 50%, #c084fc 100%) !important;
             color: white !important;
             outline: none !important;
             -webkit-tap-highlight-color: transparent !important;
@@ -1462,10 +1462,10 @@ body {
 }
 
 .nav-btn.primary {
-    background: linear-gradient(135deg, #4ade80 0%, #3b82f6 100%);
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 50%, #c084fc 100%);
     color: white;
     box-shadow: 
-        0 10px 25px rgba(74, 222, 128, 0.3),
+        0 10px 25px rgba(139, 92, 246, 0.3),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
     /* Remove default browser active states */
     -webkit-tap-highlight-color: transparent;
@@ -1476,13 +1476,13 @@ body {
 
 .nav-btn.primary:hover {
     transform: scale(1.05);
-    box-shadow: 0 20px 40px rgba(74, 222, 128, 0.4);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.4);
 }
 
 /* Ensure no blue color on active/focus states */
 .nav-btn.primary:active,
 .nav-btn.primary:focus {
-    background: linear-gradient(135deg, #4ade80 0%, #3b82f6 100%);
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 50%, #c084fc 100%);
     color: white;
     outline: none;
     -webkit-tap-highlight-color: transparent;
@@ -1492,7 +1492,7 @@ body {
 @media (max-width: 1023px) {
     .nav-btn.primary:hover {
         transform: none;
-        box-shadow: 0 10px 25px rgba(74, 222, 128, 0.3);
+        box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
     }
     
     /* Mobile-optimized scale animations for answer feedback */
@@ -1510,8 +1510,8 @@ body {
 /* Discreet color shift for next button on mobile/tablet */
 @media (max-width: 1023px) {
     .nav-btn.primary:hover {
-        background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-        box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+        background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+        box-shadow: 0 8px 20px rgba(124, 58, 237, 0.4);
     }
 }
 
