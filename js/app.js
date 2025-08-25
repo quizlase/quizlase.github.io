@@ -1623,9 +1623,9 @@ class QuizApp {
         const showAnswerBtn = document.getElementById('show-answer-btn');
         if (!showAnswerBtn) return;
 
-        // Hide "Visa svar" button if "Visa svarsalternativ" is enabled AND timer is disabled
-        // This means: when multiple choice is shown but no timer is running
-        const shouldHide = this.settings.showMultipleChoice && !this.settings.timer;
+        // Hide "Visa svar" button if "Visa svarsalternativ" is enabled
+        // This means: when multiple choice is shown, hide the show answer button
+        const shouldHide = this.settings.showMultipleChoice;
         showAnswerBtn.classList.toggle('hidden', shouldHide);
     }
 
