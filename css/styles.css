@@ -566,7 +566,7 @@ body {
     .nav-btn.primary:active,
     .nav-btn.primary:focus,
     .nav-btn.primary:focus-visible {
-        background: linear-gradient(135deg, #4ade80 0%, #3b82f6 100%) !important;
+        background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 50%, #c084fc 100%) !important;
         color: white !important;
         outline: none !important;
         -webkit-tap-highlight-color: transparent !important;
@@ -1481,11 +1481,15 @@ body {
 
 /* Ensure no blue color on active/focus states */
 .nav-btn.primary:active,
-.nav-btn.primary:focus {
-    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 50%, #c084fc 100%);
-    color: white;
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
+.nav-btn.primary:focus,
+.nav-btn.primary:focus-visible {
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 50%, #c084fc 100%) !important;
+    color: white !important;
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
 }
 
 /* Remove scale animation on mobile/tablet for next button */
@@ -1510,8 +1514,8 @@ body {
 /* Discreet color shift for next button on mobile/tablet */
 @media (max-width: 1023px) {
     .nav-btn.primary:hover {
-        background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
-        box-shadow: 0 8px 20px rgba(124, 58, 237, 0.4);
+        background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 50%, #c084fc 100%);
+        box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4);
     }
 }
 
