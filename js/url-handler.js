@@ -27,6 +27,24 @@ class URLHandler {
 
         console.log(`Försöker starta quiz från URL: ${quizParam}`);
 
+        // Kolla om det är settings
+        if (quizParam === 'settings') {
+            this.app.showView('settings');
+            return;
+        }
+
+        // Kolla om det är "fler-quiz"
+        if (quizParam === 'fler-quiz') {
+            this.app.showView('fler-quiz');
+            return;
+        }
+
+        // Kolla om det är "blandad"
+        if (quizParam === 'blandad') {
+            this.app.selectCategory('blandad');
+            return;
+        }
+
         // Först kolla standardkategorier
         if (await this.tryStandardCategory(quizParam)) {
             return;
@@ -152,6 +170,14 @@ class URLHandler {
     updateURL(quizKey) {
         const newURL = `${window.location.pathname}?quiz=${quizKey}`;
         history.pushState({ quiz: quizKey }, '', newURL);
+    }
+
+    /**
+     * Rensa URL-parametrar (tillbaka till startsidan)
+     */
+    clearURL() {
+        const newURL = window.location.pathname;
+        history.pushState({}, '', newURL);
     }
 
     /**
