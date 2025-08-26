@@ -733,13 +733,7 @@ class QuizApp {
             document.getElementById('category-title').textContent = category.name;
         }
 
-        // Spåra kategori-val för Umami Analytics
-        this.trackEvent('category-selected', {
-            category: category.name,
-            categoryKey: categoryKey,
-            questionCount: category.questions.length,
-            type: 'dynamic'
-        });
+
 
         // Spåra start av quiz-session
         this.trackEvent('quiz-session-started', {
@@ -1112,16 +1106,6 @@ class QuizApp {
     showView(viewName) {
         console.log(`Växlar till vy: ${viewName}`);
         
-        // Spåra tid på hemsidan när användare lämnar den
-        if (this.currentView === 'home' && viewName !== 'home') {
-            const timeOnHome = Date.now() - (this.homeViewStartTime || Date.now());
-            this.trackEvent('time-on-home', {
-                seconds: Math.round(timeOnHome / 1000),
-                nextView: viewName,
-                timeCategory: this.getTimeCategory(Math.round(timeOnHome / 1000))
-            });
-        }
-        
         // Starta timer när användare kommer till hemsidan
         if (viewName === 'home') {
             this.homeViewStartTime = Date.now();
@@ -1242,13 +1226,7 @@ class QuizApp {
             }
         }
 
-        // Spåra kategori-val för Umami Analytics
-        this.trackEvent('category-selected', {
-            category: category.name,
-            categoryKey: categoryKey,
-            questionCount: category.questions.length,
-            type: 'main'
-        });
+
 
         // Spåra start av quiz-session
         this.trackEvent('quiz-session-started', {
@@ -2699,13 +2677,7 @@ class QuizApp {
         }
     }
 
-    // Kategorisera tid för enklare analys
-    getTimeCategory(seconds) {
-        if (seconds < 15) return 'quick-browse';
-        if (seconds < 45) return 'normal-browse';
-        if (seconds < 120) return 'engaged-browse';
-        return 'deep-browse';
-    }
+
 
     // Rensa cache (enkel metod)
     clearCache() {

@@ -5,7 +5,7 @@
 class URLHandler {
     constructor(app) {
         this.app = app;
-        this.urlParams = new URLSearchParams(window.location.search);
+        this.urlParams = new URLSearchParams(window.location.hash.substring(1));
     }
 
     /**
@@ -168,7 +168,7 @@ class URLHandler {
      * Uppdatera URL utan att ladda om sidan (för framtida funktioner)
      */
     updateURL(quizKey) {
-        const newURL = `${window.location.pathname}?quiz=${quizKey}`;
+        const newURL = `${window.location.pathname}#quiz=${quizKey}`;
         history.pushState({ quiz: quizKey }, '', newURL);
     }
 
@@ -190,6 +190,11 @@ class URLHandler {
             } else {
                 this.app.showView('home');
             }
+        });
+
+        // Hantera hash-ändringar också
+        window.addEventListener('hashchange', () => {
+            this.handleURLQuiz();
         });
     }
 }
