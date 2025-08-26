@@ -972,3 +972,171 @@ body #app #home-view .bottom-buttons #play-all-btn:active {
     background-clip: unset !important;
     font-weight: 700 !important;
 }
+
+/* ===== SEARCH AND SHUFFLE BUTTONS - High Contrast ===== */
+/* Sök- och shuffle-knapparna under "Fler Quiz" - svart-vita stilar */
+
+/* Search container */
+.search-container {
+    background: #000000 !important;
+    border: 3px solid #ffffff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Search input wrapper */
+.search-input-wrapper {
+    background: #000000 !important;
+    border: none !important;
+    border-radius: 8px !important;
+}
+
+/* Search input field */
+.search-input {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 2px solid #ffffff !important;
+    border-radius: 6px !important;
+    font-weight: 700 !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.search-input::placeholder {
+    color: #ffffff !important;
+    opacity: 0.7 !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.search-input:focus {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    outline: 3px solid #ffff00 !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.search-input:focus::placeholder {
+    color: #000000 !important;
+    opacity: 0.5 !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Search icon */
+.search-icon {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+    fill: none !important;
+}
+
+/* Clear search button */
+.clear-search-btn {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 2px solid #ffffff !important;
+    border-radius: 50% !important;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.clear-search-btn:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    transform: scale(1.1) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.clear-search-btn:active {
+    background: #ffffff !important;
+    color: #000000 !important;
+    transform: scale(1.05) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Clear icon */
+.clear-icon {
+    color: inherit !important;
+    stroke: currentColor !important;
+    fill: none !important;
+}
+
+/* Shuffle icon button */
+#shuffle-icon-btn {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border: 3px solid #ffffff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+    font-weight: 700 !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+#shuffle-icon-btn:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    transform: scale(1.05) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+#shuffle-icon-btn:active {
+    background: #ffffff !important;
+    color: #000000 !important;
+    transform: scale(1.02) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+#shuffle-icon-btn.active {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.5) !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Shuffle icon */
+#shuffle-icon-btn .icon {
+    color: inherit !important;
+    stroke: currentColor !important;
+    fill: none !important;
+}
+
+/* Force all text and icons inside search and shuffle elements to be readable */
+.search-container *,
+.search-input-wrapper *,
+#shuffle-icon-btn * {
+    color: inherit !important;
+    -webkit-text-fill-color: inherit !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+}
+
+/* Ultimate override for search and shuffle elements */
+body #app .search-container,
+body #app .search-input-wrapper,
+body #app .search-input,
+body #app .search-icon,
+body #app .clear-search-btn,
+body #app .clear-icon,
+body #app #shuffle-icon-btn {
+    background: #000000 !important;
+    background-image: none !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    backdrop-filter: none !important;
+}
+
+/* Ultimate override for hover states */
+body #app .search-input:focus,
+body #app .clear-search-btn:hover,
+body #app #shuffle-icon-btn:hover,
+body #app #shuffle-icon-btn.active {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    -webkit-text-fill-color: unset !important;
+}

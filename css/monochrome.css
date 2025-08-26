@@ -120,18 +120,21 @@
     background: transparent !important;
     border: 2px solid rgba(168, 85, 247, 0.4) !important;
     box-shadow: none !important;
+    color: #ffffff !important;
 }
 
 #toggle-mode-btn:hover {
     border-color: rgba(168, 85, 247, 0.6) !important;
     background: rgba(168, 85, 247, 0.1) !important;
     transform: translateY(-1px) !important;
+    color: #ffffff !important;
 }
 
 #toggle-mode-btn:active {
     border-color: rgba(168, 85, 247, 0.8) !important;
     background: rgba(168, 85, 247, 0.2) !important;
     transform: translateY(0) !important;
+    color: #ffffff !important;
 }
 
 /* Next button - same transparent style */
@@ -474,6 +477,16 @@ body #app #home-view .bottom-buttons #play-all-btn:active {
     -webkit-background-clip: unset !important;
     background-clip: unset !important;
     font-weight: 600 !important;
+}
+
+/* Additional override for dynamic category name in all contexts */
+.dynamic-category-btn .dynamic-category-name,
+.dynamic-category-btn:hover .dynamic-category-name,
+.dynamic-category-btn:active .dynamic-category-name,
+.dynamic-category-btn.selection-mode .dynamic-category-name,
+.dynamic-category-btn.selected .dynamic-category-name {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
 }
 
 /* ===== ULTIMATE OVERRIDE - Highest specificity ===== */

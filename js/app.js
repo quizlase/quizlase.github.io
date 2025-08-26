@@ -708,6 +708,11 @@ class QuizApp {
         
         // Reset score
         this.resetScore();
+        
+        // Ensure category title is shown initially
+        if (!this.settings.scoreTracking) {
+            document.getElementById('category-title').textContent = category.name;
+        }
 
         // Spåra kategori-val för Umami Analytics
         this.trackEvent('category-selected', {
@@ -1173,6 +1178,11 @@ class QuizApp {
 
         // Reset score when starting new quiz
         this.resetScore();
+        
+        // Ensure category title is shown initially
+        if (!this.settings.scoreTracking) {
+            document.getElementById('category-title').textContent = category.name;
+        }
 
         // Spåra kategori-val för Umami Analytics
         this.trackEvent('category-selected', {
@@ -1394,6 +1404,11 @@ class QuizApp {
             // In direct answer mode, show the answer
             this.showAnswer = true;
             this.updateAnswerDisplay();
+            
+            // Count as answered question when timer runs out in direct answer mode (if score tracking is enabled)
+            if (this.settings.scoreTracking) {
+                this.addAnsweredQuestion();
+            }
         }
         
         // Start auto-advance after showing answer if enabled
@@ -1418,6 +1433,16 @@ class QuizApp {
         
         // Set selected answer to correct one
         this.selectedAnswer = this.answerOptions.find(option => option.isCorrect);
+        
+        // Add point for correct answer when timer runs out (if score tracking is enabled)
+        if (this.settings.scoreTracking && this.selectedAnswer && this.selectedAnswer.isCorrect) {
+            this.addPoint();
+        }
+        
+        // Count as answered question when timer runs out (if score tracking is enabled)
+        if (this.settings.scoreTracking) {
+            this.addAnsweredQuestion();
+        }
         
         // Start auto-advance after showing correct answer if enabled
         if (this.settings.autoAdvance) {
@@ -1830,11 +1855,27 @@ class QuizApp {
             categoryTitle.textContent = scoreText;
             console.log('updateScoreDisplay: Showing score:', scoreText);
         } else {
-            // Show category title (will be updated by loadCurrentQuestion)
+            // Show category title - get the current category name
             const currentCategory = this.getCurrentCategory();
             if (currentCategory) {
                 categoryTitle.textContent = currentCategory.name;
                 console.log('updateScoreDisplay: Showing category:', currentCategory.name);
+            } else {
+                // Fallback: show the selected category name
+                if (this.selectedCategory && this.categories[this.selectedCategory]) {
+                    categoryTitle.textContent = this.categories[this.selectedCategory].name;
+                } else if (this.selectedCategories && this.selectedCategories.size > 0) {
+                    // For multi-category selection, show appropriate title
+                    if (this.selectedCategories.size === 1) {
+                        const categoryKey = Array.from(this.selectedCategories)[0];
+                        const category = this.dynamicCategories[categoryKey];
+                        if (category) {
+                            categoryTitle.textContent = category.name;
+                        }
+                    } else {
+                        categoryTitle.textContent = `Blandade Kategorier (${this.selectedCategories.size})`;
+                    }
+                }
             }
         }
     }
@@ -1844,9 +1885,27 @@ class QuizApp {
         if (this.currentQuestionIndex >= 0 && this.shuffledQuestions.length > 0) {
             const currentQuestion = this.shuffledQuestions[this.currentQuestionIndex];
             if (currentQuestion) {
-                // Find which category this question belongs to
+                // First check if we have a specific selected category
+                if (this.selectedCategory && this.categories[this.selectedCategory]) {
+                    return this.categories[this.selectedCategory];
+                }
+                
+                // Check dynamic categories first
+                for (const [key, category] of Object.entries(this.dynamicCategories)) {
+                    if (category.questions.some(q => 
+                        q.question === currentQuestion.question && 
+                        q.correctAnswer === currentQuestion.correctAnswer
+                    )) {
+                        return category;
+                    }
+                }
+                
+                // Then check main categories
                 for (const [key, category] of Object.entries(this.categories)) {
-                    if (category.questions.some(q => q.question === currentQuestion.question)) {
+                    if (key !== 'blandad' && category.questions.some(q => 
+                        q.question === currentQuestion.question && 
+                        q.correctAnswer === currentQuestion.correctAnswer
+                    )) {
                         return category;
                     }
                 }
@@ -1882,6 +1941,8 @@ class QuizApp {
         this.currentScore = 0;
         this.totalQuestionsAnswered = 0;
         console.log('Score reset to 0, total questions reset to 0');
+        
+        // Update score display to show category title instead of score
         this.updateScoreDisplay();
     }
 
@@ -2308,6 +2369,11 @@ class QuizApp {
         // Reset score
         this.resetScore();
         
+        // Ensure category title is shown initially if score tracking is disabled
+        if (!this.settings.scoreTracking) {
+            // The title will be set below based on category selection
+        }
+        
         // Spåra start av multi-kategori quiz-session för Umami Analytics
         const categoryNames = Array.from(this.selectedCategories).map(key => {
             const category = this.dynamicCategories[key];
@@ -2426,21 +2492,15 @@ class QuizApp {
         }
     }
     
-    // Reset score (helper function)
-    resetScore() {
-        this.currentScore = 0;
-        this.totalQuestionsAnswered = 0;
-        this.updateScoreDisplay();
-    }
-    
-    // Update score display (helper function)
-    updateScoreDisplay() {
-        // This function should already exist in your app
-        // If not, implement it here
-    }
+
     
     // Update category title based on current question's category
     updateCategoryTitleForCurrentQuestion() {
+        // Don't update category title if score tracking is enabled
+        if (this.settings.scoreTracking) {
+            return;
+        }
+        
         const currentQuestion = this.shuffledQuestions[this.currentQuestionIndex];
         if (!currentQuestion) return;
         
