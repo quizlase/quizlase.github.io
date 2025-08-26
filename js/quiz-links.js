@@ -3,6 +3,7 @@
 
 const AVAILABLE_QUIZ = [
   {key: 'andra_varldskriget', name: 'Andra världskriget', file: 'Andra världskriget.csv'},
+  {key: 'blandtest', name: 'Blandtest', file: 'Blandtest.csv'},
   {key: 'cocktails', name: 'Cocktails', file: 'Cocktails.csv'},
   {key: 'dans', name: 'Dans', file: 'Dans.csv'},
   {key: 'design_och_mode', name: 'Design och mode', file: 'Design och mode.csv'},
@@ -28,9 +29,7 @@ const AVAILABLE_QUIZ = [
   {key: 'star_wars', name: 'Star Wars', file: 'Star Wars.csv'},
   {key: 'svenska_synonymer', name: 'Svenska synonymer', file: 'Svenska synonymer.csv'},
   {key: 'sverige', name: 'Sverige', file: 'Sverige.csv'},
-  {key: 'test_quiz', name: 'TEST-QUIZ', file: 'TEST-QUIZ.csv'},
   {key: 'vanner', name: 'Vänner', file: 'Vänner.csv'},
-  {key: 'test_quiz', name: 'TEST-QUIZ', file: 'TEST-QUIZ.csv'},
 ];
 
 // Exportera för användning
