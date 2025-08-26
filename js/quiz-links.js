@@ -29,6 +29,7 @@ const AVAILABLE_QUIZ = [
   {key: 'svenska_synonymer', name: 'Svenska synonymer', file: 'Svenska synonymer.csv'},
   {key: 'sverige', name: 'Sverige', file: 'Sverige.csv'},
   {key: 'vanner', name: 'Vänner', file: 'Vänner.csv'},
+  {key: 'test_quiz', name: 'TEST-QUIZ', file: 'TEST-QUIZ.csv'},
 ];
 
 // Exportera för användning
