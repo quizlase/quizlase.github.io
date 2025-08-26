@@ -3,7 +3,6 @@
 
 const AVAILABLE_QUIZ = [
   {key: 'andra_varldskriget', name: 'Andra världskriget', file: 'Andra världskriget.csv'},
-  {key: 'blandtest', name: 'Blandtest', file: 'Blandtest.csv'},
   {key: 'cocktails', name: 'Cocktails', file: 'Cocktails.csv'},
   {key: 'dans', name: 'Dans', file: 'Dans.csv'},
   {key: 'design_och_mode', name: 'Design och mode', file: 'Design och mode.csv'},
