@@ -14,6 +14,9 @@ class QuizApp {
         this.dynamicCategories = {}; // NY property för dynamiska kategorier
         this.allQuestions = [];
         
+        // URL Handler för quiz-länkning
+        this.urlHandler = null; // Initieras i init()
+        
         // Settings
         this.settings = {
             autoAdvance: false,
@@ -98,6 +101,10 @@ class QuizApp {
             // Phase 3: Ladda dynamiska kategorier i bakgrunden (non-blocking)
             this.loadDynamicCategoriesInBackground();
             
+            // Phase 4: Initiera URL-handler och hantera URL-parameter för direktlänkning
+            this.urlHandler = new URLHandler(this);
+            await this.urlHandler.handleURLQuiz();
+            
             console.log('=== INIT KLAR ===');
         } catch (error) {
             console.error('Failed to initialize app:', error);
@@ -124,6 +131,10 @@ class QuizApp {
             this.allQuestions = cachedData.allQuestions;
             
             // Ensure blandad category exists in cache
+            console.log('Cache: Checking if blandad category exists...');
+            console.log('Cache: allQuestions length:', this.allQuestions.length);
+            console.log('Cache: Sample question from allQuestions:', this.allQuestions[0]);
+            
             if (!this.categories.blandad) {
                 this.categories.blandad = {
                     name: 'Blanda',
@@ -133,6 +144,9 @@ class QuizApp {
                 };
                 console.log('✅ Skapade blandad-kategorin från cache');
             }
+            
+            console.log('Cache: Blandad category questions length:', this.categories.blandad.questions.length);
+            console.log('Cache: Sample question from blandad:', this.categories.blandad.questions[0]);
             
             // Sätt progress till 100% när cache används
             console.log('📊 Cache: Sätter progress till 100%');
@@ -187,13 +201,20 @@ class QuizApp {
             
             // Process results
             results.forEach(result => {
+                // Lägg till category property till varje fråga
+                const questionsWithCategory = result.questions.map(q => ({
+                    ...q,
+                    category: result.key,
+                    categoryName: result.name
+                }));
+                
                 this.categories[result.key] = {
                     name: result.name,
                     icon: result.icon,
                     color: result.color,
-                    questions: result.questions
+                    questions: questionsWithCategory
                 };
-                this.allQuestions.push(...result.questions);
+                this.allQuestions.push(...questionsWithCategory);
             });
 
             // Cache the results
@@ -203,12 +224,18 @@ class QuizApp {
             console.log('Categories:', Object.keys(this.categories));
 
             // Add mixed category
+            console.log('Creating blandad category with questions:', this.allQuestions.length);
+            console.log('Sample question from allQuestions:', this.allQuestions[0]);
+            
             this.categories.blandad = {
                 name: 'Blanda',
                 icon: 'shuffle',
                 color: 'transparent',
                 questions: [...this.allQuestions]
             };
+            
+            console.log('Blandad category created with questions:', this.categories.blandad.questions.length);
+            console.log('Sample question from blandad:', this.categories.blandad.questions[0]);
 
             // Uppdatera blandad-kategorin direkt efter att den skapats
             this.updateBlandaCategory();
@@ -345,83 +372,40 @@ class QuizApp {
         }
     }
 
-    // Ladda alla dynamiska kategorier från data/kategori/ med parallell laddning
+    // Ladda alla dynamiska kategorier från AVAILABLE_QUIZ (genererad av GitHub Actions)
     async loadDynamicCategories() {
         try {
             console.log('=== loadDynamicCategories startar ===');
-            const csvFiles = await this.scanCategoryFolder();
-            console.log('Hittade filer:', csvFiles);
             
-            if (csvFiles.length === 0) {
-                console.log('Inga dynamiska kategorier hittade');
+            // Kontrollera att quiz-links.js är laddad
+            if (typeof AVAILABLE_QUIZ === 'undefined') {
+                console.log('AVAILABLE_QUIZ inte tillgänglig - inga extra quiz att ladda');
+                this.dynamicCategories = {};
                 return;
             }
 
-            // Parallel loading without progress tracking (bakgrundsladdning)
-            const totalFiles = csvFiles.length;
-            let loadedFiles = 0;
-            
-            // Progress uppdateras inte längre här eftersom det är bakgrundsladdning
+            console.log(`Hittade ${AVAILABLE_QUIZ.length} dynamiska kategorier från quiz-links.js`);
 
-            // Create all fetch promises
-            const fetchPromises = csvFiles.map(async (filename) => {
-                const categoryName = this.formatCategoryName(filename);
-                const categoryKey = this.createCategoryKey(filename);
-                
-                try {
-                    const response = await fetch(`data/kategori/${filename}`);
-                    const csvText = await response.text();
-                    const questions = this.parseCSV(csvText);
-                    
-                    // Update progress (bakgrundsladdning - ingen UI-blockering)
-                    loadedFiles++;
-                    
-                    return {
-                        key: categoryKey,
-                        name: categoryName,
-                        file: `data/kategori/${filename}`,
-                        questions: questions,
-                        icon: this.getAutoIcon(categoryName),
-                        color: this.getAutoColor(categoryKey)
-                    };
-                } catch (error) {
-                    console.error(`Kunde inte ladda ${filename}:`, error);
-                    // Return fallback data
-                    return {
-                        key: categoryKey,
-                        name: categoryName,
-                        file: `data/kategori/${filename}`,
-                        questions: [],
-                        icon: this.getAutoIcon(categoryName),
-                        color: this.getAutoColor(categoryKey)
-                    };
-                }
-            });
-
-            // Wait for all promises to resolve
-            const results = await Promise.all(fetchPromises);
-            
-            // Process results
-            results.forEach(result => {
-                this.dynamicCategories[result.key] = {
-                    name: result.name,
-                    file: result.file,
-                    questions: result.questions,
-                    icon: result.icon,
-                    color: result.color
+            // Skapa dynamiska kategorier från listan
+            AVAILABLE_QUIZ.forEach(quiz => {
+                this.dynamicCategories[quiz.key] = {
+                    name: quiz.name,
+                    file: `data/kategori/${quiz.file}`,
+                    questions: [], // Laddas när quiz startas
+                    questionCount: 0, // Okänt tills CSV laddas
+                    icon: this.getAutoIcon(quiz.name),
+                    color: this.getAutoColor(quiz.key)
                 };
             });
-            
-            console.log('=== loadDynamicCategories klar ===');
+
+            console.log(`Laddade ${AVAILABLE_QUIZ.length} dynamiska kategorier`);
             
             // Uppdatera "Blanda"-kategorin baserat på inställningen
             this.updateBlandaCategory();
             
-            // Progress uppdateras inte längre här eftersom det är bakgrundsladdning
-            
         } catch (error) {
             console.error('Fel vid laddning av dynamiska kategorier:', error);
-            // Progress uppdateras inte längre här eftersom det är bakgrundsladdning
+            this.dynamicCategories = {};
         }
     }
 
@@ -490,7 +474,13 @@ class QuizApp {
             // Lägg till frågor från dynamiska kategorier
             Object.values(this.dynamicCategories).forEach(category => {
                 if (category.questions && category.questions.length > 0) {
-                    allQuestions.push(...category.questions);
+                    // Lägg till category property till dynamiska kategorier också
+                    const questionsWithCategory = category.questions.map(q => ({
+                        ...q,
+                        category: category.key || 'dynamic',
+                        categoryName: category.name
+                    }));
+                    allQuestions.push(...questionsWithCategory);
                 }
             });
             
@@ -1180,8 +1170,18 @@ class QuizApp {
         this.resetScore();
         
         // Ensure category title is shown initially
+        console.log('selectCategory: categoryKey =', categoryKey);
+        console.log('selectCategory: category.name =', category.name);
+        console.log('selectCategory: scoreTracking =', this.settings.scoreTracking);
+        
         if (!this.settings.scoreTracking) {
-            document.getElementById('category-title').textContent = category.name;
+            // Don't set title for "blandad" category - let updateCategoryTitleForCurrentQuestion handle it
+            if (categoryKey !== 'blandad') {
+                document.getElementById('category-title').textContent = category.name;
+                console.log('selectCategory: Set title to category name:', category.name);
+            } else {
+                console.log('selectCategory: Blandad category selected, not setting title');
+            }
         }
 
         // Spåra kategori-val för Umami Analytics
@@ -1207,8 +1207,13 @@ class QuizApp {
         // Nollställ frågeräknare för ny session
         this.questionsAnswered = 0;
 
-        // Update UI
-        document.getElementById('category-title').textContent = category.name;
+        // Update UI - don't set title for "blandad" category
+        if (categoryKey !== 'blandad') {
+            document.getElementById('category-title').textContent = category.name;
+            console.log('selectCategory: Set UI title to category name:', category.name);
+        } else {
+            console.log('selectCategory: Blandad category, not setting UI title');
+        }
         this.showView('quiz');
         this.loadCurrentQuestion(true);
     }
@@ -1237,8 +1242,9 @@ class QuizApp {
         
         document.getElementById('current-question').textContent = question.question;
         
-        // Update category title based on current question's category
-        this.updateCategoryTitleForCurrentQuestion();
+            // Update category title based on current question's category
+    console.log('loadCurrentQuestion: Calling updateCategoryTitleForCurrentQuestion');
+    this.updateCategoryTitleForCurrentQuestion();
         
         // CRITICAL: Don't load answer text until it's actually needed to prevent cheating
         
@@ -1855,28 +1861,9 @@ class QuizApp {
             categoryTitle.textContent = scoreText;
             console.log('updateScoreDisplay: Showing score:', scoreText);
         } else {
-            // Show category title - get the current category name
-            const currentCategory = this.getCurrentCategory();
-            if (currentCategory) {
-                categoryTitle.textContent = currentCategory.name;
-                console.log('updateScoreDisplay: Showing category:', currentCategory.name);
-            } else {
-                // Fallback: show the selected category name
-                if (this.selectedCategory && this.categories[this.selectedCategory]) {
-                    categoryTitle.textContent = this.categories[this.selectedCategory].name;
-                } else if (this.selectedCategories && this.selectedCategories.size > 0) {
-                    // For multi-category selection, show appropriate title
-                    if (this.selectedCategories.size === 1) {
-                        const categoryKey = Array.from(this.selectedCategories)[0];
-                        const category = this.dynamicCategories[categoryKey];
-                        if (category) {
-                            categoryTitle.textContent = category.name;
-                        }
-                    } else {
-                        categoryTitle.textContent = `Blandade Kategorier (${this.selectedCategories.size})`;
-                    }
-                }
-            }
+            // Don't update category title when scoreTracking is false
+            // The title is already set by updateCategoryTitleForCurrentQuestion
+            console.log('updateScoreDisplay: Score tracking disabled, not updating category title');
         }
     }
 
@@ -1885,11 +1872,21 @@ class QuizApp {
         if (this.currentQuestionIndex >= 0 && this.shuffledQuestions.length > 0) {
             const currentQuestion = this.shuffledQuestions[this.currentQuestionIndex];
             if (currentQuestion) {
-                // First check if we have a specific selected category
-                if (this.selectedCategory && this.categories[this.selectedCategory]) {
+                // Check if question has category information FIRST (prioritize this)
+                if (currentQuestion.category && currentQuestion.categoryName) {
+                    // Return a category object with the question's category info
+                    return {
+                        name: currentQuestion.categoryName,
+                        key: currentQuestion.category
+                    };
+                }
+                
+                // Then check if we have a specific selected category (but not "blandad")
+                if (this.selectedCategory && this.selectedCategory !== 'blandad' && this.categories[this.selectedCategory]) {
                     return this.categories[this.selectedCategory];
                 }
                 
+                // Fallback: search in categories (old method)
                 // Check dynamic categories first
                 for (const [key, category] of Object.entries(this.dynamicCategories)) {
                     if (category.questions.some(q => 
@@ -2407,17 +2404,9 @@ class QuizApp {
             document.getElementById('category-title').textContent = title;
             console.log('Setting single category title:', title);
         } else {
-            // Om det är flera kategorier, visa "Blandade Kategorier"
-            let title;
-            if (this.selectedCategories.size === Object.keys(this.dynamicCategories).length) {
-                // Om alla kategorier är valda, visa "Alla Kategorier"
-                title = `Alla Kategorier (${this.selectedCategories.size})`;
-            } else {
-                // Annars visa "Blandade Kategorier"
-                title = `Blandade Kategorier (${this.selectedCategories.size})`;
-            }
-            document.getElementById('category-title').textContent = title;
-            console.log('Setting multiple categories title:', title);
+            // Om det är flera kategorier, lämna titeln tom så att updateCategoryTitleForCurrentQuestion kan hantera den
+            // Titeln kommer att uppdateras till den aktuella frågans kategori när frågan laddas
+            console.log('Multiple categories selected - title will be set by updateCategoryTitleForCurrentQuestion');
         }
         
         this.showView('quiz');
@@ -2496,42 +2485,65 @@ class QuizApp {
     
     // Update category title based on current question's category
     updateCategoryTitleForCurrentQuestion() {
+        console.log('updateCategoryTitleForCurrentQuestion: Called');
+        console.log('updateCategoryTitleForCurrentQuestion: scoreTracking =', this.settings.scoreTracking);
+        
         // Don't update category title if score tracking is enabled
         if (this.settings.scoreTracking) {
+            console.log('updateCategoryTitleForCurrentQuestion: Score tracking enabled, returning');
             return;
         }
         
         const currentQuestion = this.shuffledQuestions[this.currentQuestionIndex];
         if (!currentQuestion) return;
         
+        console.log('updateCategoryTitleForCurrentQuestion: currentQuestion =', currentQuestion);
+        console.log('updateCategoryTitleForCurrentQuestion: selectedCategory =', this.selectedCategory);
+        console.log('updateCategoryTitleForCurrentQuestion: selectedCategories.size =', this.selectedCategories ? this.selectedCategories.size : 'undefined');
+        
         // Om vi är i "Blanda"-kategorin ELLER har flera kategorier valda, hitta vilken kategori denna fråga tillhör
         if (this.selectedCategory === 'blandad' || this.selectedCategories.size > 1) {
             // Hitta vilken kategori denna fråga tillhör
             let questionCategory = null;
             
-            // Kolla först i dynamiska kategorier
-            for (const [key, category] of Object.entries(this.dynamicCategories)) {
-                const foundQuestion = category.questions.find(q => 
-                    q.question === currentQuestion.question && 
-                    q.correctAnswer === currentQuestion.correctAnswer
-                );
-                if (foundQuestion) {
-                    questionCategory = category;
-                    break;
-                }
-            }
+            // Först, kolla om frågan redan har category-information
+            console.log('updateCategoryTitleForCurrentQuestion: Checking for category info...');
+            console.log('updateCategoryTitleForCurrentQuestion: currentQuestion.category =', currentQuestion.category);
+            console.log('updateCategoryTitleForCurrentQuestion: currentQuestion.categoryName =', currentQuestion.categoryName);
             
-            // Om inte hittad i dynamiska kategorier, kolla i huvudkategorier
-            if (!questionCategory) {
-                for (const [key, category] of Object.entries(this.categories)) {
-                    if (key !== 'blandad') { // Exkludera "Blanda"-kategorin själv
-                        const foundQuestion = category.questions.find(q => 
-                            q.question === currentQuestion.question && 
-                            q.correctAnswer === currentQuestion.correctAnswer
-                        );
-                        if (foundQuestion) {
-                            questionCategory = category;
-                            break;
+            if (currentQuestion.category && currentQuestion.categoryName) {
+                // Om frågan har category-information, använd den
+                questionCategory = {
+                    name: currentQuestion.categoryName,
+                    key: currentQuestion.category
+                };
+                console.log('Found category from question data:', currentQuestion.categoryName);
+            } else {
+                // Fallback: sök i kategorier (gammal metod)
+                // Kolla först i dynamiska kategorier
+                for (const [key, category] of Object.entries(this.dynamicCategories)) {
+                    const foundQuestion = category.questions.find(q => 
+                        q.question === currentQuestion.question && 
+                        q.correctAnswer === currentQuestion.correctAnswer
+                    );
+                    if (foundQuestion) {
+                        questionCategory = category;
+                        break;
+                    }
+                }
+                
+                // Om inte hittad i dynamiska kategorier, kolla i huvudkategorier
+                if (!questionCategory) {
+                    for (const [key, category] of Object.entries(this.categories)) {
+                        if (key !== 'blandad') { // Exkludera "Blanda"-kategorin själv
+                            const foundQuestion = category.questions.find(q => 
+                                q.question === currentQuestion.question && 
+                                q.correctAnswer === currentQuestion.correctAnswer
+                            );
+                            if (foundQuestion) {
+                                questionCategory = category;
+                                break;
+                            }
                         }
                     }
                 }
@@ -2541,7 +2553,11 @@ class QuizApp {
                 // Uppdatera titeln till att visa den aktuella frågans kategori
                 document.getElementById('category-title').textContent = questionCategory.name;
                 console.log('Updated title to show current category:', questionCategory.name);
+            } else {
+                console.log('updateCategoryTitleForCurrentQuestion: No questionCategory found');
             }
+        } else {
+            console.log('updateCategoryTitleForCurrentQuestion: Not in blandad or multi-category mode');
         }
         // Om vi inte är i "Blanda"-kategorin eller har flera kategorier valda, behåll den befintliga titeln
     }
@@ -2608,6 +2624,16 @@ class QuizApp {
         if (seconds < 45) return 'normal-browse';
         if (seconds < 120) return 'engaged-browse';
         return 'deep-browse';
+    }
+
+    // Rensa cache (enkel metod)
+    clearCache() {
+        try {
+            localStorage.removeItem('quizQuestionsCache');
+            console.log('✅ Cache rensad');
+        } catch (error) {
+            console.error('Error clearing cache:', error);
+        }
     }
 
 }
