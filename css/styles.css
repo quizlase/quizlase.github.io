@@ -1052,7 +1052,7 @@ body {
     }
     
     .dynamic-category-name {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 }
 
@@ -1063,6 +1063,10 @@ body {
             min-height: 100px; /* Lite högre för Chrome på Android */
             padding: 1.25rem;
         }
+        
+        .dynamic-category-name {
+            font-size: 1.1rem; /* Större font för Android Chrome */
+        }
     }
 }
 
@@ -1072,6 +1076,10 @@ body {
         .dynamic-category-btn {
             min-height: 100px; /* Lite högre för Chrome på Android */
             padding: 1.25rem;
+        }
+        
+        .dynamic-category-name {
+            font-size: 1.1rem; /* Större font för Android Chrome */
         }
     }
 }

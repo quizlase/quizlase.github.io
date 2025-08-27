@@ -1824,9 +1824,9 @@ class QuizApp {
         const showAnswerBtn = document.getElementById('show-answer-btn');
         if (!showAnswerBtn) return;
 
-        // Hide "Visa svar" button if "Visa svarsalternativ" is enabled
-        // This means: when multiple choice is shown, hide the show answer button
-        const shouldHide = this.settings.showMultipleChoice;
+        // Hide "Visa svar" button if "Visa svarsalternativ" is enabled OR if "Visa alltid svar" is enabled
+        // This means: when multiple choice is shown OR when answers are always shown, hide the show answer button
+        const shouldHide = this.settings.showMultipleChoice || this.settings.alwaysShowAnswer;
         showAnswerBtn.classList.toggle('hidden', shouldHide);
     }
 
