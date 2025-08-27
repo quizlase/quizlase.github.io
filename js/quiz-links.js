@@ -18,6 +18,8 @@ const AVAILABLE_QUIZ = [
   {key: 'kungligheter', name: 'Kungligheter', file: 'Kungligheter.csv'},
   {key: 'mat', name: 'Mat', file: 'Mat.csv'},
   {key: 'motor', name: 'Motor', file: 'Motor.csv'},
+  {key: 'nfl', name: 'NFL', file: 'NFL.csv'},
+  {key: 'nhl', name: 'NHL', file: 'NHL.csv'},
   {key: 'netflix', name: 'Netflix', file: 'Netflix.csv'},
   {key: 'reklam', name: 'Reklam', file: 'Reklam.csv'},
   {key: 'rymden', name: 'Rymden', file: 'Rymden.csv'},
