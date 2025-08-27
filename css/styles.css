@@ -1006,6 +1006,7 @@ body {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -1014,6 +1015,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* GPU-acceleration för bättre prestanda */
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .dynamic-category-btn:hover {
@@ -1069,6 +1073,14 @@ body {
             min-height: 100px; /* Lite högre för Chrome på Android */
             padding: 1.25rem;
         }
+    }
+}
+
+/* Firefox-specifik optimering för bättre scroll-prestanda */
+@supports (-moz-appearance: none) {
+    .dynamic-category-btn {
+        backdrop-filter: blur(10px); /* Minska blur för Firefox */
+        -webkit-backdrop-filter: blur(10px);
     }
 }
 
