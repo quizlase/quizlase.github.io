@@ -1,0 +1,200 @@
+```csv
+Kategori,Fråga,Rätt svar,Fel svar 1,Fel svar 2,Fel svar 3
+Valutor,Vilken valuta används i Japan?,Yen,Won,Yuan,Ringgit
+Valutor,Vilket land använder Euro som valuta?,Tyskland,Storbritannien,Norge,Schweiz
+Valutor,Vilken valuta har USA?,Dollar,Peso,Pound,Euro
+Valutor,Vilket land använder Pound Sterling?,Storbritannien,Irland,Australien,Nya Zeeland
+Valutor,Vilken valuta används i Kina?,Yuan,Yen,Won,Rupiah
+Valutor,Vilket land har valutan Rupee?,Indien,Pakistan,Bangladesh,Nepal
+Valutor,Vilken valuta används i Sydkorea?,Won,Yen,Yuan,Baht
+Valutor,Vilket land använder Franc som valuta?,Schweiz,Frankrike,Belgien,Monaco
+Valutor,Vilken valuta har Kanada?,Kanadensisk dollar,Amerikansk dollar,Peso,Pound
+Valutor,Vilket land använder Peso som valuta?,Mexiko,Argentina,Chile,Colombia
+Valutor,Vilken valuta används i Australien?,Australisk dollar,Pound,Euro,Yen
+Valutor,Vilket land har valutan Krona?,Sverige,Norge,Danmark,Island
+Valutor,Vilken valuta används i Ryssland?,Rubel,Hryvnia,Lari,Manat
+Valutor,Vilket land använder Real som valuta?,Brasilien,Argentina,Peru,Venezuela
+Valutor,Vilken valuta har Turkiet?,Lira,Dinar,Dirham,Rial
+Valutor,Vilket land använder Rand som valuta?,Sydafrika,Botswana,Namibia,Zimbabwe
+Valutor,Vilken valuta används i Thailand?,Baht,Ringgit,Rupiah,Dong
+Valutor,Vilket land har valutan Shekel?,Israel,Libanon,Jordanien,Syrien
+Valutor,Vilken valuta används i Malaysia?,Ringgit,Rupiah,Baht,Singapore dollar
+Valutor,Vilket land använder Rupiah som valuta?,Indonesien,Malaysia,Filippinerna,Thailand
+Valutor,Vilken valuta har Singapore?,Singapore dollar,Ringgit,Baht,Hongkong dollar
+Valutor,Vilket land använder Dong som valuta?,Vietnam,Laos,Kambodja,Myanmar
+Valutor,Vilken valuta används i Egypten?,Egyptiskt pund,Dinar,Dirham,Rial
+Valutor,Vilket land har valutan Dinar?,Irak,Iran,Kuwait,Jordanien
+Valutor,Vilken valuta används i Marocko?,Dirham,Dinar,Rial,Pound
+Valutor,Vilket land använder Rial som valuta?,Iran,Saudiarabien,Oman,Qatar
+Valutor,Vilken valuta har Norge?,Norsk krona,Svensk krona,Euro,Dansk krona
+Valutor,Vilket land använder Krone som valuta?,Danmark,Norge,Sverige,Island
+Valutor,Vilken valuta används i Island?,Isländsk krona,Norsk krona,Euro,Dansk krona
+Valutor,Vilket land har valutan Forint?,Ungern,Polen,Tjeckien,Slovakien
+Valutor,Vilken valuta används i Polen?,Zloty,Forint,Koruna,Leu
+Valutor,Vilket land använder Koruna som valuta?,Tjeckien,Slovakien,Polen,Ungern
+Valutor,Vilken valuta har Rumänien?,Leu,Lev,Forint,Zloty
+Valutor,Vilket land använder Lev som valuta?,Bulgarien,Rumänien,Serbien,Kroatien
+Valutor,Vilken valuta används i Kroatien?,Kuna,Euro,Dinar,Lev
+Valutor,Vilket land har valutan Dinar?,Serbien,Kroatien,Montenegro,Bosnien
+Valutor,Vilken valuta används i Ukraina?,Hryvnia,Rubel,Lari,Manat
+Valutor,Vilket land använder Lari som valuta?,Georgien,Armenien,Azerbajdzjan,Ukraina
+Valutor,Vilken valuta har Armenien?,Dram,Lari,Manat,Som
+Valutor,Vilket land använder Manat som valuta?,Azerbajdzjan,Turkmenistan,Uzbekistan,Kazakstan
+Valutor,Vilken valuta används i Kazakstan?,Tenge,Som,Manat,Rubel
+Valutor,Vilket land har valutan Som?,Uzbekistan,Kirgizistan,Tadzjikistan,Turkmenistan
+Valutor,Vilken valuta används i Afghanistan?,Afghani,Rupee,Taka,Rial
+Valutor,Vilket land använder Taka som valuta?,Bangladesh,Pakistan,Indien,Nepal
+Valutor,Vilken valuta har Pakistan?,Pakistansk rupee,Indisk rupee,Taka,Afghani
+Valutor,Vilket land använder Rupee som valuta?,Nepal,Bhutan,Sri Lanka,Maldiverna
+Valutor,Vilken valuta används i Sri Lanka?,Sri Lanka rupee,Indisk rupee,Taka,Rufiyaa
+Valutor,Vilket land har valutan Rufiyaa?,Maldiverna,Sri Lanka,Mauritius,Seychellerna
+Valutor,Vilken valuta används i Myanmar?,Kyat,Baht,Rupiah,Dong
+Valutor,Vilket land använder Kip som valuta?,Laos,Vietnam,Kambodja,Myanmar
+Valutor,Vilken valuta har Kambodja?,Riel,Kip,Dong,Baht
+Valutor,Vilket land använder Peso som valuta?,Filippinerna,Malaysia,Indonesien,Thailand
+Valutor,Vilken valuta används i Brunei?,Brunei dollar,Ringgit,Singapore dollar,Baht
+Valutor,Vilket land har valutan Pataca?,Macao,Hongkong,Taiwan,Kina
+Valutor,Vilken valuta används i Hongkong?,Hongkong dollar,Kinesisk yuan,Pataca,Dollar
+Valutor,Vilket land använder Dollar som valuta?,Taiwan,Kina,Hongkong,Japan
+Valutor,Vilken valuta har Mongoliet?,Tugrik,Yuan,Rubel,Won
+Valutor,Vilket land använder Riyal som valuta?,Saudiarabien,Yemen,Oman,Qatar
+Valutor,Vilken valuta används i UAE?,Dirham,Riyal,Dinar,Rial
+Valutor,Vilket land har valutan Riyal?,Qatar,Kuwait,Bahrain,Oman
+Valutor,Vilken valuta används i Oman?,Rial,Riyal,Dirham,Dinar
+Valutor,Vilket land använder Dinar som valuta?,Kuwait,Irak,Bahrain,Jordanien
+Valutor,Vilken valuta har Bahrain?,Dinar,Riyal,Dirham,Rial
+Valutor,Vilket land använder Pound som valuta?,Jordanien,Libanon,Syrien,Egypten
+Valutor,Vilken valuta används i Libanon?,Libanesiskt pund,Jordanskt dinar,Syriskt pund,Dollar
+Valutor,Vilket land har valutan Pound?,Syrien,Libanon,Jordanien,Egypten
+Valutor,Vilken valuta används i Algeriet?,Dinar,Dirham,Rial,Pound
+Valutor,Vilket land använder Dirham som valuta?,Tunisien,Libyen,Algeriet,Marocko
+Valutor,Vilken valuta har Libyen?,Dinar,Dirham,Pound,Rial
+Valutor,Vilket land använder Nakfa som valuta?,Eritrea,Etiopien,Sudan,Djibouti
+Valutor,Vilken valuta används i Etiopien?,Birr,Nakfa,Pound,Shilling
+Valutor,Vilket land har valutan Pound?,Sudan,Egypten,Syrien,Libanon
+Valutor,Vilken valuta används i Sydsudan?,Sydsudan pund,Sudan pund,Dollar,Shilling
+Valutor,Vilket land använder Franc som valuta?,Djibouti,Somalia,Etiopien,Eritrea
+Valutor,Vilken valuta har Somalia?,Shilling,Franc,Birr,Pound
+Valutor,Vilket land använder Shilling som valuta?,Kenya,Tanzania,Uganda,Somalia
+Valutor,Vilken valuta används i Uganda?,Uganda shilling,Kenya shilling,Tanzania shilling,Franc
+Valutor,Vilket land har valutan Shilling?,Tanzania,Kenya,Uganda,Rwanda
+Valutor,Vilken valuta används i Rwanda?,Franc,Shilling,Birr,Pound
+Valutor,Vilket land använder Franc som valuta?,Burundi,Rwanda,Tanzania,Kenya
+Valutor,Vilken valuta har Demokratiska republiken Kongo?,Franc,Kwanza,Rand,Pula
+Valutor,Vilket land använder Kwanza som valuta?,Angola,Namibia,Botswana,Zambia
+Valutor,Vilken valuta används i Namibia?,Namibisk dollar,Rand,Pula,Kwacha
+Valutor,Vilket land har valutan Pula?,Botswana,Namibia,Zimbabwe,Zambia
+Valutor,Vilken valuta används i Zimbabwe?,Dollar,Rand,Pula,Kwacha
+Valutor,Vilket land använder Kwacha som valuta?,Zambia,Malawi,Zimbabwe,Mozambique
+Valutor,Vilken valuta har Malawi?,Kwacha,Metical,Rand,Shilling
+Valutor,Vilket land använder Metical som valuta?,Mozambique,Angola,Malawi,Tanzania
+Valutor,Vilken valuta används i Madagaskar?,Ariary,Franc,Rupee,Shilling
+Valutor,Vilket land har valutan Rupee?,Mauritius,Madagaskar,Seychellerna,Maldiverna
+Valutor,Vilken valuta används i Seychellerna?,Rupee,Ariary,Franc,Rand
+Valutor,Vilket land använder Franc som valuta?,Komorerna,Mauritius,Madagaskar,Seychellerna
+Valutor,Vilken valuta har Kap Verde?,Escudo,Franc,Peso,Real
+Valutor,Vilket land använder Dalasi som valuta?,Gambia,Senegal,Guinea-Bissau,Sierra Leone
+Valutor,Vilken valuta används i Senegal?,CFA-franc,Dalasi,Leone,Cedi
+Valutor,Vilket land har valutan Franc?,Guinea,Liberia,Sierra Leone,Ghana
+Valutor,Vilken valuta används i Sierra Leone?,Leone,Dalasi,Cedi,Naira
+Valutor,Vilket land använder Cedi som valuta?,Ghana,Togo,Burkina Faso,Elfenbenskusten
+Valutor,Vilken valuta har Togo?,CFA-franc,Cedi,Leone,Naira
+Valutor,Vilket land använder CFA-franc som valuta?,Burkina Faso,Ghana,Nigeria,Liberia
+Valutor,Vilken valuta används i Liberia?,Liberiansk dollar,Leone,Cedi,CFA-franc
+Valutor,Vilket land har valutan Naira?,Nigeria,Niger,Tchad,Kamerun
+Valutor,Vilken valuta används i Niger?,CFA-franc,Naira,Franc,Dinar
+Valutor,Vilket land använder CFA-franc som valuta?,Tchad,Nigeria,Sudan,Libyen
+Valutor,Vilken valuta har Kamerun?,CFA-franc,Naira,Franc,Kwanza
+Valutor,Vilket land använder CFA-franc som valuta?,Centralafrikanska republiken,Tchad,Kamerun,Gabon
+Valutor,Vilken valuta används i Gabon?,CFA-franc,Kwanza,Franc,Naira
+Valutor,Vilket land har valutan CFA-franc?,Ekvatorialguinea,Gabon,Kamerun,Angola
+Valutor,Vilken valuta används i São Tomé och Príncipe?,Dobra,Kwanza,CFA-franc,Escudo
+Valutor,Vilket land använder Peso som valuta?,Argentina,Chile,Uruguay,Paraguay
+Valutor,Vilken valuta har Chile?,Peso,Real,Sol,Boliviano
+Valutor,Vilket land använder Sol som valuta?,Peru,Ecuador,Colombia,Bolivia
+Valutor,Vilken valuta används i Ecuador?,Dollar,Sol,Peso,Sucre
+Valutor,Vilket land har valutan Peso?,Colombia,Venezuela,Ecuador,Peru
+Valutor,Vilken valuta används i Venezuela?,Bolívar,Peso,Real,Sol
+Valutor,Vilket land använder Bolívar som valuta?,Venezuela,Colombia,Guyana,Brasilien
+Valutor,Vilken valuta har Guyana?,Guyana dollar,Bolívar,Real,Peso
+Valutor,Vilket land använder Dollar som valuta?,Suriname,Guyana,Brasilien,Venezuela
+Valutor,Vilken valuta används i Brasilien?,Real,Peso,Bolívar,Sol
+Valutor,Vilket land har valutan Guaraní?,Paraguay,Uruguay,Argentina,Bolivia
+Valutor,Vilken valuta används i Uruguay?,Peso,Guaraní,Real,Sol
+Valutor,Vilket land använder Peso som valuta?,Argentina,Chile,Peru,Brasilien
+Valutor,Vilken valuta har Bolivia?,Boliviano,Sol,Peso,Real
+Valutor,Vilket land använder Dollar som valuta?,Belize,Guatemala,Honduras,Costa Rica
+Valutor,Vilken valuta används i Guatemala?,Quetzal,Dollar,Peso,Córdoba
+Valutor,Vilket land har valutan Lempira?,Honduras,Nicaragua,El Salvador,Guatemala
+Valutor,Vilken valuta används i El Salvador?,Dollar,Peso,Colón,Lempira
+Valutor,Vilket land använder Colón som valuta?,Costa Rica,Nicaragua,Panama,Honduras
+Valutor,Vilken valuta har Nicaragua?,Córdoba,Colón,Peso,Dollar
+Valutor,Vilket land använder Balboa som valuta?,Panama,Costa Rica,Colombia,Ecuador
+Valutor,Vilken valuta används i Kuba?,Peso,Dollar,Euro,Bolívar
+Valutor,Vilket land har valutan Dollar?,Jamaica,Bahamas,Barbados,Trinidad och Tobago
+Valutor,Vilken valuta används i Haiti?,Gourde,Peso,Dollar,Franc
+Valutor,Vilket land använder Peso som valuta?,Dominikanska republiken,Haiti,Jamaica,Kuba
+Valutor,Vilken valuta har Puerto Rico?,Dollar,Peso,Euro,Franc
+Valutor,Vilket land använder Dollar som valuta?,Bahamas,Jamaica,Barbados,Trinidad
+Valutor,Vilken valuta används i Barbados?,Barbados dollar,Dollar,Peso,Pound
+Valutor,Vilket land har valutan Dollar?,Trinidad och Tobago,Barbados,Jamaica,Guyana
+Valutor,Vilken valuta används i Kanada?,Kanadensisk dollar,Amerikansk dollar,Pound,Euro
+Valutor,Vilket land använder Krone som valuta?,Färöarna,Island,Danmark,Norge
+Valutor,Vilken valuta har Grönland?,Dansk krone,Kanadensisk dollar,Euro,Krona
+Valutor,Vilket land använder Pound som valuta?,Falklandsöarna,Argentina,Chile,Uruguay
+Valutor,Vilken valuta används i Französka Guyana?,Euro,Franc,Real,Dollar
+Valutor,Vilket land har valutan Guilder?,Nederländska Antillerna,Aruba,Suriname,Guyana
+Valutor,Vilken valuta används i Aruba?,Florin,Guilder,Dollar,Euro
+Valutor,Vilket land använder Euro som valuta?,Frankrike,Storbritannien,Norge,Schweiz
+Valutor,Vilken valuta har Belgien?,Euro,Franc,Pound,Krona
+Valutor,Vilket land använder Euro som valuta?,Nederländerna,Storbritannien,Norge,Danmark
+Valutor,Vilken valuta används i Luxemburg?,Euro,Franc,Guilder,Mark
+Valutor,Vilket land har valutan Euro?,Österrike,Schweiz,Storbritannien,Norge
+Valutor,Vilken valuta används i Italien?,Euro,Lira,Franc,Mark
+Valutor,Vilket land använder Euro som valuta?,Spanien,Portugal,Storbritannien,Norge
+Valutor,Vilken valuta har Portugal?,Euro,Escudo,Peseta,Real
+Valutor,Vilket land använder Euro som valuta?,Andorra,Monaco,San Marino,Vatikanen
+Valutor,Vilken valuta används i Monaco?,Euro,Franc,Lira,Peseta
+Valutor,Vilket land har valutan Euro?,San Marino,Italien,Schweiz,Storbritannien
+Valutor,Vilken valuta används i Vatikanen?,Euro,Lira,Franc,Scudo
+Valutor,Vilket land använder Euro som valuta?,Malta,Storbritannien,Norge,Schweiz
+Valutor,Vilken valuta har Cypern?,Euro,Pound,Lira,Drakma
+Valutor,Vilket land använder Euro som valuta?,Grekland,Bulgarien,Rumänien,Turkiet
+Valutor,Vilken valuta används i Albanien?,Lek,Euro,Dinar,Lev
+Valutor,Vilket land har valutan Euro?,Montenegro,Serbien,Bosnien,Kroatien
+Valutor,Vilken valuta används i Nordmakedonien?,Denar,Euro,Dinar,Lev
+Valutor,Vilket land använder Marka som valuta?,Bosnien och Hercegovina,Serbien,Montenegro,Kroatien
+Valutor,Vilken valuta har Moldavien?,Leu,Hryvnia,Rubel,Lari
+Valutor,Vilket land använder Rubel som valuta?,Vitryssland,Ukraina,Polen,Litauen
+Valutor,Vilken valuta används i Litauen?,Euro,Litas,Rubel,Krona
+Valutor,Vilket land har valutan Euro?,Lettland,Litauen,Estland,Polen
+Valutor,Vilken valuta används i Estland?,Euro,Kroon,Rubel,Mark
+Valutor,Vilket land använder Euro som valuta?,Finland,Norge,Sverige,Danmark
+Valutor,Vilken valuta har Åland?,Euro,Markka,Krona,Krone
+Valutor,Vilket land använder Krona som valuta?,Sverige,Norge,Danmark,Finland
+Valutor,Vilken valuta används i Norge?,Norsk krona,Svensk krona,Dansk krone,Euro
+Valutor,Vilket land har valutan Krone?,Danmark,Sverige,Norge,Island
+Valutor,Vilken valuta används i Island?,Isländsk krona,Norsk krona,Dansk krone,Euro
+Valutor,Vilket land använder Pound som valuta?,Storbritannien,Irland,Norge,Sverige
+Valutor,Vilken valuta har Irland?,Euro,Pound,Punt,Mark
+Valutor,Vilket land använder Pound som valuta?,Isle of Man,Irland,Skottland,Wales
+Valutor,Vilken valuta används i Jersey?,Pound,Euro,Franc,Dollar
+Valutor,Vilket land har valutan Pound?,Guernsey,Jersey,Isle of Man,Gibraltar
+Valutor,Vilken valuta används i Gibraltar?,Pound,Euro,Peseta,Dollar
+Valutor,Vilket land använder Franc som valuta?,Schweiz,Frankrike,Tyskland,Österrike
+Valutor,Vilken valuta har Liechtenstein?,Schweizisk franc,Euro,Mark,Gulden
+Valutor,Vilket land använder Rubel som valuta?,Ryssland,Ukraina,Vitryssland,Moldavien
+Valutor,Vilken valuta används i Australien?,Australisk dollar,Pound,Euro,Yen
+Valutor,Vilket land har valutan Dollar?,Nya Zeeland,Australien,Fiji,Papua Nya Guinea
+Valutor,Vilken valuta används i Papua Nya Guinea?,Kina,Dollar,Rupiah,Vatu
+Valutor,Vilket land använder Vatu som valuta?,Vanuatu,Fiji,Tonga,Samoa
+Valutor,Vilken valuta har Fiji?,Fiji dollar,Australisk dollar,Vatu,Tala
+Valutor,Vilket land använder Tala som valuta?,Samoa,Tonga,Fiji,Vanuatu
+Valutor,Vilken valuta används i Tonga?,Pa'anga,Tala,Dollar,Vatu
+Valutor,Vilket land har valutan Dollar?,Kiribati,Marshall öarna,Mikronesien,Palau
+Valutor,Vilken valuta används i Nauru?,Australisk dollar,Dollar,Vatu,Kina
+Valutor,Vilket land använder Kina som valuta?,Papua Nya Guinea,Salomon öarna,Vanuatu,Fiji
+Valutor,Vilken valuta har Tuvalu?,Australisk dollar,Tuvalusk dollar,Vatu,Tala
+Valutor,Vilket land använder Franc som valuta?,Nya Kaledonien,Franska Polynesien,Wallis och Futuna,Vanuatu
+Valutor,Vilken valuta används i Franska Polynesien?,CFP-franc,Euro,Franc,Dollar
+Valutor,Vilket land har valutan CFP-franc?,Wallis och Futuna,Nya Kaledonien,Franska Polynesien,Vanuatu

@@ -7,13 +7,13 @@ cocktails,Vilken cocktail innehåller bourbon söt vermouth och Angostura bitter
 cocktails,Vad är huvudingrediensen i en Bloody Mary,Vodka,Gin,Tekila,Rum
 cocktails,Vilken cocktail har ingredienserna rom kokosnötkräm och ananasjuice,Pina Colada,Daiquiri,Mai Tai,Cuba Libre
 cocktails,Vad heter drinken som är en blandning av whisky söt vermouth och Campari,Negroni,Manhattan,Old Fashioned,Boulevardier
-cocktails,Vad är skillnaden mellan en Daiquiri och en Margarita,Daiquiri innehåller rom Margarita tequila,Daiquiri har lime Margarita har socker
+cocktails,Vad är skillnaden mellan en Daiquiri och en Margarita,Daiquiri innehåller rom Margarita tequila,Daiquiri har lime Margarita har socker,,
 cocktails,Vilken drink består av gin Campari och söt vermouth,Negroni,Mojito,Martini,Sidecar
 cocktails,Vilket årtionde blev drinken Old Fashioned populär,1800-talet,1900-talet,2000-talet,1700-talet
 cocktails,Vad heter drinken som blandar gin citronjuice sockerlag och sodavatten,Tom Collins,Gin Fizz,Mojito,Clover Club
 cocktails,Vilket franskt destilleri är känt för att producera Cointreau i drinkar,Rémy Martin,Hennessy,Bacardi,Cointreau
 cocktails,Vad är huvudingrediensen i drinken Moscow Mule,Vodka,Gin,Tekila,Rum
-cocktails,Vad är viktigt att använda i drinken Espresso Martini,Vodka kall espresso kaffelikör,Gin och tonic tequila limejuice,Vodka citronjuice sockerlag
+cocktails,Vad är viktigt att använda i drinken Espresso Martini,Vodka kall espresso kaffelikör,Gin och tonic tequila limejuice,Vodka citronjuice sockerlag,
 cocktails,Vad kallas drinken med tequila lime och saltkant på glaset,Margarita,Mojito,Caipirinha,Paloma
 cocktails,Vilket bär är huvudingrediensen i drinken Cosmopolitan,Tranbärsjuice,Blåbärsjuice,Körsbärsjuice,Limesaft
 cocktails,Vad heter drinken med bourbon socker Apelsinzest och bitters,Old Fashioned,Manhattan,Sazerac,Whiskey Sour
@@ -63,7 +63,7 @@ cocktails,Vad kallas destillationsapparaten som används för många spritdrycke
 cocktails,Vilken sprit användes i drinken Mojito,Rum,Vodka,Gin,Tequila
 cocktails,Vilken dryck är gjord av jäst äppelcider,Cider,Brandy,Whiskey,Rum
 cocktails,Vad heter den traditionella spriten från Tyskland,Pflaume,Akvavit,Jägermeister,Schwarzwald
-cocktails,Vad heter den ursprungliga spritdrycken som ledde till Gin,i Nederländerna,Genever,Vodka,Rum,Akvavit
+cocktails,Vad heter den ursprungliga spritdrycken som ledde till Gin,i Nederländerna,Genever,Vodka,Rum
 cocktails,Vem skapade drinken Cosmopolitan enligt vanlig legend,Waldorf Hotel Bartender,Walter White,Marie Brizard,Tom Collins
 cocktails,Vad kallas processen där sprit späds ut med vatten efter destillering,Dilution,Blending,Tinning,Mixing
 cocktails,Vilken sprit är traditionell bas i drinken Old Fashioned,Whiskey,Gin,Vodka,Rum
@@ -166,7 +166,7 @@ cocktails,Drink med mörk rom grenadin apelsin och limejuice kallas Zombie,Zombi
 cocktails,Drink med kaffe vodka och irländsk grädde kallas White Russian,White Russian,Black Russian,Espresso Martini,Mudslide
 cocktails,Vilket år infördes gårdsförsäljning av alkohol i Sverige?,2025,2024,2023,2026
 cocktails,Vad kallas det system som ger Systembolaget ensamrätt på alkoholförsäljning i Sverige?,Monopol,Kartell,Oligopol,Licenssystem
-cocktails,Vilken är den maxmängd sprit en konsument får köpa vid ett tillfälle vid gårdsförsäljning?,0,7 liter,1 liter,0,5 liter,2 liter
+cocktails,Vilken är den maxmängd sprit en konsument får köpa vid ett tillfälle vid gårdsförsäljning?,0,7 liter,1 liter,0
 cocktails,Vilken svensk myndighet ansvarar för tillsyn av alkoholförsäljning?,Folkhälsomyndigheten,Skatteverket,Polisen,Migrationsverket
 cocktails,Vad innebär gårdsförsäljning av alkohol i Sverige?,Småskaliga tillverkare får sälja alkohol direkt på plats,Alla får sälja alkohol i små mängder,Endast Systembolaget får sälja alkohol,Inga privata försäljare är tillåtna
 cocktails,Vilka typer av alkohol får säljas via gårdsförsäljning i Sverige?,Sprit vin och starköl,Vodka och whiskey bara,Vin och öl bara,Sprit och cider bara
@@ -176,7 +176,7 @@ cocktails,Vad är det svenska ordet för ”alcohol tax”?,Alkoholskatt,Rökska
 cocktails,Vilket år röstade Sveriges riksdag ja till att införa gårdsförsäljning av alkohol?,2025,2024,2023,2026
 cocktails,Vad är syftet med att Systembolaget inte får drivas vinstdrivande i Sverige?,Skydda folkhälsan,Maximera intäkter,Öka försäljningen,Stöd till privata handlare
 cocktails,Vilken dryckesgrupp omfattar gårdsförsäljning enligt svensk lag?,Egenproducerade alkoholhaltiga drycker,Alla typer av alkohol,Importerat vin och sprit,Bara starköl
-cocktails,Vad är den maximala volymen vin som en konsument får köpa vid ett tillfälle vid gårdsförsäljning?,3 liter,5 liter,1 liter,0,5 liter
+cocktails,Vad är den maximala volymen vin som en konsument får köpa vid ett tillfälle vid gårdsförsäljning?,3 liter,5 liter,1 liter,0
 cocktails,Vart ansöker tillverkare om tillstånd för gårdsförsäljning av alkohol i Sverige?,Kommunen,Statliga Bolaget,Polisen,Landstinget
 cocktails,Vilken myndighet beslutar om skattepåslag på alkohol i Sverige?,Skatteverket,Folkhälsomyndigheten,Finansinspektionen,Migrationsverket
 cocktails,Vad menas med ”änglarnas andel” inom sprittillverkning?,Den mängd sprit som avdunstar under lagring,Tillsatt socker i sprit,Produktionsspill,Oavsiktlig alkoholhaltighet

@@ -78,9 +78,9 @@ mat,Vad är matcha?,Grönt te-pulver,En sorts böna,Ett japanskt bröd,En krydda
 mat,När började McDonald's i Sverige?,1973,1965,1980,1971
 mat,Vad betyder tapas på spanska?,Smålock,Snacks,Bubblor,Glas
 mat,Vad är skillnaden på cheddar och grevé?,Ursprungsland,Salt,Mjölksort,Färg
-mat,Vad är gravlax?,Kryddad lax med dill,salt och socker,Friterad lax,Kokt lax,Rå lax med citron
+mat,Vad är gravlax?,Kryddad lax med dill,salt och socker,Friterad lax,Kokt lax
 mat,Vad heter grekisk getost?,Feta,Halloumi,Kefalotyri,Manouri
-mat,Hur många rätter ingår i en traditionell fransk "haute cuisine" meny?,5–7,3,10,12
+mat,"Hur många rätter ingår i en traditionell fransk ""haute cuisine"" meny?",5–7,3,10,12
 mat,Vilket land är ursprungsland för tacos?,Mexico,Spanien,USA,Peru
 mat,Vad är skillnaden på smördeg och filodeg?,Smördeg har smör i lagren,Ingen,Filodeg är sötare,Smördeg är tunnare
 mat,Vad är pho?,Vietnamesisk nudelsoppa,Koreansk risgryta,Thailändsk curry,Indisk kyckling
@@ -114,7 +114,7 @@ mat,Vem var den förste svenske kocken med tre Michelin-stjärnor?,Björn Frantz
 mat,Vad är aioli?,Vitlökssås,Tomatsås,Ölsås,Gryta
 mat,Vad är ras el hanout?,Marockansk kryddblandning,Persisk sås,Italiensk soppa,Spansk dryck
 mat,Vad heter Koreas nationalrätt?,Kimchi,Bibimbap,Noodle soup,Teriyaki
-mat,Vad är skillnaden mellan sushi och sashimi?,Sushi har ris,sashimi är bara fisk,Ingen,Sashimi har ris,Sushi är bara fisk
+mat,Vad är skillnaden mellan sushi och sashimi?,Sushi har ris,sashimi är bara fisk,Ingen,Sashimi har ris
 mat,Vem anses ha uppfunnit pommes frites?,Belgien,Frankrike,USA,Nederländerna
 mat,Vad är skillnaden mellan cider och äpplevin?,Cider är jäst cideräppelmust,Äpplevin är blandnytt,Ingen,Färg
 mat,Vad betyder ordet ”umami”?,Den femte grundsmaken,Söt-Sur-Efter,Smörig smak,Mat från Japan
@@ -160,11 +160,11 @@ mat,Vad serveras traditionellt till gås vid Mårtensafton?,Svartsoppa & äppelk
 mat,Vad är en långkål?,Grönkålsrätt från Halland,Mjuk ost,Julkorv från Värmland,Paj från Gotland
 mat,Vilken rätt är Gotlands nationalrätt gjord på saffran?,Saffranspannkaka,Gulfisk,Julgröt,Kålsoppa
 mat,Hur många kända snapsvisor sägs finnas i Sverige?,Över 12 000,500,2000,7000
-mat,Vad innehåller en klassisk kroppkaka från Öland?,Potatis,fläsk,lök,Lingon,fläsk,äpplen,Potatis,fläsk,rosmarin,Potatis,köttfärs,lök
+mat,Vad innehåller en klassisk kroppkaka från Öland?,Potatis,fläsk,lök,Lingon
 mat,Vad är klappgröt?,Vispad bärgröt,Friterad bulle,Mjölkgröt,Gräddgröt
-mat,Vad serveras traditionellt till surströmming?,Tunnbröd,mandelpotatis,lök,Blodpudding,Rotmos,Köttbullar
+mat,Vad serveras traditionellt till surströmming?,Tunnbröd,mandelpotatis,lök,Blodpudding
 mat,Vad är en kams?,En pitepalt-liknande norrländsk rätt,En kaffedryck,En ostkaka,En kålpaj
-mat,Vad är skillnaden mellan svensk ostkaka och italiensk cheesecake?,Ostkaka görs på mjölk,ostlöpe,sötmandel,Cheesecake på färskost,bär,Ingen skillnad,Ostkaka är saltare
+mat,Vad är skillnaden mellan svensk ostkaka och italiensk cheesecake?,Ostkaka görs på mjölk,ostlöpe,sötmandel,Cheesecake på färskost
 mat,Vad är kroppkaka skillnad från palt?,Kroppkaka görs av rå OCH kokt potatis - palt av rå potatis,Kroppkaka alltid på rå potatis,Ingen skillnad,Palt alltid med lingon
 mat,Vilken dryck introducerades i Sverige 1910 som alkoholfritt öl-alternativ?,Julmust,Sockerdricka,Fruktsoda,Mineralvatten
 mat,Vad är isterband för typ av korv?,Syrad grovkorv,Finmalen korv,Falukorv,Prinskorv
@@ -174,13 +174,13 @@ mat,Vad är skillnaden på nävgröt och annan gröt?,Äts med handen och görs 
 mat,Vem skapade operatårtan första gången?,Konditoriet Cattelin,Oscar II själv,Prinsessan Christina,Operakällaren
 mat,Vad är kroppkaka från Småland kryddad med?,Allspice (kryddpeppar),Ingefära,Timjan,Dill
 mat,Vem populariserade plankstek i Sverige?,Restaurang Cecil i Stockholm,Leif Mannerström,Tore Wretman,Marcus Samuelsson
-mat,Vad innehåller en klassisk Gubbröra?,Anchovis,ägghack,lök,gräddfil,Ägg & bacon,Gravad lax,Ärtor & majonnäs,Räkor & selleri
+mat,Vad innehåller en klassisk Gubbröra?,Anchovis,ägghack,lök,gräddfil
 mat,Vad kallades den traditionella svenska husmansrätten på ärter och torkat kött som lagades till sjöss?,Lapskojs,Pytt i panna,Kalops,Sjömansbiff
-mat,Vad är en ”kolbulle” gjord på?,Mjöl,vatten,fläsk,grädde,Potatis,Ärtor,Kål,Lamm
+mat,Vad är en ”kolbulle” gjord på?,Mjöl,vatten,fläsk,grädde
 mat,Vilken svensk landskapsspecialitet är ”äkta småländskt isterband”?,Syrad korv,Sötad blodpudding,Stekt ål,Halstrad sill
 mat,Vad är skillnaden mellan gotländsk saffranspannkaka och vanlig risgrynspudding?,Den innehåller saffran och sylt,Den är salt,Den är utan grädde,Den görs på mannagryn
 mat,Vilken svensk festival kallas ibland för ”sillens helg”?,Midsommar,Valborg,Mårtens afton,Jul
-mat,Vad är "lungmos"?,En potatisrätt från Skåne,En blodrätt,En dessert,En variant av fläskpannkaka
+mat,"Vad är ""lungmos""?",En potatisrätt från Skåne,En blodrätt,En dessert,En variant av fläskpannkaka
 mat,Vilken dryck är en traditionell del av kräftskivan?,Snaps,Portvin,Madeira,Vin chaud
 mat,Vem publicerade kokboken ”Hagdahls Kokkonst” på 1870-talet?,Charles Emil Hagdahl,Tore Wretman,Cajsa Warg,Olle Ternström
 mat,Vad är skillnaden mellan paltbröd och vanligt rågbröd?,Paltbröd innehåller blod,Paltbröd är alltid ljust,Skillnad i form,Ingen skillnad alls
@@ -192,7 +192,7 @@ mat,Vad var ”spickefisk” i äldre svensk mattradition?,Saltad lufttorkad fis
 mat,I vilken landsända är ”ål i gelé” en klassisk rätt?,Skåne,Norrbotten,Dalarna,Gotland
 mat,Vad är skillnaden på pölsa och palt?,Pölsa är en korngryn- och inälvsgryta,Palt är potatisbaserad,De är samma rätt,Pölsa är från Skåne
 mat,Vem skrev kokboken ”Hjelpreda i hushållningen för unga fruentimber” 1755?,Cajsa Warg,Charles Hagdahl,Anna Maria Rückersköld,Helena Nyblom
-mat,Vad är en ”Sillmacka” i Bohuslän?,Macka med sill,ägg och lök,En macka med ål,En macka med gravad lax,En macka med rökt makrill
+mat,Vad är en ”Sillmacka” i Bohuslän?,Macka med sill,ägg och lök,En macka med ål,En macka med gravad lax
 mat,Vad kallades den söta öltyp som var populär i bondesamhället?,Svagdricka,Starkdricka,Lager,Punsch
 mat,Vad innebär ”långa fredagen” i äldre svensk matkultur?,Fastemåltider med fiskrätter,En extra lång julmåltid,En höstmiddag,En sillrätt
 mat,Vad heter den dryck som är central i en berömd amerikansk scen med ”five dollar”?,Milkshake,Cocktail,Vodka,Limonad
@@ -251,7 +251,7 @@ mat,Vad är en traditionell fransk ost gjord på fårmjölk?,Roquefort,Brie,Came
 mat,Vad heter den turkiska yoghurtbaserade soppan?,Yayla çorbası,İşkembe,Mercimek,Ayran
 mat,Vem är internationellt känd som ”kocken med det vita förklädet”?,Tore Wretman,Jamie Oliver,Ferran Adrià,Gordon Ramsay
 mat,Vad är en traditionell grönsak i svensk surströmmingsmåltid?,Potatis,Lök,Gurka,Kål
-mat,Vad heter den thailändska salladen som är både kryddig, söt och syrlig?,Som tam,Papaya salad,Larb,Tam som
+mat,Vad heter den thailändska salladen som är både kryddig, söt och syrlig?,Som tam,Papaya salad,Larb
 mat,I vilket land uppfanns gyros?,Grekland,Turkiet,Italien,Spanien
 mat,Vilket krydda kommer från bark av ett träd och smakar sött?,Kanel,Kardemumma,Ingefära,Muskotnöt
 mat,Vad heter den franska råfiskrätten som serveras i tunna skivor?,Carpaccio,Tartare,Gravlax,Sashimi
