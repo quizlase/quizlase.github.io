@@ -1239,7 +1239,7 @@ geografi,Vilken valuta används i Tjeckien?,Tjeckiska kronan,Euro,Zloty,Forint
 geografi,Vad kallas den naturliga broformation i Utah?,Delicate Arch,Rainbow Bridge,Natural Bridges,Arches Bridge
 geografi,Vilket land har världens längsta kustlinje?,Kanada,Ryssland,Norge,Chile
 geografi,Vad heter Japans högsta berg utöver Mount Fuji?,Mount Kita,Mount Hotaka,Mount Yari,Mount Shirane
-geografi,Vilken stad kallas "Rosernas stad"?,Portland,Pasadena,Phoenix,Pittsburgh
+geografi,Vilken stad kallas Rosernas stad?,Portland,Pasadena,Phoenix,Pittsburgh
 geografi,Hur många öar består Filippinerna av?,7 641,6 500,8 200,5 800
 geografi,Vad kallas den smältande permafrosten i Sibirien?,Talik,Tundra,Taiga,Thermokarst
 geografi,Vilken valuta används i Ungern?,Forint,Leu,Kuna,Zloty
@@ -1476,7 +1476,6 @@ geografi,Vilket transportmedel har störst komfort för långa resor?,Första kl
 geografi,Vad kallas den traditionella franska konsten att njuta av måltider?,Savoir vivre,Art de vivre,Culinary culture,French dining
 geografi,Vilken månad har lägst flygpriser till Europa?,Februari,November,Januari,Mars
 geografi,Vad kallas resor som fokuserar på personliga utmaningar?,Challenge tourism,Adventure quests,Personal trials,Goal journeys
-Kategori,Fråga,Rätt svar,Fel svar 1,Fel svar 2,Fel svar 3
 geografi,Vilka färger har Italiens flagga?,Grön-vit-röd,Blå-vit-röd,Gul-blå-röd,Grön-vit-blå
 geografi,Vilka färger har Tysklands flagga?,Svart-röd-gul,Svart-vit-röd,Blå-vit-röd,Röd-vit-blå
 geografi,Vilka färger har Frankrikes flagga?,Blå-vit-röd,Röd-vit-blå,Grön-vit-röd,Svart-röd-gul
@@ -1610,3 +1609,226 @@ geografi,Vilken religion har flest anhängare i Nepal?,Hinduism,Buddhism,Islam,K
 geografi,Vilken religion har flest anhängare i Sri Lanka?,Buddhism,Hinduism,Islam,Kristendom
 geografi,Vilken religion har flest anhängare i Bangladesh?,Islam,Hinduism,Buddhism,Kristendom
 geografi,Vilken religion har flest anhängare i Tibet?,Buddhism,Hinduism,Islam,Kristendom
+geografi,Vilken riktning flyter Nilen?,Norrut,Söderut,Österut,Västerut
+geografi,Vilken riktning flyter Amazon?,Österut,Västerut,Norrut,Söderut
+geografi,Vilken riktning flyter Mississippi?,Söderut,Norrut,Österut,Västerut
+geografi,Vilken riktning flyter Rhen?,Norrut,Söderut,Österut,Västerut
+geografi,Vilken riktning flyter Donau?,Österut,Västerut,Norrut,Söderut
+geografi,Vilken riktning flyter Yangtze?,Österut,Västerut,Norrut,Söderut
+geografi,Vilken riktning flyter Ganges?,Österut,Västerut,Norrut,Söderut
+geografi,Vilken riktning flyter Volga?,Söderut,Norrut,Österut,Västerut
+geografi,Vilken riktning flyter Colorado River?,Västerut,Österut,Norrut,Söderut
+geografi,Vilken riktning flyter Rio Grande?,Söderut,Norrut,Österut,Västerut
+geografi,Vilken kontinent ligger längst västerut?,Nordamerika,Sydamerika,Europa,Afrika
+geografi,Vilken kontinent korsar båda tropikerna?,Afrika,Asien,Australien,Europa
+geografi,Vilken kontinent ligger helt på södra halvklotet?,Australien,Afrika,Asien,Nordamerika
+geografi,Vilken kontinent ligger mest på norra halvklotet?,Asien,Afrika,Sydamerika,Australien
+geografi,Vilken kontinent sträcker sig längst från öst till väst?,Asien,Afrika,Nordamerika,Europa
+geografi,Vilket land har längst kustlinje totalt?,Norge,Kanada,Indonesien,Ryssland
+geografi,Vilket land har kortast kustlinje av kustländer?,Monaco,Vatikanstaten,San Marino,Liechtenstein
+geografi,Vilket land har kust mot Atlanten och Stilla havet?,USA,Mexiko,Kanada,Chile
+geografi,Vilket land har kust mot tre oceaner?,Kanada,Ryssland,USA,Australien
+geografi,Vilket land omges helt av vatten?,Island,Storbritannien,Irland,Japan
+geografi,Vilket land delar ö med annat land?,Haiti,Kuba,Jamaica,Island
+geografi,Vilket land består av flest öar?,Finland,Norge,Sverige,Japan
+geografi,Vilket land har öar i flera oceaner?,Frankrike,Storbritannien,Spanien,Portugal
+geografi,Vilken bergskedja är längst?,Anderna,Himalaya,Rocky Mountains,Alperna
+geografi,Vilken bergskedja är högst?,Himalaya,Anderna,Rocky Mountains,Alperna
+geografi,Vilken bergskedja ligger i Europa?,Alperna,Himalaya,Anderna,Rocky Mountains
+geografi,Vilken bergskedja ligger i Sydamerika?,Anderna,Rocky Mountains,Himalaya,Alperna
+geografi,Vilken bergskedja ligger i Asien?,Himalaya,Alperna,Anderna,Rocky Mountains
+geografi,Vilken bergskedja ligger i Nordamerika?,Rocky Mountains,Anderna,Himalaya,Alperna
+geografi,Vilken bergskedja skiljer Europa från Asien?,Uralbergen,Alperna,Kaukasus,Karpaterna
+geografi,Vilken bergskedja ligger mellan Frankrike och Spanien?,Pyrenéerna,Alperna,Apenninerna,Karpaterna
+geografi,Vilken bergskedja går genom Italien?,Apenninerna,Alperna,Pyrenéerna,Karpaterna
+geografi,Vilken bergskedja ligger i Rumänien?,Karpaterna,Alperna,Balkanbergen,Uralbergen
+geografi,Vilket hav ligger mellan Europa och Afrika?,Medelhavet,Svarta havet,Nordsjön,Östersjön
+geografi,Vilket hav ligger mellan Europa och Asien?,Svarta havet,Medelhavet,Kaspiska havet,Östersjön
+geografi,Vilket hav ligger norr om Tyskland?,Nordsjön,Östersjön,Medelhavet,Svarta havet
+geografi,Vilket hav ligger öster om Sverige?,Östersjön,Nordsjön,Norska havet,Barents hav
+geografi,Vilket hav ligger söder om Turkiet?,Medelhavet,Svarta havet,Aegeiska havet,Adriatiska havet
+geografi,Vilket hav ligger väster om Italien?,Tyrrhenska havet,Adriatiska havet,Joniska havet,Medelhavet
+geografi,Vilket hav ligger öster om Italien?,Adriatiska havet,Tyrrhenska havet,Joniska havet,Medelhavet
+geografi,Vilket hav ligger söder om Grekland?,Medelhavet,Aegeiska havet,Joniska havet,Svarta havet
+geografi,Vilket hav ligger mellan Grekland och Turkiet?,Aegeiska havet,Medelhavet,Svarta havet,Joniska havet
+geografi,Vilket hav är saltast?,Döda havet,Medelhavet,Röda havet,Svarta havet
+geografi,Vilken sjö ligger högst över havet?,Titicacasjön,Victoriasöjn,Bajkalsjön,Kaspiska havet
+geografi,Vilken sjö är djupast?,Bajkalsjön,Titicacasjön,Victoriasjon,Tanganjikasjön
+geografi,Vilken sjö är störst till ytan?,Kaspiska havet,Victoriasjon,Bajkalsjön,Titicacasjön
+geografi,Vilken sjö ligger i Afrika?,Victoriasjon,Bajkalsjön,Titicacasjön,Kaspiska havet
+geografi,Vilken sjö ligger i Ryssland?,Bajkalsjön,Victoriasjon,Titicacasjön,Superior
+geografi,Vilken sjö ligger mellan Peru och Bolivia?,Titicacasjön,Victoriasjon,Bajkalsjön,Kaspiska havet
+geografi,Vilken sjö ligger i Nordamerika?,Lake Superior,Bajkalsjön,Victoriasjon,Titicacasjön
+geografi,Vilken sjö innehåller mest sötvatten?,Bajkalsjön,Kaspiska havet,Victoriasjon,Superior
+geografi,Vilken sjö har flest länder runt sig?,Victoriasjon,Bajkalsjön,Kaspiska havet,Titicacasjön
+geografi,Vilken vattenfall är högst?,Angel Falls,Niagara,Victoria Falls,Iguazu
+geografi,Vilken vattenfall är bredast?,Victoria Falls,Niagara,Angel Falls,Iguazu
+geografi,Vilken vattenfall ligger i Venezuela?,Angel Falls,Victoria Falls,Niagara,Iguazu
+geografi,Vilken vattenfall ligger mellan USA och Kanada?,Niagara,Angel Falls,Victoria Falls,Iguazu
+geografi,Vilken vattenfall ligger i Afrika?,Victoria Falls,Angel Falls,Niagara,Iguazu
+geografi,Vilken vattenfall ligger i Sydamerika utom Angel Falls?,Iguazu,Victoria Falls,Niagara,Yellowstone
+geografi,Vilken vattenfall ligger på Zambezi-floden?,Victoria Falls,Angel Falls,Niagara,Iguazu
+geografi,Vilken vattenfall har störst vattenvolym?,Niagara,Angel Falls,Victoria Falls,Iguazu
+geografi,Vilken vattenfall syns från rymden?,Victoria Falls,Angel Falls,Niagara,Iguazu
+geografi,Vilken vattenfall omges av regnskog?,Angel Falls,Victoria Falls,Niagara,Yellowstone
+geografi,Vilken vulkan är aktivast?,Kilauea,Etna,Vesuvius,Fuji
+geografi,Vilken vulkan förstörde Pompeii?,Vesuvius,Etna,Stromboli,Kilauea
+geografi,Vilken vulkan ligger i Japan?,Fuji,Kilauea,Etna,Vesuvius
+geografi,Vilken vulkan ligger på Hawaii?,Kilauea,Fuji,Etna,Vesuvius
+geografi,Vilken vulkan ligger i Italien utom Vesuvius?,Etna,Kilauea,Fuji,Krakatoa
+geografi,Vilken vulkan ligger i Indonesien?,Krakatoa,Kilauea,Fuji,Vesuvius
+geografi,Hur många gånger större är Ryssland än Sverige?,38 gånger,20 gånger,50 gånger,15 gånger
+geografi,Hur många gånger större är Kanada än Norge?,25 gånger,15 gånger,35 gånger,10 gånger
+geografi,Hur många gånger större är USA än Frankrike?,18 gånger,10 gånger,25 gånger,8 gånger
+geografi,Hur många gånger större är Brasilien än Tyskland?,24 gånger,15 gånger,30 gånger,12 gånger
+geografi,Hur många gånger större är Australien än Storbritannien?,32 gånger,20 gånger,40 gånger,15 gånger
+geografi,Hur många gånger större är Indien än Japan?,9 gånger,5 gånger,15 gånger,3 gånger
+geografi,Hur många gånger större är Kina än Italien?,32 gånger,20 gånger,45 gånger,15 gånger
+geografi,Hur många gånger större är Argentina än Spanien?,5 gånger,3 gånger,8 gånger,2 gånger
+geografi,Hur många gånger större är Mexiko än Grekland?,15 gånger,8 gånger,20 gånger,5 gånger
+geografi,Hur många gånger större är Iran än Polen?,5 gånger,3 gånger,8 gånger,2 gånger
+geografi,Vilken riktning måste man resa från Europa för att komma till Australien?,Sydost,Nordost,Sydväst,Nordväst
+geografi,Vilken riktning måste man resa från USA för att komma till Japan?,Väst,Öst,Nord,Syd
+geografi,Vilken riktning måste man resa från Sverige för att komma till Island?,Väst,Öst,Nord,Syd
+geografi,Vilken riktning måste man resa från Brasilien för att komma till Afrika?,Öst,Väst,Nord,Syd
+geografi,Vilken riktning måste man resa från Indien för att komma till Europa?,Väst,Öst,Nord,Syd
+geografi,Vilken riktning måste man resa från Kanada för att komma till Grönland?,Nordost,Sydost,Nordväst,Sydväst
+geografi,Vilken riktning måste man resa från Chile för att komma till Antarktis?,Syd,Nord,Öst,Väst
+geografi,Vilken riktning måste man resa från Egypten för att komma till Sudan?,Syd,Nord,Öst,Väst
+geografi,Vilken riktning måste man resa från Turkiet för att komma till Ryssland?,Nord,Syd,Öst,Väst
+geografi,Vilken riktning måste man resa från Mexiko för att komma till Sydamerika?,Sydost,Nordost,Sydväst,Nordväst
+geografi,Vilken månad har Ramadan olika år?,Rörlig månad,Alltid mars,Alltid december,Alltid juni
+geografi,Vilken månad firar Kina sitt nyår?,Januari eller februari,Alltid januari,Alltid december,Alltid mars
+geografi,Vilken månad har Indien Diwali-festival?,Oktober eller november,Alltid januari,Alltid juni,Alltid december
+geografi,Vilken månad firar Thailand Songkran?,April,Januari,Juli,Oktober
+geografi,Vilken månad har Japan körsbärsblomning?,Mars till maj,Juli till september,Oktober till december,December till februari
+geografi,Vilken månad firar Mexiko Día de los Muertos?,November,Januari,Juni,September
+geografi,Vilken månad har Tyskland Oktoberfest?,September till oktober,Alltid oktober,Alltid augusti,Alltid november
+geografi,Vilken månad firar Brasilien karneval?,Februari eller mars,Alltid juni,Alltid december,Alltid september
+geografi,Vilken månad har Nepal Dashain-festival?,September till oktober,Alltid januari,Alltid juni,Alltid december
+geografi,Vilken månad firar Spanien La Tomatina?,Augusti,Januari,April,November
+geografi,Vilken tidszon använder hela Kina?,Beijing-tid,Flera tidszoner,Moskva-tid,Tokyo-tid
+geografi,Vilken eluttag-typ används i Storbritannien?,Typ G,Typ C,Typ A,Typ F
+geografi,Vilken eluttag-typ används i Europa (kontinenten)?,Typ C,Typ G,Typ A,Typ I
+geografi,Vilken eluttag-typ används i USA?,Typ A,Typ G,Typ C,Typ F
+geografi,Vilken eluttag-typ används i Australien?,Typ I,Typ A,Typ C,Typ G
+geografi,Vilken eluttag-typ används i Indien?,Typ D,Typ A,Typ C,Typ G
+geografi,Vilken eluttag-typ används i Sydafrika?,Typ M,Typ A,Typ C,Typ G
+geografi,Vilken eluttag-typ används i Japan?,Typ A,Typ C,Typ G,Typ I
+geografi,Vilken eluttag-typ används i Kina?,Typ A,Typ C,Typ G,Typ I
+geografi,Vilken eluttag-typ används i Brasilien?,Typ N,Typ A,Typ C,Typ G
+geografi,Vilken eluttag-typ används i Argentina?,Typ I,Typ A,Typ C,Typ G
+geografi,Vilken spänning används i Europa?,230 volt,110 volt,120 volt,240 volt
+geografi,Vilken spänning används i USA?,120 volt,230 volt,110 volt,240 volt
+geografi,Vilken spänning används i Japan?,100 volt,120 volt,230 volt,240 volt
+geografi,Vilken spänning används i Kanada?,120 volt,230 volt,100 volt,240 volt
+geografi,Vilken spänning används i Australien?,230 volt,120 volt,100 volt,240 volt
+geografi,Vilken spänning används i Storbritannien?,230 volt,120 volt,240 volt,110 volt
+geografi,Vilken spänning används i Indien?,230 volt,120 volt,100 volt,240 volt
+geografi,Vilken spänning används i Kina?,220 volt,120 volt,100 volt,230 volt
+geografi,Vilken spänning används i Sydafrika?,230 volt,120 volt,100 volt,240 volt
+geografi,Vilken spänning används i Brasilien?,127/220 volt,120 volt,230 volt,100 volt
+geografi,Vilket telefonnummer ringer man för nödsamtal i EU?,112,911,999,000
+geografi,Vilket telefonnummer ringer man för nödsamtal i USA?,911,112,999,000
+geografi,Vilket telefonnummer ringer man för nödsamtal i Storbritannien?,999,112,911,000
+geografi,Vilket telefonnummer ringer man för nödsamtal i Australien?,000,911,112,999
+geografi,Vilket telefonnummer ringer man för nödsamtal i Japan?,110,911,112,999
+geografi,Vilket telefonnummer ringer man för nödsamtal i Kina?,110,911,112,119
+geografi,Vilket telefonnummer ringer man för ambulans i Italien?,112,118,115,113
+geografi,Vilket telefonnummer ringer man för nödsamtal i Ryssland?,112,01,02,03
+geografi,Vilken sida kör man bil på i Japan?,Vänster,Höger,Mitten,Växlande
+geografi,Vilken sida kör man bil på i Thailand?,Vänster,Höger,Mitten,Växlande
+geografi,Vilken sida kör man bil på i Malaysia?,Vänster,Höger,Mitten,Växlande
+geografi,Vilken sida kör man bil på i Singapore?,Vänster,Höger,Mitten,Växlande
+geografi,Vilken sida kör man bil på i Hongkong?,Vänster,Höger,Mitten,Växlande
+geografi,Vilken sida kör man bil på i Sydafrika?,Vänster,Höger,Mitten,Växlande
+geografi,Vilken sida kör man bil på i Irland?,Vänster,Höger,Mitten,Växlande
+geografi,Vilken sida kör man bil på i Malta?,Vänster,Höger,Mitten,Växlande
+geografi,Vilken sida kör man bil på i Cypern?,Vänster,Höger,Mitten,Växlande
+geografi,Vilken sida kör man bil på i Pakistan?,Vänster,Höger,Mitten,Växlande
+geografi,Vilket mobilnät används i USA förutom GSM?,CDMA,GSM,2G,4G
+geografi,Vilket mobilnät har högst hastighet?,5G,4G,3G,GSM
+geografi,Vilket mobilnät introducerades först?,GSM,CDMA,3G,LTE
+geografi,Vilket mobilnät används i Japan?,3G/4G/5G,Bara GSM,Bara CDMA,Bara 2G
+geografi,Vilket mobilnät används i Kina?,GSM/TD-SCDMA,Bara CDMA,Bara GSM,Bara 3G
+geografi,Vilket mobilnät fungerar på oceaner?,Satellit,GSM,CDMA,WiFi
+geografi,Vilken ålder får man rösta från i Tyskland?,18 år,16 år,21 år,19 år
+geografi,Vilken ålder får man rösta från i Österrike?,16 år,18 år,21 år,19 år
+geografi,Vilken ålder får man rösta från i USA?,18 år,16 år,21 år,19 år
+geografi,Vilken ålder får man rösta från i Brasilien?,16 år,18 år,21 år,19 år
+geografi,Vilken ålder får man rösta från i Japan?,18 år,20 år,16 år,21 år
+geografi,Vilken ålder får man dricka alkohol från i Tyskland?,16 år (öl/vin),18 år,21 år,14 år
+geografi,Vilken ålder får man dricka alkohol från i USA?,21 år,18 år,16 år,19 år
+geografi,Vilken ålder får man dricka alkohol från i Storbritannien?,18 år,16 år,21 år,17 år
+geografi,Vilken ålder får man dricka alkohol från i Frankrike?,18 år,16 år,21 år,17 år
+geografi,Vilken ålder får man dricka alkohol från i Japan?,20 år,18 år,21 år,16 år
+geografi,Vilken ålder får man köra bil från i Tyskland?,18 år,16 år,17 år,21 år
+geografi,Vilken ålder får man köra bil från i USA?,16 år,18 år,15 år,17 år
+geografi,Vilken ålder får man köra bil från i Storbritannien?,17 år,16 år,18 år,15 år
+geografi,Vilken ålder får man köra bil från i Australien?,16 år,17 år,18 år,15 år
+geografi,Vilken ålder får man köra bil från i Kanada?,16 år,15 år,17 år,18 år
+geografi,Vilket datum firar USA sin nationaldag?,4 juli,1 juli,14 juli,26 juli
+geografi,Vilken ö ligger närmast Afrika?,Sicilien,Korsika,Sardinien,Kreta
+geografi,Vilken ö ligger längst söderut?,Macquarie Island,Tasmania,Nya Zeeland,Falklandsöarna
+geografi,Vilken ö har flest invånare?,Java,Honshu,Storbritannien,Luzon
+geografi,Vilken ö ligger i Medelhavet?,Korsika,Island,Irland,Man
+geografi,Vilken ö är delad mellan två länder?,Nya Guinea,Borneo,Irland,Cypern
+geografi,Vilken ö ligger i Indiska oceanen?,Madagaskar,Island,Irland,Kuba
+geografi,Vilken ö är känd för lemurer?,Madagaskar,Borneo,Sumatra,Java
+geografi,Vilken stad har flest invånare i världen?,Tokyo,Shanghai,Delhi,São Paulo
+geografi,Vilken stad har näst flest invånare i världen?,Delhi,Tokyo,Shanghai,São Paulo
+geografi,Vilken stad har tredje flest invånare i världen?,Shanghai,Tokyo,Delhi,São Paulo
+geografi,Vilken stad har fjärde flest invånare i världen?,São Paulo,Mumbai,Mexico City,Kairo
+geografi,Vilken stad har femte flest invånare i världen?,Mexico City,São Paulo,Mumbai,Kairo
+geografi,Vilken stad har sjätte flest invånare i världen?,Kairo,Mumbai,Beijing,Dhaka
+geografi,Vilken stad har sjunde flest invånare i världen?,Mumbai,Kairo,Beijing,Dhaka
+geografi,Vilken stad har åttonde flest invånare i världen?,Beijing,Mumbai,Dhaka,Osaka
+geografi,Vilken stad har nionde flest invånare i världen?,Dhaka,Beijing,Osaka,New York
+geografi,Vilken stad har tionde flest invånare i världen?,Osaka,Dhaka,New York
+geografi,Vilket land har längst järnväg i världen?,Ryssland,Kina,USA,Kanada
+geografi,Vilket land har flest järnvägsstationer?,Tyskland,Japan,Indien,Kina
+geografi,Vilket land har snabbast tåg kommersiellt?,Japan,Kina,Frankrike,Tyskland
+geografi,Vilket land byggde första tunnelbanan?,Storbritannien,Frankrike,USA,Tyskland
+geografi,Vilket land har bredast järnvägsspår?,Ryssland,Indien,Spanien,Portugal
+geografi,Vilket land har smalast järnvägsspår commerciellt?,Sydafrika,Indien,Japan,Storbritannien
+geografi,Vilket land har högst järnvägsstation?,Peru,Bolivia,Tibet,Ecuador
+geografi,Vilket land har längst järnvägstunnel?,Schweiz,Japan,Storbritannien,Frankrike
+geografi,Vilket land har mest punktlig järnvägstrafik?,Japan,Schweiz,Tyskland,Nederländerna
+geografi,Vilket land producerar mest kaffe?,Brasilien,Vietnam,Colombia,Indonesien
+geografi,Vilket land producerar mest te?,Kina,Indien,Kenya,Sri Lanka
+geografi,Vilket land producerar mest ris?,Kina,Indien,Indonesien,Bangladesh
+geografi,Vilket land producerar mest vete?,Kina,Indien,Ryssland,USA
+geografi,Vilket land producerar mest majs?,USA,Kina,Brasilien,Argentina
+geografi,Vilket land producerar mest socker?,Brasilien,Indien,Kina,Thailand
+geografi,Vilket land producerar mest bomull?,Kina,Indien,USA,Pakistan
+geografi,Vilket land producerar mest olja?,USA,Saudiarabien,Ryssland,Kanada
+geografi,Vilket land producerar mest naturgas?,USA,Ryssland,Iran,Qatar
+geografi,Vilket land producerar mest kol?,Kina,USA,Indien,Australien
+geografi,Vilket land exporterar mest turister?,Tyskland,Kina,USA,Storbritannien
+geografi,Vilket land tar emot flest turister?,Frankrike,Spanien,USA,Kina
+geografi,Vilket land spenderar mest på turism utomlands?,Kina,Tyskland,USA,Storbritannien
+geografi,Vilket land har högst turistintäkter?,USA,Spanien,Frankrike,Thailand
+geografi,Vilket land har flest UNESCO-världsarv?,Italien,Kina,Tyskland,Spanien
+geografi,Vilket land har flest hotell?,USA,Kina,Italien,Spanien
+geografi,Vilket land har flest krogar per capita?,Spanien,Italien,Frankrike,Grekland
+geografi,Vilket land har flest slott?,Tyskland,Frankrike,Storbritannien,Italien
+geografi,Vilket land har flest kyrkor?,Italien,Spanien,Polen,Frankrike
+geografi,Vilket hav är djupast?,Stilla havet,Atlanten,Indiska oceanen,Arktiska oceanen
+geografi,Vilket hav är minst?,Arktiska oceanen,Indiska oceanen,Atlanten,Stilla havet
+geografi,Vilket hav är varmast?,Röda havet,Arabiska havet,Persiska viken,Medelhavet
+geografi,Vilket hav är saltast naturligt?,Döda havet,Röda havet,Medelhavet,Kaspiska havet
+geografi,Vilket hav har starkast strömmar?,Antarktiska oceanen,Atlanten,Stilla havet,Indiska oceanen
+geografi,Vilket hav är mest trafikerat?,Nordatlanten,Medelhavet,Engelska kanalen,Persiska viken
+geografi,Vilket hav har flest öar?,Östersjön,Medelhavet,Karibiska havet,Aegeiska havet
+geografi,Vilket hav fryst längst per år?,Arktiska oceanen,Östersjön,Barents hav,Beaufort Sea
+geografi,Vilket hav har högst vågor?,Stilla havet,Atlanten,Indiska oceanen,Antarktiska oceanen
+geografi,Vilket hav har lägst temperatur?,Antarktiska oceanen,Arktiska oceanen,Nordsjön,Barents hav
+geografi,Vilken flygplats har flest passagerare per år?,Hartsfield-Jackson Atlanta,Beijing Capital,Dubai International,Los Angeles
+geografi,Vilken flygplats har flest destinationer?,Frankfurt,Amsterdam,Paris CDG,London Heathrow
+geografi,Vilken flygplats ligger högst över havet?,Daocheng Yading,La Paz,Cusco,Lhasa Gonggar
+geografi,Vilken flygplats har längst landningsbana?,Qamdo Bamda,Denver International,Madrid-Barajas,Brussels Airport
+geografi,Vilken flygplats ligger längst från stadscenter?,Kansai International,Denver International,Madrid-Barajas,Charles de Gaulle
+geografi,Vilken flygplats byggdes på konstgjord ö?,Kansai International,Hong Kong,Macau,Changi
+geografi,Vilken flygplats har flest terminaler?,JFK New York,Heathrow London,Charles de Gaulle,Frankfurt
+geografi,Vilken flygplats är äldst som fortfarande används?,College Park,Tempelhof,Le Bourget,Croydon
+geografi,Vilken flygplats har dyrast landningsavgifter?,Tokyo Narita,London Heathrow,Zürich,Frankfurt
