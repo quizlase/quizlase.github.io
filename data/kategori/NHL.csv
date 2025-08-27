@@ -1,0 +1,675 @@
+Kategori,Fråga,Rätt svar,Fel svar 1,Fel svar 2,Fel svar 3,
+NHL,Hur många points för en vinst?,2,3,1,4,
+NHL,Hur många perioder spelas?,3,2,4,5,
+NHL,Hur många Stanley Cup vann Detroit mellan 1997-2002?,3,2,4,1,
+NHL,Hur många lag fanns med från början i NHL?,4,6,5,3,
+NHL,"Hur många lag utgjorde ""Original Six""?",6,4,8,5,
+NHL,Hur många Stanley Cup vann Montreal under 1970-talet?,6,4,5,7,
+NHL,Hur många spelare per lag på isen?,6,5,7,8,
+NHL,Hur många Vezina Trophies vann Hasek under 90-talet?,6,4,5,7,
+NHL,Hvilket nummer bär Alexander Ovechkin?,8,9,10,18,
+NHL,Hur många säsonger spelade Gordie Howe i NHL?,26,25,24,27,
+NHL,Hur många matcher spelades 2012-13 på grund av lockout?,48,60,70,82,
+NHL,Hur många matcher per lag spelades 2020-21 säsongen?,56,60,48,72,
+NHL,Vilket nummer bar Ray Bourque?,77,7,17,27,
+NHL,Vilket nummer hade Gretzky på tröjan?,99,9,19,11,
+NHL,Vilket nummer hade Wayne Gretzky på Kings?,99,9,19,10,
+NHL,Vilket år grundades NHL?,1917,1918,1916,1919,
+NHL,När började Original Six-eran?,1942,1940,1943,1941,
+NHL,Vilket år öppnade Saddledome?,1983,1980,1985,1988,
+NHL,Vilket draft år valdes Luc Robitaille?,1984,1983,1985,1982,
+NHL,Vilket draft år valdes Jaromir Jagr?,1990,1989,1991,1988,
+NHL,Vilket år flyttade Quebec Nordiques till Colorado?,1995,1994,1996,1997,
+NHL,Vilket draft år valdes Jarome Iginla?,1995,1994,1996,1993,
+NHL,Vilket år tradades Patrick Roy från Montreal?,1995,1994,1996,1993,
+NHL,Vilket år började Nashville spela i NHL?,1998,1999,1997,2000,
+NHL,Vilket år pensionerade sig Wayne Gretzky?,1999,1998,2000,1997,
+NHL,Vilket år började Atlanta Thrashers spela?,1999,1998,2000,1997,
+NHL,Vilket år kom Mario Lemieux tillbaka från pension första gången?,2000,1999,2001,1998,
+NHL,Vilket år började Columbus spela i NHL?,2000,1999,2001,1998,
+NHL,Vilket år började Minnesota Wild spela?,2000,1999,2001,1998,
+NHL,Vilket år draftades Ilya Kovalchuk första overall?,2001,2000,2002,1999,
+NHL,Vilket år draftades Alexander Ovechkin första overall?,2004,2003,2005,2006,
+NHL,Vilket draft år valdes Sidney Crosby?,2005,2004,2006,2003,
+NHL,Vilket år kom Joe Thornton till San Jose?,2005,2004,2006,2003,
+NHL,Vilket år blev Wayne Gretzky tränare för Phoenix?,2005,2004,2006,2003,
+NHL,Vilket år pensionerade sig Scott Stevens?,2005,2004,2006,2007,
+NHL,Vilket år pensionerade sig Steve Yzerman?,2006,2007,2005,2008,
+NHL,Vilket år pensionerade sig Peter Forsberg första gången?,2008,2007,2009,2006,
+NHL,Vilket år blev Ovechkin kapten för Washington?,2010,2009,2011,2008,
+NHL,Vilket år vann Henrik Sedin Hart Trophy?,2010,2009,2011,2012,
+NHL,Vilket år blev Henrik Sedin kapten?,2010,2009,2011,2008,
+NHL,Vilket år vann Daniel Sedin Art Ross Trophy?,2011,2010,2012,2009,
+NHL,Vilket år pensionerade sig Nicklas Lidström?,2012,2011,2013,2010,
+NHL,Bröt Toronto sin första runda-förbannelse när?,2023,2022,Inte än,2021,
+NHL,Kommer Bedard från Regina, Saskatchewan?,Ja,Nej,Vancouver,Calgary
+NHL,Hur hög är sargen runt rinken?,1.2 meter,1 meter,1.5 meter,0.8 meter,
+NHL,Största vinsten i NHL-historia?,16-3,15-0,14-1,13-2,
+NHL,Hur lång är pausen mellan perioderna?,18 minuter,15 minuter,20 minuter,12 minuter,
+NHL,"Vad menas med ""Original Six era""?",1942-1967,1917-1942,1967-1992,1917-1967,
+NHL,Hur många minuter är utvisning?,2 minuter,5 minuter,3 minuter,1 minut,
+NHL,Hur lång är en period?,20 minuter,15 minuter,25 minuter,18 minuter,
+NHL,Vilken hel säsong förlorades på grund av lockout?,2004-05,2003-04,2005-06,2012-13,
+NHL,Snabbaste hat trick i NHL?,21 sekunder,44 sekunder,1 minut,30 sekunder,
+NHL,Hur bred är en NHL-rink?,26 meter,30 meter,25 meter,28 meter,
+NHL,Hur många månader pausades NHL 2020?,4 månader,3 månader,5 månader,6 månader,
+NHL,Längsta förlängning i NHL-historien?,6 perioder,4 perioder,8 perioder,5 perioder,
+NHL,Hur länge är en NHL-rink?,60 meter,55 meter,65 meter,50 meter,
+NHL,Vilket rekord satte Selanne som rookie?,76 mål,72 mål,68 mål,80 mål,
+NHL,Vem var Vancouver:s tränare under Sedin-brödernas höjdpunkt?,Alain Vigneault,Marc Crawford,Mike Keenan,John Tortorella,
+NHL,Vem var Islanders största signing under 2000-talet?,Alexei Yashin,Michael Peca,Chris Simon,Miroslav Satan,
+NHL,Vilket kanadensiskt lag har inte vunnit Stanley Cup sen 1993?,Alla,Montreal,Calgary,Vancouver,
+NHL,Vilket lag vann Stanley Cup 2007?,Anaheim Ducks,Ottawa Senators,Detroit Red Wings,Buffalo Sabres,
+NHL,Vem var Boston Bruins målvakt under 90-talet?,Andy Moog,Reggie Lemelin,Jon Casey,Bill Ranford,
+NHL,Vilken målvakt spelade för Philadelphia 2000-talet?,Antero Niittymaki,Robert Esche,Brian Boucher,Martin Biron,
+NHL,Vilken finsk målvakt ledde Chicago 2010?,Antti Niemi,Cristobal Huet,Corey Crawford,Nikolai Khabibulin,
+NHL,Vad blev Quebec Nordiques för namn i Colorado?,Avalanche,Rockies,Rapids,Blizzard,
+NHL,"Vad menas med ""garbage time""?",Avgjord match,Dålig spel,Tredje perioden,Slutspel,
+NHL,"Vad är ""Game 7""?",Avgörande match,Sjunde målet,Sjunde spelaren,Slutspelsformat,
+NHL,Spelade Bobby Orr back eller forward?,Back,Forward,Båda,Center,
+NHL,Vem var Kings tränare när Gretzky spelade där?,Barry Melrose,Tom Webster,Larry Robinson,Andy Murray,
+NHL,Vem var Nashville:s tränare under tidigt 2000-tal?,Barry Trotz,Peter Laviolette,Dan Bylsma,John Hynes,
+NHL,Vilken incident ledde till Patrick Roys trade?,Benched mot Detroit,Fight med tränare,Krav på trade,Lönekonflikt,
+NHL,Vem var New York Islanders:s kapten under 2000-talet?,Bill McCauley,Kenny Jonsson,Alexei Yashin,Mark Streit,
+NHL,Vem var Edmonton Oilers målvakt efter Grant Fuhr?,Bill Ranford,Curtis Joseph,Tommy Salo,Nikolai Khabibulin,
+NHL,Vem var Pittsburgh tränare under Stanley Cup 1991-92?,Bob Johnson,Scotty Bowman,Gene Ubriaco,Eddie Johnston,
+NHL,Vem gjorde det berömda målet 1970 där han flög genom luften?,Bobby Orr,Gordie Howe,Phil Esposito,Johnny Bucyk,
+NHL,Från vilket lag kom Ray Bourque till Colorado?,Boston Bruins,Montreal Canadiens,Toronto Maple Leafs,Detroit Red Wings,
+NHL,Vilket lag vann Stanley Cup 2011?,Boston Bruins,Vancouver Canucks,Tampa Bay Lightning,Philadelphia Flyers,
+NHL,Vilket lag mötte Chicago i 2013 final?,Boston Bruins,Pittsburgh Penguins,New York Rangers,Los Angeles Kings,
+NHL,Hvilket lag traderade Joe Thornton till San Jose?,Boston Bruins,Toronto Maple Leafs,Montreal Canadiens,Philadelphia Flyers,
+NHL,Vem vann Conn Smythe Trophy 2004?,Brad Richards,Martin St. Louis,Nikolai Khabibulin,Vincent Lecavalier,
+NHL,Vem var New Jersey Devils:s tränare under sent 2000-tal?,Brent Sutter,Pat Burns,Larry Robinson,Claude Julien,
+NHL,Vem gjorde det kontroversiella målet i 1999 Stanley Cup Final?,Brett Hull,Mike Modano,Joe Nieuwendyk,Derian Hatcher,
+NHL,Vem vann Conn Smythe Trophy 2008?,Brian Campbell,Chris Osgood,Pavel Datsyuk,Nicklas Lidström,
+NHL,Vem vann Conn Smythe Trophy för Detroit 2008?,Brian Campbell,Chris Osgood,Pavel Datsyuk,Nicklas Lidström,
+NHL,Vem vann Conn Smythe Trophy 1994?,Brian Leetch,Mark Messier,Mike Richter,Stephane Matteau,
+NHL,Vilken back från Boston Globe var stor för Rangers?,Brian Leetch,Kevin Lowe,Jeff Beukeboom,Sergei Zubov,
+NHL,Vilken Arena spelade Nashville hemma under 2000-talet?,Bridgestone Arena,Gaylord Entertainment Center,Sommet Center,Municipal Auditorium,
+NHL,Vem var Washington:s tränare under Ovechkin tidiga år?,Bruce Boudreau,Glen Hanlon,Dale Hunter,Adam Oates,
+NHL,Vem ägde Los Angeles Kings när Gretzky tradades dit?,Bruce McNall,Philip Anschutz,Jerry Buss,Magic Johnson,
+NHL,Vilket lag representerade Buffalo i öst 1999?,Buffalo Sabres,Toronto Maple Leafs,Ottawa Senators,Boston Bruins,
+NHL,Vilket lag spelade Dominik Hasek för på 90-talet?,Buffalo Sabres,Chicago Blackhawks,Detroit Red Wings,Ottawa Senators,
+NHL,Vilket lag traderade Tom Barrasso till Pittsburgh?,Buffalo Sabres,Boston Bruins,Philadelphia Flyers,Hartford Whalers,
+NHL,Vem får Vezina Trophy?,Bästa målvakten,Bästa back,Mest assists,Rookie of Year,
+NHL,Vem vann Conn Smythe Trophy 2022?,Cale Makar,Nathan MacKinnon,Gabriel Landeskog,Mikko Rantanen,
+NHL,Vilket lag mötte Tampa Bay i 2004 final?,Calgary Flames,Philadelphia Flyers,Montreal Canadiens,San Jose Sharks,
+NHL,Vilket lag vann Mike Vernon Stanley Cup med före Detroit?,Calgary Flames,Edmonton Oilers,Vancouver Canucks,Winnipeg Jets,
+NHL,Vilket lag mötte San Jose i 2004 Conference Final?,Calgary Flames,Tampa Bay Lightning,Philadelphia Flyers,Montreal Canadiens,
+NHL,Vem var Bruins bästa forward under 90-talet?,Cam Neely,Ray Bourque,Adam Oates,Joe Juneau,
+NHL,Vilken ung målvakt ledde Carolina till Cup 2006?,Cam Ward,John Grahame,Martin Gerber,Kevin Weekes,
+NHL,Vem vann Conn Smythe Trophy 2006?,Cam Ward,Rod Brind'Amour,Eric Staal,Cory Stillman,
+NHL,Vem var Eric Lindros förmynden under traden?,Carl Lindros,Bonnie Lindros,Bobby Clarke,Pat Quinn,
+NHL,Vilket lag vann första Stanley Cup efter lockout 2004-05?,Carolina Hurricanes,Tampa Bay Lightning,Anaheim Ducks,Detroit Red Wings,
+NHL,Vilket lag vann Stanley Cup 2006?,Carolina Hurricanes,Edmonton Oilers,Anaheim Ducks,Detroit Red Wings,
+NHL,Vilket lag mötte Buffalo i 2006 Conference Final?,Carolina Hurricanes,Edmonton Oilers,Ottawa Senators,Tampa Bay Lightning,
+NHL,Vann Connor Bedard lottery för första pick 2023?,Chicago,Anaheim,Columbus,San Jose,
+NHL,Vilket lag bröt Montreals dominans 1961?,Chicago Blackhawks,Toronto Maple Leafs,Detroit Red Wings,Boston Bruins,
+NHL,Vilket lag traderade bort Dominik Hasek till Buffalo?,Chicago Blackhawks,Detroit Red Wings,St. Louis Blues,Hartford Whalers,
+NHL,Vilket lag vann Stanley Cup 2010?,Chicago Blackhawks,Philadelphia Flyers,Montreal Canadiens,Pittsburgh Penguins,
+NHL,Vilket lag vann Stanley Cup 2013?,Chicago Blackhawks,Boston Bruins,Pittsburgh Penguins,Los Angeles Kings,
+NHL,Vem var Washington:s kapten före Ovechkin?,Chris Clark,Jeff Halpern,Steve Konowalchuk,Brendan Witt,
+NHL,Vilken Back spelade med Eric Lindros i Philly?,Chris Pronger,Eric Desjardins,Dan McGillis,Kjell Samuelsson,
+NHL,Vem ledde Edmonton offensivt i 2006 playoffs?,Chris Pronger,Ales Hemsky,Ryan Smyth,Shawn Horcoff,
+NHL,Vilken back dominerade för Edmonton 2006?,Chris Pronger,Jaroslav Spacek,Steve Staios,Jason Smith,
+NHL,Vem vann Conn Smythe Trophy 1995?,Claude Lemieux,Martin Brodeur,Scott Stevens,Neal Broten,
+NHL,Vilket lag vann Stanley Cup 1996?,Colorado Avalanche,Florida Panthers,Detroit Red Wings,Pittsburgh Penguins,
+NHL,Vilket lag vann Stanley Cup 2001?,Colorado Avalanche,New Jersey Devils,Detroit Red Wings,Pittsburgh Penguins,
+NHL,Vilket lag fick Patrick Roy från Montreal?,Colorado Avalanche,Detroit Red Wings,New York Rangers,Calgary Flames,
+NHL,Vilket lag spelade Steve Moore för?,Colorado Avalanche,Toronto Maple Leafs,Calgary Flames,Edmonton Oilers,
+NHL,Äldsta rookie att debutera?,Connie Madigan,Gordie Howe,Chris Chelios,Johnny Bower,
+NHL,Vilken målvakt spelade för Chicago 2013?,Corey Crawford,Ray Emery,Antti Niemi,Scott Darling,
+NHL,Varför deltog inte NHL-spelare i OS 2022?,COVID-19,Lockout,Löneförhandling,Tidsbrist,
+NHL,"Vilken målvakt kallades ""CuJo""?",Curtis Joseph,Chris Joseph,Joe Juneau,Ingen ovan,
+NHL,Vem var Toronto Maple Leafs målvakt slutet av 90-talet?,Curtis Joseph,Felix Potvin,Glenn Healy,Damian Rhodes,
+NHL,Vilket lag vann Stanley Cup 1999?,Dallas Stars,Buffalo Sabres,Colorado Avalanche,Detroit Red Wings,
+NHL,Vilket lag fick Andy Moog från Bruins?,Dallas Stars,Montreal Canadiens,Calgary Flames,Edmonton Oilers,
+NHL,Vilken back blev stjärna för Tampa Bay 2000-talet?,Dan Boyle,Pavel Kubina,Lubomir Visnovsky,Dmitry Afanasenkov,
+NHL,Vem var Pittsburgh:s tränare 2009?,Dan Bylsma,Michel Therrien,Mario Lemieux,Eddie Olczyk,
+NHL,Vem ledde Ottawa i poäng 2007 playoffs?,Daniel Alfredsson,Dany Heatley,Jason Spezza,Mike Fisher,
+NHL,Vem ledde Buffalo offensivt under 2006-07?,Daniel Briere,Chris Drury,Thomas Vanek,Derek Roy,
+NHL,Vilken tvillingsbroder vann Art Ross 2011?,Daniel Sedin,Henrik Sedin,Båda delade,Ingen av dem,
+NHL,Vem var Calgary tränare 2004?,Darryl Sutter,Al MacNeil,Don Hay,Jim Playfair,
+NHL,Vem var Los Angeles:s tränare 2014?,Darryl Sutter,Terry Murray,John Stevens,Willie Desjardins,
+NHL,Vem var Calgary:s tränare 2004?,Darryl Sutter,Al MacNeil,Jim Playfair,Brent Sutter,
+NHL,Vem var Tampa Bays kapten 2004?,Dave Andreychuk,Vincent Lecavalier,Martin St. Louis,Brad Richards,
+NHL,Vilket dramatisk mål avgjorde 2013 final Game 6?,Dave Bolland,Patrick Kane,Jonathan Toews,Bryan Bickell,
+NHL,Vem var Columbus:s första tränare?,Dave King,Doug MacLean,Gerard Gallant,Ken Hitchcock,
+NHL,Vem var Nashville:s första stora stjärnspelare?,David Legwand,Kimmo Timonen,Scott Hartnell,Steve Sullivan,
+NHL,Vilken tjeckisk forward spelade för Columbus tidigt?,David Vyborny,Radoslav Suchy,Nikolai Zherdev,Sergei Fedorov,
+NHL,"Vilket lag spelar i ""Hockeytown""?",Detroit Red Wings,Boston Bruins,Montreal Canadiens,Toronto Maple Leafs,
+NHL,Vilket lag dominerade slutet av 1990-talet?,Detroit Red Wings,Colorado Avalanche,New Jersey Devils,Pittsburgh Penguins,
+NHL,Vilket lag vann Stanley Cup 2002?,Detroit Red Wings,Carolina Hurricanes,Colorado Avalanche,Toronto Maple Leafs,
+NHL,Vilket lag vann Presidents Trophy mest under 90-talet?,Detroit Red Wings,Pittsburgh Penguins,New York Rangers,Boston Bruins,
+NHL,Vilket lag vann Stanley Cup 2008?,Detroit Red Wings,Pittsburgh Penguins,Philadelphia Flyers,Dallas Stars,
+NFL,Vilket lag mötte Pittsburgh i 2009 final?,Detroit Red Wings,Chicago Blackhawks,Philadelphia Flyers,Washington Capitals,
+NHL,"Vad är en ""one-timer""?",Direkt skott från pass,Snabb räddning,Ensam framspelning,Hattrick,
+NHL,Fick Calgary bra utbyte för Tkachuk?,Diskutabelt,Ja,Nej,Huberdeau och Weegar,
+NHL,Vilken målvakt spelade för Buffalo i 1999 final?,Dominik Hasek,Martin Biron,Dwayne Roloson,Tom Barrasso,
+NHL,Vem var Czech Republics målvakt under 90-talet?,Dominik Hasek,Petr Svoboda,Roman Cechmanek,Milan Hnilicka,
+NHL,"Vilken spelare kallades ""The Dominator""?",Dominik Hasek,Patrick Roy,Martin Brodeur,Ed Belfour,
+NHL,Vilken målvakt vann mest Vezina Trophies 90-talet?,Dominik Hasek,Patrick Roy,Martin Brodeur,Ed Belfour,
+NHL,Vem var Los Angeles:s kapten 2012?,Dustin Brown,Anze Kopitar,Jonathan Quick,Drew Doughty,
+NHL,Vem var Edmonton:s målvakt 2006?,Dwayne Roloson,Jussi Markkanen,Ty Conklin,Tommy Salo,
+NHL,Vem var Chicagos målvakt före Hasek?,Ed Belfour,Chris Terreri,Jeff Hackett,Jimmy Waite,
+NHL,Vilken stad var värd för 2020 Stanley Cup playoffs?,Edmonton och Toronto,Las Vegas,Toronto bara,Tampa,
+NHL,Vilket lag tradade bort Wayne Gretzky 1988?,Edmonton Oilers,Los Angeles Kings,New York Rangers,St. Louis Blues,
+NHL,Vilket lag mötte Carolina i 2006 final?,Edmonton Oilers,Anaheim Ducks,Detroit Red Wings,Buffalo Sabres,
+NHL,Var Bostons exit den största upsetsen någonsin?,En av största,Största,Inte upset,Vanlig,
+NHL,Vem var den unge stjärnan för Philadelphia 90-talet?,Eric Lindros,John LeClair,Rod Brind'Amour,Mikael Renberg,
+NHL,Vilken trade förde Peter Forsberg till Quebec/Colorado?,Eric Lindros trade,Mats Sundin trade,Owen Nolan trade,Ingen trade,
+NHL,Vem vann Conn Smythe Trophy 2009?,Evgeni Malkin,Sidney Crosby,Marc-Andre Fleury,Kris Letang,
+NHL,Vilken rysk forward dominerade Pittsburgh 2009?,Evgeni Malkin,Sergei Gonchar,Alexei Ponikarovsky,Petr Sykora,
+NHL,Vilken rysk forward draftades andra overall 2004?,Evgeni Malkin,Alexander Ovechkin,Pavel Datsyuk,Ilya Kovalchuk,
+NHL,Vilken målvakt spelade för San Jose under 2000-talet?,Evgeni Nabokov,Vesa Toskala,Brian Boucher,Antero Niittymaki,
+NHL,"Vad händer vid ""icing""?",Face-off egen zon,Straff,Frisläpp,Ingenting,
+NHL,Vilket land kommer Miikka Kiprusoff från?,Finland,Sverige,Ryssland,Tjeckien,
+NHL,Vilket smeknamn hade Teemu Selanne?,Finnish Flash,Flying Finn,Teemu Time,The Jet,
+NHL,Hur många spelare kan vara utvisade samtidigt?,Flera,2,3,1,
+NHL,Vem får Art Ross Trophy?,Flest poäng,Flest mål,Bästa målvakt,Bästa rookie,
+NHL,Besegrade Vegas vilken överraskningsfinalist 2023?,Florida Panthers,Boston Bruins,Toronto Maple Leafs,Carolina Hurricanes,
+NHL,Vilken överraskningsfinalist mötte Colorado 1996?,Florida Panthers,Pittsburgh Penguins,New York Rangers,Philadelphia Flyers,
+NHL,Vilket lag traderade Roberto Luongo till Vancouver?,Florida Panthers,New York Islanders,Montreal Canadiens,Tampa Bay Lightning,
+NHL,Vilken skada plågade Peter Forsberg karriären?,Fot,Rygg,Hjärnskakning,Knä,
+NHL,Varför var Brett Hulls mål 1999 kontroversiellt?,Fot i målgården,Offside,Högt klubblad,Efter siren,
+NHL,Vem var NHL:s första president?,Frank Calder,Clarence Campbell,John Ziegler,Gary Bettman,
+NHL,Vilken back var viktig för Carolina 2006?,Frantisek Kaberle,Glen Wesley,Aaron Ward,Niclas Wallin,
+NHL,Tradades Stamkos eller lämnade som free agent?,Free agent,Tradad,Pensionerad,Spelar kvar,
+NHL,"Vad är ""sudden death""?",Förlängning tills mål,Snabb död,Avgörande mål,Slutspel,
+NHL,Kan NHL-spelare spela i OS under säsong?,Förr,Ja,Nej,2018 nej,
+NHL,"Vilken expansion år 1967 kallas ""The Great Expansion""?",Första stora utvidgningen,NHL blir professionell,Original Six slutar,Stanley Cup förändras,
+NHL,Vem var NHL kommissionär under 2004-05 lockout?,Gary Bettman,John Ziegler,Clarence Campbell,Brian Burke,
+NHL,Vem var Alexander Ovechkin:s första NHL-tränare?,Glen Hanlon,Bruce Boudreau,Dale Hunter,Adam Oates,
+NHL,"Vem var ""Mr. Hockey""?",Gordie Howe,Maurice Richard,Jean Beliveau,Ted Lindsay,
+NHL,Längsta pass i NHL-historien?,Hela rinken,150 feet,200 feet,Halva rinken,
+NHL,Vilken målvakt spelade för Rangers 2014?,Henrik Lundqvist,Cam Talbot,Martin Biron,Steve Valiquette,
+NHL,Vem blev Detroit:s näste kapten efter Lidström?,Henrik Zetterberg,Pavel Datsyuk,Johan Franzén,Valtteri Filppula,
+NHL,Vilken svensk forward blomstrade i Detroit 2000-talet?,Henrik Zetterberg,Johan Franzén,Nicklas Lidström,Tomas Holmström,
+NHL,Har Edmonton problem med målvaktsspel?,Historiskt ja,Nej,Fortfarande,Aldrig,
+NHL,Vilken sjukdom kämpade Mario Lemieux mot?,Hodgkins lymphom,Leukemi,Hjärtproblem,Ryggproblem,
+NHL,Vilken Arena hette Anaheim:s arena 2007?,Honda Center,Pond of Anaheim,Angel Stadium,Arrowhead Pond,
+NHL,Vilken position spelade Jarome Iginla?,Högerforward,Vänsterforward,Center,Back,
+NHL,Vilken position spelade Jaromir Jagr huvudsakligen?,Högerforward,Vänsterforward,Center,Back,
+NHL,Vilken målvakt spelade för Phoenix under 2000-talet?,Ilya Bryzgalov,Brian Boucher,Curtis Joseph,Nikolai Khabibulin,
+NHL,Vem ledde New Jersey offensivt 2012 playoffs?,Ilya Kovalchuk,Zach Parise,Patrik Elias,Adam Henrique,
+NHL,Vilken rysk forward blev Atlanta:s stjärna?,Ilya Kovalchuk,Alexei Zhitnik,Vyacheslav Kozlov,Pavel Datsyuk,
+NHL,Vilken rysk forward spelade för New Jersey 2000-talet?,Ilya Kovalchuk,Patrik Elias,Zach Parise,Jamie Langenbrunner,
+NHL,Vilket lag traderade bort Jarome Iginla från Dallas?,Inga - Dallas draftade,Calgary draftade,St. Louis,Edmonton,
+NHL,Vilket lag lockoutade NHL 2004-05?,Inget - lockout,Philadelphia Flyers,Tampa Bay Lightning,Calgary Flames,
+NHL,"Från vilken stad ""stals"" Seattle:s namn?",Inget lag,Vancouver,Portland,Spokane,
+NHL,Vem var Pittsburgh tränare när Lemieux kom tillbaka?,Ivan Hlinka,Kevin Constantine,Eddie Johnston,Rick Kehoe,
+NHL,Finns det några originallag kvar från 1917?,Ja,Nej,Toronto bara,Montreal bara,
+NHL,Har någon förlorande spelare vunnit Conn Smythe?,Ja,Nej,Bara en gång,Två gånger,
+NHL,Vann Chicago Blackhawks tre Stanley Cup under 2010-talet?,Ja,Nej,Två,Fyra,
+NHL,Har Vegas Golden Knights vunnit Stanley Cup?,Ja,Nej,Final bara,Semifinal,
+NHL,"Kallas Wayne Gretzky ""The Great One""?",Ja,Nej,The Greatest,The King,
+NHL,Spelade Peter Forsberg för Colorado?,Ja,Nej,Philadelphia bara,Sverige,
+NHL,Vann Nicklas Lidström Norris Trophy?,Ja,Nej,En gång,Aldrig nominerad,
+NHL,Spelade Mats Sundin för Toronto som kapten?,Ja,Nej,Vice kapten,Aldrig kapten,
+NHL,Ges Norris Trophy till bästa backen?,Ja,Nej,Bästa forward,Mest poäng,
+NHL,Får Maurice Richard Trophy den som gör flest mål?,Ja,Nej,Flest poäng,Bästa kanadensare,
+NHL,Finns det en trofé för bästa tränare?,Ja,Nej,Bara för spelare,Jack Adams Award,
+NHL,Vann någon svensk Hart Trophy nyligen?,Ja,Nej,Aldrig,Erik Karlsson,
+NHL,Har Lundqvist vunnit Vezina?,Ja,Nej,Nominerad bara,Aldrig kvalificerad,
+NHL,Röstar spelarna fram vissa priser?,Ja,Nej,Bara media,Bara tränare,
+NHL,Kan samma spelare vinna flera priser samma år?,Ja,Nej,Max två,Bara Hart+annat,
+NHL,Har NHL egen TV-kanal?,Ja,Nej,Bara i Kanada,NHL Network,
+NHL,Spelar NHL på konstfruset is?,Ja,Nej,Bara vissa arenor,Naturis förr,
+NHL,Ägs NHL-lag av samma person som andra sporter?,Ja,Nej,Förbjudet,Bara Kanada,
+NHL,Kan ett lag drafta samma spelare två gånger?,Ja,Nej,Bara junior,Om ej signerat,
+NHL,Har något lag draftat fel spelare av misstag?,Ja,Nej,Minnesota,Namnytt,
+NHL,Har NHL-spelare spelat med trasig utrustning?,Ja,Nej,Förbjudet,Säkerhet,
+NHL,Kan en spelare vägra spela för laget som draftade honom?,Ja,Nej,Bara college,Måste spela,
+NHL,Har ett NHL-lag flyttat på grund av ekonomi?,Ja,Nej,Bara arena,Hartford exempel,
+NHL,Kan en match flyttas för TV?,Ja,Nej,Bara slutspel,Bara helger,
+NHL,Har NHL-matcher spelats på andra kontinenter?,Ja,Nej,Bara Nordamerika,Global Series,
+NHL,Äter NHL-spelare tillsammans före matcher?,Ja,Nej,Bara hemma,Individuellt,
+NHL,Har NHL-spelare egna kockar?,Ja,Nej,Lagkock,Bara stjärnor,
+NHL,Tränar NHL-spelare på sommaren tillsammans?,Ja,Nej,Bara individuellt,Förbjudet,
+NHL,Har NHL-lag team-building aktiviteter?,Ja,Nej,Bara spel,Bara träning,
+NHL,Stannar NHL-lag på samma hotell?,Ja,Nej,Olika klasser,Bara slutspel,
+NHL,Har NHL-spelare dresscode?,Ja,Nej,Bara slutspel,Bara äldre lag,
+NHL,Slutar NHL grundserie vanligen i april?,Ja,Nej,Mars,Maj,
+NHL,Kan målvakten få utvisning?,Ja,Nej,Bara matchstraff,Backup tar straff,
+NHL,Får man poäng för förlust i förlängning?,Ja,Nej,Bara shootout,1 poäng,
+NHL,Kan en målvakt få assist?,Ja,Nej,Bara eget mål,Martin Brodeur exempel,
+NHL,"Betyder ""clutch"" att vara bra under press?",Ja,Nej,Hålla pucken,Tacklingstyp,
+NHL,"Betyder ""dropping the gloves"" fight?",Ja,Nej,Frisläpp,Målvaktsbyte,
+NHL,"Kallas målvakten ""netminder""?",Ja,Nej,Bara back,Bara forward,
+NHL,"Betyder ""dangle"" fintmöver?",Ja,Nej,Skott,Tackling,
+NHL,"Betyder ""bar down"" att pucken träffar ribban?",Ja,Nej,Under ribban,Utanför mål,
+NHL,"Kallas Stanley Cup för ""The Cup""?",Ja,Nej,The Trophy,The Prize,
+NHL,"Betyder ""Lord Stanley's Mug"" Stanley Cup?",Ja,Nej,Annan trofé,Gamla namnet,
+NHL,Vem var New Jerseys tränare under slutet av 90-talet?,Jacques Lemaire,Pat Burns,Larry Robinson,Robbie Ftorek,
+NHL,Vem var Minnesota Wild:s första tränare?,Jacques Lemaire,Doug Risebrough,Todd Richards,Mike Yeo,
+NHL,Vem var Montreal:s tränare 2010?,Jacques Martin,Guy Carbonneau,Bob Gainey,Michel Therrien,
+NHL,Vilket smeknamn hade Jaromir Jagr?,Jags,Czech Mate,The Magician,Super Mario,
+NHL,Vem var New Jersey:s kapten efter Scott Stevens?,Jamie Langenbrunner,Patrik Elias,John Madden,Zach Parise,
+NHL,Vilken månad startade 2012-13 säsongen?,Januari,Oktober,December,Februari,
+NHL,Vem ledde Calgary offensivt 2004?,Jarome Iginla,Craig Conroy,Olli Jokinen,Chris Simon,
+NHL,Vem ledde Calgary offensivt under 2004 Cup run?,Jarome Iginla,Martin Gelinas,Craig Conroy,Olli Jokinen,
+NHL,Vem tog över som poängkung efter Gretzky?,Jaromir Jagr,Mario Lemieux,Pavel Bure,Peter Forsberg,
+NHL,Vilken tjeckisk forward spelade med Lemieux?,Jaromir Jagr,Petr Nedved,Robert Lang,Martin Straka,
+NHL,Vem ledde Montreal till Conference Final 2010?,Jaroslav Halak,Carey Price,Scott Gomez,Mike Cammalleri,
+NHL,Vilken målvakt överraskade i Montreal 2010 playoffs?,Jaroslav Halak,Carey Price,Alex Auld,Peter Budaj,
+NHL,Vilken europeisk spelare gjorde avgörande målet 2000?,Jason Arnott,Patrik Elias,Petr Sykora,Vladimir Malakhov,
+NHL,Vilken ung målvakt ledde Anaheim till final 2003?,Jean-Sebastien Giguere,Ilya Bryzgalov,Martin Gerber,Nikolai Khabibulin,
+NHL,Vem vann Conn Smythe Trophy 2003?,Jean-Sebastien Giguere,Martin Brodeur,Scott Stevens,Paul Kariya,
+NHL,Vilken spelare vann Conn Smythe från förlorande lag 2003?,Jean-Sebastien Giguere,Patrick Roy,Ron Hextall,Reggie Leach,
+NHL,Vilken Arena spelade Phoenix hemma under 2000-talet?,Jobing.com Arena,America West Arena,Desert Diamond Arena,Phoenix Suns Arena,
+NHL,Vem var Montreal Canadiens målvakt efter Patrick Roy?,Jocelyn Thibault,Jose Theodore,Jeff Hackett,Stephane Fiset,
+NHL,Vem kom tillbaka till Montreal i Roy-traden?,Jocelyn Thibault,Andrei Kovalenko,Martin Rucinsky,Alla ovan,
+NHL,Vilken Arena spelade Detroit hemma i 2002?,Joe Louis Arena,Olympia Stadium,Little Caesars Arena,Palace of Auburn Hills,
+NHL,Vilken Arena spelade Detroit hemma 2008?,Joe Louis Arena,Olympia Stadium,Little Caesars Arena,Palace of Auburn Hills,
+NHL,Vem vann Conn Smythe Trophy 1996?,Joe Sakic,Patrick Roy,Peter Forsberg,Claude Lemieux,
+NHL,Vem gjorde mest poäng för Colorado 2001 playoffs?,Joe Sakic,Peter Forsberg,Alex Tanguay,Adam Foote,
+NHL,Vem var Peters forwards partner i Colorado?,Joe Sakic,Valeri Kamensky,Claude Lemieux,Adam Deadmarsh,
+NHL,Vem var San Jose:s kapten under 2000-talet?,Joe Thornton,Patrick Marleau,Owen Nolan,Vincent Damphousse,
+NHL,Vem vann Hart Trophy 2006?,Joe Thornton,Jaromir Jagr,Daniel Alfredsson,Jarome Iginla,
+NHL,Vem var Chicago:s tränare 2013?,Joel Quenneville,Denis Savard,Mike Kitchen,Jeremy Colliton,
+NHL,Vem var Detroit:s främste målskytt under sent 2000-tal?,Johan Franzén,Pavel Datsyuk,Henrik Zetterberg,Valtteri Filppula,
+NHL,Vem var Tampa Bay:s målvakt efter 2004 Stanley Cup?,John Grahame,Nikolai Khabibulin,Dan Ellis,Mike Smith,
+NHL,Vem var Tampa Bay:s tränare efter 2004 Cup?,John Tortorella,Barry Melrose,Rick Tocchet,Guy Boucher,
+NHL,Vem vann Conn Smythe Trophy 2021?,Jonathan Marchessault,Carey Price,Ryan McDonagh,Tyler Johnson,
+NHL,Vem vann Conn Smythe Trophy 2023?,Jonathan Marchessault,Sergei Bobrovsky,William Karlsson,Mark Stone,
+NHL,Vem vann Conn Smythe Trophy 2012?,Jonathan Quick,Anze Kopitar,Dustin Brown,Drew Doughty,
+NHL,Vilken målvakt dominerade för Kings 2012?,Jonathan Quick,Ben Scrivens,Martin Jones,Erik Ersberg,
+NHL,Vem var Chicago:s kapten 2010?,Jonathan Toews,Duncan Keith,Patrick Kane,Brent Seabrook,
+NHL,Vem vann Conn Smythe Trophy 2010?,Jonathan Toews,Patrick Kane,Duncan Keith,Antti Niemi,
+NHL,Vilken målvakt spelade för Washington under sent 2000-tal?,Jose Theodore,Olaf Kolzig,Semyon Varlamov,Braden Holtby,
+NHL,Vem vann Conn Smythe Trophy 2014?,Justin Williams,Anze Kopitar,Jonathan Quick,Drew Doughty,
+NHL,"Vilken spelare kallades ""Mr. Game 7""?",Justin Williams,Dustin Brown,Jeff Carter,Mike Richards,
+NHL,Vilket land dominerade NHL under de första decennierna?,Kanada,USA,Sverige,Ryssland,
+NHL,Vilket land kommer Paul Kariya från?,Kanada,Finland,USA,Japan,
+NHL,Vilket land kommer Luc Robitaille från?,Kanada,Frankrike,USA,Belgien,
+NHL,Vilken målvakt spelade för Atlanta under 2000-talet?,Kari Lehtonen,Pasi Nurminen,Byron Dafoe,Michael Garnett,
+NHL,Vem var Los Angeles Kings målvakt 1993?,Kelly Hrudey,Robb Stauber,Rick Knickle,Daniel Berthiaume,
+NHL,Vem var New York Islanders målvakt under tidigt 90-tal?,Kelly Hrudey,Glenn Healy,Mark Fitzpatrick,Tommy Soderstrom,
+NHL,Vilken finsk back var stjärna för Nashville?,Kimmo Timonen,Sami Salo,Jere Karalahti,Ville Koistinen,
+NHL,Vem var Vancouver målvakt 1994?,Kirk McLean,Dan Cloutier,Garth Snow,Kay Whitmore,
+NHL,Vilka spelare skadades i Detroit 1997 limousine-olyckan?,Konstantinov och Fetisov,Yzerman och Shanahan,Fedorov och Kozlov,Lidström och Larionov,
+NHL,Vilket tragedy påverkade Detroit 1997?,Limousine-olycka,Flygkrasch,Båtolycka,Busskrasch,
+NHL,Vem var Buffalo:s tränare under 2006-07 säsongen?,Lindy Ruff,Ted Nolan,Dan Bylsma,Rick Jeanneret,
+NHL,Vilken stad fick Wayne Gretzky 1988?,Los Angeles,New York,St. Louis,Vancouver,
+NHL,Vilket lag besegrade Montreal i Conference Final 1993?,Los Angeles Kings,Toronto Maple Leafs,Pittsburgh Penguins,Boston Bruins,
+NHL,Vilket lag draftade Luc Robitaille?,Los Angeles Kings,Montreal Canadiens,Quebec Nordiques,Edmonton Oilers,
+NHL,Vilket lag fick Kelly Hrudey från Islanders?,Los Angeles Kings,Calgary Flames,San Jose Sharks,Tampa Bay Lightning,
+NHL,Vilket lag vann Stanley Cup 2012?,Los Angeles Kings,New Jersey Devils,New York Rangers,Phoenix Coyotes,
+NHL,Vilket lag vann Stanley Cup 2014?,Los Angeles Kings,New York Rangers,Montreal Canadiens,Chicago Blackhawks,
+NHL,Vilken vänsterforward spelade med Gretzky på Kings?,Luc Robitaille,Tony Granato,Warren Rychel,Jim Fox,
+NHL,"Vem kallades ""Lucky Luc""?",Luc Robitaille,Luc Longley,Luc Mbah a Moute,Luke Richardson,
+NHL,Vem var Minnesota:s första stora free agent signing?,Marian Gaborik,Sergei Zholtok,Filip Kuba,Brian Rolston,
+NHL,Vilken slovakisk forward var Minnesota:s stjärna?,Marian Gaborik,Pavol Demitra,Zigmund Palffy,Miroslav Satan,
+NHL,Vilken spelare ledde NHL i poäng 1995-96?,Mario Lemieux,Jaromir Jagr,Eric Lindros,Peter Forsberg,
+NHL,Vem var Pittsburgh Penguins center under tidigt 90-tal?,Mario Lemieux,Jaromir Jagr,Ron Francis,Kevin Stevens,
+NHL,Vem var Montreal tränare när Roy tradades?,Mario Tremblay,Jacques Demers,Jean Perron,Michel Therrien,
+NHL,Vem var Rangers kapten 1994?,Mark Messier,Brian Leetch,Mike Richter,Adam Graves,
+NHL,Vem var Vancouver:s kapten före Henrik Sedin?,Markus Naslund,Trevor Linden,Mattias Ohlund,Todd Bertuzzi,
+NHL,Vem var New Jerseys målvakt i 1995 Stanley Cup?,Martin Brodeur,Chris Terreri,Mike Dunham,Corey Schwab,
+NHL,"Vem gjorde ""the shift"" i 2004 playoffs för Calgary?",Martin Gelinas,Jarome Iginla,Craig Conroy,Shean Donovan,
+NHL,Vilken målvakt spelade för Carolina före Cam Ward?,Martin Gerber,Kevin Weekes,Arturs Irbe,John Grahame,
+NHL,Vem kom till Rangers via trade deadline 2014?,Martin St. Louis,Rick Nash,Dan Boyle,Keith Yandle,
+NHL,Vem ledde Tampa Bay i poäng efter Lecavalier?,Martin St. Louis,Brad Richards,Vinny Prospal,Fredrik Modin,
+NHL,Vilken svensk forward ledde Calgary 2004?,Mattias Norström,Toni Lydman,Jordan Leopold,Ingen större svensk,
+NHL,Vilken back ledde Vancouver:s powerplay 2000-talet?,Mattias Ohlund,Sami Salo,Ed Jovanovski,Willie Mitchell,
+NHL,"Vem var ""The Rocket""?",Maurice Richard,Rocket Ismail,Guy Lafleur,Bernie Geoffrion,
+NHL,Vem var den förste att nå 50 mål på 50 matcher?,Maurice Richard,Gordie Howe,Bobby Hull,Phil Esposito,
+NHL,"Vad menas med ""five-hole""?",Mellan målvaktens ben,Fem spelare,Femte målet,Skott högt,
+NHL,Reser NHL-lag alltid flyg?,Mest,Nej,Bara långt,Buss nära,
+NHL,Vilken tränare sparkades mitt under säsong 2009 Pittsburgh?,Michel Therrien,Dan Bylsma,John Tortorella,Peter Laviolette,
+NHL,Vem var Calgary målvakt i 2004 final?,Miikka Kiprusoff,Roman Turek,Jamie McLennan,Fred Brathwaite,
+NHL,Vilken målvakt ledde Calgary till 2004 final?,Miikka Kiprusoff,Roman Turek,Jamie McLennan,Fred Brathwaite,
+NHL,Vem var Detroit:s tränare 2008?,Mike Babcock,Scotty Bowman,Dave Lewis,Jeff Blashill,
+NHL,Vem var Rangers tränare 1994?,Mike Keenan,Colin Campbell,Neil Smith,Ron Low,
+NHL,Vem var Philadelphia:s kapten under 2000-talet?,Mike Richards,Keith Primeau,Eric Desjardins,Simon Gagne,
+NHL,Vilken center ledde Philadelphia under sent 2000-tal?,Mike Richards,Jeff Carter,Daniel Briere,Claude Giroux,
+NHL,Vilken målvakt vann för Rangers 1994?,Mike Richter,John Vanbiesbrouck,Glenn Healy,Corey Hirsch,
+NHL,Flest lag för en spelare i karriären?,Mike Sillinger (12),J.J. Daigneault,Michel Petit,Lee Norwood,
+NHL,Vem var Detroit Red Wings målvakt före Chris Osgood?,Mike Vernon,Tim Cheveldae,Greg Stefan,Glen Hanlon,
+NHL,Vilket lag har vunnit flest Stanley Cup?,Montreal Canadiens,Toronto Maple Leafs,Detroit Red Wings,Boston Bruins,
+NHL,Vilken dynasty vann fem Stanley Cup mellan 1956-1960?,Montreal Canadiens,Toronto Maple Leafs,Detroit Red Wings,Boston Bruins,
+NHL,Vilket lag vann Stanley Cup 1993?,Montreal Canadiens,Los Angeles Kings,Toronto Maple Leafs,Pittsburgh Penguins,
+NHL,Vilket lag eliminerade Kings från slutspel 1993?,Montreal Canadiens,Toronto Maple Leafs,Calgary Flames,Vancouver Canucks,
+NHL,Vilket lag traderade Pierre Turgeon från Islanders?,Montreal Canadiens,Buffalo Sabres,St. Louis Blues,Dallas Stars,
+NHL,"Vad är ""plus/minus""?",Mål för/emot när på is,Poäng totalt,Utvisningar,Skott,
+NHL,Vilken arena spelade Islanders hemma under 2000-talet?,Nassau Coliseum,Barclays Center,Madison Square Garden,Prudential Center,
+NHL,Vilken Arena spelade Columbus hemma?,Nationwide Arena,Value City Arena,Schottenstein Center,Ohio Expo Center,
+NHL,Spelades den första säsongen helt färdig?,Nej,Ja,Delvis,Bara slutspel,
+NHL,Spelade kvinnor någonsin i tidiga NHL?,Nej,Ja,I slutspel,En match,
+NHL,Vann Wayne Gretzky Stanley Cup med Los Angeles?,Nej,Ja,En gång,Två gånger,
+NHL,Vann Erik Karlsson Norris som forward?,Nej,Ja,Spelade back,Tveksamt,
+NHL,Fanns video review från början?,Nej,Ja,1980-talet,1990-talet,
+NHL,Har någon målvakt gjort hat trick?,Nej,Ja,Bara assists,Ron Hextall assists,
+NHL,Har någon spelare bytt lag mitt under match?,Nej,Ja,Bara period,Bara skada,
+NHL,Har någon spelare spelat för alla Original Six?,Nej,Ja,Fem lag,Mike Sillinger,
+NHL,Vann något lag Stanley Cup utan att förlora en match?,Nej,Ja,Montreal 1976,1976 Montreal nästan,
+NHL,Draftades Wayne Gretzky av Edmonton?,Nej,Ja,Calgary,Från WHA,
+NHL,Finns det NHL-lag som ägs av staden?,Nej,Ja,Green Bay modell,Bara Kanada,
+NHL,Har något lag bytt namn mitt i säsong?,Nej,Ja,Bara flytt,California Golden Seals,
+NHL,Kan en spelare få assist på eget mål?,Nej,Ja,Bara målvakt,Tekniskt ja,
+NHL,Startade 2020-21 säsongen som planerat?,Nej,Ja,Försenad,Förkortad,
+NHL,Var Cale Makar den yngste backvinnareen av Conn Smythe?,Nej,Ja,Näst yngst,Äldst någonsin,
+NHL,Introducerades 3-on-3 format i All-Star 2022?,Nej,Ja,Redan fanns,4-on-4,
+NHL,Vann Erik Karlsson Norris Trophy 2023 som forward?,Nej,Ja,Nominerad,Spelade back,
+NHL,Spelar Tuukka Rask fortfarande?,Nej,Ja,Boston,Tradad,
+NHL,Är Roberto Luongo i Hall of Fame än?,Nej,Ja,Nominerad,Inte kvalificerad,
+NHL,Har Patrik Elias gått in i Hall of Fame?,Nej,Ja,Nominerad,Devils retired number,
+NHL,Spelar Joe Thornton fortfarande i NHL?,Nej,Ja,Florida,Pensionerad,
+NHL,Spelar Ryan Getzlaf fortfarande?,Nej,Ja,Anaheim,Pensionerad,
+NHL,Är Claude Giroux kvar i Philadelphia?,Nej,Ja,Ottawa,Pensionerad,
+NHL,Är Steven Stamkos kvar i Tampa Bay?,Nej,Ja,Nashville,Tradad,
+NHL,Pensionerade sig Patrick Kane samtidigt som Toews?,Nej,Ja,Detroit,New York Rangers,
+NHL,Är Jay Woodcroft fortfarande tränare?,Nej,Ja,Kris Knoblauch,Dave Tippett,
+NHL,Har Huberdeau anpassat sig bra till Calgary?,Nej,Ja,Delvis,Excellent,
+NHL,Är Darryl Sutter fortfarande tränare?,Nej,Ja,Ryan Huska,Pensionerad,
+NHL,Har Calgary rivalitet med Edmonton ändrats?,Nej,Ja,Intensifierad,Försvunnit,
+NHL,Vilket lag vann Stanley Cup 1995?,New Jersey Devils,Detroit Red Wings,Philadelphia Flyers,Pittsburgh Penguins,
+NHL,Vilket lag besegrade Detroit i 1995 Stanley Cup Final?,New Jersey Devils,Colorado Avalanche,Philadelphia Flyers,Pittsburgh Penguins,
+NHL,"Vilket lag introducerade ""trap"" systemet?",New Jersey Devils,Detroit Red Wings,Dallas Stars,Colorado Avalanche,
+NHL,Vilket lag vann Stanley Cup 2000?,New Jersey Devils,Dallas Stars,Colorado Avalanche,Philadelphia Flyers,
+NHL,Vilket lag besegrade Colorado i final 2001?,New Jersey Devils,Detroit Red Wings,Pittsburgh Penguins,St. Louis Blues,
+NHL,Vilket lag vann Stanley Cup 2003?,New Jersey Devils,Anaheim Ducks,Ottawa Senators,Detroit Red Wings,
+NHL,Vilket lag besegrade Anaheim i 2003 final?,New Jersey Devils,Detroit Red Wings,Ottawa Senators,Colorado Avalanche,
+NHL,Vilket lag eliminerade Rangers från slutspel ofta på 90-talet?,New Jersey Devils,Philadelphia Flyers,Pittsburgh Penguins,Washington Capitals,
+NHL,Vilket lag besegrade Pittsburgh för att vinna 1995?,New Jersey Devils,Detroit Red Wings,Philadelphia Flyers,Boston Bruins,
+NHL,Vilket lag mötte Los Angeles i 2012 final?,New Jersey Devils,New York Rangers,Philadelphia Flyers,Pittsburgh Penguins,
+NHL,Vilken stad var inte representerad i original NHL?,New York,Toronto,Montreal,Ottawa,
+NHL,Vilket lag vann fyra raka Stanley Cup på 1980-talet?,New York Islanders,Edmonton Oilers,Montreal Canadiens,Calgary Flames,
+NHL,Vilket lag traderade Felix Potvin från Toronto?,New York Islanders,Vancouver Canucks,Los Angeles Kings,Tampa Bay Lightning,
+NHL,Vilket svenskt lag representerar Henrik Lundqvist främst?,New York Rangers,Detroit Red Wings,Washington Capitals,Philadelphia Flyers,
+NHL,Vilket lag spelade Gretzky för sist?,New York Rangers,Los Angeles Kings,Edmonton Oilers,St. Louis Blues,
+NHL,Vilket lag besegrade Vancouver i 1994 final?,New York Rangers,Boston Bruins,New Jersey Devils,Pittsburgh Penguins,
+NHL,Vilket lag representerade öst i 1994 final?,New York Rangers,Boston Bruins,New Jersey Devils,Florida Panthers,
+NHL,Vilket lag mötte Los Angeles i 2014 final?,New York Rangers,Montreal Canadiens,Chicago Blackhawks,Pittsburgh Penguins,
+NHL,"Vem var ""Sudden Death""?",Nicklas Lidstrom,Peter Forsberg,Mats Sundin,Daniel Alfredsson,
+NHL,Vilken svensk back var nyckelspelare för Detroit?,Nicklas Lidström,Mattias Norström,Kenny Jönsson,Calle Johansson,
+NHL,"Vem kallades ""The Perfect Human""?",Nicklas Lidström,Steve Yzerman,Sergei Fedorov,Vladimir Konstantinov,
+NHL,Vem vann Conn Smythe Trophy 2002?,Nicklas Lidström,Steve Yzerman,Brendan Shanahan,Chris Chelios,
+NHL,Vem var Detroit:s kapten efter Steve Yzerman?,Nicklas Lidström,Chris Chelios,Brendan Shanahan,Kris Draper,
+NHL,Vem tog över som Detroit kapten efter Yzerman?,Nicklas Lidström,Chris Chelios,Pavel Datsyuk,Henrik Zetterberg,
+NHL,Spelar alla NHL-lag 82 matcher?,Normalt,Nej,Playoff-lag färre,Lockout ändrar,
+NHL,"Vad är ""power play""?",Numerärt överläge,Snabbt anfall,Hård tackling,Målfirande,
+NHL,Spelade Mario Lemieux för Pittsburgh hela karriären?,Nästan,Ja,Nej,Två lag,
+NHL,Hur många byten får ett lag?,Obegränsat,20,15,10,
+NHL,Bor NHL-spelare tillsammans som rookies?,Ofta,Nej,Bara junior,Bara träning,
+NHL,Vilken månad startar NHL-säsongen normalt?,Oktober,September,November,December,
+NHL,Vem var Florida:s kapten under 2000-talet?,Olli Jokinen,Nathan Horton,Stephen Weiss,Joe Nieuwendyk,
+NHL,Vilken finsk center spelade för Florida?,Olli Jokinen,Ville Peltonen,Jozef Stumpel,Viktor Kozlov,
+NHL,Tradades Claude Giroux till Florida?,Ottawa,Ja,Nej,Tampa,
+NHL,Vilket lag mötte Anaheim i 2007 final?,Ottawa Senators,Buffalo Sabres,Detroit Red Wings,Pittsburgh Penguins,
+NHL,Vilket lag traderade Alexei Yashin till Islanders?,Ottawa Senators,Toronto Maple Leafs,Buffalo Sabres,Montreal Canadiens,
+NHL,Hvilket smeknamn har Alexander Ovechkin?,Ovi,The Great Eight,Alexander the Great,Captain Russia,
+NHL,Vem var Toronto:s tränare under tidigt 2000-tal?,Pat Quinn,Ron Wilson,Randy Carlyle,Mike Babcock,
+NHL,Vem gjorde avgörande målet i 2010 final för Chicago?,Patrick Kane,Jonathan Toews,Duncan Keith,Marian Hossa,
+NHL,Vem vann Conn Smythe Trophy 2013?,Patrick Kane,Jonathan Toews,Corey Crawford,Duncan Keith,
+NHL,Vilken fransk-kanadensisk spelare ledde Colorado 1996?,Patrick Roy,Joe Sakic,Peter Forsberg,Claude Lemieux,
+NHL,Vilken målvakt hjälpte Colorado vinna 2001?,Patrick Roy,David Aebischer,Craig Billington,Marc Denis,
+NHL,Vem vann Conn Smythe Trophy 2001?,Patrick Roy,Joe Sakic,Peter Forsberg,Ray Bourque,
+NHL,Vem var Montreal målvakt 1993 Stanley Cup?,Patrick Roy,Andre Racicot,Frederic Chabot,Ron Tugnutt,
+NHL,Vem vann Conn Smythe Trophy 1993?,Patrick Roy,Kirk Muller,Vincent Damphousse,John LeClair,
+NHL,Vem var Atlanta Thrashers första stora draft pick?,Patrik Stefan,Dany Heatley,Kari Lehtonen,Ilya Kovalchuk,
+NHL,Vem var Anaheims största stjärna 2003?,Paul Kariya,Teemu Selanne,Steve Rucchin,Adam Oates,
+NHL,Vem var Carolina:s tränare före 2006 Cup?,Peter Laviolette,Paul Maurice,Kirk Muller,Ron Francis,
+NHL,Vem var Philadelphia:s tränare under sent 2000-tal?,Peter Laviolette,John Stevens,Ken Hitchcock,Craig Berube,
+NHL,Vilket smeknamn hade Peter Forsberg?,Peter the Great,Foppa,The Hammer,Swedish Sensation,
+NHL,Vem spelade flest säsonger utan Stanley Cup?,Phil Housley,Ray Bourque,Marcel Dionne,Dale Hunter,
+NHL,Flest matcher utan att vinna Stanley Cup som spelare?,Phil Housley,Marcel Dionne,Dale Hunter,Ray Bourque,
+NHL,Which expansion team won Stanley Cup first after 1967?,Philadelphia Flyers,Pittsburgh Penguins,Los Angeles Kings,New York Rangers,
+NHL,Vilket lag besegrade New Jersey i Conference Final 2000?,Philadelphia Flyers,Pittsburgh Penguins,Toronto Maple Leafs,New York Rangers,
+NHL,Vilket lag fick Eric Lindros från Quebec?,Philadelphia Flyers,New York Rangers,Toronto Maple Leafs,Detroit Red Wings,
+NHL,Vilket lag draftade Peter Forsberg?,Philadelphia Flyers,Quebec Nordiques,Colorado Avalanche,Boston Bruins,
+NHL,Vilket lag mötte Chicago i 2010 final?,Philadelphia Flyers,Montreal Canadiens,Pittsburgh Penguins,Boston Bruins,
+NHL,Vilket lag eliminerade Montreal från 2010 playoffs?,Philadelphia Flyers,Pittsburgh Penguins,Washington Capitals,Boston Bruins,
+NHL,Vilket lag traderade Vincent Lecavalier från Tampa Bay?,Philadelphia Flyers,Montreal Canadiens,Los Angeles Kings,Boston Bruins,
+NHL,Vem var Islanders bästa forward under 90-talet?,Pierre Turgeon,Pat LaFontaine,Ziggy Palffy,Kenny Jonsson,
+NHL,Längsta namn på en NHL-spelare?,Pierre-Alexandre Parenteau,Jean-Sebastien Giguere,Pierre-Marc Bouchard,Marc-Antoine Pouliot,
+NHL,Vilket lag representerade Mario Lemieux hela karriären?,Pittsburgh Penguins,Quebec Nordiques,Montreal Canadiens,Philadelphia Flyers,
+NHL,Vilket lag spelade Luc Robitaille för efter Kings första gången?,Pittsburgh Penguins,New York Rangers,Detroit Red Wings,Boston Bruins,
+NHL,Vilket lag draftade Jaromir Jagr?,Pittsburgh Penguins,Philadelphia Flyers,New Jersey Devils,Washington Capitals,
+NHL,Vilket lag mötte Detroit i 2008 final?,Pittsburgh Penguins,Philadelphia Flyers,Montreal Canadiens,Boston Bruins,
+NHL,Hvilket lag vann Stanley Cup 2009?,Pittsburgh Penguins,Detroit Red Wings,Chicago Blackhawks,Washington Capitals,
+NHL,Vilket lag draftade Sidney Crosby första overall 2005?,Pittsburgh Penguins,Washington Capitals,Columbus Blue Jackets,Chicago Blackhawks,
+NHL,Vilket lag spelade mot Washington i 2009 semifinals?,Pittsburgh Penguins,Philadelphia Flyers,New York Rangers,Carolina Hurricanes,
+NHL,Vilket lag draftade Eric Lindros first overall?,Quebec Nordiques,Philadelphia Flyers,Toronto Maple Leafs,Ottawa Senators,
+NHL,Vilken veteran vann slutligen Stanley Cup med Colorado 2001?,Ray Bourque,Dave Andreychuk,Al MacInnis,Chris Chelios,
+NHL,Vilken back ledde Boston under 90-talet?,Ray Bourque,Glen Wesley,Don Sweeney,Garry Galley,
+NHL,Vilken målvakt spelade för Ottawa 2007?,Ray Emery,Dominik Hasek,Martin Gerber,Mike Morrison,
+NHL,Vilken Arena spelade Carolina hemma under 2006?,RBC Center,PNC Arena,Greensboro Coliseum,Charlotte Coliseum,
+NHL,Vem ledde Rangers offensivt 2014 playoffs?,Rick Nash,Martin St. Louis,Derek Stepan,Chris Kreider,
+NHL,Vem var Columbus Blue Jackets första draft pick?,Rick Nash,Rostislav Klesla,Pascal Leclaire,David Vyborny,
+NHL,Vilken målvakt spelade för Vancouver under 2000-talet?,Roberto Luongo,Dan Cloutier,Alex Auld,Curtis Sanford,
+NHL,Vem var Florida Panthers:s målvakt under 2000-talet?,Roberto Luongo,Tomas Vokoun,Ed Belfour,Jose Theodore,
+NHL,Vilken back ledde Calgary:s försvar 2004?,Robyn Regehr,Jordan Leopold,Denis Gauthier,Rhett Warrener,
+NHL,Vem var Carolina:s kapten 2006?,Rod Brind'Amour,Eric Staal,Cam Ward,Glen Wesley,
+NHL,Vem ledde Carolina offensivt före Eric Staal?,Rod Brind'Amour,Jeff O'Neill,Ron Francis,Sami Kapanen,
+NHL,Vem var Philadelphia målvakt under Lindros era?,Ron Hextall,Garth Snow,Tommy Soderstrom,John Vanbiesbrouck,
+NHL,Vem var San Jose:s tränare under tidigt 2000-tal?,Ron Wilson,Todd McLellan,Darryl Sutter,Claude Julien,
+NHL,Vad är Calder Trophy för?,Rookie of Year,Bästa målvakt,Mest sportslig,Bästa back,
+NHL,Kortaste spelare i NHL-historien?,Roy Worters,Theo Fleury,Martin St. Pierre,Nathan Gerbe,
+NHL,Vilken målvakt spelade för Buffalo under 2000-talet?,Ryan Miller,Martin Biron,Ty Conklin,Jocelyn Thibault,
+NHL,Vilket land kommer Alexander Ovechkin från?,Ryssland,Ukraina,Vitryssland,Tjeckien,
+NHL,Vilket land kommer Pavel Datsyuk från?,Ryssland,Ukraina,Vitryssland,Kazakstan,
+NHL,Vilken Arena spelade Calgary hemma i?,Saddledome,Stampede Corral,McMahon Stadium,Flames Arena,
+NHL,Vilket lönestak introducerades efter lockout?,Salary cap,Luxury tax,Revenue sharing,Draft lottery,
+NHL,Vilket lag mötte Calgary i 2004 Conference Final?,San Jose Sharks,Detroit Red Wings,Vancouver Canucks,Colorado Avalanche,
+NHL,Vilken forward kom till Montreal som free agent 2009?,Scott Gomez,Mike Cammalleri,Brian Gionta,Tomas Plekanec,
+NHL,Vem var Anaheim:s kapten 2007?,Scott Niedermayer,Chris Pronger,Teemu Selanne,Ryan Getzlaf,
+NHL,Vilken veteran back kom från New Jersey till Anaheim?,Scott Niedermayer,Ken Daneyko,Colin White,Brian Rafalski,
+NHL,Vem vann Conn Smythe Trophy 2007?,Scott Niedermayer,Jean-Sebastien Giguere,Chris Pronger,Teemu Selanne,
+NHL,Vem var den siste spelaren att vinna Stanley Cup som kapten för två olika lag?,Scott Stevens,Mark Messier,Chris Pronger,Sidney Crosby,
+NHL,Vem var New Jerseys kapten under 2000 Stanley Cup?,Scott Stevens,Ken Daneyko,Martin Brodeur,Jason Arnott,
+NHL,Vem vann Conn Smythe Trophy 2000?,Scott Stevens,Martin Brodeur,Jason Arnott,Patrik Elias,
+NHL,Vem var Detroits tränare 2002?,Scotty Bowman,Dave Lewis,Mike Babcock,Jacques Demers,
+NHL,Vilken veteran tränare pensionerade sig efter 2002?,Scotty Bowman,Pat Quinn,Jacques Lemaire,Ken Hitchcock,
+NHL,Vilket ryss spelare spelade för Rangers 90-talet?,Sergei Nemchinov,Alexei Kovalev,Pavel Bure,Alexander Mogilny,
+NHL,Vem var Phoenix:s kapten under Gretzky:s tid?,Shane Doan,Keith Tkachuk,Jeremy Roenick,Teppo Numminen,
+NHL,Vilket smeknamn har Sidney Crosby?,Sid the Kid,The Next One,Captain Canada,The Golden Boy,
+NHL,Vem ledde Pittsburgh offensivt 2008?,Sidney Crosby,Evgeni Malkin,Marian Hossa,Ryan Malone,
+NHL,Vilken ung center draftades av Pittsburgh 2005?,Sidney Crosby,Evgeni Malkin,Jordan Staal,Ryan Whitney,
+NHL,"Vad är ""hockey IQ""?",Spelförståelse,Intelligens,Poäng,Skicklighet,
+NHL,Vad belönar Lady Byng Trophy?,Sportsligt uppförande,Flest mål,Bästa ledare,Mest assists,
+NHL,Vilket lag traderade Chris Pronger till senare?,St. Louis Blues,Edmonton Oilers,Anaheim Ducks,Hartford Whalers,
+NHL,Vilket lag spelade Curtis Joseph för på 90-talet?,St. Louis Blues,Edmonton Oilers,Toronto Maple Leafs,Alla ovan,
+NHL,Vilken Arena spelade Tampa Bay hemma i 2004?,St. Pete Times Forum,Tropicana Field,Amalie Arena,Ice Palace,
+NHL,Vad kallades den första säsongens mästerskap?,Stanley Cup,Championship Trophy,NHL Trophy,Hockey Cup,
+NHL,Vilken Arena spelade Los Angeles hemma 2012?,Staples Center,Forum,Honda Center,Angel Stadium,
+NHL,Vem skadades i Todd Bertuzzi incident?,Steve Moore,Matt Cooke,Darcy Tucker,Sean Avery,
+NHL,Vilket land kommer Peter Forsberg från?,Sverige,Norge,Finland,Danmark,
+NHL,Vilket lag vann Stanley Cup 2020?,Tampa Bay Lightning,Dallas Stars,New York Islanders,Philadelphia Flyers,
+NHL,Besegrade Colorado vilken finalfavorit 2022?,Tampa Bay Lightning,Florida Panthers,New York Rangers,Calgary Flames,
+NHL,Vilket lag vann Stanley Cup 2004?,Tampa Bay Lightning,Calgary Flames,Philadelphia Flyers,San Jose Sharks,
+NHL,Vilket lag traderade Martin St. Louis till Rangers?,Tampa Bay Lightning,Montreal Canadiens,Philadelphia Flyers,Calgary Flames,
+NHL,Vilken Arena spelade Boston hemma 2011?,TD Garden,Boston Garden,Fleet Center,Matthews Arena,
+NHL,"Vem var ""The Finnish Flash""?",Teemu Selanne,Jari Kurri,Saku Koivu,Mikko Koivu,
+NHL,Vem var den finske sniper för Anaheim?,Teemu Selanne,Saku Koivu,Jere Lehtinen,Ville Peltonen,
+NHL,Vilket smeknamn har Pavel Datsyuk?,The Magic Man,The Professor,Pasha,Dats,
+NHL,Vilket smeknamn hade Eric Lindros?,The Next One,Big E,The Franchise,E-Train,
+NHL,Mest utvisade spelare genom tiderna?,Tiger Williams,Marty McSorley,Bob Probert,Dale Hunter,
+NHL,Vem vann Conn Smythe Trophy 2011?,Tim Thomas,Zdeno Chara,Patrice Bergeron,David Krejci,
+NHL,Vilken målvakt hade fantastisk säsong för Boston 2011?,Tim Thomas,Tuukka Rask,Anton Khudobin,Jeremy Smith,
+NHL,Vilket land kommer Dominik Hasek från?,Tjeckien,Slovakien,Polen,Ryssland,
+NHL,Vilket land representerade Jaromir Jagr internationellt?,Tjeckoslovakien/Tjeckien,Polen,Slovakien,Ryssland,
+NHL,Vilken forward var kontroversiell för Vancouver 2004?,Todd Bertuzzi,Matt Cooke,Brad May,Jarkko Ruutu,
+NHL,Vem var Pittsburgh målvakt under tidigt 90-tal?,Tom Barrasso,Frank Pietrangelo,Wendell Young,Ken Wregget,
+NHL,Vilket lag vann den första Stanley Cup i NHL?,Toronto Arenas,Montreal Canadiens,Ottawa Senators,Boston Bruins,
+NHL,Vilket lag har längst tid utan Stanley Cup?,Toronto Maple Leafs,Buffalo Sabres,Vancouver Canucks,Minnesota Wild,
+NHL,"Vad betyder ""hat trick""?",Tre mål samma spelare,Tre assists,Målvakts­räddning,Snabb puck,
+NHL,Första europeiska spelaren i NHL?,Ulf Sterner,Borje Salming,Stan Mikita,Johnny Gottselig,
+NHL,Vilken Arena spelade Chicago hemma 2010?,United Center,Chicago Stadium,Allstate Arena,Wintrust Arena,
+NHL,"Vad är ""the sin bin""?",Utvisningsbås,Domarens plats,Målet,Bänken,
+NHL,Vilken finsk forward spelade för Detroit 2000-talet?,Valtteri Filppula,Jiri Hudler,Dan Cleary,Kris Draper,
+NHL,Vilket lag mötte Boston i 2011 final?,Vancouver Canucks,Tampa Bay Lightning,Philadelphia Flyers,Pittsburgh Penguins,
+NHL,Vilket lag fick Roberto Luongo från Florida?,Vancouver Canucks,Montreal Canadiens,Toronto Maple Leafs,New York Islanders,
+NHL,Vem vann Conn Smythe Trophy 2020?,Victor Hedman,Nikita Kucherov,Andrei Vasilevskiy,Brayden Point,
+NHL,Vem tog över som Tampa Bays kapten efter Stamkos?,Victor Hedman,Nikita Kucherov,Brayden Point,Andrei Vasilevskiy,
+NHL,Varför spelade inte Lindros för Quebec?,Ville inte flytta,Franska språket,Familie beslut,Alla ovan,
+NHL,Vilken ung center blomstrade för Tampa 2004?,Vincent Lecavalier,Brad Richards,Martin St. Louis,Ruslan Fedotenko,
+NHL,Vilken position spelade Luc Robitaille?,Vänsterforward,Högerforward,Center,Back,
+NHL,Vem ledde Kings i scoring 1993 playoffs?,Wayne Gretzky,Luc Robitaille,Tomas Sandstrom,Tony Granato,
+NHL,Vem var Phoenix Coyotes:s tränare under 2000-talet?,Wayne Gretzky,Bob Francis,Dave Tippett,Claude Julien,
+NHL,Första afroamerikanske spelaren i NHL?,Willie O'Ree,Grant Fuhr,Jarome Iginla,P.K. Subban,
+NHL,Vilket lag draftade Teemu Selanne?,Winnipeg Jets,Anaheim Ducks,San Jose Sharks,Calgary Flames,
+NHL,Vilken Arena spelade Minnesota hemma?,Xcel Energy Center,Target Center,Mariucci Arena,Met Center,
+NHL,Längsta spelare i NHL-historien?,Zdeno Chara,Tyler Myers,Hal Gill,Ben Bishop,
+NHL,Vem var Boston:s kapten 2011?,Zdeno Chara,Patrice Bergeron,David Krejci,Milan Lucic,
+NHL,"Vad är ""offside""?",Över blå linje för tidigt,Bakåtpass,Högt klubbat,Ruffing,
+NHL,"Vad är ""top shelf""?",Övre delen av mål,Bästa spelare,Publikens plats,Första kedjan,
+NHL,Vilket lag draftade Börje Salming?,Toronto Maple Leafs,Detroit Red Wings,New York Rangers,Boston Bruins
+NHL,Vad kallades Börje Salming för smeknamn?,The King,Swedish Superman,Mr. Elbows,Salming the Great
+NHL,Vilket år kom Börje Salming till NHL?,1973,1972,1974,1975
+NHL,Vilket lag spelade Ulf Sterner för som förste svensk?,New York Rangers,Toronto Maple Leafs,Detroit Red Wings,Boston Bruins
+NHL,Vilket år debuterade Ulf Sterner som förste svensk i NHL?,1965,1964,1966,1963
+NHL,Vilket lag draftade Mats Sundin?,Quebec Nordiques,Toronto Maple Leafs,Vancouver Canucks,Calgary Flames
+NHL,Vilket draft år valdes Mats Sundin första overall?,1989,1988,1990,1987
+NHL,Vem tradade Mats Sundin till Toronto?,Wendel Clark,Owen Nolan,Sylvain Lefebvre,Alla ovan
+NHL,Vilket nummer bar Mats Sundin i Toronto?,13,14,19,21
+NHL,Hur många säsonger var Mats Sundin kapten för Toronto?,11,9,12,10
+NHL,Vilket år blev Mats Sundin kapten för Toronto?,1997,1996,1998,1995
+NHL,Vilket lag spelade Mats Sundin för efter Toronto?,Vancouver Canucks,Montreal Canadiens,New York Rangers,Calgary Flames
+NHL,Vilket smeknamn hade Peter Forsberg?,Foppa,Peter the Great,The Swedish Hammer,Forsy
+NHL,Vilket lag fick Peter Forsberg i Eric Lindros-traden?,Quebec Nordiques,Philadelphia Flyers,Colorado Avalanche,Boston Bruins
+NHL,Vilket draft år draftades Peter Forsberg?,1991,1990,1992,1989
+NHL,Vilken skada plågade Peter Forsberg mest?,Fotskador,Hjärnskakning,Ryggskador,Knäskador
+NHL,Vilket lag återvände Peter Forsberg till efter Colorado?,Philadelphia Flyers,Nashville Predators,Colorado Avalanche,Detroit Red Wings
+NHL,Vilket smeknamn hade Nicklas Lidström?,The Perfect Human,Mr. Automatic,The Professor,Swedish Machine
+NHL,Vilket draft år valdes Nicklas Lidström?,1989,1988,1990,1987
+NHL,Vilken draft position valdes Lidström?,53:e,47:e,61:a,39:e
+NHL,Hur många Stanley Cup vann Nicklas Lidström?,4,3,5,6
+NHL,Hur många Norris Trophy vann Nicklas Lidström?,7,6,5,8
+NHL,Vilket år pensionerade sig Nicklas Lidström?,2012,2011,2013,2010
+NHL,Vilket nummer bar Nicklas Lidström?,5,4,6,3
+NHL,Vem tog över som Detroit kapten efter Lidström?,Henrik Zetterberg,Pavel Datsyuk,Johan Franzén,Valtteri Filppula
+NHL,Vilket smeknamn har Henrik Lundqvist?,The King,King Henry,The Swedish Wall,Lundy
+NHL,Vilket lag draftade Henrik Lundqvist?,New York Rangers,Detroit Red Wings,Montreal Canadiens,Vancouver Canucks
+NHL,Vilket draft år valdes Henrik Lundqvist?,2000,1999,2001,1998
+NHL,Vilken draft position valdes Lundqvist?,205:e,187:e,223:a,194:e
+NHL,Vilket nummer bar Henrik Lundqvist?,30,31,35,1
+NHL,Hur många år spelade Lundqvist för Rangers?,15,14,16,13
+NHL,Vilket lag försökte Henrik Lundqvist vinna Cup med sist?,Washington Capitals,Florida Panthers,Colorado Avalanche,Tampa Bay Lightning
+NHL,Vilket år pensionerade sig Henrik Lundqvist?,2021,2020,2022,2019
+NHL,Vilken hjärtsjukdom tvingade Lundqvist till retirement?,Myocarditis,Arrhythmia,Cardiomyopathy,Heart valve issue
+NHL,Vilket smeknamn har Erik Karlsson?,EK65,The Karlsson Express,Swedish Lightning,Mr. Smooth
+NHL,Vilket lag draftade Erik Karlsson?,Ottawa Senators,San Jose Sharks,Pittsburgh Penguins,Montreal Canadiens
+NHL,Vilket draft år valdes Erik Karlsson?,2008,2007,2009,2006
+NHL,Vilken draft position valdes Karlsson?,15:e,12:e,18:e,21:a
+NHL,Vilket nummer bar Erik Karlsson i Ottawa?,65,66,6,5
+NHL,Vilket år vann Erik Karlsson första Norris Trophy?,2012,2011,2013,2010
+NHL,Hur många Norris Trophy har Erik Karlsson vunnit?,2,1,3,4
+NHL,Vilket lag tradade Erik Karlsson från Ottawa?,San Jose Sharks,Pittsburgh Penguins,Vegas Golden Knights,Tampa Bay Lightning
+NHL,Vilket år gjorde Erik Karlsson 100+ poäng som back?,2022-23,2021-22,2023-24,2020-21
+NHL,Vem var siste back före Karlsson att göra 100+ poäng?,Bobby Orr,Paul Coffey,Al MacInnis,Phil Housley
+NHL,Vilket lag spelade Daniel Alfredsson för hela karriären?,Ottawa Senators,Detroit Red Wings,Colorado Avalanche,Toronto Maple Leafs
+NHL,Vilket draft år valdes Daniel Alfredsson?,1994,1993,1995,1992
+NHL,Vilken draft position valdes Alfredsson?,133:e,156:e,121:a,144:e
+NHL,Vilket nummer bar Daniel Alfredsson i Ottawa?,11,9,19,14
+NHL,Vilket år blev Daniel Alfredsson kapten för Ottawa?,1999,1998,2000,1997
+NHL,Vilket lag spelade Daniel Alfredsson för sist?,Detroit Red Wings,Ottawa Senators,Toronto Maple Leafs,Montreal Canadiens
+NHL,Vilket smeknamn hade Daniel Alfredsson?,Alfie,The Captain,Mr. Senator,Swedish Sniper
+NHL,Vilken kontrovers var Alfredsson involverad i 2007 playoffs?,Kastade handsken mot fans,Muck Tucker incident,Spat på Niedermayer,Ray Emery fight
+NHL,Vilket lag draftade Gabriel Landeskog?,Colorado Avalanche,Ottawa Senators,New Jersey Devils,Philadelphia Flyers
+NHL,Vilket draft år valdes Gabriel Landeskog?,2011,2010,2012,2009
+NHL,Vilken draft position valdes Landeskog?,2:a,1:a,3:e,4:e
+NHL,Vilket år vann Gabriel Landeskog Calder Trophy?,2012,2011,2013,2010
+NHL,Vilket år blev Gabriel Landeskog kapten för Colorado?,2012,2013,2011,2014
+NHL,Hur gammal var Landeskog när han blev kapten?,19,20,18,21
+NHL,Vilket nummer bar Gabriel Landeskog?,92,91,96,29
+NHL,Vilket lag draftade Victor Hedman?,Tampa Bay Lightning,Ottawa Senators,New York Islanders,Atlanta Thrashers
+NHL,Vilket draft år valdes Victor Hedman?,2009,2008,2010,2007
+NHL,Vilken draft position valdes Hedman?,2:a,1:a,3:e,4:e
+NHL,Vilket nummer bar Victor Hedman?,77,7,17,27
+NHL,Vilket år vann Victor Hedman Conn Smythe Trophy?,2020,2021,2019,2018
+NHL,Hur många Stanley Cup har Victor Hedman vunnit?,2,1,3,4
+NHL,Vilket smeknamn har Victor Hedman?,Heddy,The Swedish Tower,Big Vic,Mr. Lightning
+NHL,Vilket lag draftade William Nylander?,Toronto Maple Leafs,Buffalo Sabres,Calgary Flames,Malmö Redhawks
+NHL,Vilket draft år valdes William Nylander?,2014,2013,2015,2012
+NHL,Vilken draft position valdes Nylander?,8:e,6:e,12:e,10:e
+NHL,Vem är William Nylanders far?,Michael Nylander,Niklas Nylander,Peter Nylander,Stefan Nylander
+NHL,Vilket lag spelade Michael Nylander för i NHL?,Washington Capitals,New York Rangers,Chicago Blackhawks,Alla ovan
+NHL,Vilket nummer bar William Nylander i Toronto?,88,11,29,39
+NHL,Vilken kontraktsdispyt hade William Nylander 2018?,Holdout till december,Trade request,Salary arbitration,Europe threat
+NHL,Vilket lag draftade Elias Pettersson?,Vancouver Canucks,Detroit Red Wings,Carolina Hurricanes,Arizona Coyotes
+NHL,Vilket draft år valdes Elias Pettersson?,2017,2016,2018,2015
+NHL,Vilken draft position valdes Pettersson?,5:e,3:e,7:e,9:e
+NHL,Vilket år vann Elias Pettersson Calder Trophy?,2019,2018,2020,2017
+NHL,Vilket nummer bar Elias Pettersson i Vancouver?,40,4,14,44
+NHL,Vilket SHL-lag kommer Elias Pettersson från?,Växjö Lakers,Frölunda Indians,Skellefteå AIK,Färjestad BK
+NHL,Vilket smeknamn har Elias Pettersson?,Petey,EP40,The Alien,Swedish Sensation
+NHL,Vilket lag draftade Filip Forsberg?,Washington Capitals,Nashville Predators,Columbus Blue Jackets,Philadelphia Flyers
+NHL,Vilket draft år valdes Filip Forsberg?,2012,2011,2013,2010
+NHL,Vilken draft position valdes Forsberg?,11:e,8:e,14:e,17:e
+NHL,Vilket lag tradade Filip Forsberg till Nashville?,Washington Capitals,Philadelphia Flyers,Columbus Blue Jackets,Pittsburgh Penguins
+NHL,Vem tradades i utbyte mot Filip Forsberg?,Martin Erat,Mike Ribeiro,David Legwand,Patric Hornqvist
+NHL,Vilket nummer bar Filip Forsberg i Nashville?,9,10,11,19
+NHL,Vilket SHL-lag kommer Filip Forsberg från?,Leksands IF,Modo Hockey,HV71,Brynäs IF
+NHL,Är Filip Forsberg släkt med Peter Forsberg?,Nej,Ja,Kusiner,Brorson
+NHL,Vilket lag draftade Erik Gustafsson som forward?,Philadelphia Flyers,Chicago Blackhawks,Edmonton Oilers,Boston Bruins
+NHL,Vilket lag utvecklade Erik Gustafsson till back?,Chicago Blackhawks,Philadelphia Flyers,Calgary Flames,Washington Capitals
+NHL,Vilken ovanlig position bytte Erik Gustafsson?,Forward till back,Back till forward,Center till wing,Wing till center
+NHL,Vilket lag draftade Carl Hagelin?,New York Rangers,Pittsburgh Penguins,Anaheim Ducks,Washington Capitals
+NHL,Vilket draft år valdes Carl Hagelin?,2007,2006,2008,2005
+NHL,Vilket universitet spelade Carl Hagelin för?,University of Michigan,Boston University,Harvard University,Boston College
+NHL,Vilket smeknamn har Carl Hagelin?,Swagelin,Haggy,The Swedish Speedster,Fast Carl
+NHL,Vilket lag draftade Mattias Ekholm?,Nashville Predators,Edmonton Oilers,San Jose Sharks,Columbus Blue Jackets
+NHL,Vilket draft år valdes Mattias Ekholm?,2009,2008,2010,2007
+NHL,Vilken draft position valdes Ekholm?,102:a,87:e,124:e,156:e
+NHL,Vilket lag tradade Mattias Ekholm från Nashville?,Edmonton Oilers,Colorado Avalanche,Toronto Maple Leafs,Calgary Flames
+NHL,Vilket SHL-lag kommer Mattias Ekholm från?,Mora IK,Brynäs IF,Färjestad BK,Skellefteå AIK
+NHL,Vilket nummer bar Mattias Ekholm i Nashville?,14,4,24,42
+NHL,Vilket lag draftade Oliver Ekman-Larsson?,Phoenix Coyotes,Arizona Coyotes,Vancouver Canucks,Florida Panthers
+NHL,Vilket draft år valdes Oliver Ekman-Larsson?,2009,2008,2010,2007
+NHL,Vilken draft position valdes Ekman-Larsson?,6:e,4:e,9:e,12:e
+NHL,Vilket nummer bar Oliver Ekman-Larsson i Arizona?,23,3,33,13
+NHL,Vilket SHL-lag kommer Oliver Ekman-Larsson från?,Leksands IF,HV71,Frölunda Indians,Skellefteå AIK
+NHL,Vilket lag tradade Oliver Ekman-Larsson från Arizona?,Vancouver Canucks,Florida Panthers,Calgary Flames,Edmonton Oilers
+NHL,Vilket lag draftade Marcus Kruger?,Chicago Blackhawks,Washington Capitals,Columbus Blue Jackets,Carolina Hurricanes
+NHL,Vilket draft år valdes Marcus Kruger?,2009,2008,2010,2007
+NHL,Hur många Stanley Cup vann Marcus Kruger med Chicago?,2,1,3,4
+NHL,Vilket SHL-lag kommer Marcus Kruger från?,Djurgården IF,AIK,Hammarby,Modo Hockey
+NHL,Vilket lag draftade Hampus Lindholm?,Anaheim Ducks,Boston Bruins,Philadelphia Flyers,Detroit Red Wings
+NHL,Vilket draft år valdes Hampus Lindholm?,2012,2011,2013,2010
+NHL,Vilken draft position valdes Lindholm?,6:e,4:e,9:e,12:e
+NHL,Vilket lag tradade Hampus Lindholm från Anaheim?,Boston Bruins,Philadelphia Flyers,Detroit Red Wings,Calgary Flames
+NHL,Vilket SHL-lag kommer Hampus Lindholm från?,Rögle BK,Frölunda Indians,Skellefteå AIK,HV71
+NHL,Vilket lag draftade John Klingberg?,Dallas Stars,Boston Bruins,Anaheim Ducks,Detroit Red Wings
+NHL,Vilket draft år valdes John Klingberg?,2010,2009,2011,2008
+NHL,Vilken draft position valdes Klingberg?,131:a,156:e,187:e,203:e
+NHL,Vilket SHL-lag kommer John Klingberg från?,Frölunda Indians,Skellefteå AIK,HV71,Växjö Lakers
+NHL,Vilket lag signerade John Klingberg som free agent 2023?,Anaheim Ducks,Boston Bruins,Philadelphia Flyers,Toronto Maple Leafs
+NHL,Vilket lag draftade Rasmus Dahlin?,Buffalo Sabres,Arizona Coyotes,Ottawa Senators,Detroit Red Wings
+NHL,Vilket draft år valdes Rasmus Dahlin?,2018,2017,2019,2016
+NHL,Vilken draft position valdes Dahlin?,1:a,2:a,3:e,4:e
+NHL,Vilket SHL-lag kommer Rasmus Dahlin från?,Frölunda Indians,Skellefteå AIK,HV71,Växjö Lakers
+NHL,Vilket nummer bar Rasmus Dahlin i Buffalo?,26,6,4,24
+NHL,Vilket lag draftade Jesper Bratt?,New Jersey Devils,Philadelphia Flyers,New York Rangers,Washington Capitals
+NHL,Vilket draft år valdes Jesper Bratt?,2016,2015,2017,2014
+NHL,Vilken draft position valdes Bratt?,162:a,187:e,203:e,214:e
+NHL,Vilket SHL-lag kommer Jesper Bratt från?,AIK,Djurgården IF,Hammarby,Modo Hockey
+NHL,Vilket nummer bar Jesper Bratt i New Jersey?,63,36,73,96
+NHL,Vilket lag draftade Lucas Raymond?,Detroit Red Wings,Ottawa Senators,Los Angeles Kings,San Jose Sharks
+NHL,Vilket draft år valdes Lucas Raymond?,2020,2019,2021,2018
+NHL,Vilken draft position valdes Raymond?,4:e,6:e,8:e,10:e
+NHL,Vilket SHL-lag kommer Lucas Raymond från?,Frölunda Indians,Skellefteå AIK,HV71,Växjö Lakers
+NHL,Vilket nummer bar Lucas Raymond i Detroit?,23,9,72,86
+NHL,Vilket lag draftade Moritz Seider (tysk men spelade i svensk junior)?,Detroit Red Wings,Ottawa Senators,Buffalo Sabres,San Jose Sharks
+NHL,Vilket år vann Lucas Raymond Calder Trophy?,Inte vunnit,2022,2023,2021
+NHL,Vem vann Calder Trophy 2022 istället för Raymond?,Moritz Seider,Trevor Zegras,Michael Bunting,Anton Lundell
+NHL,Vilket lag draftade Alexander Holtz?,New Jersey Devils,Arizona Coyotes,Ottawa Senators,Los Angeles Kings
+NHL,Vilket draft år valdes Alexander Holtz?,2020,2019,2021,2018
+NHL,Vilken draft position valdes Holtz?,7:e,5:e,9:e,11:e
+NHL,Vilket SHL-lag kommer Alexander Holtz från?,Djurgården IF,AIK,Hammarby,Frölunda Indians
+NHL,Vilket lag draftade Nils Höglander?,Vancouver Canucks,Seattle Kraken,Philadelphia Flyers,Carolina Hurricanes
+NHL,Vilket draft år valdes Nils Höglander?,2019,2018,2020,2017
+NHL,Vilken draft position valdes Höglander?,40:e,32:a,48:e,55:e
+NHL,Vilket SHL-lag kommer Nils Höglander från?,Rögle BK,Frölunda Indians,Skellefteå AIK,HV71
+NHL,Vilket lag draftade Oskar Sundqvist?,Pittsburgh Penguins,St. Louis Blues,Detroit Red Wings,Colorado Avalanche
+NHL,Vilket draft år valdes Oskar Sundqvist?,2012,2011,2013,2010
+NHL,Vilket lag vann Oskar Sundqvist Stanley Cup med?,St. Louis Blues,Pittsburgh Penguins,Colorado Avalanche,Tampa Bay Lightning
+NHL,Vilket SHL-lag kommer Oskar Sundqvist från?,MODO Hockey,Brynäs IF,Färjestad BK,Skellefteå AIK
+NHL,Vilket lag draftade Adrian Kempe?,Los Angeles Kings,Anaheim Ducks,San Jose Sharks,Vegas Golden Knights
+NHL,Vilket draft år valdes Adrian Kempe?,2014,2013,2015,2012
+NHL,Vilken draft position valdes Kempe?,29:e,31:a,35:e,42:a
+NHL,Vilket SHL-lag kommer Adrian Kempe från?,Djurgården IF,AIK,Hammarby,Modo Hockey
+NHL,Vilket lag draftade Andreas Johnsson?,New Jersey Devils,Toronto Maple Leafs,New York Rangers,Philadelphia Flyers
+NHL,Vilket draft år valdes Andreas Johnsson?,2013,2012,2014,2011
+NHL,Vilken draft position valdes Andreas Johnsson?,202:a,187:e,214:e,223:e
+NHL,Vilket SHL-lag kommer Andreas Johnsson från?,Frölunda Indians,Skellefteå AIK,HV71,Växjö Lakers
