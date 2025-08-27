@@ -1031,14 +1031,14 @@ teknik,Vem utvecklade Ruby programmeringsspråket?,Yukihiro Matsumoto,Guido van 
 teknik,Vad heter prinsessan Link ofta räddar?,Zelda,Peach,Daisy,Rosalina,
 teknik,Vilket företag äger Zoom?,Zoom Video Communications,Microsoft,Google,Cisco,
 teknik,Vad är HDMI främst till för?,Överföra bild och ljud digitalt,Lagra filmer,Strömförsörja TV,Ge smart-funktioner,
-teknik,Vad heter attacktypen som överbelastar servrar med trafik?,DDoS,SQL injection,Cross-site scripting,Man-in-the-middle
-teknik,Vilket protokoll säkrar trådlösa nätverk bäst?,WPA3,WEP,WPS,MAC-filtrering
-teknik,Vad kallas skadlig kod som döljer sig i legitima program?,Trojan,Virus,Worm,Spyware
-teknik,Vilken teknik används för att dölja data i andra filer?,Steganografi,Kryptografi,Hashing,Komprimering
-teknik,Vad heter angrepp som utnyttjar mänsklig psykologi?,Social engineering,Phishing,Pretexting,Baiting
-teknik,Vilket system upptäcker intrång i nätverk?,IDS,Firewall,Antivirus,VPN
-teknik,Vad kallas processen att testa säkerhetshål?,Penetrationstestning,Vulnerability assessment,Risk analysis,Security audit
-teknik,Vilken metod autentiserar användare med flera faktorer?,2FA,SSO,LDAP,Kerberos
-teknik,Vad heter attacken som omdirigerar webbtrafik?,DNS spoofing,IP spoofing,ARP poisoning,Session hijacking
-teknik,Vad kallas AI som kan lära sig utan märkt data?,Unsupervised learning,Supervised learning,Reinforcement learning,Transfer learning
-teknik,Vilket nätverk inspireras av hjärnans struktur?,Neurala nätverk,Bayesianska nätverk,Beslutsträd,Support vector machines
+teknik,Vad heter attacktypen som överbelastar servrar med trafik?,DDoS,SQL injection,Cross-site scripting,Man-in-the-middle,
+teknik,Vilket protokoll säkrar trådlösa nätverk bäst?,WPA3,WEP,WPS,MAC-filtrering,
+teknik,Vad kallas skadlig kod som döljer sig i legitima program?,Trojan,Virus,Worm,Spyware,
+teknik,Vilken teknik används för att dölja data i andra filer?,Steganografi,Kryptografi,Hashing,Komprimering,
+teknik,Vad heter angrepp som utnyttjar mänsklig psykologi?,Social engineering,Phishing,Pretexting,Baiting,
+teknik,Vilket system upptäcker intrång i nätverk?,IDS,Firewall,Antivirus,VPN,
+teknik,Vad kallas processen att testa säkerhetshål?,Penetrationstestning,Vulnerability assessment,Risk analysis,Security audit,
+teknik,Vilken metod autentiserar användare med flera faktorer?,2FA,SSO,LDAP,Kerberos,
+teknik,Vad heter attacken som omdirigerar webbtrafik?,DNS spoofing,IP spoofing,ARP poisoning,Session hijacking,
+teknik,Vad kallas AI som kan lära sig utan märkt data?,Unsupervised learning,Supervised learning,Reinforcement learning,Transfer learning,
+teknik,Vilket nätverk inspireras av hjärnans struktur?,Neurala nätverk,Bayesianska nätverk,Beslutsträd,Support vector machines,
