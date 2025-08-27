@@ -30,6 +30,7 @@ const AVAILABLE_QUIZ = [
   {key: 'star_wars', name: 'Star Wars', file: 'Star Wars.csv'},
   {key: 'svenska_synonymer', name: 'Svenska synonymer', file: 'Svenska synonymer.csv'},
   {key: 'sverige', name: 'Sverige', file: 'Sverige.csv'},
+  {key: 'valutor', name: 'Valutor', file: 'Valutor.csv'},
   {key: 'vanner', name: 'Vänner', file: 'Vänner.csv'},
 ];
 
