@@ -16,6 +16,7 @@ const AVAILABLE_QUIZ = [
   {key: 'jul', name: 'Jul', file: 'Jul.csv'},
   {key: 'kaffe', name: 'Kaffe', file: 'Kaffe.csv'},
   {key: 'kungligheter', name: 'Kungligheter', file: 'Kungligheter.csv'},
+  {key: 'liverpool_fc', name: 'Liverpool FC', file: 'Liverpool FC.csv'},
   {key: 'mat', name: 'Mat', file: 'Mat.csv'},
   {key: 'motor', name: 'Motor', file: 'Motor.csv'},
   {key: 'nfl', name: 'NFL', file: 'NFL.csv'},
@@ -30,6 +31,7 @@ const AVAILABLE_QUIZ = [
   {key: 'star_wars', name: 'Star Wars', file: 'Star Wars.csv'},
   {key: 'svenska_synonymer', name: 'Svenska synonymer', file: 'Svenska synonymer.csv'},
   {key: 'sverige', name: 'Sverige', file: 'Sverige.csv'},
+  {key: 'vm_1994', name: 'VM 1994', file: 'VM 1994.csv'},
   {key: 'valutor', name: 'Valutor', file: 'Valutor.csv'},
   {key: 'vanner', name: 'Vänner', file: 'Vänner.csv'},
 ];
