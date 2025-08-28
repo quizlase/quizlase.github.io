@@ -33,6 +33,18 @@ class SEOURLHandler {
                 }, 100);
             } else {
                 console.log('🔍 Ingen quiz-parameter hittad');
+                
+                // Kolla om det finns en pending route från 404.html
+                const pendingRoute = sessionStorage.getItem('pendingRoute');
+                if (pendingRoute) {
+                    console.log('🔄 Hittade pending route:', pendingRoute);
+                    sessionStorage.removeItem('pendingRoute'); // Rensa efter användning
+                    
+                    // Vänta lite så att appen hinner initieras
+                    setTimeout(() => {
+                        this.handleSpecialRoute(pendingRoute);
+                    }, 100);
+                }
             }
             return;
         }
@@ -238,6 +250,9 @@ class SEOURLHandler {
 
         // Update UI
         document.getElementById('category-title').textContent = quiz.name;
+        
+
+        
         this.app.showView('quiz');
         this.app.loadCurrentQuestion(true);
 

@@ -1292,8 +1292,6 @@ class QuizApp {
         if (categoryKey !== 'blandad') {
             document.getElementById('category-title').textContent = category.name;
             console.log('selectCategory: Set UI title to category name:', category.name);
-        } else {
-            console.log('selectCategory: Blandad category selected, not setting UI title');
         }
         
         // Uppdatera URL för direktlänkning
@@ -1398,6 +1396,8 @@ class QuizApp {
             }
         });
     }
+
+
 
     // Select answer in multiple choice mode
     selectAnswer(optionIndex) {

@@ -22,22 +22,25 @@
                 return;
             }
             
-            // Hantera specialrutter
+            // Hantera specialrutter - spara information och omdirigera till hemsidan
             if (path === '/blanda' || path === '/blanda/') {
-                console.log('🔄 Blanda-path hittad, omdirigerar till hemsidan');
-                window.location.href = '/?quiz=blandad';
+                console.log('🔄 Blanda-path hittad, sparar och omdirigerar till hemsidan');
+                sessionStorage.setItem('pendingRoute', 'blanda');
+                window.location.href = '/';
                 return;
             }
             
             if (path === '/fler-quiz' || path === '/fler-quiz/') {
-                console.log('🔄 Fler Quiz-path hittad, omdirigerar till hemsidan');
-                window.location.href = '/?quiz=fler-quiz';
+                console.log('🔄 Fler Quiz-path hittad, sparar och omdirigerar till hemsidan');
+                sessionStorage.setItem('pendingRoute', 'fler-quiz');
+                window.location.href = '/';
                 return;
             }
             
             if (path === '/installningar' || path === '/installningar/') {
-                console.log('🔄 Installningar-path hittad, omdirigerar till hemsidan');
-                window.location.href = '/?quiz=settings';
+                console.log('🔄 Installningar-path hittad, sparar och omdirigerar till hemsidan');
+                sessionStorage.setItem('pendingRoute', 'installningar');
+                window.location.href = '/';
                 return;
             }
             
