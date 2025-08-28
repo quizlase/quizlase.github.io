@@ -1,0 +1,66 @@
+name: Update Sitemap
+
+on:
+  schedule:
+    # Kör varje vecka på söndag kl 02:00 UTC
+    - cron: '0 2 * * 0'
+  
+  # Manuell körning från GitHub UI
+  workflow_dispatch:
+  
+  # Kör när quiz-data uppdateras
+  push:
+    branches: [ main ]
+    paths:
+      - 'data/**'
+      - 'js/**'
+      - 'index.html'
+
+jobs:
+  update-sitemap:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Generate sitemap
+      run: |
+        echo "🚀 Startar generering av sitemap..."
+        node generate-sitemap.js
+        
+    - name: Check sitemap was created
+      run: |
+        if [ -f sitemap.xml ]; then
+          echo "✅ Sitemap.xml skapad framgångsrikt!"
+          echo "📊 Filstorlek: $(du -h sitemap.xml | cut -f1)"
+          echo "📄 Innehåll:"
+          head -20 sitemap.xml
+        else
+          echo "❌ Sitemap.xml skapades inte!"
+          exit 1
+        fi
+        
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        # Lägg till sitemap.xml
+        git add sitemap.xml
+        
+        # Kontrollera om det finns ändringar att committa
+        if git diff --staged --quiet; then
+          echo "ℹ️ Inga ändringar att committa"
+        else
+          echo "💾 Committar sitemap-uppdateringar..."
+          git commit -m "🤖 Auto-update sitemap.xml [skip ci]"
+          
+          echo "🚀 Pushar ändringar..."
+          git push
+        fi

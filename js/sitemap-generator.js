@@ -14,56 +14,55 @@ class SitemapGenerator {
      * Ladda alla tillgängliga kategorier
      */
     loadCategories() {
-        // Huvudkategorier från data-mappen
+        try {
+            // Försök läsa kategorier dynamiskt om vi är i Node.js-miljö
+            if (typeof require !== 'undefined') {
+                const fs = require('fs');
+                const path = require('path');
+                
+                // Läs huvudkategorier från data-mappen
+                const dataDir = path.join(__dirname, '..', 'data');
+                const dataFiles = fs.readdirSync(dataDir)
+                    .filter(file => file.endsWith('.csv'))
+                    .map(file => file.replace('.csv', ''));
+                
+                // Läs kategorier från kategori-mappen
+                const kategoriDir = path.join(__dirname, '..', 'data', 'kategori');
+                const kategoriFiles = fs.readdirSync(kategoriDir)
+                    .filter(file => file.endsWith('.csv'))
+                    .map(file => file.replace('.csv', ''));
+                
+                // Kombinera alla kategorier
+                this.categories = [...dataFiles, ...kategoriFiles];
+                
+                console.log(`✅ Laddade ${this.categories.length} kategorier dynamiskt:`);
+                console.log(`   Huvudkategorier: ${dataFiles.join(', ')}`);
+                console.log(`   Nische-kategorier: ${kategoriFiles.join(', ')}`);
+                
+                return this.categories;
+            }
+        } catch (error) {
+            console.error('❌ Fel vid dynamisk läsning av kategorier:', error);
+        }
+        
+        // Fallback till hårdkodade kategorier om dynamisk läsning misslyckas
+        return this.loadFallbackCategories();
+    }
+
+    /**
+     * Fallback om dynamisk läsning misslyckas
+     */
+    loadFallbackCategories() {
         this.categories = [
-            'allmanbildning',
-            'musik', 
-            'geografi',
-            'film_tv',
-            'sport',
-            'teknik'
+            'allmanbildning', 'musik', 'geografi', 'film_tv', 'sport', 'teknik',
+            'Andra världskriget', 'Cocktails', 'Dans', 'Design och mode', 'Disney',
+            'Djur och natur', 'Flaggor', 'Fotboll', 'Grundämnen', 'Harry Potter',
+            'Huvudstäder', 'Jul', 'Kaffe', 'Kungligheter', 'Liverpool FC', 'Mat',
+            'Motor', 'Netflix', 'NFL', 'NHL', 'Reklam', 'Rymden', 'Sagan om ringen',
+            'Sex and the City', 'Spanska ord', 'Språk', 'Star Wars', 'Svenska synonymer',
+            'Sverige', 'Valutor', 'Vänner', 'VM 1994'
         ];
-        
-        // Kategorier från kategori-mappen (Fler Quiz)
-        const kategoriCategories = [
-            'Andra världskriget',
-            'Cocktails',
-            'Dans',
-            'Design och mode',
-            'Disney',
-            'Djur och natur',
-            'Flaggor',
-            'Fotboll',
-            'Grundämnen',
-            'Harry Potter',
-            'Huvudstäder',
-            'Jul',
-            'Kaffe',
-            'Kungligheter',
-            'Liverpool FC',
-            'Mat',
-            'Motor',
-            'Netflix',
-            'NFL',
-            'NHL',
-            'Reklam',
-            'Rymden',
-            'Sagan om ringen',
-            'Sex and the City',
-            'Spanska ord',
-            'Språk',
-            'Star Wars',
-            'Svenska synonymer',
-            'Sverige',
-            'Valutor',
-            'Vänner',
-            'VM 1994'
-        ];
-        
-        // Kombinera alla kategorier
-        this.categories = this.categories.concat(kategoriCategories);
-        
-        console.log(`✅ Laddade ${this.categories.length} kategorier`);
+        console.log(`⚠️ Använder fallback-kategorier: ${this.categories.length} st`);
         return this.categories;
     }
 
