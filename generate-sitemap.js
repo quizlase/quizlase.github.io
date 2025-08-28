@@ -1,5 +1,5 @@
 /**
- * Script för att generera sitemap.xml för Quizla.se
+ * Script för att generera sitemap.xml för Quizla
  * Kör: node generate-sitemap.js
  */
 

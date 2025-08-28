@@ -1243,12 +1243,15 @@ class QuizApp {
         // Nollställ frågeräknare för ny session
         this.questionsAnswered = 0;
 
+        // Generera FAQ Schema för denna kategori
+        this.generateFullFAQSchema(category.questions);
+
         // Update UI - don't set title for "blandad" category
         if (categoryKey !== 'blandad') {
             document.getElementById('category-title').textContent = category.name;
             console.log('selectCategory: Set UI title to category name:', category.name);
         } else {
-            console.log('selectCategory: Blandad category, not setting UI title');
+            console.log('selectCategory: Blandad category selected, not setting UI title');
         }
         
         // Uppdatera URL för direktlänkning
@@ -1273,7 +1276,7 @@ class QuizApp {
         answerOptions.classList.add('hidden');
         answerOptions.classList.remove('visible');
         
-                // Reset answer state
+        // Reset answer state
         this.showAnswer = false;
         
         // Remove answers-active class immediately
@@ -1284,9 +1287,12 @@ class QuizApp {
         
         document.getElementById('current-question').textContent = question.question;
         
-            // Update category title based on current question's category
-    console.log('loadCurrentQuestion: Calling updateCategoryTitleForCurrentQuestion');
-    this.updateCategoryTitleForCurrentQuestion();
+        // Update FAQ Schema for current question
+        this.updateFAQSchema(question);
+        
+        // Update category title based on current question's category
+        console.log('loadCurrentQuestion: Calling updateCategoryTitleForCurrentQuestion');
+        this.updateCategoryTitleForCurrentQuestion();
         
         // CRITICAL: Don't load answer text until it's actually needed to prevent cheating
         
@@ -2435,6 +2441,9 @@ class QuizApp {
         // Nollställ frågeräknare för ny session
         this.questionsAnswered = 0;
         
+        // Generera FAQ Schema för hela quiz-sessionen
+        this.generateFullFAQSchema(allQuestions);
+        
         // Update UI - visa kategorinamn från CSV-filerna
         console.log('Category names:', categoryNames);
         console.log('showMixedTitle:', showMixedTitle);
@@ -2523,6 +2532,10 @@ class QuizApp {
                 autoAdvance: this.settings.autoAdvance
             }
         });
+        
+        // Generera FAQ Schema för alla kategorier
+        const allQuestions = Object.values(this.dynamicCategories).flatMap(cat => cat.questions);
+        this.generateFullFAQSchema(allQuestions);
         
         // Start quiz with all categories
         this.startQuizWithSelectedCategories(true); // true = visa kategorinamnen istället för generisk titel
@@ -2667,6 +2680,91 @@ class QuizApp {
 
     // Metoden showBackgroundLoadingComplete tas bort eftersom notifikationer inte längre visas
 
+    // ===== FAQ SCHEMA GENERERING =====
+    
+    /**
+     * Uppdaterar FAQ Schema för aktuell quiz-fråga
+     * Detta ger "rich snippets" i Google-sökresultaten
+     */
+    updateFAQSchema(question) {
+        try {
+            // Ta bort tidigare FAQ Schema om det finns
+            const existingSchema = document.querySelector('script[data-faq-schema]');
+            if (existingSchema) {
+                existingSchema.remove();
+            }
+            
+            // Skapa nytt FAQ Schema för aktuell fråga
+            const faqSchema = {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [{
+                    "@type": "Question",
+                    "name": question.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": question.correctAnswer
+                    }
+                }]
+            };
+            
+            // Lägg till i <head> för att Google ska kunna läsa det
+            const script = document.createElement('script');
+            script.type = 'application/ld+json';
+            script.textContent = JSON.stringify(faqSchema);
+            script.setAttribute('data-faq-schema', 'true');
+            document.head.appendChild(script);
+            
+            console.log('✅ FAQ Schema uppdaterat för fråga:', question.question.substring(0, 50) + '...');
+            
+        } catch (error) {
+            console.error('❌ Fel vid uppdatering av FAQ Schema:', error);
+        }
+    }
+    
+    /**
+     * Genererar FAQ Schema för hela quiz-sessionen
+     * Detta ger Google en komplett översikt över alla frågor
+     */
+    generateFullFAQSchema(allQuestions) {
+        try {
+            // Ta bort tidigare fullständiga FAQ Schema om det finns
+            const existingFullSchema = document.querySelector('script[data-full-faq-schema]');
+            if (existingFullSchema) {
+                existingFullSchema.remove();
+            }
+            
+            // Skapa FAQ Schema för alla frågor (max 10 för att inte överbelasta)
+            const maxQuestions = Math.min(allQuestions.length, 10);
+            const faqItems = allQuestions.slice(0, maxQuestions).map(question => ({
+                "@type": "Question",
+                "name": question.question,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": question.correctAnswer
+                }
+            }));
+            
+            const fullFAQSchema = {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": faqItems
+            };
+            
+            // Lägg till i <head>
+            const script = document.createElement('script');
+            script.type = 'application/ld+json';
+            script.textContent = JSON.stringify(fullFAQSchema);
+            script.setAttribute('data-full-faq-schema', 'true');
+            document.head.appendChild(script);
+            
+            console.log(`✅ Fullständigt FAQ Schema genererat för ${maxQuestions} frågor`);
+            
+        } catch (error) {
+            console.error('❌ Fel vid generering av fullständigt FAQ Schema:', error);
+        }
+    }
+    
     // ===== UMAMI ANALYTICS TRACKING =====
     
     // Hjälpfunktion för att spåra events

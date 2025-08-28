@@ -1,5 +1,5 @@
 /**
- * Dynamisk Sitemap Generator för Quizla.se
+ * Dynamisk Sitemap Generator för Quizla
  * Genererar automatiskt sitemap baserat på tillgängliga quiz-kategorier
  */
 
