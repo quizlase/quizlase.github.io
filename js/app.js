@@ -14,7 +14,7 @@ class QuizApp {
         this.dynamicCategories = {}; // NY property för dynamiska kategorier
         this.allQuestions = [];
         
-        // URL Handler för quiz-länkning
+        // SEO URL Handler för quiz-länkning
         this.urlHandler = null; // Initieras i init()
         
         // Settings
@@ -99,14 +99,13 @@ class QuizApp {
             this.hideLoadingScreen();
             
             // Phase 3: Ladda dynamiska kategorier i bakgrunden (non-blocking)
+            console.log('🚀 Startar bakgrundsladdning av dynamiska kategorier...');
             this.loadDynamicCategoriesInBackground();
             
             // Phase 4: Initiera URL-handler och hantera URL-parameter för direktlänkning
-            this.urlHandler = new URLHandler(this);
-            await this.urlHandler.handleURLQuiz();
+            this.urlHandler = new SEOURLHandler(this);
             
-            // Aktivera browser back/forward hantering
-            this.urlHandler.setupPopstateHandler();
+            // Browser back/forward hanteras automatiskt av SEOURLHandler
             
             console.log('=== INIT KLAR ===');
         } catch (error) {
@@ -379,6 +378,9 @@ class QuizApp {
     async loadDynamicCategories() {
         try {
             console.log('=== loadDynamicCategories startar ===');
+            console.log('🔍 Kontrollerar AVAILABLE_QUIZ...');
+            console.log('🔍 typeof AVAILABLE_QUIZ:', typeof AVAILABLE_QUIZ);
+            console.log('🔍 window.AVAILABLE_QUIZ:', window.AVAILABLE_QUIZ);
             
             // Kontrollera att quiz-links.js är laddad
             if (typeof AVAILABLE_QUIZ === 'undefined') {
@@ -390,11 +392,16 @@ class QuizApp {
             console.log(`Hittade ${AVAILABLE_QUIZ.length} dynamiska kategorier från quiz-links.js`);
 
             // Skapa dynamiska kategorier från listan och ladda frågorna
+            console.log('🔄 Startar laddning av', AVAILABLE_QUIZ.length, 'dynamiska quiz');
+            
             const loadPromises = AVAILABLE_QUIZ.map(async (quiz) => {
                 try {
+                    console.log(`📥 Laddar quiz: ${quiz.name} från ${quiz.file}`);
                     const response = await fetch(`data/kategori/${quiz.file}`);
                     const csvText = await response.text();
                     const questions = this.parseCSV(csvText);
+                    
+                    console.log(`✅ Laddade ${quiz.name}: ${questions.length} frågor`);
                     
                     return {
                         key: quiz.key,
@@ -406,7 +413,7 @@ class QuizApp {
                         color: this.getAutoColor(quiz.key)
                     };
                 } catch (error) {
-                    console.error(`Kunde inte ladda ${quiz.file}:`, error);
+                    console.error(`❌ Kunde inte ladda ${quiz.file}:`, error);
                     return {
                         key: quiz.key,
                         name: quiz.name,
@@ -423,11 +430,16 @@ class QuizApp {
             const results = await Promise.all(loadPromises);
             
             // Skapa dynamiska kategorier
+            console.log('🔄 Skapar dynamiska kategorier från laddade resultat...');
             results.forEach(result => {
                 this.dynamicCategories[result.key] = result;
+                console.log(`✅ Lade till kategori: ${result.key} (${result.name}) med ${result.questions.length} frågor`);
             });
 
-            console.log(`Laddade ${AVAILABLE_QUIZ.length} dynamiska kategorier med frågor`);
+            console.log(`🎉 Laddade ${AVAILABLE_QUIZ.length} dynamiska kategorier med frågor`);
+            console.log('📊 Final this.dynamicCategories:', this.dynamicCategories);
+            console.log('🔢 Antal kategorier i this.dynamicCategories:', Object.keys(this.dynamicCategories).length);
+            console.log('🔑 Nycklar i this.dynamicCategories:', Object.keys(this.dynamicCategories));
             
             // Uppdatera "Blanda"-kategorin baserat på inställningen
             this.updateBlandaCategory();
@@ -451,8 +463,9 @@ class QuizApp {
             console.log('loadDynamicCategories klar (bakgrund)');
             
             // Rendera dynamiska kategorier när de är klara
+            console.log('🔄 Anropar renderDynamicCategories...');
             this.renderDynamicCategories();
-            console.log('renderDynamicCategories klar (bakgrund)');
+            console.log('✅ renderDynamicCategories klar (bakgrund)');
             
             // Uppdatera frågeräkningen efter att dynamiska kategorier laddats
             this.updateQuestionCount();
@@ -636,17 +649,31 @@ class QuizApp {
 
     // Rendera dynamiska kategorier på "Fler Quiz"-sidan
     renderDynamicCategories(searchTerm = '') {
+        console.log('🔄 renderDynamicCategories anropad med sökterm:', searchTerm);
+        console.log('📊 this.dynamicCategories:', this.dynamicCategories);
+        console.log('🔢 Antal dynamiska kategorier:', Object.keys(this.dynamicCategories).length);
+        
         const container = document.getElementById('dynamic-categories-container');
-        if (!container) return;
+        if (!container) {
+            console.error('❌ Container för dynamiska kategorier hittades inte');
+            return;
+        }
         
         container.innerHTML = '';
         
         // Om inga dynamiska kategorier finns
         if (Object.keys(this.dynamicCategories).length === 0) {
+            console.warn('⚠️ Inga dynamiska kategorier att rendera');
+            console.log('🔍 Kontrollerar om AVAILABLE_QUIZ finns:', typeof AVAILABLE_QUIZ !== 'undefined');
+            if (typeof AVAILABLE_QUIZ !== 'undefined') {
+                console.log('🔍 AVAILABLE_QUIZ innehåll:', AVAILABLE_QUIZ);
+            }
+            
             container.innerHTML = `
                 <div style="grid-column: 1 / -1; text-align: center; padding: 2rem; color: rgba(255, 255, 255, 0.6);">
                     <p>Inga extra quiz hittades i data/kategori/</p>
                     <p style="font-size: 0.875rem; margin-top: 0.5rem;">Lägg till CSV-filer i mappen för att se dem här</p>
+                    <p style="font-size: 0.75rem; margin-top: 0.5rem; color: rgba(255, 255, 255, 0.4);">Laddar quiz i bakgrunden...</p>
                 </div>
             `;
             return;
@@ -694,9 +721,12 @@ class QuizApp {
             `;
             
             btn.addEventListener('click', () => {
+                console.log('🖱️ Klick på dynamisk kategori:', key, category.name);
                 if (this.selectionMode) {
+                    console.log('🔀 Selection mode - togglar kategori:', key);
                     this.toggleCategorySelection(key);
                 } else {
+                    console.log('🎯 Normal mode - startar quiz för kategori:', key);
                     this.selectDynamicCategory(key);
                 }
             });
@@ -709,8 +739,14 @@ class QuizApp {
 
     // Välj dynamisk kategori och starta quiz
     selectDynamicCategory(categoryKey) {
+        console.log('🔄 selectDynamicCategory anropad med:', categoryKey);
+        console.log('📊 this.dynamicCategories:', this.dynamicCategories);
+        console.log('🔍 Söker efter kategori:', categoryKey);
+        
         const category = this.dynamicCategories[categoryKey];
         if (!category || category.questions.length === 0) {
+            console.error('❌ Kategori hittades inte eller har inga frågor:', categoryKey);
+            console.error('📊 Tillgängliga kategorier:', Object.keys(this.dynamicCategories));
             alert('Inga frågor tillgängliga för denna kategori');
             return;
         }
@@ -755,7 +791,7 @@ class QuizApp {
         
         // Uppdatera URL för direktlänkning
         if (this.urlHandler) {
-            this.urlHandler.updateURL(categoryKey);
+            this.urlHandler.updateCategoryURL(category.name);
         }
         
         this.showView('quiz');
@@ -901,10 +937,10 @@ class QuizApp {
         const blandaBtn = document.getElementById('blanda-btn');
         if (blandaBtn) {
             blandaBtn.addEventListener('click', () => {
-                // Uppdatera URL för direktlänkning
-                if (this.urlHandler) {
-                    this.urlHandler.updateURL('blandad');
-                }
+                        // Uppdatera URL för direktlänkning
+        if (this.urlHandler) {
+            this.urlHandler.updateSpecialRouteURL('blanda');
+        }
                 this.selectCategory('blandad');
             });
             console.log('Blanda event listener kopplad');
@@ -922,10 +958,10 @@ class QuizApp {
             flerQuizBtn.addEventListener('click', () => {
                 console.log('Fler Quiz knapp klickad!');
                 
-                // Uppdatera URL för direktlänkning
-                if (this.urlHandler) {
-                    this.urlHandler.updateURL('fler-quiz');
-                }
+                        // Uppdatera URL för direktlänkning
+        if (this.urlHandler) {
+            this.urlHandler.updateSpecialRouteURL('fler-quiz');
+        }
                 
                 // Spåra Fler Quiz klick för Umami Analytics
                 this.trackEvent('fler-quiz-clicked', {
@@ -1142,10 +1178,16 @@ class QuizApp {
                 this.urlHandler.clearURL();
             } else if (viewName === 'settings') {
                 // Lägg till settings-parameter
-                this.urlHandler.updateURL('settings');
+                this.urlHandler.updateSpecialRouteURL('installningar');
             } else if (viewName === 'fler-quiz') {
                 // Lägg till fler-quiz-parameter
-                this.urlHandler.updateURL('fler-quiz');
+                this.urlHandler.updateSpecialRouteURL('fler-quiz');
+                
+                // Rendera dynamiska kategorier när fler-quiz visas
+                console.log('🔄 Fler Quiz visas - renderar dynamiska kategorier');
+                console.log('📊 this.dynamicCategories när Fler Quiz visas:', this.dynamicCategories);
+                console.log('🔢 Antal kategorier:', Object.keys(this.dynamicCategories).length);
+                this.renderDynamicCategories();
             }
         }
     }
@@ -1256,7 +1298,7 @@ class QuizApp {
         
         // Uppdatera URL för direktlänkning
         if (this.urlHandler && categoryKey !== 'blandad') {
-            this.urlHandler.updateURL(categoryKey);
+            this.urlHandler.updateCategoryURL(this.categories[categoryKey].name);
         }
         
         this.showView('quiz');
@@ -2455,20 +2497,23 @@ class QuizApp {
             document.getElementById('category-title').textContent = title;
             console.log('Setting single category title:', title);
             
-            // Uppdatera URL för direktlänkning (enda kategorin)
-            if (this.urlHandler) {
-                const categoryKey = Array.from(this.selectedCategories)[0];
-                this.urlHandler.updateURL(categoryKey);
+                    // Uppdatera URL för direktlänkning (enda kategorin)
+        if (this.urlHandler) {
+            const categoryKey = Array.from(this.selectedCategories)[0];
+            const category = this.dynamicCategories[categoryKey];
+            if (category) {
+                this.urlHandler.updateCategoryURL(category.name);
             }
+        }
         } else {
             // Om det är flera kategorier, lämna titeln tom så att updateCategoryTitleForCurrentQuestion kan hantera den
             // Titeln kommer att uppdateras till den aktuella frågans kategori när frågan laddas
             console.log('Multiple categories selected - title will be set by updateCategoryTitleForCurrentQuestion');
             
-            // Uppdatera URL för flera kategorier (använd "mixed" som nyckel)
-            if (this.urlHandler) {
-                this.urlHandler.updateURL('mixed');
-            }
+                    // Uppdatera URL för flera kategorier (använd "mixed" som nyckel)
+        if (this.urlHandler) {
+            this.urlHandler.updateSpecialRouteURL('blanda');
+        }
         }
         
         this.showView('quiz');
@@ -2620,11 +2665,11 @@ class QuizApp {
                 document.getElementById('category-title').textContent = questionCategory.name;
                 console.log('Updated title to show current category:', questionCategory.name);
                 
-                // Uppdatera URL för direktlänkning (från aktuell frågas kategori)
-                // MEN inte om vi är i "Blanda"-kategorin - den ska behålla sin URL
-                if (this.urlHandler && questionCategory.key && this.selectedCategory !== 'blandad') {
-                    this.urlHandler.updateURL(questionCategory.key);
-                }
+                        // Uppdatera URL för direktlänkning (från aktuell frågas kategori)
+        // MEN inte om vi är i "Blanda"-kategorin - den ska behålla sin URL
+        if (this.urlHandler && questionCategory.key && this.selectedCategory !== 'blandad') {
+            this.urlHandler.updateCategoryURL(questionCategory.name);
+        }
             } else {
                 console.log('updateCategoryTitleForCurrentQuestion: No questionCategory found');
             }

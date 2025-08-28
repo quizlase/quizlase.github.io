@@ -79,11 +79,19 @@ class SitemapGenerator {
         // Huvudkategorier - hög prioritet
         this.categories.forEach(category => {
             const cleanCategory = this.cleanCategoryName(category);
-            xml += this.createURL(`/quiz/${cleanCategory}`, '0.8', 'weekly');
+            xml += this.createURL(`/quiz/${cleanCategory}`, '0.9', 'weekly');
         });
         
+        // Dynamiska kategorier (Fler Quiz) - hög prioritet
+        if (typeof AVAILABLE_QUIZ !== 'undefined') {
+            AVAILABLE_QUIZ.forEach(quiz => {
+                const cleanCategory = this.cleanCategoryName(quiz.name);
+                xml += this.createURL(`/quiz/${cleanCategory}`, '0.8', 'weekly');
+            });
+        }
+        
         // Blanda-knappen - hög prioritet
-        xml += this.createURL('/blanda', '0.9', 'weekly');
+        xml += this.createURL('/blanda', '0.8', 'weekly');
         
         // Fler Quiz - hög prioritet
         xml += this.createURL('/fler-quiz', '0.8', 'weekly');

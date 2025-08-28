@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizla - Sidan hittades inte</title>
+    <script>
+        // GitHub Pages routing handler
+        // Detta gör att /quiz/disney fungerar korrekt
+        
+        (function() {
+            const path = window.location.pathname;
+            
+            // Hantera /quiz/[kategori] format
+            if (path.startsWith('/quiz/')) {
+                const category = path.substring(7); // Ta bort '/quiz/'
+                console.log('🔄 Omdirigerar till quiz:', category);
+                
+                // Omdirigera till hemsidan med rätt hash
+                window.location.href = `/?quiz=${category}`;
+                return;
+            }
+            
+            // Hantera specialrutter
+            if (path === '/blanda' || path === '/blanda/') {
+                window.location.href = '/?quiz=blandad';
+                return;
+            }
+            
+            if (path === '/fler-quiz' || path === '/fler-quiz/') {
+                window.location.href = '/?quiz=fler-quiz';
+                return;
+            }
+            
+            if (path === '/installningar' || path === '/installningar/') {
+                window.location.href = '/?quiz=settings';
+                return;
+            }
+            
+            // Om inget matchar, gå till hemsidan
+            window.location.href = '/';
+            
+        })();
+    </script>
+</head>
+<body>
+    <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+        <h1>Quizla</h1>
+        <p>Omdirigerar...</p>
+        <p>Om du inte omdirigeras automatiskt, <a href="/">klicka här</a>.</p>
+    </div>
+</body>
+</html>
