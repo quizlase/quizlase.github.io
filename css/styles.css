@@ -1866,11 +1866,12 @@ body {
 }
 
 /* Om Quizla Section Styles */
-.about-quizla-content {
+.about-quizla-intro {
     margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.about-description {
+.about-quizla-description-main {
     color: rgba(255, 255, 255, 0.9);
     font-size: 0.95rem;
     line-height: 1.6;
@@ -1878,31 +1879,108 @@ body {
     text-align: left;
 }
 
-.about-description:last-of-type {
-    margin-bottom: 0.75rem;
+.about-quizla-description-main:last-of-type {
+    margin-bottom: 0;
 }
 
-.about-features {
-    list-style: none;
-    padding: 0;
+.about-quizla-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.about-quizla-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-quizla-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-quizla-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.about-quizla-title {
+    font-size: 1rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 50%, #f9a8d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.about-quizla-description {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
     margin: 0;
 }
 
-.about-features li {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
-    padding-left: 0;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+/* Responsiv design för Om Quizla */
+@media (max-width: 480px) {
+    .about-quizla-grid {
+        gap: 0.75rem;
+    }
+    
+    .about-quizla-card {
+        padding: 1rem 0.75rem;
+    }
+    
+    .about-quizla-icon {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .about-quizla-title {
+        font-size: 0.95rem;
+        margin-bottom: 0.375rem;
+    }
+    
+    .about-quizla-description {
+        font-size: 0.8rem;
+    }
 }
 
-.feature-icon {
-    font-size: 1.25rem;
-    flex-shrink: 0;
-    display: inline-block;
+/* Extra små skärmar - behåll 2 kolumner men justera storlekar */
+@media (max-width: 360px) {
+    .about-quizla-grid {
+        gap: 0.5rem;
+    }
+    
+    .about-quizla-card {
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .about-quizla-icon {
+        font-size: 1.5rem;
+        margin-bottom: 0.375rem;
+    }
+    
+    .about-quizla-title {
+        font-size: 0.875rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .about-quizla-description {
+        font-size: 0.75rem;
+        line-height: 1.3;
+    }
 }
 
 

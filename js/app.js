@@ -2206,6 +2206,12 @@ class QuizApp {
         if (totalAllElement) {
             totalAllElement.textContent = totalAllQuestions.toLocaleString('sv-SE');
         }
+        
+        // Uppdatera offline-beskrivningen med totala antalet frågor
+        const offlineElement = document.getElementById('total-questions-offline');
+        if (offlineElement) {
+            offlineElement.textContent = totalAllQuestions.toLocaleString('sv-SE');
+        }
     }
 
     // Save settings to localStorage
