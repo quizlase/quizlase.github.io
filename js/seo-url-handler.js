@@ -25,17 +25,21 @@ class SEOURLHandler {
             const quizParam = searchParams.get('quiz');
             if (quizParam) {
                 console.log('🔄 Hittade quiz-parameter:', quizParam);
+                console.log('🔍 Väntar på att appen ska initieras...');
                 // Vänta lite så att appen hinner initieras
                 setTimeout(() => {
+                    console.log('🎯 Startar quiz-routing för parameter:', quizParam);
                     this.handleQuizRoute(quizParam);
                 }, 100);
+            } else {
+                console.log('🔍 Ingen quiz-parameter hittad');
             }
             return;
         }
 
         // Hantera /quiz/[kategori] format
         if (path.startsWith('/quiz/')) {
-            const category = path.substring(7); // Ta bort '/quiz/'
+            const category = path.substring(6); // Ta bort '/quiz/' (6 tecken, inte 7)
             console.log('🔄 Hanterar direkt quiz-path:', category);
             // Vänta lite så att appen hinner initieras
             setTimeout(() => {
@@ -66,6 +70,8 @@ class SEOURLHandler {
     async handleQuizRoute(categorySlug) {
         console.log(`🔄 Hanterar quiz-route: ${categorySlug}`);
         console.log('🔍 Kontrollerar om appen är redo...');
+        console.log('🔍 this.app.categories:', this.app.categories);
+        console.log('🔍 Object.keys(this.app.categories):', Object.keys(this.app.categories));
 
         // Vänta tills appen är redo
         let attempts = 0;
@@ -74,11 +80,13 @@ class SEOURLHandler {
                 console.error('❌ Appen blev aldrig redo');
                 return;
             }
+            console.log(`⏳ Väntar... försök ${attempts + 1}/50`);
             await new Promise(resolve => setTimeout(resolve, 100));
             attempts++;
         }
 
         console.log('✅ Appen är redo, startar quiz-routing...');
+        console.log('🔍 Tillgängliga kategorier:', Object.keys(this.app.categories));
 
         // Först kolla standardkategorier
         if (await this.tryStandardCategory(categorySlug)) {
@@ -117,12 +125,18 @@ class SEOURLHandler {
         if (standardCategories[normalizedSlug]) {
             const categoryKey = standardCategories[normalizedSlug];
             console.log(`✅ Startar standardkategori: ${categoryKey}`);
+            console.log('🔍 Kategori hittad i standardCategories');
             
             // Kontrollera att kategorin finns i appen
+            console.log('🔍 Kontrollerar om kategorin finns i appen...');
+            console.log('🔍 this.app.categories[categoryKey]:', this.app.categories[categoryKey]);
+            
             if (!this.app.categories[categoryKey]) {
                 console.error(`❌ Kategori ${categoryKey} finns inte i appen`);
                 return false;
             }
+            
+            console.log('✅ Kategori finns i appen, uppdaterar meta-taggar...');
             
             // Uppdatera meta-taggar för SEO
             this.updateCategoryMetaTags(categoryKey, this.getStandardCategoryName(categoryKey));
@@ -132,6 +146,7 @@ class SEOURLHandler {
             console.log('🔍 app.selectCategory finns:', typeof this.app.selectCategory);
             
             if (typeof this.app.selectCategory === 'function') {
+                console.log('✅ app.selectCategory är en funktion, anropar den...');
                 this.app.selectCategory(categoryKey);
                 return true;
             } else {

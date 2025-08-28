@@ -10,34 +10,39 @@
         
         (function() {
             const path = window.location.pathname;
+            console.log('🔄 404.html hanterar path:', path);
             
-            // Hantera /quiz/[kategori] format
+            // Hantera /quiz/[kategori] format - låt SEO URL-hanteraren hantera detta
             if (path.startsWith('/quiz/')) {
-                const category = path.substring(7); // Ta bort '/quiz/'
-                console.log('🔄 Omdirigerar till quiz:', category);
+                const category = path.substring(6); // Ta bort '/quiz/' (6 tecken, inte 7)
+                console.log('🔄 Quiz-path hittad, omdirigerar till hemsidan med parameter:', category);
                 
-                // Omdirigera till hemsidan med rätt parameter
-                window.location.href = `/?quiz=${category}`;
+                // Omdirigera till hemsidan med quiz-parameter så att SEO URL-hanteraren kan hantera det
+                window.location.replace(`/?quiz=${category}`);
                 return;
             }
             
             // Hantera specialrutter
             if (path === '/blanda' || path === '/blanda/') {
+                console.log('🔄 Blanda-path hittad, omdirigerar till hemsidan');
                 window.location.href = '/?quiz=blandad';
                 return;
             }
             
             if (path === '/fler-quiz' || path === '/fler-quiz/') {
+                console.log('🔄 Fler Quiz-path hittad, omdirigerar till hemsidan');
                 window.location.href = '/?quiz=fler-quiz';
                 return;
             }
             
             if (path === '/installningar' || path === '/installningar/') {
+                console.log('🔄 Installningar-path hittad, omdirigerar till hemsidan');
                 window.location.href = '/?quiz=settings';
                 return;
             }
             
             // Om inget matchar, gå till hemsidan
+            console.log('🔄 Okänd path, går till hemsidan');
             window.location.href = '/';
             
         })();
