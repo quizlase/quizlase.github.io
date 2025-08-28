@@ -1211,7 +1211,7 @@ class QuizApp {
                         ${this.getCategoryIcon(category.icon)}
                     </div>
                     <div class="category-info">
-                        <h3 class="category-name">${category.name}</h3>
+                        <h2 class="category-name">${category.name}</h2>
                     </div>
                     <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -2704,7 +2704,7 @@ class QuizApp {
                         <div class="spinner"></div>
                     </div>
                     <div class="category-info">
-                        <h3 class="category-name">Laddar...</h3>
+                        <h2 class="category-name">Laddar...</h2>
                     </div>
                     <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -2723,7 +2723,7 @@ class QuizApp {
                         </svg>
                     </div>
                     <div class="category-info">
-                        <h3 class="category-name">Fler Quiz</h3>
+                        <h2 class="category-name">Fler Quiz</h2>
                     </div>
                     <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
