@@ -2510,10 +2510,13 @@ class QuizApp {
             // Titeln kommer att uppdateras till den aktuella frågans kategori när frågan laddas
             console.log('Multiple categories selected - title will be set by updateCategoryTitleForCurrentQuestion');
             
-                    // Uppdatera URL för flera kategorier (använd "mixed" som nyckel)
-        if (this.urlHandler) {
-            this.urlHandler.updateSpecialRouteURL('blanda');
-        }
+                    // Uppdatera URL för flera kategorier - skapa en fast URL med alla kategorier
+            if (this.urlHandler) {
+                // Skapa en kombinerad URL-nyckel för alla valda kategorier
+                const categoryKeys = Array.from(this.selectedCategories).sort();
+                const combinedKey = categoryKeys.join('-');
+                this.urlHandler.updateMultiCategoryURL(combinedKey, categoryNames);
+            }
         }
         
         this.showView('quiz');
@@ -2665,11 +2668,14 @@ class QuizApp {
                 document.getElementById('category-title').textContent = questionCategory.name;
                 console.log('Updated title to show current category:', questionCategory.name);
                 
-                        // Uppdatera URL för direktlänkning (från aktuell frågas kategori)
-        // MEN inte om vi är i "Blanda"-kategorin - den ska behålla sin URL
-        if (this.urlHandler && questionCategory.key && this.selectedCategory !== 'blandad') {
-            this.urlHandler.updateCategoryURL(questionCategory.name);
-        }
+                // Uppdatera URL för direktlänkning (från aktuell frågas kategori)
+                // MEN inte om vi är i "Blanda"-kategorin - den ska behålla sin URL
+                // OCH inte om vi har flera kategorier valda - behåll den kombinerade URL:en
+                if (this.urlHandler && questionCategory.key && 
+                    this.selectedCategory !== 'blandad' && 
+                    this.selectedCategories.size <= 1) {
+                    this.urlHandler.updateCategoryURL(questionCategory.name);
+                }
             } else {
                 console.log('updateCategoryTitleForCurrentQuestion: No questionCategory found');
             }

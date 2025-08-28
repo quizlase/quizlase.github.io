@@ -99,10 +99,41 @@ class SitemapGenerator {
         // Inställningar - låg prioritet
         xml += this.createURL('/installningar', '0.3', 'monthly');
         
+        // Generera URL:er för kombinerade kategorier
+        this.generateMultiCategoryURLs(xml);
+
         xml += '</urlset>';
         
         console.log('✅ Sitemap XML genererad');
         return xml;
+    }
+
+    /**
+     * Generera URL:er för kombinerade kategorier
+     */
+    generateMultiCategoryURLs(xml) {
+        if (typeof AVAILABLE_QUIZ === 'undefined' || AVAILABLE_QUIZ.length < 2) {
+            return;
+        }
+
+        // Generera populära kombinationer (2-3 kategorier)
+        const popularCombinations = [
+            ['disney', 'fotboll'],
+            ['star-wars', 'rymden'],
+            ['musik', 'film'],
+            ['sport', 'geografi'],
+            ['historia', 'allmanbildning'],
+            ['teknik', 'rymden'],
+            ['mat', 'kultur'],
+            ['språk', 'geografi']
+        ];
+
+        popularCombinations.forEach(combination => {
+            const combinedKey = combination.join('-');
+            xml += this.createURL(`/${combinedKey}`, '0.7', 'weekly');
+        });
+
+        console.log('✅ Genererade URL:er för kombinerade kategorier');
     }
 
     /**

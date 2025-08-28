@@ -100,6 +100,13 @@ class SEOURLHandler {
         console.log('✅ Appen är redo, startar quiz-routing...');
         console.log('🔍 Tillgängliga kategorier:', Object.keys(this.app.categories));
 
+        // Kontrollera om det är en kombinerad kategori (t.ex. disney-fotboll)
+        if (categorySlug.includes('-')) {
+            if (await this.tryMultiCategory(categorySlug)) {
+                return;
+            }
+        }
+
         // Först kolla standardkategorier
         if (await this.tryStandardCategory(categorySlug)) {
             return;
@@ -251,8 +258,6 @@ class SEOURLHandler {
         // Update UI
         document.getElementById('category-title').textContent = quiz.name;
         
-
-        
         this.app.showView('quiz');
         this.app.loadCurrentQuestion(true);
 
@@ -336,6 +341,24 @@ class SEOURLHandler {
         this.trackUmamiPageView(route, newURL);
 
         console.log(`🔗 URL uppdaterad till: ${newURL}`);
+    }
+
+    /**
+     * Uppdatera URL för flera kategorier (t.ex. disney-fotboll)
+     */
+    updateMultiCategoryURL(combinedKey, categoryNames) {
+        const newURL = `/${combinedKey}`;
+        
+        window.history.pushState({ 
+            categories: combinedKey, 
+            categoryNames: categoryNames,
+            type: 'multi-category' 
+        }, '', newURL);
+
+        // Spåra i Umami Analytics
+        this.trackUmamiPageView(`multi-${combinedKey}`, newURL);
+
+        console.log(`🔗 Multi-kategori URL uppdaterad till: ${newURL}`);
     }
 
     /**
@@ -511,7 +534,7 @@ class SEOURLHandler {
         let ogTitle = document.querySelector('meta[property="og:title"]');
         if (ogTitle) ogTitle.content = 'Quizla - Sveriges största Quiz, helt gratis!';
         
-        let ogDesc = document.querySelector('meta[property="og:description"]');
+        let ogDesc = document.querySelector('meta[name="property="og:description"]');
         if (ogDesc) ogDesc.content = 'Spela tusentals gratis quiz inom allmänbildning, sport, musik, film och mycket mer. Offline-läge, inga reklamer!';
         
         // Återställ Twitter Cards
@@ -541,9 +564,110 @@ class SEOURLHandler {
         this.app.showView('home');
         this.clearMetaTags();
     }
+
+    /**
+     * Försök starta quiz med flera kategorier
+     */
+    async tryMultiCategory(combinedSlug) {
+        console.log('🔍 Kontrollerar kombinerad kategori:', combinedSlug);
+        
+        if (typeof AVAILABLE_QUIZ === 'undefined') {
+            console.error('❌ AVAILABLE_QUIZ inte laddad');
+            return false;
+        }
+
+        // Dela upp slug:en i enskilda kategorier
+        const categoryKeys = combinedSlug.split('-');
+        console.log('🔍 Kategori-nycklar:', categoryKeys);
+
+        // Kontrollera att alla kategorier finns
+        const validCategories = [];
+        for (const key of categoryKeys) {
+            const category = AVAILABLE_QUIZ.find(q => q.key === key);
+            if (category) {
+                validCategories.push(category);
+            } else {
+                console.log(`❌ Kategori "${key}" hittades inte`);
+                return false;
+            }
+        }
+
+        if (validCategories.length < 2) {
+            console.log('❌ Behöver minst 2 kategorier för kombinerat quiz');
+            return false;
+        }
+
+        console.log('✅ Alla kategorier hittade, startar kombinerat quiz');
+
+        try {
+            // Ladda alla kategorier och kombinera frågor
+            const allQuestions = [];
+            for (const category of validCategories) {
+                const response = await fetch(`data/kategori/${category.file}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                const csvText = await response.text();
+                const questions = this.app.parseCSV(csvText);
+                
+                // Lägg till kategori-information till varje fråga
+                questions.forEach(q => {
+                    q.category = category.key;
+                    q.categoryName = category.name;
+                });
+                
+                allQuestions.push(...questions);
+            }
+
+            if (allQuestions.length === 0) {
+                throw new Error('Inga giltiga frågor hittades');
+            }
+
+            // Starta kombinerat quiz
+            this.startMultiCategoryQuiz(validCategories, allQuestions);
+            return true;
+
+        } catch (error) {
+            console.error(`❌ Kunde inte ladda kombinerat quiz:`, error);
+            return false;
+        }
+    }
+
+    /**
+     * Starta quiz med flera kategorier
+     */
+    startMultiCategoryQuiz(categories, questions) {
+        // Sätt valda kategorier
+        this.app.selectedCategories = new Set(categories.map(c => c.key));
+        
+        // Blanda frågor och starta quiz
+        this.app.shuffledQuestions = this.app.shuffleArray(questions);
+        this.app.currentQuestionIndex = 0;
+        this.app.showAnswer = this.app.settings.alwaysShowAnswer;
+        this.app.selectedAnswer = null;
+
+        // Reset score
+        this.app.resetScore();
+
+        // Uppdatera UI
+        const categoryNames = categories.map(c => c.name).join(' + ');
+        document.getElementById('category-title').textContent = categoryNames;
+        
+        // Visa quiz-vyn
+        this.app.showView('quiz');
+        this.app.loadCurrentQuestion(true);
+
+        console.log(`✅ Kombinerat quiz startat med ${categories.length} kategorier och ${questions.length} frågor`);
+    }
 }
 
 // Exportera för användning
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = SEOURLHandler;
+}
+
+// Exportera för webbläsaren
+if (typeof window !== 'undefined') {
+    window.SEOURLHandler = SEOURLHandler;
 }
