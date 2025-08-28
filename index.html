@@ -28,6 +28,56 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="b75e4f3a-82e5-4e93-9227-4c4c31eda5d0"></script>
+    
+    <!-- SEO Meta-taggar -->
+    <meta name="description" content="Quizla.se - Sveriges största quizplattform med tusentals gratis frågor inom allmänbildning, sport, musik, film och mycket mer. Spela offline, inga reklamer, helt gratis!">
+    <meta name="keywords" content="quiz, frågesport, allmänbildning, sport, musik, film, gratis, offline, svenska quiz, utbildning">
+    <meta name="author" content="Adam Arvidsson">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph för sociala medier -->
+    <meta property="og:title" content="Quizla.se - Sveriges största Quiz, helt gratis!">
+    <meta property="og:description" content="Spela tusentals gratis quiz inom allmänbildning, sport, musik, film och mycket mer. Offline-läge, inga reklamer!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://quizla.se">
+    <meta property="og:image" content="https://quizla.se/favicon/android-chrome-512x512.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Quizla.se - Sveriges största Quiz, helt gratis!">
+    <meta name="twitter:description" content="Spela tusentals gratis quiz inom allmänbildning, sport, musik, film och mycket mer.">
+    <meta name="twitter:image" content="https://quizla.se/favicon/android-chrome-512x512.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://quizla.se">
+    
+    <!-- Schema.org markup för bättre SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Quizla.se",
+      "description": "Sveriges största quizplattform med tusentals gratis frågor",
+      "url": "https://quizla.se",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "SEK"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Adam Arvidsson"
+      },
+      "featureList": [
+        "Offline-läge",
+        "Inga reklamer", 
+        "Gratis",
+        "Integritetsvänlig"
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Loading Screen -->
@@ -61,8 +111,8 @@
                         </div>
                         <div class="title-underline"></div>
                     </div>
-                    <button id="settings-btn" class="settings-btn">
-                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <button id="settings-btn" class="settings-btn" aria-label="Inställningar">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
@@ -77,10 +127,10 @@
                 <!-- Bottom buttons row - Blanda och Fler Quiz på samma rad -->
                 <div class="bottom-buttons-row">
                     <!-- Blanda knapp -->
-                    <button class="category-btn mixed" id="blanda-btn">
+                    <button class="category-btn mixed" id="blanda-btn" aria-label="Blanda alla kategorier">
                         <div class="category-content">
                             <div class="category-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-white" aria-hidden="true">
                                     <path d="M16 3h5v5"></path>
                                     <path d="M4 20L21 3"></path>
                                     <path d="M21 16v5h-5"></path>
@@ -91,24 +141,24 @@
                             <div class="category-info">
                                 <h3 class="category-name">Blanda</h3>
                             </div>
-                            <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
                         </div>
                     </button>
 
                     <!-- Fler Quiz knapp -->
-                    <button class="category-btn fler-quiz-btn" id="fler-quiz-btn">
+                    <button class="category-btn fler-quiz-btn" id="fler-quiz-btn" aria-label="Visa fler quiz-kategorier">
                         <div class="category-content">
                             <div class="category-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-white" aria-hidden="true">
                                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                                 </svg>
                             </div>
                             <div class="category-info">
                                 <h3 class="category-name">Fler Quiz</h3>
                             </div>
-                            <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
                         </div>
@@ -130,8 +180,8 @@
             <div class="container">
                 <!-- Header -->
                 <div class="quiz-header">
-                    <button id="back-btn" class="back-btn">
-                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <button id="back-btn" class="back-btn" aria-label="Gå tillbaka">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                         </svg>
                     </button>
@@ -184,9 +234,9 @@
                 </div>
 
                 <!-- Show Answer Button (for direct answer mode) -->
-                <button id="show-answer-btn" class="show-answer-btn">
+                <button id="show-answer-btn" class="show-answer-btn" aria-label="Visa svaret på frågan">
                     <div class="btn-content">
-                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                         </svg>
@@ -490,6 +540,34 @@
                                 <span class="category-stat-number" id="total-all-questions">0</span>
                                 <span class="category-stat-label">Totalt</span>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Om Quizla.se Section -->
+                    <div class="settings-section">
+                        <div class="section-header">
+                            <div class="section-icon">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h2 class="section-title">Om Quizla.se</h2>
+                        </div>
+
+                        <div class="about-quizla-content">
+                            <p class="about-description">
+                                Quizla – Sveriges största quizplattform där du kan utmana dig själv och dina vänner i tusentals frågor inom allt från allmänbildning till sport, musik, film och mycket mer.
+                            </p>
+                            <p class="about-description">
+                                Vi tror på en enkel och rolig upplevelse, därför är Quizla:
+                            </p>
+                            <ul class="about-features">
+                                <li><span class="feature-icon">🎉</span> <strong>Alltid gratis</strong> – inga betalväggar.</li>
+                                <li><span class="feature-icon">🚫</span> <strong>Utan reklam</strong> – inga störande annonser.</li>
+                                <li><span class="feature-icon">🔒</span> <strong>Integritetsvänlig</strong> – vi sparar ingen känslig data.</li>
+                                <li><span class="feature-icon">🌐</span> <strong>Offline-läge</strong> – spela även när du inte har internet.</li>
+                                <li><span class="feature-icon">🍪</span> <strong>Ingen cookie-banner</strong></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

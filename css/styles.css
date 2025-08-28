@@ -1084,6 +1084,15 @@ body {
     }
 }
 
+/* Android Chrome mobile - mindre font för Fler Quiz knappar */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @media (max-width: 480px) {
+        .dynamic-category-btn .dynamic-category-name {
+            font-size: 0.9rem; /* 10% mindre än standard 1rem */
+        }
+    }
+}
+
 /* Firefox-specifik optimering för bättre scroll-prestanda */
 @supports (-moz-appearance: none) {
     .dynamic-category-btn {
@@ -1854,6 +1863,52 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+/* Om Quizla.se Section Styles */
+.about-quizla-content {
+    margin-top: 1rem;
+}
+
+.about-description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.about-description:last-of-type {
+    margin-bottom: 0.75rem;
+}
+
+.about-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-features li {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.feature-icon {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+
+
+.about-features li:last-child {
+    margin-bottom: 0;
 }
 
 .setting-info {

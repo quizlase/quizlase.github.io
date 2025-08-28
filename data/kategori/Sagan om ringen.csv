@@ -1,12 +1,401 @@
 Kategori,Fråga,Rätt svar,Fel svar 1,Fel svar 2,Fel svar 3
-Sagan om Ringen,Vad heter ringen som är central i berättelsen?,Den enda ringen,Den mäktiga ringen,Den förbannade ringen,Den magiska ringen
-Sagan om Ringen,Vilken karaktär är ringbäraren?,Frodo Baggins,Sam Gamgi,Bilbo Baggins,Aragorn
-Sagan om Ringen,Vad heter landet där hobbitarna bor?,Fallet,Minas Tirith,Edoras,Rivendell
-Sagan om Ringen,Vilken karaktär är Gandalfs riktiga namn?,Mithrandir,Radagast,Saruman,Tom Bombadil
-Sagan om Ringen,Vad heter elvernas hem i Lothlórien?,Caras Galadhon,Imladris,Minas Tirith,Edoras
-Sagan om Ringen,Vilken karaktär är kungen av Gondor?,Aragorn,Boromir,Denethor,Faramir
-Sagan om Ringen,Vad heter det svarta språket som orcherna talar?,Svart tungomål,Orkiska,Mordoriska,Saurons språk
-Sagan om Ringen,Vilken karaktär är Gollums ursprungliga namn?,Sméagol,Déagol,Bilbo,Frodo
-Sagan om Ringen,Vad heter det landskap där ringen smiddes?,Mordor,Isengard,Rohan,Gondor
-Sagan om Ringen,Vilken karaktär är den sista kungen av Arnor?,Aragorn,Arvedui,Arhorn,Isildur
-
+SaganOmRingen,Hur gammal är Frodo när han adopteras?,21,12,18,25
+SaganOmRingen,Hur gammal är Frodo när han lämnar?,53,50,55,48
+SaganOmRingen,Hur gammal blir Bilbo på sin sista fest?,111,100,110,112
+SaganOmRingen,Vilket år publicerades första boken?,1954,1953,1955,1952
+SaganOmRingen,Vilket år i Shire Reckoning föds Frodo?,2968,2890,2944,2980
+SaganOmRingen,Vilket år adopterar Bilbo Frodo officiellt?,2989,2968,2980,2977
+SaganOmRingen,Vilket år byggdes The High Hay enligt Shire Reckoning?,2997,3000,2990,3010
+SaganOmRingen,Vilket år återvänder hobbitsarna till Shire?,3019,3018,3020,3017
+SaganOmRingen,Vilket år i Third Age förstörs ringen?,3019,3018,3020,3021
+SaganOmRingen,Vilket år lämnar Frodo Shire med alverna?,3021,3019,3020,3022
+SaganOmRingen,Vilket år slutar Third Age?,3021,3019,3020,3022
+SaganOmRingen,Vilket datum exakt förstörs ringen?,25 mars,22 mars,1 april,15 mars
+SaganOmRingen,Vilken powers har Tom över sina marker?,Absolute dominion,Magic control,Nature command,Forest rule
+SaganOmRingen,Vad heter Gil-galads spjut?,Aeglos,Glamdring,Orcrist,Anduril
+SaganOmRingen,Vad kallas den stora musiken som skapade världen?,Ainulindalë,Music of Creation,Great Song,Silmarillion
+SaganOmRingen,"Vad betyder ""Vilya"" på quenya?",Air/Sky,Fire,Water,Earth
+SaganOmRingen,Vem av Maiar blev Radagast?,Aiwendil,Olórin,Curunír,Alatar
+SaganOmRingen,Vem äger The Green Dragon?,Al,Ted,Bill,Sam
+SaganOmRingen,Vad heter de blå trollkarlarna?,Alatar och Pallando,Morinehtar och Rómestámo,Curumo och Aiwendil,Blue och Azure
+SaganOmRingen,Vem smidade om Narsil till Andúril?,Alverna i Rivendell,Dvärgar i Erebor,Människor i Gondor,Númenoréer
+SaganOmRingen,Vem spelade Gollum med motion capture?,Andy Serkis,Peter Jackson,Ian McKellen,Elijah Wood
+SaganOmRingen,Vad heter Aragorns svärd?,Andúril,Glamdring,Sting,Narsil
+SaganOmRingen,Vad kallades Sauron på Númenor?,Annatar,Tar-Mairon,Lord of Gifts,King's advisor
+SaganOmRingen,Vilket falskt namn använde Sauron bland alverna?,Annatar,Mairon,Tar-Mairon,Gorthaur
+SaganOmRingen,Vem var Númenórs siste kung?,Ar-Pharazôn,Elendil,Isildur,Anárion
+SaganOmRingen,Vem känner igen athelas?,Aragorn,Gandalf,Elrond,Denethor
+SaganOmRingen,Vem befriede de döda från förbannelsen?,Aragorn,Gandalf,Elrond,Isildur
+SaganOmRingen,Vem gifter sig Arwen med?,Aragorn,Boromir,Faramir,Legolas
+SaganOmRingen,Vad heter Elronds dotter?,Arwen,Galadriel,Celebrían,Tauriel
+SaganOmRingen,Vem blir Aragorns drottning?,Arwen Undómiel,Éowyn,Galadriel,Rosie Cotton
+SaganOmRingen,Vad heter alvhästen som bär Frodo?,Asfaloth,Shadowfax,Roheryn,Hasufel
+SaganOmRingen,Vad kallas det healande bladet?,Athelas,Kingsfoil,Lembas,Miruvor
+SaganOmRingen,Vilken växt använder Aragorn för healing?,Athelas,Lembas,Miruvor,Kingsfoil
+SaganOmRingen,Vilken Vala tjänade Saruman?,Aulë,Manwë,Yavanna,Ulmo
+SaganOmRingen,Vem tjänade Sauron bland Valar ursprungligen?,Aulë,Manwë,Melkor,Ulmo
+SaganOmRingen,Var levde Ungoliant förr?,Avathar,Dor-lómin,Beleriand,Angband
+SaganOmRingen,Vad heter Frodos hem?,Bag End,Hill End,Hole End,Green End
+SaganOmRingen,Vem vägledde dvärgar genom Moria förr?,Balin,Glóin,Óin,Dwalin
+SaganOmRingen,Vad står på Balins gravsten?,Balin Lord of Moria,Here lies Balin,Balin Son of Fundin,Lord Balin
+SaganOmRingen,Vad hittar Gimli i Chamber of Mazarbul?,Balins grav,Skatter,Orcs,Weapons
+SaganOmRingen,Vad väckte dvärgarna när de grävde för djupt?,Balrog,Dragon,Watcher,Orcs
+SaganOmRingen,Vilket monster vaktar i Moria?,Balrog,Dragon,Watcher in the Water,Cave Troll
+SaganOmRingen,Vad heter Saurons fästning?,Barad-dûr,Orthanc,Minas Morgul,Mount Doom
+SaganOmRingen,Vad heter floden där Frodos föräldrar dog?,Baranduin,Brandywine,Mitheithel,Celebrant
+SaganOmRingen,Vem äger The Prancing Pony?,Barliman Butterbur,Bill Ferny,Harry Goatleaf,Ted Sandyman
+SaganOmRingen,Vad heter striden för att befria Shire?,Battle of Bywater,Scouring of Shire,Liberation of Shire,Hobbiton Fight
+SaganOmRingen,Vad heter Pipps vän bland vakterna?,Beregond,Targon,Bergil,Ioreth
+SaganOmRingen,Vilken väktare hjälper Pippin rädda Faramir?,Beregond,Targon,Prince Imrahil,Húrin
+SaganOmRingen,Vad heter Beregnds son?,Bergil,Beregond Jr,Boromir,Targon
+SaganOmRingen,Vem gav mithril-skjortan till Frodo?,Bilbo,Thorin,Gimli,Dáin
+SaganOmRingen,Vem gav Sting till Frodo?,Bilbo,Gandalf,Elrond,Galadriel
+SaganOmRingen,Vad heter Frodos vårdnadshavare?,Bilbo Baggins,No guardian,Uncle Baggins,Bag End owner
+SaganOmRingen,Vad heter Frodos farbror?,Bilbo Baggins,Bingo Baggins,Bungo Baggins,Balbo Baggins
+SaganOmRingen,Vilket djur äger Sam Gamgee?,Bill ponnyn,Asfaloth,Shadowfax,Roheryn
+SaganOmRingen,Vem spelade Pippin Took?,Billy Boyd,Dominic Monaghan,Sean Astin,Elijah Wood
+SaganOmRingen,Vilken följeslagare dör under resan?,Boromir,Gandalf,Gimli,Legolas
+SaganOmRingen,Vem försöker ta ringen från Frodo vid Amon Hen?,Boromir,Gollum,Faramir,Denethor
+SaganOmRingen,Vad heter huvudstaden i Buckland?,Brandy Hall,Bucklebury,Crickhollow,Brandywine Bridge
+SaganOmRingen,Vilket släkte kommer Frodos mor från?,Brandybuck,Took,Gamgee,Bolger
+SaganOmRingen,Vad heter floden som Frodo korsar?,Bruinen,Anduin,Mitheithel,Celebrant
+SaganOmRingen,Hur dör Denethor?,Bränner sig själv,Hoppar,Krigare,Nazgûl
+SaganOmRingen,Vem byggde The High Hay?,Bucklanders,Shire-folk,Rangers,Tom Bombadil
+SaganOmRingen,På vilket berg försöker sällskapet passera först?,Caradhras,Celebdil,Fanuidhol,Mount Doom
+SaganOmRingen,Var bor Galadriel och Celeborn?,Caras Galadhon,Cerin Amroth,Mirror of Galadriel,Egladil
+SaganOmRingen,Vad räddade mithril-skjortan Frodo från?,Cave troll spear,Sting,Morgul blade,Shelob
+SaganOmRingen,Vem är Galadriels make?,Celeborn,Elrond,Gil-galad,Círdan
+SaganOmRingen,Vem hjälpte Sauron skapa de 19 ringarna?,Celebrimbor,Fëanor,Gil-galad,Elrond
+SaganOmRingen,Vem är Arwens mor?,Celebrían,Galadriel,Elrond,Gil-galad
+SaganOmRingen,"Vad betyder ""Thain""?",Chieftain,King,Mayor,Lord
+SaganOmRingen,Vem spelade Saruman?,Christopher Lee,Ian McKellen,Sean Bean,John Hurt
+SaganOmRingen,Var hittar Sam orc-rustningen?,Cirith Ungol tower,Dead orcs,Orc camp,Watchtower
+SaganOmRingen,Vilken skrift använder dvärgar?,Cirth,Tengwar,Angerthas,Runes
+SaganOmRingen,Vad heter fältet där de hyllar hjältarna?,Cormallen,Pelennor,Dagorlad,Nindalf
+SaganOmRingen,Vad heter kroningsceremonin?,Coronation,King's return,Crown of Gondor,Royal ceremony
+SaganOmRingen,Mot vem kämpade de döda?,Corsairs of Umbar,Orcs of Mordor,Easterlings,Southrons
+SaganOmRingen,Hur är Frodo och Bilbo släkt?,Cousins,Uncle nephew,Brothers,Grandfather grandson
+SaganOmRingen,Vem av Maiar blev Saruman?,Curunír,Olórin,Aiwendil,Pallando
+SaganOmRingen,Vem gav Narya till Gandalf?,Círdan,Elrond,Galadriel,Gil-galad
+SaganOmRingen,Vad händer med slavarna när Sauron faller?,De befrias,De dör,De flyr,De kämpar
+SaganOmRingen,Vad händer med Nazgûl vid floden?,De spolas bort,De förstörs,De flyr,De faller
+SaganOmRingen,Vad heter andra delen?,De två tornen,Fellowship,Return of King,Two Towers
+SaganOmRingen,Vad heter de döda soldaterna?,Dead Men of Dunharrow,Army of Dead,Oathbreakers,Cursed Warriors
+SaganOmRingen,Vem härskade över Gondor när Frodo kom?,Denethor,Aragorn,Boromir,Faramir
+SaganOmRingen,Under vilket förklädnadsnamn slåss Éowyn?,Dernhelm,Dernhild,Elfhelm,Windfola
+SaganOmRingen,Vilken sten sitter i Nenya?,Diamond,Ruby,Sapphire,Pearl
+SaganOmRingen,Vad heter Imrahils hem?,Dol Amroth,Minas Tirith,Lossarnach,Pinnath Gelin
+SaganOmRingen,Vem spelade Merry Brandybuck?,Dominic Monaghan,Billy Boyd,Sean Astin,Elijah Wood
+SaganOmRingen,Var skapades Härskarringen?,Dooms berg,Erebor,Khazad-dûm,Rivendell
+SaganOmRingen,Vad heter Frodos far?,Drogo Baggins,Bilbo Baggins,Bungo Baggins,Bingo Baggins
+SaganOmRingen,Vad hände med Frodos föräldrar?,Drowned in Baranduin,Killed by orcs,Disease,Old age
+SaganOmRingen,Vem grundade Khazad-dûm?,Durin the Deathless,Balin,Dáin,Thorin
+SaganOmRingen,Vad kallas Balrog på sindarin?,Durin's Bane,Shadow of Flame,Flame of Udûn,Dark Fire
+SaganOmRingen,Vem för bud om segern?,Eagles,Gwaihir,Messengers,Riders
+SaganOmRingen,Vad heter öst-folken?,Easterlings,Variags,Wainriders,Men of Khand
+SaganOmRingen,Vad heter Rohans huvudstad?,Edoras,Helm's Deep,Dunharrow,Aldburg
+SaganOmRingen,Vilket element representerar Narya?,Eld,Luft,Vatten,Jord
+SaganOmRingen,Vem ledde de trogna Númenóréerna till Midgård?,Elendil,Isildur,Gil-galad,Anárion
+SaganOmRingen,Vilken kröna användes?,Elendil's crown,Gondor crown,King's crown,Royal circlet
+SaganOmRingen,Vad blir Aragorns kungliga namn?,Elessar,Telcontar,Strider,Chieftain
+SaganOmRingen,Vem spelade Frodo i filmerna?,Elijah Wood,Daniel Radcliffe,Orlando Bloom,Sean Bean
+SaganOmRingen,Vem är Arwens far?,Elrond,Celebrían,Gil-galad,Thranduil
+SaganOmRingen,Vad heter alvkungen i Rivendell?,Elrond,Gil-galad,Celebrimbor,Thranduil
+SaganOmRingen,Vem räddar Frodo från Nazgûl-kniven?,Elrond,Gandalf,Arwen,Glorfindel
+SaganOmRingen,Vem helar Frodos sår i Rivendell?,Elrond,Gandalf,Arwen,Glorfindel
+SaganOmRingen,Hur många Oscar vann Return of the King?,Elva,Nio,Tio,Tolv
+SaganOmRingen,Vad kallas alvernas avskjedsmantlar?,Elven-cloaks,Lórien cloaks,Grey cloaks,Leaf-brooches
+SaganOmRingen,Var fångar Frodo och Sam Gollum?,Emyn Muil,Dead Marshes,Ithilien,Dagorlad
+SaganOmRingen,Vad kallas träd-herrarna?,Ents,Huorns,Onodrim,Tree-shepherds
+SaganOmRingen,Vem förstör Isengard?,Ents,Rohirrim,Gondorians,Eagles
+SaganOmRingen,Vem befriar Merry och Pippin?,Ents,Rohirrim,Aragorn,Gandalf
+SaganOmRingen,Vad heter bergskedjan runt Mordor?,Ephel Dúath,Ash Mountains,Shadow Mountains,Morgul Mountains
+SaganOmRingen,Vad heter de norra bergen av Mordor?,Ered Lithui,Ash Mountains,Grey Mountains,Iron Mountains
+SaganOmRingen,Vad heter världens skapare?,Eru Ilúvatar,Manwë,Varda,Aulë
+SaganOmRingen,Hur många hårstrån begärde Gimli?,Ett,Tre,Fem,Två
+SaganOmRingen,"Vad betyder ""Undómiel""?",Evenstar,Morning Star,Bright Lady,Elven Princess
+SaganOmRingen,Vad händer med Gollum i Mount Doom?,Faller i lavan,Dödas av Frodo,Flyr,Förvandlas
+SaganOmRingen,Vem helar Aragorn först?,Faramir,Éowyn,Merry,Pippin
+SaganOmRingen,Vad heter Boromirs bror?,Faramir,Denethor,Imrahil,Damrod
+SaganOmRingen,Vem styrde Ithilien?,Faramir,Boromir,Denethor,Imrahil
+SaganOmRingen,Vem gifter sig Éowyn med?,Faramir,Aragorn,Éomer,Erkenbrand
+SaganOmRingen,Vem efterträder Sam som borgmästare?,Fast Will Whitfoot,Ted Sandyman,Robin Smallburrow,Folco Boffin
+SaganOmRingen,Vart tar örnarna Frodo och Sam?,Field of Cormallen,Minas Tirith,Osgiliath,Rivendell
+SaganOmRingen,"Vad betyder ""Narya"" på quenya?",Fire,Air,Water,Ring of Fire
+SaganOmRingen,Vilken teknik användes för att göra hobbitar kortare?,Forced perspective,CGI,Green screen,Doubles
+SaganOmRingen,Vad kallar dvärgarna Tom Bombadil?,Forn,Orald,Eldest,Master
+SaganOmRingen,Vad börjar efter Third Age?,Fourth Age,Age of Men,Age of Peace,New Age
+SaganOmRingen,Vem bar mithril-skjorta?,Frodo,Bilbo,Thorin,Gimli
+SaganOmRingen,Vem blir knivstucken av Nazgûl?,Frodo,Sam,Merry,Pippin
+SaganOmRingen,Vem erbjuder sig att bära ringen till Mordor?,Frodo,Sam,Boromir,Aragorn
+SaganOmRingen,Vem av hobbitsarna seglar med alverna?,Frodo,Sam,Merry,Pippin
+SaganOmRingen,Vad heter Sams äldsta son?,Frodo Gardner,Merry Gardner,Pippin Gardner,Sam Gardner Jr
+SaganOmRingen,Vem tror de att Mouth of Sauron dödat?,Frodo och Sam,All hobbits,Fellowship,Aragorn
+SaganOmRingen,Vem hyllas som hjältar på Cormallen?,Frodo och Sam,All hobbits,Fellowship,Ring-bearers
+SaganOmRingen,Vad bråkar orc-kaptenernan om?,Frodos mithril-skjorta,Ring,Weapons,Territory
+SaganOmRingen,Vilka föremål visar Mouth of Sauron?,Frodos skjorta och Sams svärd,Ring,Sting,Mithril
+SaganOmRingen,Hur långt tog det att filma alla tre filmer?,Fyrahundrafemton dagar,Tresexa dagar,Fyrahundra dagar,Fyrahundratio dagar
+SaganOmRingen,Vem skapade palantíri?,Fëanor,Celebrimbor,Gil-galad,Elrond
+SaganOmRingen,Vem begärde Galadriels hår förr och nekades?,Fëanor,Celebrimbor,Gil-galad,Elrond
+SaganOmRingen,Vem skapade tengwar-skriften?,Fëanor,Celebrimbor,Gil-galad,Elrond
+SaganOmRingen,Vad händer med Sauron när ringen förstörs?,Förstörs,Flyr,Förvandlas,Dör
+SaganOmRingen,Vilken gåva får Legolas av Galadriel?,Galadhrim bow,Hair,Cloak,Lembas
+SaganOmRingen,Vad heter alvdrottningen i Lothlórien?,Galadriel,Arwen,Elrond,Celebrían
+SaganOmRingen,Vilket ljus använder Sam mot Shelob?,Galadriels fial,Sting,Lembas,Ring
+SaganOmRingen,Vem arrangerar fyrverkerierna på Bilbos fest?,Gandalf,Bilbo,Hobbits,Sackville-Bagginses
+SaganOmRingen,Vem löser gåtan till Moria?,Gandalf,Frodo,Legolas,Gimli
+SaganOmRingen,Vem sätter kronan på Aragorns huvud?,Gandalf,Faramir,Elrond,People
+SaganOmRingen,Vem dödade Balrog?,Gandalf,Gimli,Legolas,Aragorn
+SaganOmRingen,Vem föreslår att förstöra ringen?,Gandalf,Elrond,Aragorn,Boromir
+SaganOmRingen,Vem kröner Aragorn?,Gandalf,Elrond,Denethor,Faramir
+SaganOmRingen,Vad kallas Gandalf efter återkomsten från döden?,Gandalf den vite,Gandalf Stormcrow,Gandalf Greyhame,Mithrandir
+SaganOmRingen,Vilka fem trollkarlar sändes till Midgård?,Gandalf Saruman Radagast Alatar Pallando,Gandalf Saruman Radagast Sauron Elrond,Gandalf Elrond Galadriel Saruman Radagast,Istari Wizards Five Blue
+SaganOmRingen,Vem var alvkung under Last Alliance?,Gil-galad,Elrond,Círdan,Thranduil
+SaganOmRingen,Vad heter Gandalfs svärd?,Glamdring,Sting,Andúril,Narsil
+SaganOmRingen,Vem för Frodo över floden i böckerna?,Glorfindel,Arwen,Elrond,Legolas
+SaganOmRingen,Vad heter Gimlis far?,Glóin,Balin,Dwalin,Óin
+SaganOmRingen,Vilken dvärg var med Bilbo på hans resa?,Glóin,Gimli,Dáin,Thorin
+SaganOmRingen,Vad heter Tom Bombadils fru?,Goldberry,River-daughter,Fair Lady,Water-lily
+SaganOmRingen,Vem guidar Frodo och Sam till Mordor?,Gollum,Faramir,Aragorn,Gandalf
+SaganOmRingen,Vem tar ringen från Frodo i Mount Doom?,Gollum,Sauron,Sam,Sméagol
+SaganOmRingen,Vad heter den andre orc-kaptenen?,Gorbag,Shagrat,Snaga,Lagduf
+SaganOmRingen,Vilket område genomkorsar Frodo och Sam i Mordor?,Gorgoroth,Udûn,Nurn,Lithlad
+SaganOmRingen,Varifrån seglar alverna bort?,Grey Havens,Dol Amroth,Pelargir,Lond Daer
+SaganOmRingen,Vad heter Farmer Maggots hund?,Grip,Fang,Wolf,Catch
+SaganOmRingen,Vilken färg hade Gandalfs mantel först?,Grå,Vit,Blå,Brun
+SaganOmRingen,Vem förrådde Théoden?,Gríma Ormtunga,Saruman,Denethor,Mouth of Sauron
+SaganOmRingen,Vem dödade Saruman i böckerna?,Gríma Ormtunga,Gandalf,Aragorn,Éomer
+SaganOmRingen,Vem dödar Sharkey/Saruman i Shire?,Gríma Wormtongue,Merry,Pippin,Sam
+SaganOmRingen,Vem hittar Gandalf efter striden med Balrog?,Gwaihir,Landroval,Meneldor,Thorondor
+SaganOmRingen,Vem leder örnarna?,Gwaihir,Great Eagle,Thorondor,Wind-lord
+SaganOmRingen,Vad heter örnkungen?,Gwaihir,Landroval,Meneldor,Thorondor
+SaganOmRingen,Vad heter örnkungen?,Gwaihir Windlord,Great Eagle,King of Eagles,Thorondor
+SaganOmRingen,Vilken hobbit bor i Number 3 Bagshot Row?,Hamfast Gamgee,Sam Gamgee,Ted Sandyman,Old Noakes
+SaganOmRingen,Vad heter Sams far?,Hamfast Gamgee,Hal Gamgee,Hob Gamgee,Ham Gamgee
+SaganOmRingen,Vad händer med Boromir?,Han dör,Han förvandlas,Han flyr,Han ger upp
+SaganOmRingen,Vad heter Aragorns första handling som kung?,Heal the sick,Pardon enemies,Crown Faramir,Marry Arwen
+SaganOmRingen,Vilka händer har Aragorn som kung?,Healing hands,King's touch,Royal power,Blessed hands
+SaganOmRingen,Vad heter den stora fästningen i Rohan?,Helms klyfta,Isengard,Minas Tirith,Osgiliath
+SaganOmRingen,Vad sjunger Tom för att befria hobbitsarna?,Hey dol! merry dol!,Old Tom Bombadil,Ring a dong dillo,Tom's song
+SaganOmRingen,Vad heter Aragorns efterkommande titel?,High King,King Elessar,Emperor,Lord Protector
+SaganOmRingen,Vilken ort kommer Frodo från?,Hobbiton,Byvatten,Michel Delving,Longbottom
+SaganOmRingen,Vilket kön har Shelob?,Hona,Hane,Asexual,Unknown
+SaganOmRingen,Vilka djur använde Easterlings?,Horses and chariots,Wargs,Mûmakil,Eagles
+SaganOmRingen,Vilken ring bär Frodo?,Härskarringen,Vilya,Narya,Nenya
+SaganOmRingen,Vem spelade Gandalf?,Ian McKellen,Christopher Lee,Sean Bean,John Rhys-Davies
+SaganOmRingen,Vad kallar alverna Tom Bombadil?,Iarwain Ben-adar,Eldest,Fatherless,Master
+SaganOmRingen,Vad dödar de flesta orcs på Cirith Ungol?,Inbördes strid,Sam,Shelob,Tower collapse
+SaganOmRingen,Vilka andra djur hjälper i sista striden?,Inga andra,Horses,Wargs,Bears
+SaganOmRingen,Vem ersätter Boromir i sällskapet?,Ingen,Faramir,Éomer,Erkenbrand
+SaganOmRingen,Vilken effekt har Härskarringen på Tom Bombadil?,Ingen,Gör honom mäktigare,Gör honom osynlig,Korrumperar honom
+SaganOmRingen,Vilken profetia uppfylldes när Éowyn dödade Witch-king?,Ingen man kan döda honom,Han är odödlig,Han föds på nytt,Han flyr till Sauron
+SaganOmRingen,Vad händer när Tom tar på Härskarringen?,Ingenting,Den gör honom osynlig,Han blir korrumperad,Den bränner honom
+SaganOmRingen,Vart tar Uruk-hai Merry och Pippin?,Isengard,Mordor,Dol Guldur,Minas Morgul
+SaganOmRingen,Vem högg av Saurons finger?,Isildur,Gil-galad,Elendil,Círdan
+SaganOmRingen,Vad kallas trollkarlarnas orden på Quenya?,Istari,Wizards,Maiar,Servants
+SaganOmRingen,Vilken väg tar Gollum för att komma in i Mordor?,Ithilien tunnlarna,Cirith Ungol,Morannon,Cair Andros
+SaganOmRingen,Vem skrev Sagan om Ringen?,J.R.R. Tolkien,C.S. Lewis,George R.R. Martin,Terry Pratchett
+SaganOmRingen,Vem spelade Gimli?,John Rhys-Davies,Sean Bean,Ian McKellen,Christopher Lee
+SaganOmRingen,Vad innehåller Galadriels gåva till Sam?,Jord från hennes trädgård,Magic seeds,Mallorn seed,Athelas
+SaganOmRingen,Vad ger Galadriel till Sam?,Jord och frön,Box of soil,Seeds,Rope
+SaganOmRingen,Vad heter dvärgarnas forna hem?,Khazad-dûm,Erebor,Iron Hills,Blue Mountains
+SaganOmRingen,På vilken bro slåss Gandalf mot Balrog?,Khazad-dûm,Pelennor,Anduin,Mitheithel
+SaganOmRingen,Vilken titel har Aragorn över Dol Amroth?,King,Prince,Lord,Duke
+SaganOmRingen,Vad kallas Aragorns helande förmåga?,King's hands,Healing touch,Royal gift,Blessed power
+SaganOmRingen,Vad heter tredje delen?,Konungens återkomst,Return of King,King's Return,Return
+SaganOmRingen,Vad heter Aragorns rättmätiga titel?,Kung av Gondor,Kung av Rohan,Furste av Dol Amroth,Jarl av Dale
+SaganOmRingen,Vad heter den sista alliansen?,Last Alliance of Elves and Men,White Council,Fellowship,Free Peoples
+SaganOmRingen,Vad heter alvbrödet?,Lembas,Miruvor,Athelas,Kingsfoil
+SaganOmRingen,Vad innehöll Galadriels gåva till Frodo?,Ljus från Eärendils stjärna,Vatten,Jord,Eld
+SaganOmRingen,Vilket alvrike styr Celeborn och Galadriel?,Lothlórien,Rivendell,Mirkwood,Grey Havens
+SaganOmRingen,Vilket element representerar Vilya?,Luft,Eld,Vatten,Jord
+SaganOmRingen,Vilket namn hade Sauron innan han blev ond?,Mairon,Aulendil,Curumo,Tar-Mairon
+SaganOmRingen,Vad heter träden i Lothlórien?,Mallorn,Ash,Oak,Birch
+SaganOmRingen,Vilken växt planterar Sam över hela Shire?,Mallorn trees,Oak trees,Party Tree,Apple trees
+SaganOmRingen,Vilken Vala tjänade Gandalf?,Manwë,Aulë,Yavanna,Ulmo
+SaganOmRingen,Vem av Valar sände trollkarlarna?,Manwë,Eru Ilúvatar,Ulmo,Aulë
+SaganOmRingen,Vad heter dagen på Shire-calendar?,March 25,Spring day,Ring day,Victory day
+SaganOmRingen,Vilken månad förstörs ringen?,Mars,April,February,May
+SaganOmRingen,Vad blir Merry till slut?,Master av Buckland,Thain av Shire,Mayor av Michel Delving,Warden av Westfarthing
+SaganOmRingen,Vilken titel ärver Merry?,Master of Buckland,Thain,Mayor,Lord
+SaganOmRingen,Vilket ord öppnar dörrarna till Moria?,Mellon,Friend,Speak friend and enter,Khazad-dûm
+SaganOmRingen,Vad heter Merrys fullständiga namn?,Meriadoc Brandybuck,Merry Brandybuck,Merias Brandybuck,Meriadoc the Magnificent
+SaganOmRingen,Vem hjälpte Éowyn att döda Witch-king?,Merry,Pippin,Aragorn,Gandalf
+SaganOmRingen,Vilka två hobbits träffar Treebeard först?,Merry och Pippin,Frodo och Sam,Pippin och Sam,Merry och Frodo
+SaganOmRingen,Vilka två hobbits försöker rädda Boromir?,Merry och Pippin,Frodo och Sam,Sam och Pippin,Frodo och Merry
+SaganOmRingen,Vilken palantír använder Denethor?,Minas Tirith,Orthanc,Minas Ithil,Annúminas
+SaganOmRingen,Var kröns Aragorn?,Minas Tirith,Osgiliath,Pelennor,Cormallen
+SaganOmRingen,Vad heter den vita staden?,Minas Tirith,Minas Ithil,Osgiliath,Dol Amroth
+SaganOmRingen,Var kröns Aragorn till kung?,Minas Tirith,Osgiliath,Dol Amroth,Edoras
+SaganOmRingen,Var gifter sig Aragorn och Arwen?,Minas Tirith,Rivendell,Lothlórien,Edoras
+SaganOmRingen,Vilken stad byggde Númenóréerna?,Minas Tirith,Osgiliath,Pelargir,Dol Amroth
+SaganOmRingen,Vilket rike styr Thranduil över?,Mirkwood,Rivendell,Lothlórien,Grey Havens
+SaganOmRingen,Vad heter det mörka skogslandet?,Mirkwood,Fangorn,Old Forest,Chetwood
+SaganOmRingen,Vad heter alvdrycken?,Miruvor,Lembas,Athelas,Cordial
+SaganOmRingen,Vad heter Gandalfs alvnamn?,Mithrandir,Tharkûn,Incánus,Olórin
+SaganOmRingen,Vad kallas Mordors svarta port?,Morannon,Black Gate,Dark Door,Shadow Gate
+SaganOmRingen,I vilket land ligger Barad-dûr?,Mordor,Isengard,Moria,Dol Guldur
+SaganOmRingen,Vad heter vägen genom Mordor?,Morgai,Morgul Vale,Udûn,Gorgoroth
+SaganOmRingen,Vad kallas Khazad-dûm av andra folk?,Moria,Caradhras,Redhorn Pass,Dimrill Dale
+SaganOmRingen,Vad heter mithril på sindarin?,Moria-silver,True-silver,Dwarf-silver,King-silver
+SaganOmRingen,Vad heter Jacksons cameo-roll?,Morian soldier,Corsair,Orc,Man of Dale
+SaganOmRingen,Vad heter berget där ringen måste förstöras?,Mount Doom,Caradhras,Celebdil,Fanuidhol
+SaganOmRingen,Var skulle Isildur ha förstört ringen?,Mount Doom,Barad-dûr,Rivendell,Lothlórien
+SaganOmRingen,Vem ledde Haradrims armé?,Mouth of Sauron,Gothmog,Witch-king,Prince of Harad
+SaganOmRingen,Vad heter Saurons mun?,Mouth of Sauron,Lieutenant,Herald,Ambassador
+SaganOmRingen,Vad heter Farmer Maggots fru?,Mrs. Maggot,Sarah,Betty,Martha
+SaganOmRingen,Vilken gröda odlar Farmer Maggot som hobbitsarna stjäl?,Mushrooms,Carrots,Potatoes,Turnips
+SaganOmRingen,Vilka elefanter använde sydlänningarna?,Mûmakil,Oliphaunts,War-elephants,Southron beasts
+SaganOmRingen,Vad heter Elendils svärd?,Narsil,Andúril,Glamdring,Aeglos
+SaganOmRingen,Vilken alvring äger Gandalf?,Narya,Vilya,Nenya,Härskarringen
+SaganOmRingen,Vilka varelser tjänar som Saurons ryttare?,Nazgûl,Fell Beasts,Wargs,Mumakil
+SaganOmRingen,Vad attackerar hobbitsarna på Weathertop?,Nazgûl,Orcs,Wolves,Wargs
+SaganOmRingen,Vad händer när örnarna kommer?,Nazgûl flyr,Orcs retreat,Eagles fight,Sauron falls
+SaganOmRingen,Vilken alvring äger Galadriel?,Nenya,Vilya,Narya,Härskarringen
+SaganOmRingen,Vad heter hobbithålan bredvid Bag End?,New Row,Bagshot Row,Hill Row,Green Row
+SaganOmRingen,Vad heter Bilbos hem efter han lämnat?,New Row,Bag End,Still Bilbo's,Empty hole
+SaganOmRingen,Hur många medlemmar har följeskapet från början?,Nio,Åtta,Tio,Sju
+SaganOmRingen,Hur många ringar gavs till människor?,Nio,Åtta,Tio,Sju
+SaganOmRingen,Hur många Nazgûl finns det?,Nio,Sju,Tolv,Fem
+SaganOmRingen,Vad heter slavområdet i södra Mordor?,Nurn,Gorgoroth,Udûn,Khand
+SaganOmRingen,I vilket land filmades trilogin?,Nya Zeeland,Australien,Irland,Island
+SaganOmRingen,"Vad betyder ""kingsfoil"" för vanligt folk?",Ogräs,Medicine,Food,Poison
+SaganOmRingen,Vad skyddar The High Hay emot?,Old Forest,Wolves,Bandits,Bad weather
+SaganOmRingen,Vilket smeknamn har Hamfast?,Old Gaffer,Gaffer,Ham,Rope-maker
+SaganOmRingen,Vad betydde Gandalf ursprungligen innan han kom till Midgård?,Olórin,Curunír,Aiwendil,Pallando
+SaganOmRingen,Vem av Maiar blev Gandalf?,Olórin,Curunír,Aiwendil,Alatar
+SaganOmRingen,Vilken disguise använder Sam och Frodo i Mordor?,Orc-armor,Black cloaks,Nazgûl robes,Nothing
+SaganOmRingen,Vilka fiender attackerar i Moria?,Orcs and Cave Troll,Goblins,Wargs,Spiders
+SaganOmRingen,Vem spelade Legolas?,Orlando Bloom,Viggo Mortensen,Sean Bean,Elijah Wood
+SaganOmRingen,Vad kallas Mount Doom på sindarin?,Orodruin,Amon Amarth,Thangorodrim,Methedras
+SaganOmRingen,Vilken palantír stjäl Pippin?,Orthanc,Minas Tirith,Ithil Stone,Elostirion
+SaganOmRingen,Vad heter Isengards torn?,Orthanc,Barad-dûr,Minas Morgul,Dol Guldur
+SaganOmRingen,Vilka två torn syftar titeln på?,Orthanc och Barad-dûr,Minas Tirith och Minas Morgul,Orthanc och Minas Tirith,Barad-dûr och Minas Morgul
+SaganOmRingen,Var skapades de 19 ringarna?,Ost-in-Edhil,Rivendell,Lothlórien,Grey Havens
+SaganOmRingen,Vad heter Celebrimbors verkstad-stad?,Ost-in-Edhil,Eregion,Hollin,Mirobrigand
+SaganOmRingen,Vad heter Lobelia Sackville-Baggins man?,Otho,Otto,Lotho,Cosimo
+SaganOmRingen,Vem var Thain före Pippin?,Paladin Took,Pippin Took Sr,Gerontius Took,Bandobras Took
+SaganOmRingen,Vad heter Pippins far?,Paladin Took,Peregrin Took Sr,Pippin Sr,Thain Took
+SaganOmRingen,Vad heter Cirith Ungols fullständiga namn på sindarin?,Pass of the Spider,Spider's pass,Web pass,Ungol pass
+SaganOmRingen,"Vad betyder ""Cirith"" på sindarin?",Pass/Gap,Mountain,Road,Gate
+SaganOmRingen,Var kämpade de döda?,Pelargir,Minas Tirith,Black Gate,Helm's Deep
+SaganOmRingen,Vad heter Pippins fullständiga namn?,Peregrin Took,Pippin Took,Peregrin the Great,Pippin Paladin
+SaganOmRingen,Vem regisserade filmtrilogin?,Peter Jackson,Steven Spielberg,George Lucas,James Cameron
+SaganOmRingen,Vem försöker stoppa Denethor från att dö?,Pippin,Gandalf,Faramir,Beregond
+SaganOmRingen,Vem attackerar Mouth of Sauron?,Pippin,Gandalf,Aragorn,Éomer
+SaganOmRingen,Vilken sång sjungs för Frodo och Sam?,Praise them with great praise,Song of Frodo,Hobbit song,Ring-bearer song
+SaganOmRingen,Vad heter Frodos mor?,Primula Brandybuck,Peregrina Took,Belladonna Took,Rosa Baggins
+SaganOmRingen,Vem leder Dol Amroth i Minas Tirith?,Prince Imrahil,Denethor,Aragorn,Faramir
+SaganOmRingen,Vem översätter Red Book till engelska enligt Tolkien?,Professor Tolkien,Translator,Scholar,Historian
+SaganOmRingen,Vad heter det höga alvspråket?,Quenya,Sindarin,Telerin,Nandorin
+SaganOmRingen,Vem dokumenterar händelserna för framtiden?,Red Book,Sam's book,Frodo's diary,Bilbo's book
+SaganOmRingen,Vilken film vann Best Picture Oscar?,Return of the King,Fellowship,Two Towers,Alla tre
+SaganOmRingen,Från vilket land kom Easterlings?,Rhûn,Khand,Harad,Umbar
+SaganOmRingen,Vilken magisk effekt använder Bilbo för att försvinna?,Ringen,Gandalf,Magic,Fireworks
+SaganOmRingen,Vad svär Gollum vid?,Ringen,Precious,Sméagol,Sauron
+SaganOmRingen,Vad heter första delen?,Ringens brödraskap,Two Towers,Return of King,Fellowship
+SaganOmRingen,Var hålls rådet om ringens öde?,Rivendell,Lothlórien,Minas Tirith,Edoras
+SaganOmRingen,Vilket epithet har Goldberry?,River-woman's daughter,River-daughter,Water-lily,Fair lady
+SaganOmRingen,Vad heter Rohirrims språk?,Rohirric,Westron,Sindarin,Adûnaic
+SaganOmRingen,Vem gifter sig Sam med?,Rosie Cotton,Pearl Took,Daisy Gamgee,Poppy Bolger
+SaganOmRingen,Vilken sten sitter i Narya?,Ruby,Sapphire,Diamond,Emerald
+SaganOmRingen,Vilka hobbitar försöker ärva Bag End?,Sackville-Bagginses,Bracegirdles,Bolgers,Proudfoots
+SaganOmRingen,Vilka släktingar försöker ta över Bag End?,Sackville-Bagginses,Other Bagginses,Bracegirdles,Proudfoots
+SaganOmRingen,Vad heter ceremonin när alverna lämnar Midgård?,Sailing to Undying Lands,Grey Ship,Last Alliance,White Council
+SaganOmRingen,Vem attackerar Shelob först?,Sam,Frodo,Gollum,Faramir
+SaganOmRingen,Vem fortsätter skriva i Red Book efter Frodo?,Sam Gamgee,Merry Brandybuck,Pippin Took,Bilbo Baggins
+SaganOmRingen,Vem blir borgmästare i Hobbiton?,Sam Gamgee,Merry Brandybuck,Pippin Took,Ted Sandyman
+SaganOmRingen,Vad heter Sams fullständiga namn?,Samwise Gamgee,Samuel Gamgee,Sam Gardner,Samwise the Brave```csv
+SaganOmRingen,Vem äger kvarnen i Hobbiton?,Sandyman familjen,Ted Sandyman,Mill-owner,Baggins
+SaganOmRingen,Vilken sten sitter i Vilya?,Sapphire,Ruby,Diamond,Emerald
+SaganOmRingen,Vad heter Merrys far?,Saradoc Brandybuck,Rorimac Brandybuck,Meriadoc Sr,Master Brandybuck
+SaganOmRingen,Vem är egentligen Sharkey?,Saruman,Lotho,Grima,Bill Ferny
+SaganOmRingen,Vem kontrollerar de flesta palantíri?,Sauron,Saruman,Denethor,Aragorn
+SaganOmRingen,Vem skapade Härskarringen?,Sauron,Saruman,Celebrimbor,Gil-galad
+SaganOmRingen,Vad ser Denethor i palantíri som gör honom galen?,Saurons styrka,Framtiden,Det förflutna,Faramirs död
+SaganOmRingen,Vilket smeknamn har Merrys far?,Scattergold,Goldfather,Master,Saradoc the Great
+SaganOmRingen,Vad heter det inre havet i Mordor?,Sea of Núrnen,Lake Mordor,Dark Water,Shadow Sea
+SaganOmRingen,Vem spelade Samwise Gamgee?,Sean Astin,Elijah Wood,Dominic Monaghan,Billy Boyd
+SaganOmRingen,Vem spelade Boromir?,Sean Bean,Viggo Mortensen,Orlando Bloom,John Rhys-Davies
+SaganOmRingen,Vilken månad besöker hobbitsarna Tom Bombadil?,September,October,August,November
+SaganOmRingen,Vad heter Gandalfs häst?,Shadowfax,Roheryn,Hasufel,Arod
+SaganOmRingen,Vad heter orc-kaptenen som Sam dödar?,Shagrat,Gorbag,Grishnákh,Uglúk
+SaganOmRingen,Vem tar över Shire medan hobbitsarna är borta?,Sharkey,Lotho,Ted Sandyman,Bill Ferny
+SaganOmRingen,Vad heter jättespindeln?,Shelob,Ungoliant,Spiderweb,Arachne
+SaganOmRingen,Vad ser Sam i Galadriels spegel?,Shire förstört,Rosie,His garden,Future children
+SaganOmRingen,Vad heter alvernas språk i Rivendell?,Sindarin,Quenya,Westron,Adûnaic
+SaganOmRingen,Hur många palantíri fanns det ursprungligen?,Sju,Fem,Nio,Åtta
+SaganOmRingen,Hur många ringar gavs till dvärgherrarna?,Sju,Åtta,Sex,Nio
+SaganOmRingen,Vad händer med Gríma efter han dödat Saruman?,Skjuts av hobbitar,Flyr,Fångas,Hängs
+SaganOmRingen,Vad heter det hemska namnet på Gollum?,Sméagol,Déagol,Grishnákh,Gothmog
+SaganOmRingen,Vad tvingar sällskapet gå genom Moria?,Snöstorm,Orcs,Wargs,Saruman
+SaganOmRingen,Vilken relation har Celebrimbor till Fëanor?,Sonson,Son,Brother,Nephew
+SaganOmRingen,Vilka folk förslavades i Nurn?,Southrons and Easterlings,Gondorians,Rohirrim,Hobbits
+SaganOmRingen,Vad står skrivet på dörrarna till Moria?,Speak friend and enter,Friend,Mellon,Gates of Durin
+SaganOmRingen,Vad visar Galadriel för Frodo och Sam?,Spegeln,Framtiden,Det förflutna,Sauron
+SaganOmRingen,"Vad betyder ""Ungol"" på sindarin?",Spider,Web,Dark,Poison
+SaganOmRingen,Vad heter Frodos svärd?,Sting,Glamdring,Andúril,Hadhafang
+SaganOmRingen,Vilket föremål ger Bilbo till Frodo förutom ringen?,Sting and mithril shirt,Books,Maps,Money
+SaganOmRingen,Under vilket namn träffar hobbitsarna Aragorn?,Strider,Chieftain,Ranger,Wingfoot
+SaganOmRingen,Vilken effekt har miruvor?,Stärker och värmer,Healer,Sleep,Invisibility
+SaganOmRingen,Vilken inskription finns på ringen?,Svartiska,Sindarin,Quenya,Westron
+SaganOmRingen,På vilket språk är inskriptionen på ringen?,Svartiska,Sindarin,Quenya,Westron
+SaganOmRingen,Varför blev de förbannate?,Svek Isildur,Broke oath,Cowardice,Betrayed Gondor
+SaganOmRingen,Vad kallas alvbåtarna?,Swan-ships,Elven-boats,Grey ships,River boats
+SaganOmRingen,Vilken skrift använder alver?,Tengwar,Cirth,Sarati,Angerthas
+SaganOmRingen,Vad blir Pippin till slut?,Thain av Shire,Master av Buckland,Mayor av Hobbiton,Ranger
+SaganOmRingen,Vilken titel ärver Pippin?,Thain of the Shire,Master of Buckland,Mayor,Warden
+SaganOmRingen,Vad heter värdshuset i Bywater?,The Green Dragon,The Ivy Bush,The Golden Perch,The Prancing Pony
+SaganOmRingen,Vilket kapitel avslutar Sagan om Ringen?,The Grey Havens,The Steward and the King,Many Partings,The Field of Cormallen
+SaganOmRingen,Vad betyder det gamla talesättet om kingsfoil?,The hands of the king are hands of healing,King's touch heals all,Royal blood heals,Athelas works for kings
+SaganOmRingen,Vad heter gränsen mellan Shire och Old Forest?,The Hedge,High Hay,Boundary,Forest Edge
+SaganOmRingen,Vad heter gästgivargården i Bree?,The Prancing Pony,The Green Dragon,The Ivy Bush,The Golden Perch
+SaganOmRingen,Vad heter boken som Frodo skriver?,The Red Book,There and Back Again,My Adventures,The War of the Ring
+SaganOmRingen,Vilken titel får Gandalf efter återuppståndelsen?,The White,Stormcrow,Greyhame,Mithrandir
+SaganOmRingen,Vad heter den fullständiga titeln på Red Book?,There and Back Again and What Happened After,Red Book of Westmarch,Adventures of Bilbo and Frodo,The Hobbit and Lord of the Rings
+SaganOmRingen,Vad heter Legolas far?,Thranduil,Elrond,Gil-galad,Oropher
+SaganOmRingen,Vem är härskarens av Rohan?,Théoden,Éomer,Éowyn,Erkenbrand
+SaganOmRingen,Hur många ringar skapades totalt?,Tjugo,Nitton,Tjugoen,Tjugotvå
+SaganOmRingen,Vem komponerade sången?,Tolkien,Characters,Minstrels,Gandalf
+SaganOmRingen,Vad heter den mystiske figuren i Old Forest?,Tom Bombadil,Old Man Willow,Farmer Maggot,Goldberry
+SaganOmRingen,Varför lämnar Celebrían Midgård?,Torterad av orcs,Sjuk,Hemsick,Tired of war
+SaganOmRingen,Vad heter vakttornet vid Cirith Ungol?,Tower of Cirith Ungol,Durthang,Carchost,Narchost
+SaganOmRingen,Vilka orc-stammar kämpar vid Cirith Ungol?,Tower-orcs och Morgul-orcs,Uruk-hai och Orcs,Isengard och Mordor,Goblins och Uruk-hai
+SaganOmRingen,Hur många ringar gavs till alvkungarna?,Tre,Fyra,Fem,Sex
+SaganOmRingen,Hur många pilar träffar Boromir?,Tre,Två,Fyra,En
+SaganOmRingen,Vilken gåva får Gimli av Galadriel?,Tre hårstrån,Jewelry,Mithril,Beard braid
+SaganOmRingen,Vem är herre över träden i Fangorn?,Treebeard,Old Man Willow,Tom Bombadil,Radagast
+SaganOmRingen,Vad åt Ungoliant tillsammans med Melkor?,Trees of Valinor,Silmarils,Light,Gold
+SaganOmRingen,Hur många Oscar-nomineringar fick filmtrilogin totalt?,Trettio,Tjugofem,Trettiofem,Tjugonio
+SaganOmRingen,Hur många barn får Sam?,Tretton,Tolv,Fjorton,Elva
+SaganOmRingen,Hur länge är de borta från Shire?,Tretton månader,Tolv månader,Fjorton månader,Femton månader
+SaganOmRingen,Vad arbetar Hamfast med?,Trädgårdsmästare,Rope-maker,Miller,Baker
+SaganOmRingen,Vad kallade sig korsarerna från?,Umbar,Harad,Khand,Rhûn
+SaganOmRingen,Vem är Shelobs moder?,Ungoliant,Great Spider,Dark Mother,Shadow-spider
+SaganOmRingen,Vilken ras skapade Saruman?,Uruk-hai,Orcs,Goblins,Wargs
+SaganOmRingen,Vem fångar Merry och Pippin?,Uruk-hai,Orcs,Nazgûl,Saruman
+SaganOmRingen,Vart åker Celebrían över haven?,Valinor,Númenor,Tol Eressëa,Grey Havens
+SaganOmRingen,Vad heter den odödliga landen?,Valinor,Númenor,Eldamar,Tol Eressëa
+SaganOmRingen,Vilket element representerar Nenya?,Vatten,Eld,Luft,Jord
+SaganOmRingen,Vem spelade Aragorn?,Viggo Mortensen,Sean Bean,Orlando Bloom,John Rhys-Davies
+SaganOmRingen,Vilken alvring äger Elrond?,Vilya,Narya,Nenya,Härskarringen
+SaganOmRingen,Vad heter de tre alvringarna på quenya?,Vilya Narya Nenya,Three Rings,Elven Rings,Powers Three
+SaganOmRingen,"Vad betyder ""mellon"" på sindarin?",Vän,Kärlek,Ringe,Död
+SaganOmRingen,Vad attackerar sällskapet vid Moriasjön?,Watcher in the Water,Kraken,Sea-serpent,Giant squid
+SaganOmRingen,"Vad betyder ""Nenya"" på quenya?",Water/Tears,Fire,Air,Ring of Water
+SaganOmRingen,Vad heter det förstörda tornet där Aragorn leder hobbitsarna?,Weathertop,Amon Sûl,Amon Hen,Amon Lhaw
+SaganOmRingen,Vilken stad var huvudsaklig bas för produktionen?,Wellington,Auckland,Christchurch,Queenstown
+SaganOmRingen,Vad heter den gemensamma tungan?,Westron,Common Speech,Adûnaic,Rohirric
+SaganOmRingen,Vad heter den vita rådet?,White Council,Last Alliance,Fellowship,Free Peoples
+SaganOmRingen,Vad heter produktionsbolaget?,WingNut Films,New Line,Miramax,Warner Bros
+SaganOmRingen,Vem ledde Morgul-armén?,Witch-king,Gothmog,Mouth of Sauron,Orc-captain
+SaganOmRingen,Vad heter Nazgûlens ledare?,Witch-king av Angmar,Mouth of Sauron,Gothmog,Sauron
+SaganOmRingen,Vilken Vala tjänade Radagast?,Yavanna,Manwë,Aulë,Ulmo
+SaganOmRingen,Vilka sista ord säger Gandalf till Balrog?,You cannot pass,You shall not pass,Flame of Udûn,Shadow and flame
+SaganOmRingen,Var återuppstår Gandalf?,Zirakzigil,Celebdil,Caradhras,Fanuidhol
+SaganOmRingen,Vem av de ursprungliga nio följeslagarna överlever?,Åtta av nio,Alla nio,Sju av nio,Sex av nio
+SaganOmRingen,Vem blir kung av Rohan efter Théoden?,Éomer,Erkenbrand,Elfhelm,Háma
+SaganOmRingen,Vem dödade Witch-king av Angmar?,Éowyn,Merry,Aragorn,Gandalf
+SaganOmRingen,Vad heter Faramirs kärleksintresse?,Éowyn,Arwen,Galadriel,Rosie Cotton
+SaganOmRingen,Vad heter Éomers syster?,Éowyn,Dernhelm,Elfhild,Morwen
+SaganOmRingen,Vem räddar Frodo och Sam från Mount Doom?,Örnarna,Gandalf,Aragorn,Faramir

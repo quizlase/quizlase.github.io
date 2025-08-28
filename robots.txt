@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /js/
+Disallow: /css/
+Disallow: /favicon/
+Disallow: /.git/
+Disallow: /prompts/
+
+Sitemap: https://quizla.se/sitemap.xml
