@@ -1,0 +1,239 @@
+Kategori,Fråga,Rätt svar,Fel svar 1,Fel svar 2,Fel svar 3
+F1,Hur många GP-segrar vann Stefan Johansson?,0,1,2,3
+F1,Hur många segrar hade Rosberg 1982?,1,0,2,3
+F1,Hur många VM-titlar vann Alonso?,2,3,1,4
+F1,Hur många VM-titlar vann Jim Clark?,2,1,3,4
+F1,Hur många däckcompounds har Pirelli per helg?,3,2,4,5
+F1,Hur många VM-titlar vann Sebastian Vettel?,4,3,5,2
+F1,Hur många VM-titlar vann Juan Manuel Fangio?,5,4,6,3
+F1,Vad hade Peterson för bilnummer ofta?,5,6,11,2
+F1,Hur många gånger vann Senna Monaco GP?,6,5,7,4
+F1,Hur många VM-titlar vann Schumacher totalt?,7,6,8,5
+F1,Hur många VM-titlar har Hamilton vunnit?,7,6,8,5
+F1,Hur många konstruktörstitlar har McLaren vunnit?,8,7,9,6
+F1,Hur många år i rad vann Mercedes konstruktörstiteln?,8,7,9,6
+F1,Hur många poäng får sprintvinnaren?,8,10,5,12
+F1,Hur många konstruktörstitlar har Williams vunnit?,9,8,10,7
+F1,Hur många GP vann Ronnie Peterson?,10,8,12,6
+F1,Hur många segrar vann Peterson totalt?,10,8,12,6
+F1,Hur många segrar hade Schumacher som rekord?,13,12,14,11
+F1,Hur många segrar tog Verstappen 2022?,15,14,16,13
+F1,Hur många konstruktörstitlar har Ferrari vunnit?,16,15,17,14
+F1,Hur många segrar tog Verstappen 2023?,19,18,20,17
+F1,Hur många dagar efter olyckan körde Lauda igen?,42,40,45,38
+F1,Hur många GP körde Joakim Bonnier?,104,95,110,88
+F1,Vilket år startade första F1-världsmästerskapet?,1950,1949,1951,1948
+F1,Vilket år började Ferrari tävla i F1?,1950,1949,1951,1948
+F1,Vilket år debuterade första svensken i F1?,1956,1957,1955,1958
+F1,Vilket år infördes konstruktörsmästerskapet?,1958,1957,1959,1956
+F1,Vilket år grundades Lotus av Colin Chapman?,1958,1957,1959,1956
+F1,Vilket år grundades McLaren?,1963,1962,1964,1961
+F1,Vilket år dog Jim Clark?,1968,1967,1969,1966
+F1,Vilket år debuterade Ronnie Peterson?,1970,1969,1971,1968
+F1,Vilket år dog Joakim Bonnier?,1972,1971,1973,1970
+F1,Vilket år slutade F1 köra på Nordschleife?,1976,1975,1977,1974
+F1,Vilket år var Laudas olycka på Nürburgring?,1976,1975,1977,1974
+F1,Vilket år grundades Williams?,1977,1976,1978,1975
+F1,Vilket år dog Ronnie Peterson?,1978,1977,1979,1976
+F1,Vilken säsong dog Peterson?,1978,1977,1979,1976
+F1,Vilket år returnerade Tyskland GP till Nürburgring?,1984,1983,1985,1982
+F1,Vilket år började Japan GP köras på Suzuka?,1987,1986,1988,1985
+F1,Vilket år förbjöds turbo i F1?,1988,1987,1989,1986
+F1,Vilket år introducerades säkerhetsbilen?,1993,1992,1994,1991
+F1,Vilket år dog Ayrton Senna?,1994,1993,1995,1992
+F1,Vilket år vann Michael Schumacher sin första titel?,1994,1993,1995,1992
+F1,När vann Williams senast konstruktörstiteln?,1997,1996,1998,1995
+F1,Vilket år vann McLaren senast konstruktörstiteln?,1998,1999,1997,2000
+F1,Vilket år var närmaste målgången?,2002,2001,2003,2000
+F1,Vilket år satte Schumacher segrar-rekordet?,2004,2002,2001,2000
+F1,Vilket år vann Fernando Alonso sin första titel?,2005,2004,2006,2003
+F1,Vilket år kom Red Bull till F1?,2005,2004,2006,2003
+F1,Vilket år förbjöds V10-motorer?,2006,2005,2007,2004
+F1,Vilket år vann Lewis Hamilton sin första titel?,2008,2007,2009,2006
+F1,När vann Ferrari senast konstruktörstiteln?,2008,2007,2009,2006
+F1,Vilket år kom Senna-dokumentären?,2010,2009,2011,2008
+F1,Vilket år introducerades DRS?,2011,2010,2012,2009
+F1,Vilket år återvände Pirelli till F1?,2011,2010,2012,2009
+F1,Vilket år vann Williams senast?,2012,2011,2013,2010
+F1,Vilket år kom filmen Rush?,2013,2012,2014,2011
+F1,När vann Mercedes sitt första VM?,2014,2013,2015,2012
+F1,Vilket år återintroducerades turbo?,2014,2013,2015,2012
+F1,Vilket år dog Jules Bianchi?,2015,2014,2016,2013
+F1,Vilket år introducerades VSC?,2015,2014,2016,2013
+F1,Vilket år slutade Hamilton och Rosberg på samma poäng?,2016,2014,2015,2017
+F1,Vilket år blev Max Verstappen yngste GP-vinnare?,2016,2015,2017,2014
+F1,Vilket år slutade Rosberg efter VM-titeln?,2016,2015,2017,2014
+F1,Vilket år tog Liberty Media över F1?,2017,2016,2018,2015
+F1,Vilket år slutade Marcus Ericsson i F1?,2018,2017,2019,2016
+F1,Vilket år lämnade Ricciardo Red Bull?,2018,2017,2019,2016
+F1,Vilket år började Drive to Survive?,2019,2018,2020,2017
+F1,Vilket år dog Charlie Whiting?,2019,2018,2020,2017
+F1,Vilket år exploderade Hamiltons däck i Silverstone?,2020,2019,2021,2018
+F1,Vilket år vann Verstappen sin första VM-titel?,2021,2020,2022,2019
+F1,Vilket år förbjöds DAS?,2021,2020,2022,2019
+F1,Vilket år vann Verstappen sin första titel?,2021,2020,2022,2019
+F1,Vilket år introducerades sprint-lopp?,2021,2020,2022,2019
+F1,Vilket år introducerades kost-taket (budget cap)?,2021,2020,2022,2019
+F1,Vilket är närmaste målgången i F1-historien?,0.010 sekunder,0.007 sekunder,0.014 sekunder,0.020 sekunder
+F1,Hur många varv är en sprint?,100 km,30 minuter,17 varv,Varierar per bana
+F1,Hur mycket är budget-taket?,145 miljoner USD,150 miljoner USD,140 miljoner USD,135 miljoner USD
+F1,Hur gammal var Verstappen när han vann första gången?,18 år 228 dagar,18 år 200 dagar,18 år 250 dagar,19 år
+F1,"Vilken era kallas ""turbo-eran""?",1980-talets början,1970-talets slut,1990-talets början,2000-talets början
+F1,Vilka år var Senna och Prost teammates?,1988-1989,1987-1988,1988-1990,1987-1989
+F1,Vilka år vann Schumacher för Ferrari?,2000-2004,1999-2003,2001-2005,2000-2003
+F1,Vilka år vann Alonso VM?,2005-2006,2004-2005,2006-2007,2005-2007
+F1,Vilka år vann Vettel VM?,2010-2013,2009-2012,2011-2014,2010-2012
+F1,Vilka år var Hamilton och Rosberg teammates?,2013-2016,2014-2017,2013-2017,2012-2016
+F1,Vilka år vann Hamilton för Mercedes?,2014-2015 och 2017-2020,2013-2016,2015-2019,2014-2018
+F1,Vilka år vann Mercedes konstruktörs-VM?,2014-2021,2013-2020,2014-2020,2015-2021
+F1,Vilket lopp hade flest safety car-perioder?,2020 Tuscan GP,2021 Azerbaijan GP,2020 Turkish GP,2019 German GP
+F1,Vilka år kämpade Hamilton och Verstappen?,2021-2022,2020-2021,2021-2023,2019-2021
+F1,Hur lång är Monaco-banan?,3.337 km,3.200 km,3.500 km,3.100 km
+F1,Hur lång tid tog Canada GP 2011?,4 timmar 4 minuter,3 timmar 45 minuter,4 timmar 30 minuter,3 timmar 30 minuter
+F1,På vilken bana var närmaste målgången?,A1-Ring,Silverstone,Monza,Spa
+F1,Vilket lopp avgjorde VM 2021?,Abu Dhabi,Saudi Arabia,Brazil,Mexico
+F1,Vem är Red Bulls chefskonstruktör?,Adrian Newey,Christian Horner,Pierre Waché,Rob Marshall
+F1,Vem vann Monaco 1984?,Alain Prost,Ayrton Senna,Nigel Mansell,Keke Rosberg
+F1,Vem vann VM 1989 efter kollisionen?,Alain Prost,Ayrton Senna,Nigel Mansell,Nelson Piquet
+F1,Vilket år nådde Schumacher 100 segrar?,Aldrig,2006,2004,2005
+F1,Vilket team vann första konstruktörstiteln?,Alfa Romeo,Ferrari,Maserati,Mercedes
+F1,Vem har kört flest GP utan seger?,Andrea de Cesaris,Nick Heidfeld,Jarno Trulli,Martin Brundle
+F1,Vem regisserade Senna-dokumentären?,Asif Kapadia,Ron Howard,James Mangold,Peter Berg
+F1,"Vem kallas ""Mr. Monaco""?",Ayrton Senna,Michael Schumacher,Lewis Hamilton,Nico Rosberg
+F1,Vem var McLarens mest framgångsrike förare?,Ayrton Senna,Lewis Hamilton,Alain Prost,Mika Häkkinen
+F1,Vem ledde när Monaco 1984 stoppades?,Ayrton Senna,Alain Prost,Stefan Bellof,Nigel Mansell
+F1,Vem vann VM 1990?,Ayrton Senna,Alain Prost,Nigel Mansell,Nelson Piquet
+F1,Vad händer när Ferrari vinner på Monza?,Banan invaderas,Fyrverkerier,Italienska flaggor,Alla ovanstående
+F1,För vilket team vann Schumacher sina första två titlar?,Benetton,Ferrari,Jordan,Mercedes
+F1,Vem introducerade säkerhetsbilen i F1?,Bernd Mayländer,Charlie Whiting,Max Mosley,Jean Todt
+F1,Vem är nuvarande säkerhetsbildsförare?,Bernd Mayländer,Bruno Correia,Charlie Whiting,Derek Warwick
+F1,Vem sålde F1 till Liberty Media?,Bernie Ecclestone,CVC Capital,Max Mosley,Jean Todt
+F1,"Vem var ""F1:s supremo"" i flera decennier?",Bernie Ecclestone,Max Mosley,Jean Todt,Charlie Whiting
+F1,För vilket team vann Bonnier sitt GP?,BRM,Maserati,Ferrari,Porsche
+F1,Vem grundade McLaren?,Bruce McLaren,Dennis McLaren,Ron Dennis,Teddy Mayer
+F1,Vad hände med Red Bull för budget-överträdelsen?,Böter och utvecklingsbegränsningar,Poängavdrag,Uteslutning,Varning
+F1,Vilket lopp 2011 varade längst tid?,Canada,Monaco,Britain,Hungary
+F1,Vem var Verstappens första teammate?,Carlos Sainz,Daniel Ricciardo,Jean-Eric Vergne,Nyck de Vries
+F1,Vem var F1:s CEO före Domenicali?,Chase Carey,Bernie Ecclestone,Max Mosley,Jean Todt
+F1,Vem spelade James Hunt i Rush?,Chris Hemsworth,Daniel Brühl,Olivia Wilde,Alexandra Maria Lara
+F1,Vilken bana håller Monaco GP?,Circuit de Monaco,Monte Carlo,Port Hercules,Casino Circuit
+F1,Vem designade Lotus 79?,Colin Chapman,Adrian Newey,Gordon Murray,John Barnard
+F1,Vem var Schumachers huvudsakliga rival på 90-talet?,Damon Hill,Jacques Villeneuve,Mika Häkkinen,Alla ovanstående
+F1,Vem spelade Niki Lauda i Rush?,Daniel Brühl,Chris Hemsworth,Ron Howard,Peter Morgan
+F1,Vad hette Mercedes kontroversiella system 2020?,DAS,ERS,MGU,FRIC
+F1,Vem äger Red Bull F1-team?,Dietrich Mateschitz,Christian Horner,Adrian Newey,Helmut Marko
+F1,Vad står DRS för?,Drag Reduction System,Dynamic Racing System,Direct Racing System,Downforce Reduction System
+F1,Vad heter Netflix F1-serie?,Drive to Survive,Formula 1,Racing Life,Grand Prix
+F1,Vad stod DAS för?,Dual Axis Steering,Direct Axis System,Dynamic Axis Steering,Double Axis System
+F1,Vad står ERS för?,Energy Recovery System,Electric Recovery System,Engine Recovery System,Enhanced Racing System
+F1,Vem grundade Ferrari F1-team?,Enzo Ferrari,Alfredo Ferrari,Piero Ferrari,Luca di Montezemolo
+F1,Varför svimmade Mansell?,Extrem värme,Uttorkning,Båda ovanstående,Sjukdom
+F1,För vilka team körde Fangio?,Ferrari,Maserati,Mercedes,Alla ovanstående
+F1,Vilket team har vunnit flest konstruktörstitlar?,Ferrari,McLaren,Williams,Mercedes
+F1,Vilket team introducerade semi-automatisk växellåda?,Ferrari,McLaren,Williams,Lotus
+F1,Vad hette säkerhetsorganisationen som bildades efter 1994?,FIA Safety Commission,GPDA,Safety Car,Medical Team
+F1,Vilket var Petersons första seger?,Frankrike 1973,Monaco 1974,Österrike 1973,Italien 1973
+F1,Vem är Ferraris nuvarande teamchef?,Frédéric Vasseur,Mattia Binotto,Maurizio Arrivabene,Marco Mattiacci
+F1,Varför slutade F1 på Nordschleife?,För farlig,För lång,Dålig budget,För kort
+F1,Vem vann första F1-världsmästerskapet?,Giuseppe Farina,Juan Manuel Fangio,Alberto Ascari,Luigi Fagioli
+F1,Vilken däcktillverkare dominerade 80-90-talet?,Goodyear,Michelin,Pirelli,Bridgestone
+F1,Vad var speciellt med Lotus 79?,Ground effect,Turbo,Fyrhjulsdrift,Aktiv fjädring
+F1,Vad kallas de hårdaste däcken?,Hard,Medium,Super Hard,Extra Hard
+F1,På vilken bana dog Jim Clark?,Hockenheim,Silverstone,Monza,Spa
+F1,När får förare använda DRS?,I DRS-zoner när de är inom 1 sekund,Varhelst,Bara på raksträckor,Bara i kval
+F1,På vilken bana dog Ayrton Senna?,Imola,Monza,Silverstone,Spa
+F1,Vann Joakim Bonnier någon GP?,Ja,Nej,En,Två
+F1,Vad hette Red Bull innan?,Jaguar,Stewart,Minardi,Tyrrell
+F1,Vem vann VM 1976 trots Laudas olycka?,James Hunt,Niki Lauda,Mario Andretti,Jody Scheckter
+F1,Vilket lopp 1989 kolliderade Senna och Prost?,Japan,Brazil,Monaco,France
+F1,Vem vann Canada 2011 efter att ha varit sist?,Jenson Button,Lewis Hamilton,Sebastian Vettel,Fernando Alonso
+F1,Vem var Lotus mest berömda förare?,Jim Clark,Graham Hill,Jochen Rindt,Mario Andretti
+F1,Vem var den första svensken i F1?,Joakim Bonnier,Ronnie Peterson,Stefan Johansson,Jo Bonnier
+F1,Vem designade Suzuka-banan?,John Hugenholtz,Hermann Tilke,Enzo Ferrari,Colin Chapman
+F1,Vem var den sista föraren att dö i F1?,Jules Bianchi,Ayrton Senna,Roland Ratzenberger,Dan Wheldon
+F1,Vad är speciellt med Monaco GP?,Körning genom stadsgator,Yachter i hamnen,Kändisar,Alla ovanstående
+F1,Vad hette kontroversielle beslutet i Abu Dhabi 2021?,Lapped cars controversy,Safety car decision,Red flag incident,DRS failure
+F1,Vilken bana introducerades 2023?,Las Vegas,Qatar,Saudi Arabia,Miami
+F1,"Vilken bana är känd som ""La Sarthe""?",Le Mans,Monaco,Silverstone,Spa
+F1,Vem var Verstappens huvudrival 2021?,Lewis Hamilton,Valtteri Bottas,Charles Leclerc,Carlos Sainz
+F1,Vem har flest GP-segrar genom tiderna?,Lewis Hamilton,Michael Schumacher,Ayrton Senna,Alain Prost
+F1,Vem var den första att nå 100 GP-segrar?,Lewis Hamilton,Michael Schumacher,Sebastian Vettel,Fernando Alonso
+F1,Vem ledde innan sista varvet i Abu Dhabi 2021?,Lewis Hamilton,Max Verstappen,Valtteri Bottas,Sergio Perez
+F1,Vad hette Lotus revolutionerande bil 1978?,Lotus 79,Lotus 78,Lotus 80,Lotus 77
+F1,Vem är äldste GP-vinnare?,Luigi Fagioli,Juan Manuel Fangio,Jack Brabham,Graham Hill
+F1,För vilka team körde Peterson?,March,Lotus,Tyrrell,Alla ovanstående
+F1,För vilket team debuterade Peterson?,March,Lotus,Tyrrell,BRM
+F1,Vem var Petersons teammate när han dog?,Mario Andretti,Emerson Fittipaldi,James Hunt,Niki Lauda
+F1,Vem var Vettels teammate under Red Bull-åren?,Mark Webber,Daniel Ricciardo,Max Verstappen,David Coulthard
+F1,För vilket team debuterade Joakim Bonnier?,Maserati,Ferrari,BRM,Connaught
+F1,Vem är yngste GP-vinnare?,Max Verstappen,Sebastian Vettel,Fernando Alonso,Lewis Hamilton
+F1,Vem vann första sprinten någonsin?,Max Verstappen,Lewis Hamilton,Valtteri Bottas,Sergio Perez
+F1,Vem har vunnit flest sprinter?,Max Verstappen,Lewis Hamilton,Charles Leclerc,George Russell
+F1,För vilket team vann Hamilton sin första titel?,McLaren,Mercedes,Ferrari,Red Bull
+F1,För vilket team körde Stefan Johansson?,McLaren,Ferrari,Båda ovanstående,Williams
+F1,Vilket team har vunnit flest konstruktörstitlar i rad?,Mercedes,Ferrari,McLaren,Red Bull
+F1,Vad hette den första säkerhetsbilen?,Mercedes 190E,BMW M3,Audi Quattro,Ford Sierra
+F1,Vilken bana är högst över havet?,Mexico City,Austria,Brazil,Belgium
+F1,Vilken bana introducerades 2022?,Miami,Las Vegas,Qatar,Saudi Arabia
+F1,Vem var race director före 2022?,Michael Masi,Charlie Whiting,Niels Wittich,Eduardo Freitas
+F1,Vem fattade beslutet i Abu Dhabi 2021?,Michael Masi,Charlie Whiting,Niels Wittich,Eduardo Freitas
+F1,Vem var den första föraren att vinna 100 GP?,Michael Schumacher,Lewis Hamilton,Ayrton Senna,Alain Prost
+F1,Vem hade flest segrar på en säsong före Verstappen?,Michael Schumacher,Sebastian Vettel,Lewis Hamilton,Nigel Mansell
+F1,Vad gör DRS?,Minskar luftmotstånd,Ökar kraft,Förbättrar grepp,Minskar vikt
+F1,Vilket lopp 1984 stoppades efter 31 varv?,Monaco,Monaco,San Marino,Belgium
+F1,Vilken bana har mest glamourösa miljö?,Monaco,Singapore,Abu Dhabi,Bahrain
+F1,"Vilken bana kallas ""The Temple of Speed""?",Monza,Silverstone,Spa,Suzuka
+F1,Vilken bana har längst raksträcka i F1?,Monza,Silverstone,Spa,Baku
+F1,Vilket lopp körde Niki Lauda 1976 trots att ha brännskador?,Monza,Silverstone,Hockenheim,Spa
+F1,Vilket GP vann Joakim Bonnier?,Nederländerna 1959,Monaco 1960,Belgien 1958,Frankrike 1961
+F1,Vem var Hamiltons teammate under Mercedes dominansen?,Nico Rosberg,Valtteri Bottas,Båda ovanstående,Jenson Button
+F1,Vem vann VM 2016?,Nico Rosberg,Lewis Hamilton,Max Verstappen,Sebastian Vettel
+F1,Vem är F1:s nuvarande race director?,Niels Wittich,Michael Masi,Charlie Whiting,Eduardo Freitas
+F1,Vem var Williams mest framgångsrike förare?,Nigel Mansell,Damon Hill,Jacques Villeneuve,Alan Jones
+F1,Vem svimmade i Dallas 1984?,Nigel Mansell,Keke Rosberg,Alain Prost,Derek Warwick
+F1,Vem har vunnit VM med minst antal segrar?,Niki Lauda 1984,Damon Hill 1996,Keke Rosberg 1982,Nelson Piquet 1983
+F1,"Vilken tysk bana kallas ""The Green Hell""?",Nürburgring Nordschleife,Hockenheim,Sachsenring,Nürburgring GP
+F1,Vem var den sista föraren att vinna för Williams?,Pastor Maldonado,Juan Pablo Montoya,Jenson Button,Jacques Villeneuve
+F1,Vilken däcktillverkare används nu i F1?,Pirelli,Michelin,Bridgestone,Goodyear
+F1,Vad heter nuvarande motorformel?,Power Unit,V6 Turbo Hybrid,ERS,MGU
+F1,Vad hette Verstappens dominanta bil 2023?,RB19,RB20,RB18,RB21
+F1,För vilket team vann Vettel alla sina titlar?,Red Bull,Ferrari,McLaren,Toro Rosso
+F1,Vem vann konstruktörs-VM 2022?,Red Bull,Mercedes,Ferrari,McLaren
+F1,Vem vann konstruktörs-VM 2023?,Red Bull,Mercedes,Ferrari,McLaren
+F1,Vilket team har haft flest olika teammates till Verstappen?,Red Bull,Toro Rosso,AlphaTauri,Alla samma
+F1,Vilket team bröt mot budget-taket 2021?,Red Bull,Mercedes,Ferrari,McLaren
+F1,Varför stoppades Monaco 1984?,Regn,Olycka,Mörker,Tekniskt fel
+F1,För vilket team vann Alonso sina titlar?,Renault,McLaren,Ferrari,Toro Rosso
+F1,Till vilket team gick Ricciardo från Red Bull?,Renault,McLaren,Ferrari,Mercedes
+F1,Vem dog samma helg som Senna?,Roland Ratzenberger,Rubens Barrichello,Gerhard Berger,Jos Verstappen
+F1,Vilken svensk förare vann flest GP?,Ronnie Peterson,Stefan Johansson,Marcus Ericsson,Gunnar Nilsson
+F1,"Vem var känd som ""Super Swede""?",Ronnie Peterson,Stefan Johansson,Joakim Bonnier,Gunnar Nilsson
+F1,Mellan vilka förare var närmaste målgången?,Rubens Barrichello och Michael Schumacher,Lewis Hamilton och Felipe Massa,Sebastian Vettel och Fernando Alonso,Damon Hill och Michael Schumacher
+F1,Vilken film handlar om Hunt vs Lauda?,Rush,Senna,Ford v Ferrari,Grand Prix
+F1,Vilket lopp vann Hamilton sin 100:e seger?,Russia 2021,Turkey 2021,USA 2021,Brazil 2021
+F1,För vilket team körde Marcus Ericsson?,Sauber,Caterham,Båda ovanstående,Manor
+F1,Vilken bana introducerades 2021?,Saudi Arabia,Qatar,Miami,Las Vegas
+F1,Vem var tidigare yngste GP-vinnare?,Sebastian Vettel,Fernando Alonso,Lewis Hamilton,Kimi Räikkönen
+F1,Vem var Verstappens teammate 2022-2023?,Sergio Perez,Daniel Ricciardo,Alexander Albon,Pierre Gasly
+F1,Vem ersatte Ricciardo som Verstappens teammate?,Sergio Perez,Alexander Albon,Pierre Gasly,Nyck de Vries
+F1,Var hölls första F1-loppet?,Silverstone,Monaco,Monza,Spa
+F1,"Vilken bana kallas ""The Home of British Motorsport""?",Silverstone,Brands Hatch,Donington Park,Oulton Park
+F1,På vilken bana kördes första sprinten?,Silverstone,Monza,Interlagos,Red Bull Ring
+F1,Vilken bana har flest kurvor?,Singapore,Monaco,Hungary,Baku
+F1,Vilket varv avgjordes VM 2021?,Sista varvet,Näst sista varvet,58:e varvet,57:e varvet
+F1,Vad kallas de mjukaste däcken?,Soft,Super Soft,Ultra Soft,Hyper Soft
+F1,Vilken bana är känd för Eau Rouge-kurvan?,Spa-Francorchamps,Silverstone,Suzuka,Monaco
+F1,Hur dog Joakim Bonnier?,Sportbilsolycka,F1-olycka,Bilolycka,Sjukdom
+F1,Vem körde för McLaren och Ferrari på 80-talet?,Stefan Johansson,Gunnar Nilsson,Slim Borgudd,Kenny Bräck
+F1,Vem är F1:s nuvarande CEO?,Stefano Domenicali,Chase Carey,Bernie Ecclestone,Jean Todt
+F1,Vad innebär ground effect?,Sugeffekt under bilen,Aerodynamiska vingar,Låg tyngdpunkt,Bred däck
+F1,Vad hette Ronnie Peterson?,Super Swede,Flying Finn,Swedish Sensation,Nordic Thunder
+F1,Vilken bana har figure-8 layout?,Suzuka,Interlagos,Hockenheim,Nürburgring
+F1,På vilken bana skadades Bianchi dödligt?,Suzuka,Silverstone,Spa,Monaco
+F1,Vad hette rivaliteten Senna-Prost?,The Rivalry,McLaren Wars,Brazilian-French Feud,Championship Battle
+F1,Vad kallas Ferrari-fansen?,Tifosi,Ferraristi,Rossi,Scuderia
+F1,Vem var Mercedes teamchef under dominansåren?,Toto Wolff,Ross Brawn,Niki Lauda,Norbert Haug
+F1,Vilken motor använde F1 före hybrid-eran?,V8,V10,V12,V6
+F1,Vad står VSC för?,Virtual Safety Car,Vehicle Safety Control,Velocity Safety Check,Visual Safety Car
+F1,Från vilken stad kom Ronnie Peterson?,Örebro,Stockholm,Göteborg,Växjö
+F1,Vilket var Petersons sista seger?,Österrike 1978,Italien 1978,Frankrike 1978,Storbritannien 1978
