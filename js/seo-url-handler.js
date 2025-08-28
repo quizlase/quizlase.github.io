@@ -534,7 +534,7 @@ class SEOURLHandler {
         let ogTitle = document.querySelector('meta[property="og:title"]');
         if (ogTitle) ogTitle.content = 'Quizla - Sveriges största Quiz, helt gratis!';
         
-        let ogDesc = document.querySelector('meta[name="property="og:description"]');
+        let ogDesc = document.querySelector('meta[property="og:description"]');
         if (ogDesc) ogDesc.content = 'Spela tusentals gratis quiz inom allmänbildning, sport, musik, film och mycket mer. Offline-läge, inga reklamer!';
         
         // Återställ Twitter Cards
