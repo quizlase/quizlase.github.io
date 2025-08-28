@@ -12,6 +12,7 @@ const AVAILABLE_QUIZ = [
   {key: 'design_och_mode', name: 'Design och mode', file: 'Design och mode.csv'},
   {key: 'disney', name: 'Disney', file: 'Disney.csv'},
   {key: 'djur_och_natur', name: 'Djur och natur', file: 'Djur och natur.csv'},
+  {key: 'f1', name: 'F1', file: 'F1.csv'},
   {key: 'flaggor', name: 'Flaggor', file: 'Flaggor.csv'},
   {key: 'fotboll', name: 'Fotboll', file: 'Fotboll.csv'},
   {key: 'grundamnen', name: 'Grundämnen', file: 'Grundämnen.csv'},
