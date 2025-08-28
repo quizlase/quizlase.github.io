@@ -16,7 +16,7 @@
                 const category = path.substring(7); // Ta bort '/quiz/'
                 console.log('🔄 Omdirigerar till quiz:', category);
                 
-                // Omdirigera till hemsidan med rätt hash
+                // Omdirigera till hemsidan med rätt parameter
                 window.location.href = `/?quiz=${category}`;
                 return;
             }

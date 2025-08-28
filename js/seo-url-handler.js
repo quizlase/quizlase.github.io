@@ -18,12 +18,17 @@ class SEOURLHandler {
         const path = window.location.pathname;
         const searchParams = new URLSearchParams(window.location.search);
         
+        console.log('🔄 setupInitialRoute - path:', path, 'searchParams:', searchParams.toString());
+        
         if (path === '/' || path === '') {
             // Kolla om det finns quiz-parameter i URL
             const quizParam = searchParams.get('quiz');
             if (quizParam) {
                 console.log('🔄 Hittade quiz-parameter:', quizParam);
-                this.handleQuizRoute(quizParam);
+                // Vänta lite så att appen hinner initieras
+                setTimeout(() => {
+                    this.handleQuizRoute(quizParam);
+                }, 100);
             }
             return;
         }
@@ -31,17 +36,27 @@ class SEOURLHandler {
         // Hantera /quiz/[kategori] format
         if (path.startsWith('/quiz/')) {
             const category = path.substring(7); // Ta bort '/quiz/'
-            this.handleQuizRoute(category);
+            console.log('🔄 Hanterar direkt quiz-path:', category);
+            // Vänta lite så att appen hinner initieras
+            setTimeout(() => {
+                this.handleQuizRoute(category);
+            }, 100);
         }
         // Hantera andra specialrutter
         else if (path === '/blanda') {
-            this.app.selectCategory('blandad');
+            setTimeout(() => {
+                this.app.selectCategory('blandad');
+            }, 100);
         }
         else if (path === '/fler-quiz') {
-            this.app.showView('fler-quiz');
+            setTimeout(() => {
+                this.app.showView('fler-quiz');
+            }, 100);
         }
         else if (path === '/installningar') {
-            this.app.showView('settings');
+            setTimeout(() => {
+                this.app.showView('settings');
+            }, 100);
         }
     }
 
@@ -50,6 +65,20 @@ class SEOURLHandler {
      */
     async handleQuizRoute(categorySlug) {
         console.log(`🔄 Hanterar quiz-route: ${categorySlug}`);
+        console.log('🔍 Kontrollerar om appen är redo...');
+
+        // Vänta tills appen är redo
+        let attempts = 0;
+        while (!this.app.categories || Object.keys(this.app.categories).length === 0) {
+            if (attempts > 50) { // Max 5 sekunder
+                console.error('❌ Appen blev aldrig redo');
+                return;
+            }
+            await new Promise(resolve => setTimeout(resolve, 100));
+            attempts++;
+        }
+
+        console.log('✅ Appen är redo, startar quiz-routing...');
 
         // Först kolla standardkategorier
         if (await this.tryStandardCategory(categorySlug)) {
@@ -70,6 +99,8 @@ class SEOURLHandler {
      * Försök starta standardkategori
      */
     async tryStandardCategory(categorySlug) {
+        console.log('🔍 Kontrollerar standardkategorier för:', categorySlug);
+        
         const standardCategories = {
             'sport': 'sport',
             'musik': 'musik',
@@ -80,19 +111,36 @@ class SEOURLHandler {
         };
 
         const normalizedSlug = this.normalizeCategorySlug(categorySlug);
+        console.log('🔍 Normaliserad slug:', normalizedSlug);
+        console.log('🔍 Tillgängliga standardkategorier:', Object.keys(standardCategories));
         
         if (standardCategories[normalizedSlug]) {
             const categoryKey = standardCategories[normalizedSlug];
             console.log(`✅ Startar standardkategori: ${categoryKey}`);
             
+            // Kontrollera att kategorin finns i appen
+            if (!this.app.categories[categoryKey]) {
+                console.error(`❌ Kategori ${categoryKey} finns inte i appen`);
+                return false;
+            }
+            
             // Uppdatera meta-taggar för SEO
             this.updateCategoryMetaTags(categoryKey, this.getStandardCategoryName(categoryKey));
             
             // Starta quiz
-            this.app.selectCategory(categoryKey);
-            return true;
+            console.log('🎯 Anropar app.selectCategory för:', categoryKey);
+            console.log('🔍 app.selectCategory finns:', typeof this.app.selectCategory);
+            
+            if (typeof this.app.selectCategory === 'function') {
+                this.app.selectCategory(categoryKey);
+                return true;
+            } else {
+                console.error('❌ app.selectCategory är inte en funktion');
+                return false;
+            }
         }
 
+        console.log('❌ Inga standardkategorier matchade');
         return false;
     }
 
@@ -100,20 +148,28 @@ class SEOURLHandler {
      * Försök starta dynamisk kategori
      */
     async tryDynamicCategory(categorySlug) {
+        console.log('🔍 Kontrollerar dynamiska kategorier för:', categorySlug);
+        
         if (typeof AVAILABLE_QUIZ === 'undefined') {
-            console.error('AVAILABLE_QUIZ inte laddad');
+            console.error('❌ AVAILABLE_QUIZ inte laddad');
             return false;
         }
+
+        console.log('🔍 AVAILABLE_QUIZ innehåll:', AVAILABLE_QUIZ);
 
         // Hitta kategori baserat på slug
         const quiz = AVAILABLE_QUIZ.find(q => {
             const quizSlug = this.generateCategorySlug(q.name);
+            console.log(`🔍 Jämför: "${quizSlug}" med "${categorySlug}"`);
             return quizSlug === categorySlug;
         });
 
         if (!quiz) {
+            console.log('❌ Ingen dynamisk kategori matchade');
             return false;
         }
+
+        console.log('✅ Hittade dynamisk kategori:', quiz);
 
         try {
             console.log(`🔄 Laddar dynamisk quiz: ${quiz.name}`);
@@ -135,8 +191,16 @@ class SEOURLHandler {
             this.updateCategoryMetaTags(quiz.key, quiz.name);
 
             // Starta quiz
-            this.startDynamicQuiz(quiz, questions);
-            return true;
+            console.log('🎯 Startar dynamiskt quiz för:', quiz.name);
+            console.log('🔍 startDynamicQuiz finns:', typeof this.startDynamicQuiz);
+            
+            if (typeof this.startDynamicQuiz === 'function') {
+                this.startDynamicQuiz(quiz, questions);
+                return true;
+            } else {
+                console.error('❌ startDynamicQuiz är inte en funktion');
+                return false;
+            }
 
         } catch (error) {
             console.error(`❌ Kunde inte ladda quiz "${quiz.name}":`, error);
@@ -177,19 +241,26 @@ class SEOURLHandler {
      * Generera slug för kategori
      */
     generateCategorySlug(categoryName) {
-        return categoryName.toLowerCase()
+        console.log('🔍 Genererar slug för:', categoryName);
+        
+        const slug = categoryName.toLowerCase()
             .replace(/[åäö]/g, (match) => {
                 return { 'å': 'a', 'ä': 'a', 'ö': 'o' }[match];
             })
             .replace(/\s+/g, '-')
             .replace(/[^a-z0-9-]/g, '');
+            
+        console.log('🔍 Genererad slug:', slug);
+        return slug;
     }
 
     /**
      * Normalisera slug för jämförelse
      */
     normalizeCategorySlug(slug) {
-        return slug.toLowerCase()
+        console.log('🔍 Normaliserar slug:', slug);
+        
+        const normalized = slug.toLowerCase()
             .replace(/[åäö]/g, (match) => {
                 return { 'å': 'a', 'ä': 'a', 'ö': 'o' }[match];
             })
@@ -197,6 +268,9 @@ class SEOURLHandler {
             .replace(/[^a-z0-9_]/g, '')
             .replace(/_+/g, '_')
             .replace(/^_|_$/g, '');
+            
+        console.log('🔍 Normaliserad slug:', normalized);
+        return normalized;
     }
 
     /**
